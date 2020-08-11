@@ -2628,6 +2628,7 @@
 #include "maps\europe-2\escnew.dm"
 #include "maps\europe-2\escnew_areas.dm"
 #include "maps\europe-2\escnew_define.dm"
+#include "maps\europe-2\escnew_jobs.dm"
 #include "maps\europe-2\escnew_outfits.dm"
 #include "maps\europe-2\europe-1.dmm"
 #include "maps\redline\redline_areas.dm"

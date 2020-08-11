@@ -15,16 +15,16 @@
 						/datum/job/escalation/usmc/ftmg,
 						/datum/job/escalation/usmc/ftmga,
 						/datum/job/escalation/nva/platlead,
-						/datum/job/escalation/bdw/bdwplatleaddep,
-						/datum/job/escalation/bdw/bdwratelo,
-						/datum/job/escalation/bdw/bdwmessenger,
-						/datum/job/escalation/bdw/bdwcorpsman,
-						/datum/job/escalation/bdw/bdwsurgerist,
-						/datum/job/escalation/bdw/bdwsl,
-						/datum/job/escalation/bdw/bdwsld,
-						/datum/job/escalation/bdw/bdwsm,
-						/datum/job/escalation/bdw/bdwmg,
-						/datum/job/escalation/nvaddr/bdwmgas
+						/datum/job/escalation/bdw/platleaddep,
+						/datum/job/escalation/bdw/ratelo,
+						/datum/job/escalation/bdw/messenger,
+						/datum/job/escalation/bdw/corpsman,
+						/datum/job/escalation/bdw/surgerist,
+						/datum/job/escalation/bdw/sl,
+						/datum/job/escalation/bdw/sld,
+						/datum/job/escalation/bdw/sm,
+						/datum/job/escalation/bdw/mg,
+						/datum/job/escalation/nvaddr/bdwmgas,
 						/datum/job/escalation/bdw/rifle,
 						/datum/job/escalation/nva/platlead,
 						/datum/job/escalation/nva/platleaddep,
@@ -67,7 +67,6 @@
 	title = "US"
 	enabled = 0
 	faction_tag = "usmc"
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/usmc
 	military_faction = NATO
 	latejoin_at_spawnpoints = 1
 
@@ -272,7 +271,7 @@
 	title = "BDW"
 	enabled = 0
 	faction_tag = "bdw"
-	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/
 	military_faction = NATO
 	latejoin_at_spawnpoints = 1
 
@@ -283,7 +282,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/platlead
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/platlead
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -299,7 +298,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/platleaddep
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/platleaddep
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -311,7 +310,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/ratelo
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/ratelo
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -323,7 +322,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/messenger
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/messenger
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -335,7 +334,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/corpsman
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/corpsman
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -347,7 +346,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/doctor
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/doctor
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -359,7 +358,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/sqleader
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/sqleader
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -371,7 +370,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/sqleaderdep
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/sqleaderdep
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -383,7 +382,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/marksman
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/marksman
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -395,7 +394,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/mgunner
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/mgunner
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -407,7 +406,7 @@
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/rifleman
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/rifleman
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE

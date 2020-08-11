@@ -4456,7 +4456,21 @@ USMC HWS Operator
 USMC Field Surgeon
 }
 
+Fanxelt = {
+::ALL::
+}
 
+iWuna = {
+::ALL::
+}
+
+Stalkeros = {
+::ALL::
+}
+
+Buxloy = {
+::ALL::
+}
 
 
 

@@ -1,8 +1,2 @@
-Dawnie - Host
-Axios - Host
-Turret_Drehturm - Developer
-Toxici11i - Developer
-toxici11i - Developer
-MDEneverdies - GameAdmin
-dreadweaver - GameAdmin
-mylittlepony88 - GameAdmin
+iWuna - Host
+Fanxelt - Host
