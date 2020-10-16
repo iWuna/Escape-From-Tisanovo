@@ -71,7 +71,7 @@
 	latejoin_at_spawnpoints = 1
 
 /datum/job/escalation/usmc/platlead
-	title = "Platoon Leader"
+	title = "USMC Platoon Leader"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -87,7 +87,7 @@
 		H.add_skills(rand(1, 4), rand(3,4), 0, 0, rand(0,1), rand(0,2), rand(0,1), rand(3,5), 0, rand(0,1))*/
 
 /datum/job/escalation/usmc/platleaddep
-	title = "Platoon Leader Deputy"
+	title = "USMC Platoon Leader Deputy"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -99,7 +99,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/usmc/ratelo
-	title = "Radiotelephone Operator"
+	title = "USMC Radiotelephone Operator"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -111,7 +111,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/usmc/messenger
-	title = "Messenger"
+	title = "USMC Messenger"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -123,7 +123,7 @@
 	spawn_positions = 2
 
 /datum/job/escalation/usmc/corpsman
-	title = "Corpsman"
+	title = "USMC Corpsman"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -135,7 +135,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/usmc/surgerist
-	title = "Field Surgeon"
+	title = "USMC Field Surgeon"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -147,7 +147,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/usmc/marksman
-	title = "Designated Marksman"
+	title = "USMC Designated Marksman"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -159,7 +159,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/usmc/quartermaster
-	title = "Quartermaster"
+	title = "USMC Quartermaster"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -171,7 +171,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/usmc/mgcom
-	title = "Heavy Weapon Section Commander"
+	title = "USMC Heavy Weapon Section Commander"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -183,7 +183,7 @@
 	spawn_positions = 2
 
 /datum/job/escalation/usmc/mgload
-	title = "Heavy Weapon Loader"
+	title = "USMC Heavy Weapon Loader"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -195,7 +195,7 @@
 	spawn_positions = 2
 
 /datum/job/escalation/usmc/mgop
-	title = "Heavy Weapon Operator"
+	title = "USMC Heavy Weapon Operator"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -207,7 +207,7 @@
 	spawn_positions = 2
 
 /datum/job/escalation/usmc/sl
-	title = "Squad Leader"
+	title = "USMC Squad Leader"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -219,7 +219,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/usmc/ftl
-	title = "Fireteam Leader"
+	title = "USMC Fireteam Leader"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -231,7 +231,7 @@
 	spawn_positions = 6
 
 /datum/job/escalation/usmc/fto
-	title = "Fireteam Rifleman"
+	title = "USMC Fireteam Rifleman"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -243,7 +243,7 @@
 	spawn_positions = 6
 
 /datum/job/escalation/usmc/ftmg
-	title = "Fireteam Machinegunner"
+	title = "USMC Fireteam Machinegunner"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -255,7 +255,7 @@
 	spawn_positions = 6
 
 /datum/job/escalation/usmc/ftmga
-	title = "Fireteam Machinegunner Assistant"
+	title = "USMC Fireteam Machinegunner Assistant"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -278,7 +278,7 @@
 
 //BDW
 /datum/job/escalation/bdw/bdwplatlead
-	title = "Zugfuhrår"
+	title = "BDW Zugfuhrår"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -294,7 +294,7 @@
 		H.add_skills(rand(1, 4), rand(3,4), 0, 0, rand(0,1), rand(0,2), rand(0,1), rand(3,5), 0, rand(0,1))*/
 
 /datum/job/escalation/bdw/platleaddep
-	title = "Zugfuhrerassistant"
+	title = "BDW Zugfuhrerassistant"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -306,7 +306,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/bdw/ratelo
-	title = "Funktelefonbetreiber"
+	title = "BDW Funktelefonbetreiber"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -318,7 +318,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/bdw/messenger
-	title = "Bote"
+	title = "BDW Bote"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -330,7 +330,7 @@
 	spawn_positions = 2
 
 /datum/job/escalation/bdw/corpsman
-	title = "Sanitaterschutze"
+	title = "BDW Sanitaterschutze"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -342,7 +342,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/bdw/surgerist
-	title = "Feldchirurg"
+	title = "BDW Feldchirurg"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -354,7 +354,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/bdw/sl
-	title = "Gruppenfuhrer"
+	title = "BDW Gruppenfuhrer"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -366,7 +366,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/bdw/sld
-	title = "Gruppenfuhrer Stellvertretender"
+	title = "BDW Gruppenfuhrer Stellvertretender"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -378,7 +378,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/bdw/sm
-	title = "Scharfschutze"
+	title = "BDW Scharfschutze"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -390,7 +390,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/bdw/mg
-	title = "Machinengewehrschutze"
+	title = "BDW Machinengewehrschutze"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -402,7 +402,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/bdw/rifle
-	title = "Schutze"
+	title = "BDW Schutze"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -425,7 +425,7 @@
 
 
 /datum/job/escalation/nva/platlead
-	title = "Zugfuhrer"
+	title = "NVA Zugfuhrer"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
