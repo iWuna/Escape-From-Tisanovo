@@ -86,11 +86,13 @@ proc/show_statistic_by_faction()
 	var/usmc_live = 0
 	var/csla_live = 0
 	var/cccp_live = 0
+	var/dayz_live = 0
 
 	var/bund_dead = 0
 	var/usmc_dead = 0
 	var/csla_dead = 0
 	var/cccp_dead = 0
+	var/dayz_dead = 0
 
 	for(var/datum/army_faction/F in ticker.mode.teams)
 
@@ -116,6 +118,11 @@ proc/show_statistic_by_faction()
 						cccp_dead++
 					else
 						cccp_live++
+				if("surv")
+					if(H.stat == DEAD)
+						dayz_dead++
+					else
+						dayz_live++
 
 	if(usmc_live || usmc_dead)
 		dat += "USMC : [usmc_live > 0 ? usmc_live : "no"] alive, [usmc_dead > 0 ? usmc_dead : "no"] dead.<br>"
@@ -128,6 +135,8 @@ proc/show_statistic_by_faction()
 
 	if(csla_live || csla_dead)
 		dat += "CSLA : [csla_live > 0 ? csla_live : "no"] alive, [csla_dead > 0 ? csla_dead : "no"] dead.<br>"
+	if(dayz_live || dayz_dead)
+		dat += "CIV : [dayz_live > 0 ? dayz_live : "no"] alive, [dayz_dead > 0 ? dayz_dead : "no"] dead.<br>"
 
 	return dat
 

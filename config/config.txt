@@ -1,5 +1,5 @@
 ## Server name: This appears at the top of the screen in-game. In this case it will read "tgstation: station_name" where station_name is the randomly generated name of the station for the round. Remove the # infront of SERVERNAME and replace 'tgstation' with the name of your choice
-# SERVERNAME Escalation1984
+SERVERNAME Cold War 13
 
 ## Alert levels
 ALERT_GREEN All threats to the ship have passed. Security may not have weapons visible, privacy laws are once again fully enforced.
@@ -179,7 +179,7 @@ ANTAG_HUD_RESTRICTED
 # DONT_DEL_NEWMOB
 
 ## set a hosted by name for unix platforms
-HOSTEDBY yournamehere
+HOSTEDBY TauCeti
 
 ## Set to jobban "Guest-" accounts from Captain, HoS, HoP, CE, RD, CMO, Warden, Security, Detective, and AI positions.
 ## Set to 1 to jobban them from those positions, set to 0 to allow them.
@@ -347,7 +347,7 @@ EVENT_CUSTOM_START_MAJOR 80;100
 DISABLE_OOC
 
 ## Uncomment to disable the AHELP channel by default.
-DISABLE_AHELP
+#DISABLE_AHELP
 
 
 ## Uncomment to disable the dead OOC channel by default.
@@ -360,10 +360,10 @@ DISABLE_AOOC
 #DISABLE_DSAY
 
 ## Uncomment to disable respawning by default.
-DISABLE_RESPAWN
+#DISABLE_RESPAWN
 
 ## Respawn delay in minutes before one may respawn as a crew member.
-#RESPAWN_DELAY 30
+RESPAWN_DELAY 5
 
 ## Strength of ambient star light. Set to 0 or less to turn off. A value of 1 is unlikely to have a noticeable effect in most lighting systems.
 STARLIGHT 1

@@ -1,5 +1,5 @@
 /datum/army_faction/civ
-	group_name = "Neutrals"
+	group_name = "CIVILIAN"
 	enabled = 0
 
 /datum/army_faction/civ/civilians
@@ -9,6 +9,7 @@
 	flag_state = "white"
 	base_color = "white"
 	num_fireteams = 0
+	language = "Czech"
 
 /datum/army_faction/civ/redcross
 	name = "Red Cross"
