@@ -1,2 +1,3 @@
 iWuna - Host
-Fanxelt - Host
+Fanxelt - GameAdmin
+VanoTyan - GameAdmin

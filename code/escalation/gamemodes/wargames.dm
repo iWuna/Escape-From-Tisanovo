@@ -1,10 +1,10 @@
 //Very basic escalation 1983 gamemode. has no objectives, admins have to set everything.
 
 /datum/game_mode/wargames
-	name = "Europe 1984"
+	name = "Escalation: DayZ"
 	config_tag = "wargames"
 	required_players = 0
-	round_description = "Teams battle for supremacy!"
+	round_description = "Try to survive!"
 	extended_round_description = "This gamemode requires admins."
 	ert_disabled = 1
 	addantag_allowed = ADDANTAG_ADMIN //Only admins can add antags. This should be disabled in config anyway

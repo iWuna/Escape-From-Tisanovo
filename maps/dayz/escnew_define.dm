@@ -4,8 +4,7 @@
 	full_name = "Chernogorsk"
 	path = "chernogorsk"
 
-	lobby_icon = 'icons/escalation/lobby.png'
-	lobby_screens = list("valour")
+	lobby_icon = 'icons/escalation/dayz1.png'
 
 	station_levels = list(1, 2, 3)
 	contact_levels = list(1, 2, 3)

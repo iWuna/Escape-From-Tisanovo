@@ -62,3 +62,13 @@
 				/obj/item/nothing,
 				/obj/item/nothing
 				)
+
+/obj/effect/spawner/lootdrop/zombie_civ
+	name = "civ random zombie spawn"
+	lootdoubles = FALSE
+	loot = list(
+				/mob/living/simple_animal/hostile/dayz/zombie/civ,
+				/mob/living/simple_animal/hostile/dayz/zombie/civ,
+				/mob/living/simple_animal/hostile/dayz/zombie/civ,
+				/obj/item/nothing
+				)
