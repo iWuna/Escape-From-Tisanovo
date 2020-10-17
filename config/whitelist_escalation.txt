@@ -3852,662 +3852,234 @@ BDW HWS Operator
 }
 
 ike709 = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 Captainbritton02 = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 Hatknight = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 RNJesus = {
-BDW Zugfuhrerassistant
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 novacommander = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 sethc123 = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 Xywenx = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 Theflyingbananagaming = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 DeadLantern = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 Villeri = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 Bigfoun = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 
 Shamzie = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 Subdon = {
-BDW Zugfuhrer
-BDW Zugfuhrerassistant
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Feldchirurg
-BDW Gruppenfuhrer
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 TechnoKat = {
-BDW Zugfuhrer
-BDW Zugfuhrerassistant
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Feldchirurg
-BDW Gruppenfuhrer
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 TeenGowen = {
-BDW Zugfuhrer
-BDW Zugfuhrerassistant
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Feldchirurg
-BDW Gruppenfuhrer
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 Jack354yo = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 FireNightPower = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 PinxePuto = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 Anibalvianaregojunior = {
-BDW Zugfuhrerassistant
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 Martzin = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 Verynisepersin = {
-BDW Zugfuhrerassistant
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 Fonzie49 = {
-BDW Zugfuhrerassistant
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 FireNightPower = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 EvenInDeathIStillServe = {
-BDW Zugfuhrerassistant
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 
 Adronio = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 Tristan63 = {
-BDW Zugfuhrer
-BDW Zugfuhrerassistant
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Feldchirurg
-BDW Gruppenfuhrer
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 
 Weras57 = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 DMAN777 = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 EpicRice = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 Verarch = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 Battieralarm3 = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 Rustarus = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 Eluxor = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 RiggyMiggy = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 BotanistPower = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
 PseudoScientist = {
-BDW Funktelefonbetreiber
-BDW Bote
-BDW Sanitaterschutze
-BDW Gruppenfuhrer Stellvertretender
-BDW Scharfschutze
-BDW Machinengewehrschutze
-BDW Grenadier
-BDW Squad Radio Operator
-BDW Schutze
-BDW HWS Commander
-BDW HWS Loader
-BDW HWS Operator
+Survivor
 }
 
-
-# ADMINISTRATION
-
 Dawnie = {
-::ALL::
+Survivor
 }
 
 AncientV25 = {
-::ALL::
+Survivor
 }
 
 severepwnage = {
-::ALL::
+Survivor
 }
 
 MDEneverdies = {
-::ALL::
+Survivor
 }
 
 
 
 I like D0nUts = {
-::ALL::
+Survivor
 }
 
 BlazSnake = {
-::ALL::
+Survivor
 }
 
 Toxici11i = {
-
-s
-USMC HWS Operator
-USMC Field Surgeon
+Survivor
 }
 
 Fanxelt = {
 ::ALL::
 }
 
-iWuna = {
-::ALL::
-}
+#iWuna = {
+#::ALL::
+#}
 
 Stalkeros = {
-::ALL::
+Survivor
 }
 
 Buxloy = {
-::ALL::
+Survivor
 }
 
 HughDePayne = {
-::ALL::
+Survivor
 }
 
 jhnazar = {
-::ALL::
+Survivor
 }
 
 Hitchkock = {
-::ALL::
+Survivor
 }
 
 VanoTyan = {
-::ALL::
+Survivor
 }
 
 excelsior0w0 = {
-::ALL::
+Survivor
 }
 
 undud = {
-::ALL::
+Survivor
 }
 
 goodbigbird = {
-::ALL::
+Survivor
 }
 
 Wincant = {
-::ALL::
+Survivor
 }
 
 v4d3p3d1c4b0c4ll1d00sl1c001t7 = {
-::ALL::
+Survivor
 }
 
 Kerststf = {
-::ALL::
+Survivor
 }

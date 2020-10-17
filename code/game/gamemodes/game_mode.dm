@@ -39,7 +39,7 @@ var/global/list/additional_antag_types = list()
 	var/waittime_h = 180 SECONDS		     // Upper bounds on time before start of shift report
 
 //1983 stuff
-	var/minimum_teams = 2
+	var/minimum_teams = 1
 	var/minimum_neutrals = 0
 	var/list/datum/army_faction/teams = list()	//A list of the teams fighting
 	var/list/datum/army_faction/neutral_teams = list() //A list of the neutral teams in the game

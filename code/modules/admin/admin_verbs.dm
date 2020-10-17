@@ -20,7 +20,7 @@ var/list/admin_verbs_admin = list(
 	/client/proc/show_armies_tags,
 	/client/proc/show_separated_stat,
 	/client/proc/show_general_stat,	//allows us to set a custom colour for everythign we say in ooc,
-	/client/proc/add_to_esc_whitelist,
+	//client/proc/add_to_esc_whitelist,
 	/client/proc/stop_art_shelling,
 	/client/proc/stop_arty_gib,
 	/datum/admins/proc/show_game_mode,  //Configuration window for the current game mode.,
@@ -1041,6 +1041,7 @@ var/list/admin_verbs_mentor = list(
 	world << show_statistic_by_faction()
 	feedback_add_details("admin_verb", "AKLL")
 
+/*
 /client/proc/add_to_esc_whitelist()
 	set name = "Add to WL"
 	set category = "EscAdmin"
@@ -1057,7 +1058,7 @@ var/list/admin_verbs_mentor = list(
 		update_escpanels_for_all()
 
 	feedback_add_details("admin_verb", "ESCW")
-
+*/
 
 /client/proc/show_armies_tags()
 	set name = "Show armies' tags"

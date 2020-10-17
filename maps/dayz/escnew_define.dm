@@ -3,9 +3,7 @@
 	name = "Chernogorsk"
 	full_name = "Chernogorsk"
 	path = "chernogorsk"
-
-	lobby_icon = 'icons/escalation/dayz1.png'
-
+	lobby_icon = 'icons/escalation/dayz2.png'
 	station_levels = list(1, 2, 3)
 	contact_levels = list(1, 2, 3)
 	player_levels = list(1, 2, 3)
