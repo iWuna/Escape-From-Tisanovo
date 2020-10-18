@@ -441,7 +441,7 @@
 		H.add_skills(rand(1, 4), rand(3,4), 0, 0, rand(0,1), rand(0,2), rand(0,1), rand(3,5), 0, rand(0,1))*/
 
 /datum/job/escalation/nva/platleaddep
-	title = "Zugfuhrerassistant"
+	title = "NVA Zugfuhrerassistant"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -453,7 +453,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/nva/sm
-	title = "Scharfschutze"
+	title = "NVA Scharfschutze"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -465,7 +465,7 @@
 	spawn_positions = 2
 
 /datum/job/escalation/nva/ratelo
-	title = "Funktelefonbetreiber"
+	title = "NVA Funktelefonbetreiber"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -477,7 +477,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/nva/corpsman
-	title = "Sanitater"
+	title = "NVA Sanitater"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -489,7 +489,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/nva/surgerist
-	title = "Feldchirurg"
+	title = "NVA Feldchirurg"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -501,7 +501,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/nva/sl
-	title = "Gruppenfuhrer"
+	title = "NVA Gruppenfuhrer"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -513,7 +513,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/nva/sld
-	title = "Gruppenfuhrer Stellvertretender"
+	title = "NVA Gruppenfuhrer Stellvertretender"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -526,7 +526,7 @@
 
 
 /datum/job/escalation/nva/mg
-	title = "Machinengewehrschutze"
+	title = "NVA Machinengewehrschutze"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -538,7 +538,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/nva/mgas
-	title = "Machinengewehrschutze Stellvertretender"
+	title = "NVA Machinengewehrschutze Stellvertretender"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -550,7 +550,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/nva/srad
-	title = "Funke"
+	title = "NVA Funke"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -562,7 +562,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/nva/rocket
-	title = "Panzerabwehrschutze"
+	title = "NVA Panzerabwehrschutze"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -574,7 +574,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/nva/rocketass
-	title = "Panzerab. Stellvertretender"
+	title = "NVA Panzerab. Stellvertretender"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -586,7 +586,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/nva/rifle
-	title = "Schutze"
+	title = "NVA Schutze"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -609,7 +609,7 @@
 //Soviet Army
 
 /datum/job/escalation/sa/platlead
-	title = "Komandir vzvoda"
+	title = "SA Komandir vzvoda"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -625,7 +625,7 @@
 		H.add_skills(rand(1, 4), rand(3,4), 0, 0, rand(0,1), rand(0,2), rand(0,1), rand(3,5), 0, rand(0,1))*/
 
 /datum/job/escalation/sa/platleaddep
-	title = "Zamestitel' komandira vzvoda"
+	title = "SA Zamestitel' komandira vzvoda"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -637,7 +637,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/sa/ratelo
-	title = "Shtabnoi Radiotelefonist"
+	title = "SA Shtabnoi Radiotelefonist"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -649,7 +649,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/sa/corpsman
-	title = "Sanitar"
+	title = "SA Sanitar"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -661,7 +661,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/sa/surgerist
-	title = "Polevoi Vrach"
+	title = "SA Polevoi Vrach"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -673,7 +673,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/sa/sniper
-	title = "Snaiper"
+	title = "SA Snaiper"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -686,7 +686,7 @@
 
 
 /datum/job/escalation/sa/sl
-	title = "Komandir Otdeleniya"
+	title = "SA Komandir Otdeleniya"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -698,7 +698,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/sa/sld
-	title = "Zamestitel' Komandira Otdeleniya"
+	title = "SA Zamestitel' Komandira Otdeleniya"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -711,7 +711,7 @@
 
 
 /datum/job/escalation/sa/mg
-	title = "Pulemetchik"
+	title = "SA Pulemetchik"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -723,7 +723,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/sa/mgas
-	title = "Pomoshnik Pulemetchika"
+	title = "SA Pomoshnik Pulemetchika"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -735,7 +735,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/sa/srad
-	title = "Radiotelefonist"
+	title = "SA Radiotelefonist"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -747,7 +747,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/sa/rocket
-	title = "Strelok-Granatometchik"
+	title = "SA Strelok-Granatometchik"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -759,7 +759,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/sa/rocketass
-	title = "Pomoshnik Granatometchika"
+	title = "SA Pomoshnik Granatometchika"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -771,7 +771,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/sa/rifle
-	title = "Strelok"
+	title = "SA Strelok"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -784,7 +784,7 @@
 
 
 /datum/job/escalation/sa/otvco
-	title = "OTV Komandir"
+	title = "SA OTV Komandir"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -797,7 +797,7 @@
 
 
 /datum/job/escalation/sa/otvop
-	title = "OTV Operator"
+	title = "SA OTV Operator"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -810,7 +810,7 @@
 
 
 /datum/job/escalation/sa/otvload
-	title = "OTV Zaryazhaiuschiy"
+	title = "SA OTV Zaryazhaiuschiy"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
