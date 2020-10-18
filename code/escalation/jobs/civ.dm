@@ -18,10 +18,10 @@
 	selection_color = "#B0C4DE"
 	account_allowed = 0
 	announced = FALSE
-	amount = 25
+	amount = 50
 	enabled = 1
 	position = "team"
 	whitelist_rank = "usmc_officer"
-	total_positions = 40
+	total_positions = 50
 	spawn_positions = 15
 	also_known_languages = list(LANGUAGE_CZECH = 100, LANGUAGE_RUSSIAN = 80)

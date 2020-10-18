@@ -1,6 +1,6 @@
 /datum/army_faction/civ
 	group_name = "CIVILIAN"
-	enabled = 0
+	enabled = 1
 
 /datum/army_faction/civ/civilians
 	name = "Civilians"
