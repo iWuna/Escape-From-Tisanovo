@@ -9,7 +9,6 @@
 	item_state = null
 	slot_flags = SLOT_NHOLSTER
 	storage_slots = 3
-	storage_slots = null
 	use_sound = 'sound/items/interactions/holsteropen.wav'
 	close_sound = 'sound/items/interactions/holsterclose.wav'
 	var/icon_closed = "holster_empty" //Empty for now.
@@ -77,6 +76,20 @@
 		/obj/item/ammo_magazine/a9x18
 		)
 
+/obj/item/weapon/storage/belt/holster/sa/empty
+	storage_slots = 2
+	holster_sound = 'sound/effects/holster/holsterin.ogg'
+	unholster_sound = 'sound/effects/holster/holsterout.ogg'
+	special_item = /obj/item/weapon/gun/projectile/makarov
+	desc = "This holster can hold Makarov pistol and one magazine."
+	special_item = /obj/item/weapon/gun/projectile/makarov
+	open_delay = 5
+	startswith = null
+	can_hold = list(
+		/obj/item/weapon/gun/projectile/makarov,
+		/obj/item/ammo_magazine/a9x18
+		)
+
 /obj/item/weapon/storage/belt/holster/csla
 	storage_slots = 2
 	holster_sound = 'sound/effects/holster/holsterin.ogg'
@@ -88,6 +101,19 @@
 		/obj/item/weapon/gun/projectile/cz82,
 		/obj/item/ammo_magazine/a9x18
 		)
+	can_hold = list(
+		/obj/item/weapon/gun/projectile/cz82,
+		/obj/item/ammo_magazine/a9x18
+		)
+
+/obj/item/weapon/storage/belt/holster/csla/empty
+	storage_slots = 2
+	holster_sound = 'sound/effects/holster/holsterin.ogg'
+	open_delay = 5
+	unholster_sound = 'sound/effects/holster/holsterout.ogg'
+	special_item = /obj/item/weapon/gun/projectile/cz82
+	desc = "This holster can hold CZ82 pistol and one magazine."
+	startswith = null
 	can_hold = list(
 		/obj/item/weapon/gun/projectile/cz82,
 		/obj/item/ammo_magazine/a9x18
@@ -107,6 +133,22 @@
 		/obj/item/weapon/gun/projectile/colt911,
 		/obj/item/ammo_magazine/c45m,
 		)
+	can_hold = list(
+		/obj/item/weapon/gun/projectile/colt911,
+		/obj/item/ammo_magazine/c45m,
+		)
+
+/obj/item/weapon/storage/belt/holster/usmc/empty
+	special_item = /obj/item/weapon/gun/projectile/colt911
+	holster_sound = 'sound/effects/holster/tactiholsterin.ogg'
+	unholster_sound = 'sound/effects/holster/tactiholsterout.ogg'
+	name = "ALICE M12 holster"
+	icon_state = "alice_holster"
+	icon_closed = "alice_holster_empty"
+	storage_slots = 2
+
+	desc = "This holster can hold a M1911A1 and one magazine."
+	startswith = null
 	can_hold = list(
 		/obj/item/weapon/gun/projectile/colt911,
 		/obj/item/ammo_magazine/c45m,
@@ -145,6 +187,17 @@
 		/obj/item/ammo_magazine/a9x19
 		)
 
+/obj/item/weapon/storage/belt/holster/bdw/empty
+	storage_slots = 2
+	holster_sound = 'sound/effects/holster/holsterin.ogg'
+	unholster_sound = 'sound/effects/holster/holsterout.ogg'
+	special_item = /obj/item/weapon/gun/projectile/walther
+	desc = "This holster can hold Walter P1 and one magazine."
+	startswith = null
+	can_hold = list(
+		/obj/item/weapon/gun/projectile/walther,
+		/obj/item/ammo_magazine/a9x19
+		)
 
 /obj/item/weapon/storage/belt/holster/sheath
 	name = "sheath"

@@ -1353,6 +1353,11 @@ obj/structure/sign/noshitlers
 	icon = 'icons/obj/decals48.dmi'
 	icon_state = "raduzhnoe"
 
+/obj/structure/sign/tisanovo
+	name = "Tisanovo"
+	icon = 'icons/obj/decals48.dmi'
+	icon_state = "tisanovo"
+
 /obj/structure/sign/stogovka
 	name = "Stogovka river"
 	icon = 'icons/obj/decals48.dmi'

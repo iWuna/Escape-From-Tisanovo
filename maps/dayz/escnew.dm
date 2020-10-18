@@ -1,7 +1,7 @@
 #if !defined(using_map_DATUM)
 	#include "escnew_areas.dm"
 
-	#include "chernogorsk.dmm"
+	#include "tisanovo.dmm"
 
 	#include "../../code/modules/lobby_music/dayz.dm"
 
