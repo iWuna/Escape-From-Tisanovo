@@ -23,5 +23,5 @@
 	position = "team"
 	whitelist_rank = "usmc_officer"
 	total_positions = 150
-	spawn_positions = 15
+	spawn_positions = 150
 	also_known_languages = list(LANGUAGE_CZECH = 100, LANGUAGE_RUSSIAN = 80)

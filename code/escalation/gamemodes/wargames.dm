@@ -1,7 +1,7 @@
 //Very basic escalation 1983 gamemode. has no objectives, admins have to set everything.
 
 /datum/game_mode/wargames
-	name = "Escalation: DayZ"
+	name = "Zed Invasion"
 	config_tag = "wargames"
 	required_players = 0
 	round_description = "Try to survive!"

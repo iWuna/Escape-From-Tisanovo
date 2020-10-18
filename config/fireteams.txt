@@ -8,6 +8,16 @@
 # /datum/job/escalation/cccp/grenadier
 # @END@
 
+# CIV
+Reserve 1:civ
+/datum/job/escalation/dayz/neutral
+
+Reserve 2:civ
+/datum/job/escalation/dayz/neutral
+
+Reserve 3:civ
+/datum/job/escalation/dayz/neutral
+
 # WARPAC
 
 Otdelenie 'Anna':cccp

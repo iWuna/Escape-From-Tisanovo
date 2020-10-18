@@ -67,7 +67,7 @@ mob/new_player/proc/StatRand()
 	output += "<center><p><a href='byond://?src=\ref[src];char_setup=1'>Setup Character</a></p></center>"
 
 	if(ticker && ticker.mode && ticker.mode.admin_enabled_joining)
-		output += "<center><p><a href='byond://?src=\ref[src];join=1'>Join Team!</A></p></center>"
+		output += "<center><p><a href='byond://?src=\ref[src];join=1'>Join Game!</A></p></center>"
 
 //	else
 //		output += "<center><p>Join Team (Waiting For Admins)</p></center>"
