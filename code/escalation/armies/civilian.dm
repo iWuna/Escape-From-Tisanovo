@@ -8,7 +8,7 @@
 	faction_tag = "civ"
 	flag_state = "white"
 	base_color = "white"
-	num_fireteams = 0
+	num_fireteams = 3
 	language = "Czech"
 
 /datum/army_faction/civ/redcross

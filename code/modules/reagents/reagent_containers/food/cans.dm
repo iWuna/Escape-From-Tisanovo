@@ -6,8 +6,8 @@
 //DRINKS
 
 /obj/item/weapon/reagent_containers/food/drinks/cans/cola
-	name = "\improper Space Cola"
-	desc = "Cola. in space."
+	name = "\improper Coke"
+	desc = "Regular Coke soda."
 	icon_state = "cola"
 	center_of_mass = "x=16;y=10"
 /obj/item/weapon/reagent_containers/food/drinks/cans/cola/New()
@@ -34,7 +34,7 @@
 
 
 /obj/item/weapon/reagent_containers/food/drinks/cans/space_mountain_wind
-	name = "\improper Space Mountain Wind"
+	name = "\improper Mountain Dew"
 	desc = "Blows right through you like a space wind."
 	icon_state = "space_mountain_wind"
 	center_of_mass = "x=16;y=10"
@@ -97,7 +97,7 @@
 		reagents.add_reagent(/datum/reagent/drink/tea/icetea, 30)
 
 /obj/item/weapon/reagent_containers/food/drinks/cans/grape_juice
-	name = "\improper Grapel Juice"
+	name = "\improper Pipsi"
 	desc = "500 pages of rules of how to appropriately enter into a combat with this juice!"
 	icon_state = "purple_can"
 	center_of_mass = "x=16;y=10"

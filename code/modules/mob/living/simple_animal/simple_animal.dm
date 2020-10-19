@@ -10,6 +10,8 @@
 	health = 20
 	maxHealth = 20
 
+	layer
+
 	mob_bump_flag = SIMPLE_ANIMAL
 	mob_swap_flags = MONKEY|SLIME|HUMAN
 	mob_push_flags = MONKEY|SLIME|HUMAN
@@ -182,6 +184,9 @@
 	var/death_sound = null
 	////// ////// //////
 	var/life_disabled = 0           //VOREStation Edit -- For performance reasons
+
+	var/looted = FALSE
+	var/looting = FALSE
 
 /mob/living/simple_animal/New()
 	..()
@@ -616,6 +621,8 @@
 		if(I_HELP)
 			if (health > 0)
 				M.visible_message("<span class='notice'>[M] [response_help] \the [src].</span>")
+			if(stat == DEAD)
+				loot(M)
 
 		if(I_DISARM)
 			M.visible_message("<span class='notice'>[M] [response_disarm] \the [src].</span>")
@@ -1692,3 +1699,95 @@
 /mob/living/simple_animal/retaliate
 	retaliate = 1
 	destroy_surroundings = 1
+
+
+
+
+///looting///
+
+/mob/living/simple_animal/proc/getLootObject(var/modifer)
+	var/list/common = list (/obj/item/weapon/storage/fancy/cigarettes/dromedaryco = 50,
+	/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle = 50
+	)
+
+	var/list/uncommon = list (/obj/item/weapon/reagent_containers/food/snacks/tincan/stewbuckwheat = 20,
+	/obj/item/weapon/reagent_containers/food/snacks/armymaindish/burrito = 35,
+	/obj/item/weapon/reagent_containers/food/drinks/bottle/andropovka = 10,
+	/obj/item/weapon/reagent_containers/food/drinks/cans/cola = 20,
+	/obj/item/weapon/reagent_containers/food/drinks/cans/space_up = 15,
+	/obj/item/weapon/reagent_containers/food/snacks/tincan/stewpearlbarley = 20
+	)
+
+	var/list/unusual = list (/obj/item/weapon/reagent_containers/food/snacks/tincan/stewbuckwheat = 50,
+	/obj/item/weapon/reagent_containers/food/condiment/sovietsugar/zheldor = 40,
+	/obj/item/weapon/reagent_containers/food/snacks/armymaindish/burrito = 35,
+	/obj/item/clothing/shoes/soviet/field = 25,
+	/obj/item/clothing/shoes/leather = 30,
+	/obj/item/clothing/shoes/hightops/green = 10,
+	/obj/item/clothing/shoes/hightops/red = 10,
+	/obj/item/clothing/shoes/hightops/black = 10,
+	/obj/item/weapon/reagent_containers/glass/ampule/morphine = 5,
+	/obj/item/weapon/reagent_containers/glass/ampule/epinephrine = 5,
+	/obj/item/weapon/reagent_containers/food/drinks/cans/space_mountain_wind = 10,
+	/obj/item/weapon/reagent_containers/food/drinks/flask/wornflask/small = 15,
+	/obj/item/weapon/reagent_containers/food/snacks/armymaindish/armychocolate = 10,
+	/obj/item/ammo_magazine/c545x39m/empty = 10
+	)
+
+	var/list/rare = list (/obj/item/weapon/storage/firstaid/usmc_ifak = 15,
+	/obj/item/weapon/reagent_containers/syrette/morphine  = 15,
+	/obj/item/weapon/ampule_pack/morphine = 2,
+	/obj/item/ammo_magazine/cz9x18 = 15,
+	/obj/item/weapon/storage/backpack/usmc_buttpack = 15
+	)
+
+	var/rarity = rand(1, 100)
+	var/list/rarity_range = list (50 * modifer, 60 * modifer, 75 * modifer, 90 * modifer)
+
+	var/list/loot = null
+
+	if(rarity > rarity_range[1])
+		loot = common
+
+	if(rarity > rarity_range[2])
+		loot = uncommon
+
+	if(rarity > rarity_range[3])
+		loot = unusual
+
+	if(rarity > rarity_range[4])
+		loot = rare
+
+	if(loot != null)
+		var/obj/item = pickweight(loot)
+		return item
+	else
+		return null
+
+/mob/living/simple_animal/proc/loot(var/mob/living/carbon/player)
+	if(looted)
+		return
+
+	if(looting)
+		return
+
+	looting = TRUE
+	if(!do_mob(player, src, 20))
+		looting = FALSE
+		return
+
+	looting = FALSE
+	looted = TRUE
+
+	player.visible_message("[player] searching in [src] body.")
+
+	var/modifer = 1
+	var/itemType = getLootObject(1 / modifer)
+	if(itemType == null)
+		player.visible_message("<span class='notice'>Empty.</span>")
+		return
+
+	var/itemTypeString = "[itemType]"
+	var/obj/item = new itemTypeString()
+
+	player.put_in_active_hand(item)
