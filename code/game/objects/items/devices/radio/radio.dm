@@ -348,7 +348,7 @@
 
 		  // Other tags:
 			"compression" = rand(45,50), // compressed radio signal
-			"message" = rhtml_decode(sanitize(message)), // the actual sent message
+			"message" = sanitize(message), // the actual sent message
 			"connection" = connection, // the radio connection to use
 			"radio" = src, // stores the radio used for transmission
 			"slow" = 0, // how much to sleep() before broadcasting - simulates net lag
@@ -405,7 +405,7 @@
 		"vmask" = voicemask,	// 1 if the mob is using a voice gas mas
 
 		"compression" = 10, // uncompressed radio signal
-		"message" = rhtml_decode(sanitize(message)), // the actual sent message
+		"message" = sanitize(message), // the actual sent message
 		"connection" = connection, // the radio connection to use
 		"radio" = src, // stores the radio used for transmission
 		"slow" = 0,
