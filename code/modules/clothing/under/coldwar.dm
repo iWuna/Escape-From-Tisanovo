@@ -87,6 +87,18 @@
 /obj/item/clothing/under/bundeswehr/olive/stabsunter
 	starting_accessories = list(/obj/item/clothing/accessory/insignia/bundeswehr/stabsunter)
 
+//CIV//
+/obj/item/clothing/under/civilian/
+
+/obj/item/clothing/under/civilian/jacket_and_scarf
+	name = "stylish jacket"
+	icon_state = "civ2"
+	worn_state = "civ2"
+
+/obj/item/clothing/under/civilian/shirt_and_pants
+	name = "shirt with pants"
+	icon_state = "civ1"
+	worn_state = "civ1"
 
 //Soviet Army
 /obj/item/clothing/under/soviet/
