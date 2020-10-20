@@ -68,10 +68,26 @@
 	path = /obj/item/clothing/under/soviet/gopnik
 	cost = 1
 
-/datum/gear/soda
+/datum/gear/weapon1
+	display_name = "Makeshift knife"
+	path = /obj/item/weapon/material/knife/sharpening
+	cost = 4
+
+/datum/gear/water1
 	display_name = "Pipsi"
 	path = /obj/item/weapon/reagent_containers/food/drinks/cans/grape_juice
-	cost = 1
+	cost = 2
+
+/datum/gear/water2
+	display_name = "Water bottle"
+	path = /obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle
+	cost = 3
+
+/datum/gear/food1
+	display_name = "Salami slice"
+	path = /obj/item/weapon/reagent_containers/food/snacks/slice/breadsys/ontop/salami
+	cost = 2
+
 
 /datum/gear/matchbook
 	display_name = "matchbook"

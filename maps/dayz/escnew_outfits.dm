@@ -20,9 +20,9 @@
 	holster = null
 	left_pouch = null
 	right_pouch = null
-	r_pocket = /obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle
+	r_pocket = null
 	back = null
 	head = null
-	l_pocket = /obj/item/weapon/reagent_containers/food/snacks/slice/breadsys/ontop/salami
-	l_hand = /obj/item/weapon/material/knife/sharpening
+	l_pocket = null
+	l_hand = null
 	belt = null
