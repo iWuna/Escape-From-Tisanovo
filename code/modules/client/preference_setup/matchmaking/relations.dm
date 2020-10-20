@@ -25,7 +25,7 @@
 	. += "Characters with enabled relations are paired up randomly after spawn. You can terminate relations when you first open relations info window, but after that it's final."
 	. += "<hr>"
 	. += "<br><b>What do they know about you?</b> This is the general info that all kinds of your connections would know. <a href='?src=\ref[src];relation_info=["general"]'>Edit</a>"
-	. += "<br><i>[pref.relations_info["general"] ? cp1251_to_utf8(pref.relations_info["general"]) : "Nothing specific."]</i>"
+	. += "<br><i>[pref.relations_info["general"] ? pref.relations_info["general"] : "Nothing specific."]</i>"
 	. += "<hr>"
 	for(var/T in subtypesof(/datum/relation))
 		var/datum/relation/R = T
@@ -38,7 +38,7 @@
 			. += "<span class='linkOn'>Off</span>"
 		. += "<br><i>[initial(R.desc)]</i>"
 		. += "<br><b>What do they know about you?</b><a href='?src=\ref[src];relation_info=[initial(R.name)]'>Edit</a>"
-		. += "<br><i>[pref.relations_info[initial(R.name)] ? cp1251_to_utf8(pref.relations_info[initial(R.name)]) : "Nothing specific."]</i>"
+		. += "<br><i>[pref.relations_info[initial(R.name)] ? pref.relations_info[initial(R.name)] : "Nothing specific."]</i>"
 		. += "<hr>"
 	. = jointext(.,null)
 

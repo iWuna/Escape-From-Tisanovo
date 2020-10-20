@@ -2,10 +2,7 @@
 	var/list/motionTargets = list()
 	var/detectTime = 0
 	var/alarm_delay = 100 // Don't forget, there's another 10 seconds in queueAlarm()
-
-/obj/machinery/camera/Initialize()
-	. = ..()
-	proximity_monitor = new(src, 2)
+	flags = PROXMOVE
 
 /obj/machinery/camera/internal_process()
 	// motion camera event loop

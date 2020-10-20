@@ -134,7 +134,7 @@ var/list/obj/machinery/requests_console/allConsoles = list()
 	if(reject_bad_text(href_list["write"]))
 		recipient = href_list["write"] //write contains the string of the receiving department's name
 
-		var/new_message = rhtml_encode(input_utf8(usr, "Write your message:", "Awaiting Input", "", "message"))
+		var/new_message = html_encode(input(usr, "Write your message:", "Awaiting Input", "", "message"))
 		if(new_message)
 			message = new_message
 			screen = RCS_MESSAUTH
@@ -146,7 +146,7 @@ var/list/obj/machinery/requests_console/allConsoles = list()
 			reset_message(1)
 
 	if(href_list["writeAnnouncement"])
-		var/new_message = rhtml_encode(input_utf8(usr, "Write your message:", "Awaiting Input", "", "message"))
+		var/new_message = html_encode(input(usr, "Write your message:", "Awaiting Input", "", "message"))
 		if(new_message)
 			message = new_message
 		else
@@ -154,7 +154,7 @@ var/list/obj/machinery/requests_console/allConsoles = list()
 
 	if(href_list["sendAnnouncement"])
 		if(!announcementConsole)	return
-		announcement.Announce(utf8_to_cp1251(message), msg_sanitized = 1)
+		announcement.Announce(message, msg_sanitized = 1)
 		reset_message(1)
 
 	if( href_list["department"] && message )

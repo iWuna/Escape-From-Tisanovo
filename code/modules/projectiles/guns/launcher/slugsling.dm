@@ -7,14 +7,16 @@
 	var/break_on_impact = 1 //There are two modes to the eggs.
 							//One breaks the egg on hit,
 
-/obj/item/weapon/slugegg/Initialize()
-	. = ..()
-	proximity_monitor = new(src, 0)
-
-/obj/item/weapon/slugegg/throw_impact(atom/hit_atom, speed)
+/obj/item/weapon/slugegg/throw_impact(atom/hit_atom, var/speed)
 	if(break_on_impact)
 		squish()
+	else
+		flags |= PROXMOVE //Dont want it active during the throw... loooots of unneeded checking.
 	return ..()
+
+/obj/item/weapon/slugegg/attack_self(var/mob/living/user)
+	user.drop_from_inventory(src)
+	squish()
 
 /obj/item/weapon/slugegg/HasProximity(var/atom/movable/AM)
 	if(isliving(AM))

@@ -67,7 +67,7 @@ mob/new_player/proc/StatRand()
 	output += "<center><p><a href='byond://?src=\ref[src];char_setup=1'>Setup Character</a></p></center>"
 
 	if(ticker && ticker.mode && ticker.mode.admin_enabled_joining)
-		output += "<center><p><a href='byond://?src=\ref[src];join=1'>Join Game!</A></p></center>"
+		output += "<center><p><a href='byond://?src=\ref[src];join=1'>Join Team!</A></p></center>"
 
 //	else
 //		output += "<center><p>Join Team (Waiting For Admins)</p></center>"
@@ -123,9 +123,6 @@ mob/new_player/proc/StatRand()
 			slot_index++
 			if(istype(J,/datum/job/escalation))
 				var/datum/job/escalation/A = J
-				//if(!check_player_in_whitelist(src.key, A.title) && !(A.title in protected_from_whitelist/*see escalation_whitelist.dm*/))
-				//	out += "<P>[A.name] - [A.english_name] (NOT IN WHITELIST)</P>"
-				//else
 				out += "<P><a href='byond://?src=\ref[src];set_team_job=[slot_index]'>[A.name] - [A.english_name] (OPEN)</A></P>"
 
 			else
@@ -160,9 +157,6 @@ mob/new_player/proc/StatRand()
 
 			if(istype(S, /datum/job/escalation))
 				var/datum/job/escalation/A = S
-				//if(!check_player_in_whitelist(src.key, A.title)  && !(A.title in protected_from_whitelist/*see escalation_whitelist.dm*/))
-				//	out += "<p>[A.name] - [A.english_name] (NOT IN WHITELIST)</p>"
-				//else
 				out += "<p><a href='byond://?src=\ref[src];set_fireteam_job=[slot_index]'>[A.name] - [A.english_name] (OPEN)</a></p>"
 
 			else
@@ -243,7 +237,6 @@ mob/new_player/proc/StatRand()
 		var/datum/army_faction/team = get_army(team_view)
 
 		var/slot_index = text2num(href_list["set_team_job"])
-
 
 		if(team && istype(team.slots[slot_index], /mob/new_player))
 			alert("Someone has already picked that job. Too slow!")
@@ -375,13 +368,6 @@ mob/new_player/proc/StatRand()
 		client.prefs.ShowChoices(src)
 
 	if(href_list["game_setup"])
-		if(!check_rights(R_ADMIN))
-			log_admin("[src] Tried accessing the game-start menu without permission")
-			message_admins("[src] Tried accessing the game-start menu without permission", 1)
-			return
-		else
-			log_admin("[src] Is accessing the game start menu.")
-			message_admins("[src] is attempting to access the game start menu.", 1)
 		if(!(initialization_stage&INITIALIZATION_COMPLETE))
 			to_chat(src, "<span class='warning'>Wait for server initialization to complete.</span>")
 			return
@@ -389,7 +375,7 @@ mob/new_player/proc/StatRand()
 			if(ticker.current_state == GAME_STATE_PLAYING)
 				to_chat(src,"<span class='warning'>The round has started already, use verbs instead to change things.</span>")
 				return
-			if(!client.holder) //Shouldn't be possible, but better safe than sorry - this didnt work well but is kept for redundancy sake.
+			if(!client.holder) //Shouldn't be possible, but better safe than sorry
 				return
 			client.holder.show_game_mode()
 

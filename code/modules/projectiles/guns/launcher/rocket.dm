@@ -6,7 +6,6 @@
 	w_class = 5
 	throw_speed = 2
 	throw_range = 10
-	one_hand_penalty = 20
 	force = 5.0
 	flags =  CONDUCT
 	slot_flags = 0
@@ -60,7 +59,6 @@
 	item_state = "rpg1" ///change
 	w_class = 5
 	throw_speed = 3
-	one_hand_penalty = 20
 	throw_range = 40
 	force = 5.0
 	flags =  CONDUCT
@@ -150,14 +148,7 @@
 			item_state = "[item_state]-deployed"
 			slot_flags = null
 	else
-		playsound(src.loc,'sound/weapons/gunporn/rpgoneuse_deploying.ogg',80, 0)
-		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
-		if(do_after(usr, 30, src))
-			usr.visible_message("<span class='notice'>\The [usr] folds the [src].</span>", "<span class='notice'>You fold the [src]</span>")
-			folded = 1
-			icon_state = initial(icon_state)
-			item_state = initial(item_state)
-			slot_flags = null
+		return
 
 /obj/item/weapon/gun/launcher/oneuse/special_check(mob/user)
 	if(folded == 1)
@@ -173,7 +164,6 @@
 	item_state = "rpg18"
 	w_class = 4
 	throw_speed = 2
-	one_hand_penalty = 20
 	throw_range = 10
 	force = 5.0
 	flags =  CONDUCT
@@ -248,7 +238,6 @@
 	desc = "That's the one-use RPG used by US army."
 	icon_state = "m72"
 	item_state = "m72"
-	one_hand_penalty = 20
 	w_class = 4
 	throw_speed = 2
 	throw_range = 10

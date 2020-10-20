@@ -108,7 +108,7 @@
 	force = 10
 	slot_flags = SLOT_BACK
 	caliber = "7.62x51"
-	screen_shake = 1 //extra kickback
+	screen_shake = 2 //extra kickback
 	load_method = MAGAZINE
 	max_shells = 10
 	one_hand_penalty = 3

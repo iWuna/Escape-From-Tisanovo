@@ -8,7 +8,6 @@
 	icon = 'icons/turf/space.dmi'
 	icon_state = "bluespace"
 	desc = "Looks like infinity."
-	permit_ao = FALSE
 
 /turf/unsimulated/mask
 	name = "mask"
@@ -27,7 +26,6 @@
 	icon_state = "roaddottedstripes"
 	blend_with_neighbors = 10
 	outdoors = 1
-	permit_ao = FALSE
 	footstep_sounds = list("human" = list(
 		'sound/effects/footsteps/concrete1.wav',
 		'sound/effects/footsteps/concrete2.wav',

@@ -15,16 +15,16 @@
 						/datum/job/escalation/usmc/ftmg,
 						/datum/job/escalation/usmc/ftmga,
 						/datum/job/escalation/nva/platlead,
-						/datum/job/escalation/bdw/platleaddep,
-						/datum/job/escalation/bdw/ratelo,
-						/datum/job/escalation/bdw/messenger,
-						/datum/job/escalation/bdw/corpsman,
-						/datum/job/escalation/bdw/surgerist,
-						/datum/job/escalation/bdw/sl,
-						/datum/job/escalation/bdw/sld,
-						/datum/job/escalation/bdw/sm,
-						/datum/job/escalation/bdw/mg,
-						/datum/job/escalation/nvaddr/bdwmgas,
+						/datum/job/escalation/bdw/bdwplatleaddep,
+						/datum/job/escalation/bdw/bdwratelo,
+						/datum/job/escalation/bdw/bdwmessenger,
+						/datum/job/escalation/bdw/bdwcorpsman,
+						/datum/job/escalation/bdw/bdwsurgerist,
+						/datum/job/escalation/bdw/bdwsl,
+						/datum/job/escalation/bdw/bdwsld,
+						/datum/job/escalation/bdw/bdwsm,
+						/datum/job/escalation/bdw/bdwmg,
+						/datum/job/escalation/nvaddr/bdwmgas
 						/datum/job/escalation/bdw/rifle,
 						/datum/job/escalation/nva/platlead,
 						/datum/job/escalation/nva/platleaddep,
@@ -67,11 +67,12 @@
 	title = "US"
 	enabled = 0
 	faction_tag = "usmc"
+	outfit_type = /decl/hierarchy/outfit/escalation/nato/usmc
 	military_faction = NATO
 	latejoin_at_spawnpoints = 1
 
 /datum/job/escalation/usmc/platlead
-	title = "USMC Platoon Leader"
+	title = "Platoon Leader"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -87,7 +88,7 @@
 		H.add_skills(rand(1, 4), rand(3,4), 0, 0, rand(0,1), rand(0,2), rand(0,1), rand(3,5), 0, rand(0,1))*/
 
 /datum/job/escalation/usmc/platleaddep
-	title = "USMC Platoon Leader Deputy"
+	title = "Platoon Leader Deputy"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -99,7 +100,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/usmc/ratelo
-	title = "USMC Radiotelephone Operator"
+	title = "Radiotelephone Operator"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -111,7 +112,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/usmc/messenger
-	title = "USMC Messenger"
+	title = "Messenger"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -123,7 +124,7 @@
 	spawn_positions = 2
 
 /datum/job/escalation/usmc/corpsman
-	title = "USMC Corpsman"
+	title = "Corpsman"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -135,7 +136,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/usmc/surgerist
-	title = "USMC Field Surgeon"
+	title = "Field Surgeon"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -147,7 +148,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/usmc/marksman
-	title = "USMC Designated Marksman"
+	title = "Designated Marksman"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -159,7 +160,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/usmc/quartermaster
-	title = "USMC Quartermaster"
+	title = "Quartermaster"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -171,7 +172,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/usmc/mgcom
-	title = "USMC Heavy Weapon Section Commander"
+	title = "Heavy Weapon Section Commander"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -183,7 +184,7 @@
 	spawn_positions = 2
 
 /datum/job/escalation/usmc/mgload
-	title = "USMC Heavy Weapon Loader"
+	title = "Heavy Weapon Loader"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -195,7 +196,7 @@
 	spawn_positions = 2
 
 /datum/job/escalation/usmc/mgop
-	title = "USMC Heavy Weapon Operator"
+	title = "Heavy Weapon Operator"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -207,7 +208,7 @@
 	spawn_positions = 2
 
 /datum/job/escalation/usmc/sl
-	title = "USMC Squad Leader"
+	title = "Squad Leader"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -219,7 +220,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/usmc/ftl
-	title = "USMC Fireteam Leader"
+	title = "Fireteam Leader"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -231,7 +232,7 @@
 	spawn_positions = 6
 
 /datum/job/escalation/usmc/fto
-	title = "USMC Fireteam Rifleman"
+	title = "Fireteam Rifleman"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -243,7 +244,7 @@
 	spawn_positions = 6
 
 /datum/job/escalation/usmc/ftmg
-	title = "USMC Fireteam Machinegunner"
+	title = "Fireteam Machinegunner"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -255,7 +256,7 @@
 	spawn_positions = 6
 
 /datum/job/escalation/usmc/ftmga
-	title = "USMC Fireteam Machinegunner Assistant"
+	title = "Fireteam Machinegunner Assistant"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -271,18 +272,18 @@
 	title = "BDW"
 	enabled = 0
 	faction_tag = "bdw"
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/
+	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw
 	military_faction = NATO
 	latejoin_at_spawnpoints = 1
 
 
 //BDW
 /datum/job/escalation/bdw/bdwplatlead
-	title = "BDW Zugfuhrår"
+	title = "Zugfuhrår"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/platlead
+	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/platlead
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -294,11 +295,11 @@
 		H.add_skills(rand(1, 4), rand(3,4), 0, 0, rand(0,1), rand(0,2), rand(0,1), rand(3,5), 0, rand(0,1))*/
 
 /datum/job/escalation/bdw/platleaddep
-	title = "BDW Zugfuhrerassistant"
+	title = "Zugfuhrerassistant"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/platleaddep
+	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/platleaddep
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -306,11 +307,11 @@
 	spawn_positions = 1
 
 /datum/job/escalation/bdw/ratelo
-	title = "BDW Funktelefonbetreiber"
+	title = "Funktelefonbetreiber"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/ratelo
+	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/ratelo
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -318,11 +319,11 @@
 	spawn_positions = 1
 
 /datum/job/escalation/bdw/messenger
-	title = "BDW Bote"
+	title = "Bote"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/messenger
+	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/messenger
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -330,11 +331,11 @@
 	spawn_positions = 2
 
 /datum/job/escalation/bdw/corpsman
-	title = "BDW Sanitaterschutze"
+	title = "Sanitaterschutze"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/corpsman
+	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/corpsman
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -342,11 +343,11 @@
 	spawn_positions = 3
 
 /datum/job/escalation/bdw/surgerist
-	title = "BDW Feldchirurg"
+	title = "Feldchirurg"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/doctor
+	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/doctor
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -354,11 +355,11 @@
 	spawn_positions = 1
 
 /datum/job/escalation/bdw/sl
-	title = "BDW Gruppenfuhrer"
+	title = "Gruppenfuhrer"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/sqleader
+	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/sqleader
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -366,11 +367,11 @@
 	spawn_positions = 3
 
 /datum/job/escalation/bdw/sld
-	title = "BDW Gruppenfuhrer Stellvertretender"
+	title = "Gruppenfuhrer Stellvertretender"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/sqleaderdep
+	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/sqleaderdep
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -378,11 +379,11 @@
 	spawn_positions = 3
 
 /datum/job/escalation/bdw/sm
-	title = "BDW Scharfschutze"
+	title = "Scharfschutze"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/marksman
+	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/marksman
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -390,11 +391,11 @@
 	spawn_positions = 3
 
 /datum/job/escalation/bdw/mg
-	title = "BDW Machinengewehrschutze"
+	title = "Machinengewehrschutze"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/mgunner
+	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/mgunner
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -402,11 +403,11 @@
 	spawn_positions = 3
 
 /datum/job/escalation/bdw/rifle
-	title = "BDW Schutze"
+	title = "Schutze"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
-	outfit_type = /decl/hierarchy/outfit/escalation/nato/bundes/rifleman
+	outfit_type = /decl/hierarchy/outfit/job/coldwar/bdw/rifleman
 	selection_color = "#4682B4"
 	account_allowed = 0
 	announced = FALSE
@@ -425,7 +426,7 @@
 
 
 /datum/job/escalation/nva/platlead
-	title = "NVA Zugfuhrer"
+	title = "Zugfuhrer"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -441,7 +442,7 @@
 		H.add_skills(rand(1, 4), rand(3,4), 0, 0, rand(0,1), rand(0,2), rand(0,1), rand(3,5), 0, rand(0,1))*/
 
 /datum/job/escalation/nva/platleaddep
-	title = "NVA Zugfuhrerassistant"
+	title = "Zugfuhrerassistant"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -453,7 +454,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/nva/sm
-	title = "NVA Scharfschutze"
+	title = "Scharfschutze"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -465,7 +466,7 @@
 	spawn_positions = 2
 
 /datum/job/escalation/nva/ratelo
-	title = "NVA Funktelefonbetreiber"
+	title = "Funktelefonbetreiber"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -477,7 +478,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/nva/corpsman
-	title = "NVA Sanitater"
+	title = "Sanitater"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -489,7 +490,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/nva/surgerist
-	title = "NVA Feldchirurg"
+	title = "Feldchirurg"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -501,7 +502,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/nva/sl
-	title = "NVA Gruppenfuhrer"
+	title = "Gruppenfuhrer"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -513,7 +514,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/nva/sld
-	title = "NVA Gruppenfuhrer Stellvertretender"
+	title = "Gruppenfuhrer Stellvertretender"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -526,7 +527,7 @@
 
 
 /datum/job/escalation/nva/mg
-	title = "NVA Machinengewehrschutze"
+	title = "Machinengewehrschutze"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -538,7 +539,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/nva/mgas
-	title = "NVA Machinengewehrschutze Stellvertretender"
+	title = "Machinengewehrschutze Stellvertretender"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -550,7 +551,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/nva/srad
-	title = "NVA Funke"
+	title = "Funke"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -562,7 +563,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/nva/rocket
-	title = "NVA Panzerabwehrschutze"
+	title = "Panzerabwehrschutze"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -574,7 +575,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/nva/rocketass
-	title = "NVA Panzerab. Stellvertretender"
+	title = "Panzerab. Stellvertretender"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -586,7 +587,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/nva/rifle
-	title = "NVA Schutze"
+	title = "Schutze"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -609,7 +610,7 @@
 //Soviet Army
 
 /datum/job/escalation/sa/platlead
-	title = "SA Komandir vzvoda"
+	title = "Komandir vzvoda"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -625,7 +626,7 @@
 		H.add_skills(rand(1, 4), rand(3,4), 0, 0, rand(0,1), rand(0,2), rand(0,1), rand(3,5), 0, rand(0,1))*/
 
 /datum/job/escalation/sa/platleaddep
-	title = "SA Zamestitel' komandira vzvoda"
+	title = "Zamestitel' komandira vzvoda"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -637,7 +638,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/sa/ratelo
-	title = "SA Shtabnoi Radiotelefonist"
+	title = "Shtabnoi Radiotelefonist"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -649,7 +650,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/sa/corpsman
-	title = "SA Sanitar"
+	title = "Sanitar"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -661,7 +662,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/sa/surgerist
-	title = "SA Polevoi Vrach"
+	title = "Polevoi Vrach"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -673,7 +674,7 @@
 	spawn_positions = 1
 
 /datum/job/escalation/sa/sniper
-	title = "SA Snaiper"
+	title = "Snaiper"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -686,7 +687,7 @@
 
 
 /datum/job/escalation/sa/sl
-	title = "SA Komandir Otdeleniya"
+	title = "Komandir Otdeleniya"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -698,7 +699,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/sa/sld
-	title = "SA Zamestitel' Komandira Otdeleniya"
+	title = "Zamestitel' Komandira Otdeleniya"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -711,7 +712,7 @@
 
 
 /datum/job/escalation/sa/mg
-	title = "SA Pulemetchik"
+	title = "Pulemetchik"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -723,7 +724,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/sa/mgas
-	title = "SA Pomoshnik Pulemetchika"
+	title = "Pomoshnik Pulemetchika"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -735,7 +736,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/sa/srad
-	title = "SA Radiotelefonist"
+	title = "Radiotelefonist"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -747,7 +748,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/sa/rocket
-	title = "SA Strelok-Granatometchik"
+	title = "Strelok-Granatometchik"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -759,7 +760,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/sa/rocketass
-	title = "SA Pomoshnik Granatometchika"
+	title = "Pomoshnik Granatometchika"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -771,7 +772,7 @@
 	spawn_positions = 3
 
 /datum/job/escalation/sa/rifle
-	title = "SA Strelok"
+	title = "Strelok"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -784,7 +785,7 @@
 
 
 /datum/job/escalation/sa/otvco
-	title = "SA OTV Komandir"
+	title = "OTV Komandir"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -797,7 +798,7 @@
 
 
 /datum/job/escalation/sa/otvop
-	title = "SA OTV Operator"
+	title = "OTV Operator"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
@@ -810,7 +811,7 @@
 
 
 /datum/job/escalation/sa/otvload
-	title = "SA OTV Zaryazhaiuschiy"
+	title = "OTV Zaryazhaiuschiy"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28

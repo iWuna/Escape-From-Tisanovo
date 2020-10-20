@@ -738,8 +738,8 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 		mob_icon = default_onmob_icons[slot]
 	return overlay_image(mob_icon,mob_state,color,RESET_COLOR)
 
-/obj/item/get_examine_line(mob/user)
+/obj/item/proc/get_examine_line()
 	if(blood_DNA)
-		. = "<span class='warning'>[icon2html(src, user)] [gender==PLURAL?"some":"a"] [(blood_color != SYNTH_BLOOD_COLOUR) ? "blood" : "oil"]-stained [src]</span>"
+		. = "<span class='warning'>\icon[src] [gender==PLURAL?"some":"a"] [(blood_color != SYNTH_BLOOD_COLOUR) ? "blood" : "oil"]-stained [src]</span>"
 	else
-		. = "[icon2html(src, user)] \a [src]"//Kicking an item
+		. = "\icon[src] \a [src]"

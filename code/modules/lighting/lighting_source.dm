@@ -7,7 +7,6 @@
 	var/atom/source_atom     // The atom that we belong to.
 
 	var/turf/source_turf     // The turf under the above.
-	var/turf/pixel_turf      // The turf the top_atom appears to over.
 	var/light_power    // Intensity of the emitter light.
 	var/light_range      // The range of the emitted light.
 	var/light_color    // The colour of the light, string, decomposed by parse_light_color()
@@ -32,11 +31,6 @@
 	var/destroyed       // Whether we are destroyed and need to stop emitting light.
 	var/force_update
 
-// This macro will only offset up to 1 tile, but anything with a greater offset is an outlier and probably should handle its own lighting offsets.
-// Anything pixelshifted 16px or more will be considered on the next tile.
-#define GET_APPROXIMATE_PIXEL_DIR(PX, PY) ((!(PX) ? 0 : ((PX >= 16 ? EAST : (PX <= -16 ? WEST : 0)))) | (!PY ? 0 : (PY >= 16 ? NORTH : (PY <= -16 ? SOUTH : 0))))
-#define UPDATE_APPROXIMATE_PIXEL_TURF var/_mask = GET_APPROXIMATE_PIXEL_DIR(top_atom.pixel_x, top_atom.pixel_y); pixel_turf = _mask ? (get_step(source_turf, _mask) || source_turf) : source_turf
-
 /datum/light_source/New(var/atom/owner, var/atom/top)
 	total_lighting_sources++
 	source_atom = owner // Set our new owner.
@@ -52,7 +46,6 @@
 		top_atom.light_sources += src
 
 	source_turf = top_atom
-	UPDATE_APPROXIMATE_PIXEL_TURF
 	light_power = source_atom.light_power
 	light_range = source_atom.light_range
 	light_color = source_atom.light_color
@@ -130,7 +123,6 @@
 	if(isturf(top_atom))
 		if(source_turf != top_atom)
 			source_turf = top_atom
-			UPDATE_APPROXIMATE_PIXEL_TURF
 			. = 1
 	else if(top_atom.loc != source_turf)
 		source_turf = top_atom.loc
@@ -190,17 +182,7 @@
 		. * applied_lum_b            \
 	);
 
-//Original lighting falloff calculation. This looks the best out of the three. However, this is also the most expensive.
-//#define LUM_FALLOFF(C, T) (1 - CLAMP01(sqrt((C.x - T.x) ** 2 + (C.y - T.y) ** 2 + LIGHTING_HEIGHT) / max(1, light_range)))
-
-//Cubic lighting falloff. This has the *exact* same range as the original lighting falloff calculation, down to the exact decimal, but it looks a little unnatural due to the harsher falloff and how it's generally brighter across the board.
-//#define LUM_FALLOFF(C, T) (1 - CLAMP01((((C.x - T.x) * (C.x - T.x)) + ((C.y - T.y) * (C.y - T.y)) + LIGHTING_HEIGHT) / max(1, light_range*light_range)))
-
-//Linear lighting falloff. This resembles the original lighting falloff calculation the best, but results in lights having a slightly larger range, which is most noticable with large light sources. This also results in lights being diamond-shaped, fuck. This looks the darkest out of the three due to how lights are brighter closer to the source compared to the original falloff algorithm. This falloff method also does not at all take into account lighting height, as it acts as a flat reduction to light range with this method.
-//#define LUM_FALLOFF(C, T) (1 - CLAMP01(((abs(C.x - T.x) + abs(C.y - T.y))) / max(1, light_range+1)))
-
-//Linear lighting falloff but with an octagonal shape in place of a diamond shape. Lummox JR please add pointer support.
-#define GET_LUM_DIST(DISTX, DISTY) (DISTX + DISTY + abs(DISTX - DISTY)*0.4)
+// This is the define used to calculate falloff.
 #define LUM_FALLOFF(C, T)(1 - CLAMP01(((C.x - T.x) ** 2 +(C.y - T.y) ** 2 + LIGHTING_HEIGHT) ** 0.6 / max(1, light_range)))
 
 /datum/light_source/proc/apply_lum()
@@ -355,7 +337,6 @@
 	return null
 
 #undef effect_update
-#undef GET_LUM_DIST
 #undef LUM_FALLOFF
 #undef REMOVE_CORNER
 #undef APPLY_CORNER

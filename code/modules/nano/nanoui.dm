@@ -86,7 +86,8 @@ nanoui is used to open and update nano browser uis
 	add_template("main", ntemplate_filename)
 
 	if (ntitle)
-		title = sanitize(ntitle)
+		title = html_encode(ntitle)
+		title = sanitize(title, MAX_MESSAGE_LEN, FALSE)
 	if (nwidth)
 		width = nwidth
 	if (nheight)
@@ -105,7 +106,6 @@ nanoui is used to open and update nano browser uis
   */
 /datum/nanoui/proc/add_common_assets()
 	add_script("libraries.min.js") // A JS file comprising of jQuery, doT.js and jQuery Timer libraries (compressed together)
-	add_script("JSON_parseMore.js") // Honestly I have no idea how to add to that previous file safely but someone else can do it if they want
 	add_script("nano_utility.js") // The NanoUtility JS, this is used to store utility functions.
 	add_script("nano_template.js") // The NanoTemplate JS, this is used to render templates.
 	add_script("nano_state_manager.js") // The NanoStateManager JS, it handles updates from the server and passes data to the current state
@@ -363,9 +363,9 @@ nanoui is used to open and update nano browser uis
 	return {"
 <!DOCTYPE html>
 <html>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<script type='text/javascript'>
 			function receiveUpdateData(jsonString)
 			{
@@ -375,10 +375,10 @@ nanoui is used to open and update nano browser uis
 				{
 					NanoStateManager.receiveUpdateData(jsonString);
 				}
-				else
-				{
-					alert('browser.recieveUpdateData failed due to jQuery or NanoStateManager being unavailiable.');
-				}
+				//else
+				//{
+				//	alert('browser.recieveUpdateData failed due to jQuery or NanoStateManager being unavailiable.');
+				//}
 			}
 		</script>
 		[head_content]
@@ -474,9 +474,12 @@ nanoui is used to open and update nano browser uis
 	update_status(0)
 	if (status == STATUS_DISABLED && !force_push)
 		return // Cannot update UI, no visibility
+
 	var/list/send_data = get_send_data(data)
-	//to_world(list2params(list(json_encode(send_data))))// used for debugging //NANO DEBUG HOOK
-	user << output(list2params(list(json_encode(send_data))),"[window_id].browser:receiveUpdateData")
+
+//	to_chat(user, list2json_usecache(send_data))// used for debugging //NANO DEBUG HOOK
+
+	user << output(list2params(list(strip_improper(json_encode(send_data)))),"[window_id].browser:receiveUpdateData")
 
  /**
   * This Topic() proc is called whenever a user clicks on a link within a Nano UI
@@ -531,26 +534,4 @@ nanoui is used to open and update nano browser uis
   * @return nothing
   */
 /datum/nanoui/proc/update(var/force_open = 0)
-	src_object.ui_interact(user, ui_key, src, force_open)
-
- /**
-  * Sends a message to the client-side JS.
-  *
-  * @param js_function string The name of the JS function to execute.
-  * @param data string URL-encoded list of args as made by list2params.
-  *
-  * @return nothing
-  */
-/datum/nanoui/proc/send_message(js_function, data)
-    user << output(data, "[window_id].browser:[js_function]")
-
-/mob/verb/fix_nanoui()
-	set name = "Fix NanoUI"
-	set category = "OOC"
-
-	world.log << "[key_name(src)] used the Fix NanoUI verb. Open UIs: [length(open_uis)]"
-	for(var/datum/nanoui/ui in open_uis)
-		CHECK_TICK
-		world.log << url_decode(winget(ui.user, ui.window_id, "*"))
-		ui.close()
-	to_chat(src, "<span class='notice'>All Nano UIs should be closed now.</span>")
+	src_object.ui_interact(user, ui_key, src, force_open, master_ui, state)

@@ -11,13 +11,10 @@
 	use_power = 0
 	light_range = 4
 	light_power = 1
+	flags = PROXMOVE
 	var/obj/machinery/field_generator/FG1 = null
 	var/obj/machinery/field_generator/FG2 = null
 	var/hasShocked = 0 //Used to add a delay between shocks. In some cases this used to crash servers by spawning hundreds of sparks every second.
-
-/obj/machinery/containment_field/Initialize()
-	. = ..()
-	proximity_monitor = new(src, 1)
 
 /obj/machinery/containment_field/Destroy()
 	if(FG1 && !FG1.clean_up)

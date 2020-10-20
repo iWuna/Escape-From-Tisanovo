@@ -23,11 +23,6 @@
 //unset redraw_mob to prevent the mob from being redrawn at the end.
 /mob/proc/equip_to_slot_if_possible(obj/item/W as obj, slot, del_on_fail = 0, disable_warning = 0, redraw_mob = 1, force = 0)
 	if(!istype(W)) return 0
-	
-	for(var/obj/item/item in src.contents) //unzoom them if they try putting shit away
-		if(item.zoom)
-			item.zoom(src)
-			break
 
 	if(!W.mob_can_equip(src, slot, disable_warning, force))
 		if(del_on_fail)
@@ -43,11 +38,6 @@
 
 /mob/proc/equip_to_slot_viahud(obj/item/W as obj, slot, del_on_fail = 0, disable_warning = 0, redraw_mob = 1, force = 0)
 	if(!istype(W)) return 0
-
-	for(var/obj/item/item in src.contents) //unzoom them if they try putting shit away
-		if(item.zoom)
-			item.zoom(src)
-			break
 
 	if(W.time_to_equip)
 		if(!do_after(src, W.time_to_equip))
@@ -116,10 +106,6 @@ var/list/slot_equipment_priority = list( \
 
 /mob/proc/equip_to_storage(obj/item/newitem)
 	// Try put it in their backpack
-	for(var/obj/item/item in src.contents) //unzoom them if they try putting shit away
-		if(item.zoom)
-			item.zoom(src)
-			break
 	if(istype(src.back,/obj/item/weapon/storage))
 		var/obj/item/weapon/storage/backpack = src.back
 		if(backpack.can_be_inserted(newitem, null, 1))

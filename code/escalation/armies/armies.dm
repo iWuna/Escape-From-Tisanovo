@@ -135,6 +135,7 @@ proc/show_statistic_by_faction()
 
 	if(csla_live || csla_dead)
 		dat += "CSLA : [csla_live > 0 ? csla_live : "no"] alive, [csla_dead > 0 ? csla_dead : "no"] dead.<br>"
+
 	if(dayz_live || dayz_dead)
 		dat += "CIV : [dayz_live > 0 ? dayz_live : "no"] alive, [dayz_dead > 0 ? dayz_dead : "no"] dead.<br>"
 

@@ -1,6 +1,6 @@
 #define WORLD_ICON_SIZE 32
 
-/var/server_name = "Escalation: DayZ Mod"
+/var/server_name = "Escalation: DayZ"
 
 /var/game_id = null
 /hook/global_init/proc/generate_gameid()
@@ -79,7 +79,7 @@
 	loop_checks = FALSE
 #endif
 
-#define RECOMMENDED_VERSION 512
+#define RECOMMENDED_VERSION 513
 /world/New()
 	//set window title
 	name = "[server_name]"
@@ -132,7 +132,6 @@
 	// Create robolimbs for chargen.
 	populate_robolimb_list()
 	init_factions()
-	//init_whitelist()
 
 	processScheduler = new
 	master_controller = new /datum/controller/game_controller()
@@ -505,8 +504,6 @@ var/world_topic_spam_protect_time = world.timeofday
 
 		return GLOB.prometheus_metrics.collect()
 
-#define open_link(target, url)                              target << link(url)
-
 
 /world/Reboot(var/reason)
 	/*spawn(0)
@@ -516,14 +513,9 @@ var/world_topic_spam_protect_time = world.timeofday
 
 	processScheduler.stop()
 
-	var/datum/chatOutput/co
-	for(var/client/C in GLOB.clients)
-		co = C.chatOutput
-		if(co)
-			co.ehjax_send(data = "roundrestart")
-
-		if(config.server) //if you set a server location in config.txt, it sends you there instead of trying to reconnect to the same world address. -- NeoFite
-			open_link(C, "byond://[config.server]") //goonchat reeboot.exe
+	if(config.server)	//if you set a server location in config.txt, it sends you there instead of trying to reconnect to the same world address. -- NeoFite
+		for(var/client/C in GLOB.clients)
+			to_chat(C, link("byond://[config.server]"))
 
 	if(config.wait_for_sigusr1_reboot && reason != 3)
 		text2file("foo", "reboot_called")
@@ -622,11 +614,11 @@ var/world_topic_spam_protect_time = world.timeofday
 	if (config && config.server_name)
 		s += "<b>[config.server_name]</b> &#8212; "
 
-	s += "<b>Escalation: DayZ (EN/RU)</b>";
+	s += "<b>[station_name()]</b>";
 	s += " ("
-	s += "<a href=\"https://discord.gg/qEMHNrS\">" //Change this to wherever you want the hub to link to.
+	s += "<a href=\"http://\">" //Change this to wherever you want the hub to link to.
 //	s += "[game_version]"
-	s += "DISCORD"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
+	s += "Default"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
 	s += "</a>"
 	s += ")"
 
@@ -637,7 +629,7 @@ var/world_topic_spam_protect_time = world.timeofday
 			features += master_mode
 	else
 		features += "<b>STARTING</b>"
-/*
+
 	if (!config.enter_allowed)
 		features += "closed"
 
@@ -648,7 +640,7 @@ var/world_topic_spam_protect_time = world.timeofday
 
 	if (config && config.allow_ai)
 		features += "AI allowed"
-*/
+
 	var/n = 0
 	for (var/mob/M in GLOB.player_list)
 		if (M.client)
@@ -661,7 +653,7 @@ var/world_topic_spam_protect_time = world.timeofday
 
 
 	if (config && config.hostedby)
-		features += "hosted by <b>iWuna</b>"
+		features += "hosted by <b>[config.hostedby]</b>"
 
 	if (features)
 		s += ": [jointext(features, ", ")]"

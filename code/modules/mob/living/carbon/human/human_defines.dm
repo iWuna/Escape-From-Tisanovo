@@ -130,5 +130,3 @@
 	var/cant_baton = 0
 
 	var/fraction = null
-
-	var/obj/screen/text/atm/hovertext = null

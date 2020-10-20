@@ -7,7 +7,6 @@ SUBSYSTEM_DEF(artillery)
 	wait = 4 SECONDS
 	flags = SS_BACKGROUND
 	runlevels = RUNLEVEL_GAME | RUNLEVEL_POSTGAME
-	var/gibbing = 1
 
 
 
@@ -19,8 +18,6 @@ SUBSYSTEM_DEF(artillery)
 	for(var/obj/effect/landmark/artillery/T in landmarks_list)
 		var/turf/TR = T.loc
 		barraged_turfs |= TR
-
-
 
 /datum/controller/subsystem/artillery/fire()
 	spawn(0)
@@ -37,17 +34,9 @@ SUBSYSTEM_DEF(artillery)
 	sleep(rand(50,100))
 	playsound(src, 'sound/effects/mortar_falling.wav', 80, 1)
 	sleep(rand(	0,60))
-	explosion(src, 1, 2, 4, 5, 0)
+	explosion(src, 1, 2, 4, 5)
 	sleep(rand(30,60))
 
-/client/proc/stop_arty_gib()
-	set name = "Stop Artillery Gibbing"
-	set category = "EscAdmin"
-
-	if(!holder)
-		return
-
-	SSartillery.gibbing = 0 //MANAGE THIS HERE FOR COHESIONS SAKE
 
 /client/proc/stop_art_shelling()
 	set name = "Stop Artillery Shelling"

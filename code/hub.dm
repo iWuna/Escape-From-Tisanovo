@@ -2,9 +2,9 @@
 /* This is for any host that would like their server to appear on the main SS13 hub.
  * uncomment the define below to enable the HUB entry for your server
  */
-#define HUB_ENABLED 1
+//#define HUB_ENABLED 1
 	hub = "Exadv1.spacestation13"
-	name = "Escalation: 1984"
+	name = "Europe 1984"
 #ifdef HUB_ENABLED
 	hub_password = "kMZy3U5jJHSiBQjr"
 #else

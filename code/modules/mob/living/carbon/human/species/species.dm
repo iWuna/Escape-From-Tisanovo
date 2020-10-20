@@ -52,7 +52,7 @@
 	var/max_age = 50
 
 	// Language/culture vars.
-	var/default_language = LANGUAGE_CZECH    // Default language is used when 'say' is used without modifiers.
+	var/default_language = LANGUAGE_CZECH   // Default language is used when 'say' is used without modifiers.
 	var/language = LANGUAGE_CZECH            // Default racial language, if any.
 	var/list/secondary_langs = list()         // The names of secondary languages that are available to this species.
 	var/assisted_langs = list()               // The languages the species can't speak without an assisted organ.

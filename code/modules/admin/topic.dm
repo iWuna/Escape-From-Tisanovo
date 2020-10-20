@@ -1627,7 +1627,7 @@
 		src.access_news_network()
 
 	else if(href_list["ac_set_new_message"])
-		src.admincaster_feed_message.body = rhtml_encode(input_utf8(usr, "Write your Feed story", "Network Channel Handler", "", "message"))
+		src.admincaster_feed_message.body = html_encode(input(usr, "Write your Feed story", "Network Channel Handler", "", "message"))
 		src.access_news_network()
 
 	else if(href_list["ac_submit_new_message"])
@@ -1816,7 +1816,7 @@
 
 	if(href_list["add_player_info"])
 		var/key = href_list["add_player_info"]
-		var/add = input_utf8("Add Player Info", type = "text")
+		var/add = input("Add Player Info") as null|message
 		if(!add) return
 
 		notes_add(key,add,usr)

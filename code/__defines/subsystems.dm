@@ -43,15 +43,11 @@
 // Subsystems shutdown in the reverse of the order they initialize in
 // The numbers just define the ordering, they are meaningless otherwise.
 #define INIT_ORDER_TONEMAP 19
-#define SS_PRIORITY_AO       40
 #define INIT_ORDER_DBCORE 18
-#define SS_PRIORITY_CHAT           95  // Chat.
 #define INIT_ORDER_BLACKBOX 17
 #define INIT_ORDER_SERVER_MAINT 16
 #define INIT_ORDER_JOBS 15
-#define SS_PRIORITY_ZCOPY          10  // Builds appearances for Z-Mimic.
 #define INIT_ORDER_EVENTS 14
-#define SS_INIT_CHAT     -90 // Should be lower to ensure chat remains smooth during init.
 #define INIT_ORDER_TICKER 13
 #define INIT_ORDER_MAPPING 12
 #define INIT_ORDER_ATOMS 11

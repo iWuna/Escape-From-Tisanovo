@@ -11,9 +11,6 @@
 	var/simulated = 1 //filter for actions - used by lighting overlays
 	var/fluorescent // Shows up under a UV light.
 
-	///Proximity monitor associated with this atom
-	var/datum/proximity_monitor/proximity_monitor
-
 	///Chemistry.
 	var/datum/reagents/reagents = null
 
@@ -68,7 +65,6 @@
 
 /atom/Destroy()
 	QDEL_NULL(reagents)
-	QDEL_NULL(proximity_monitor)
 	. = ..()
 
 /atom/proc/reveal_blood()
@@ -258,19 +254,10 @@ its easier to just keep the beam vertical.
 		if(get_dist(user,src) > 5)//Don't get descriptions of things far away.
 			to_chat(user, "<span class='info'>It's too far away to see clearly.</span>")
 			return
-	to_chat(user, "[icon2html(src, user)] That's [f_name] [suffix]")
+	to_chat(user, "\icon[src] That's [f_name] [suffix]")
 	to_chat(user, desc)
 
 	return distance == -1 || (get_dist(src, user) <= distance)
-
-/atom/proc/get_examine_line(mob/user, thats = FALSE)
-	var/f_name = "\a [src]."
-	if(src.blood_DNA && !istype(src, /obj/effect/decal))
-		if(gender == PLURAL)
-			f_name = "some "
-		else
-			f_name = "a "
-	return "[icon2html(src, user)] That's [f_name]"
 
 // called by mobs when e.g. having the atom as their machine, pulledby, loc (AKA mob being inside the atom) or buckled var set.
 // see code/modules/mob/mob_movement.dm for more.
@@ -562,20 +549,3 @@ its easier to just keep the beam vertical.
 		do_climb(target)
 	else
 		return ..()
-
-/atom/proc/get_color()
-	return color
-
-/obj/screen/text/atm
-
-/client/MouseEntered(var/atom/a)
-	if(mob && ishuman(mob))
-		var/mob/living/carbon/human/H = mob
-		if(a.mouse_opacity)  // i spread this out to make it more "readable"
-			H.hovertext.maptext = "<center><span style=\"\
-			color: #188A01; \
-			font-family: 'Arial Black', Gadget, sans-serif; \
-			\">[uppertext(a.name)]\
-			</span></center>"
-		else
-			H.hovertext.maptext = ""  // ui is blank, sad!

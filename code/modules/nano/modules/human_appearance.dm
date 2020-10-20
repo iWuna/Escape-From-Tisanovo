@@ -100,12 +100,12 @@
 
 	data["specimen"] = owner.species.name
 	data["gender"] = owner.gender
-	data["change_race"] = can_change(APPEARANCE_RACE)
-	if(data["change_race"])
-		var/species[0]
-		for(var/specimen in valid_species)
-			species[++species.len] =  list("specimen" = specimen)
-		data["species"] = species
+//	data["change_race"] = can_change(APPEARANCE_RACE)
+//	if(data["change_race"])
+///		var/species[0]
+//		for(var/specimen in valid_species)
+//			species[++species.len] =  list("specimen" = specimen)
+//		data["species"] = species
 
 	data["change_gender"] = can_change(APPEARANCE_GENDER)
 	if(data["change_gender"])

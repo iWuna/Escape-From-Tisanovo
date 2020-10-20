@@ -14,21 +14,21 @@
 		/////////
 	var/datum/preferences/prefs = null
 	var/move_delay		= 1
-	var/next_movement	= 0
 	var/moving			= null
 	var/adminobs		= null
 
 	var/adminhelped = 0
 
 	var/staffwarn = null
-	var/datum/chatOutput/chatOutput
-	//mouse_pointer_icon = file('icons/misc/pointer_cursor.dmi') //Make a cursor icon
 
 		///////////////
 		//SOUND STUFF//
 		///////////////
 	var/ambience_playing= null
 	var/played			= 0
+	var/next_movement	= 0
+
+	//mouse_pointer_icon = file('icons/misc/pointer_cursor.dmi') //Make a cursor icon
 
 		////////////
 		//SECURITY//
@@ -48,15 +48,7 @@
 	var/related_accounts_ip = "Requires database"	//So admins know why it isn't working - Used to determine what other accounts previously logged in from this ip
 	var/related_accounts_cid = "Requires database"	//So admins know why it isn't working - Used to determine what other accounts previously logged in from this computer id
 
-	preload_rsc = 1 // This was 0 so Bay12 can set it to an URL once the player logs in and have them download the resources from a different server. . But we change it...but we change it again because it made loading in slow as shit...but we change it AGAIN, for testing purposes.
+	preload_rsc = 1 // This is 0 so we can set it to an URL once the player logs in and have them download the resources from a different server.
 	var/static/obj/screen/click_catcher/void
 
-
-
-
 	var/list/selected_target[2]
-
-
-	var/hi_last_pos
-
-	var/encoding = "1252"

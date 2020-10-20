@@ -116,11 +116,6 @@
 //Attempts to load A into src, depending on the type of thing being loaded and the load_method
 //Maybe this should be broken up into separate procs for each load method?
 /obj/item/weapon/gun/projectile/proc/load_ammo(var/obj/item/A, mob/user)
-	if(istype(A,/obj/item/stack/bullets))
-		var/obj/item/stack/bullets/bullet_stack = A
-		A = new bullet_stack.stacktype()
-		bullet_stack.use(1)
-
 	if(istype(A, /obj/item/ammo_magazine))
 		if(src != user.r_hand && src != user.l_hand && !(istype(src, /obj/item/weapon/gun/projectile/heavy_mg)))
 			user << "<span class='warning'>[src] must be in your hand to do that.</span>"

@@ -2,7 +2,7 @@
 	name = "explosion crater"
 	icon_state = "dirt_shell"
 	icon = 'icons/turf/flooring/crater64.dmi'
-	layer = BELOW_OBJ_LAYER
+	layer = BASE_ABOVE_OBJ_LAYER
 	density = 0
 	opacity = 0
 	anchored = 1

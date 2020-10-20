@@ -741,7 +741,6 @@
 	icon_state = "vhtree152"
 	plane = -9
 	density = 1
-	anchored = 1
 	alpha = 150
 
 /obj/structure/flora/tree/summer/alt1
@@ -749,7 +748,6 @@
 	icon_state = "hbtree96"
 	pixel_x = -32
 	density = 1
-	anchored = 1
 	alpha = 150
 
 /obj/structure/flora/tree/summer/alt2
@@ -757,7 +755,6 @@
 	icon_state = "mbtree96"
 	pixel_x = -32
 	density = 1
-	anchored = 1
 	alpha = 150
 
 /obj/structure/flora/tree/summer/alt3
@@ -765,32 +762,27 @@
 	icon_state = "sometree"
 	pixel_x = -32
 	density = 1
-	anchored = 1
 	alpha = 150
 
 /obj/structure/flora/summer/log1
-	name = "wooden log"
 	icon = 'icons/obj/flora/miscflora48.dmi'
 	icon_state = "brevno1"
-	density = 0
-	anchored = 1
+	density = 1
 
 /obj/structure/flora/summer/log2
 	icon = 'icons/obj/flora/miscflora48.dmi'
 	icon_state = "brevno2"
-	density = 0
-	anchored = 1
+	density = 1
+
 
 /obj/structure/flora/tree/summer/dead1
 	name = "dead tree"
 	icon_state = "vhdtree152"
 	density = 1
-	anchored = 1
 	alpha = 150
 
 /obj/structure/flora/tree/summer/dead2
 	name = "dead tree"
 	icon_state = "hdtree96"
 	density = 1
-	anchored = 1
 	alpha = 150

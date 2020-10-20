@@ -63,6 +63,16 @@
 
 */
 
+/datum/gear/under1
+	display_name = "tracksuit"
+	path = /obj/item/clothing/under/soviet/gopnik
+	cost = 1
+
+/datum/gear/soda
+	display_name = "Pipsi"
+	path = /obj/item/weapon/reagent_containers/food/drinks/cans/grape_juice
+	cost = 1
+
 /datum/gear/matchbook
 	display_name = "matchbook"
 	path = /obj/item/weapon/storage/box/matches

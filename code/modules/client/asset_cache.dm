@@ -135,9 +135,6 @@ You can set verify to TRUE if you want send() to sleep until the client has the 
 
 //This proc "registers" an asset, it adds it to the cache for further use, you cannot touch it from this point on or you'll fuck things up.
 //if it's an icon or something be careful, you'll have to copy it before further use.
-/proc/register_asset(var/asset_name, var/asset)
-	asset_cache.cache[asset_name] = asset
-
 // will return filename for cached atom icon or null if not cached
 // can accept atom objects or types
 /proc/getAtomCacheFilename(var/atom/A)
@@ -151,9 +148,9 @@ You can set verify to TRUE if you want send() to sleep until the client has the 
 //Generated names do not include file extention.
 //Used mainly for code that deals with assets in a generic way
 //The same asset will always lead to the same asset name
-/proc/generate_asset_name(file)
-	return "asset.[md5(fcopy_rsc(file))]"
 
+/proc/register_asset(var/asset_name, var/asset)
+	asset_cache.cache[asset_name] = asset
 
 //These datums are used to populate the asset cache, the proc "register()" does this.
 
@@ -184,7 +181,6 @@ You can set verify to TRUE if you want send() to sleep until the client has the 
 /datum/asset/simple/register()
 	for(var/asset_name in assets)
 		register_asset(asset_name, assets[asset_name])
-
 /datum/asset/simple/send(client)
 	send_asset_list(client,assets,verify)
 
@@ -238,7 +234,6 @@ You can set verify to TRUE if you want send() to sleep until the client has the 
 		"tgui.js"	= 'tgui/assets/tgui.js'
 	)
 
-
 /datum/asset/nanoui
 	var/list/common = list()
 
@@ -288,39 +283,6 @@ You can set verify to TRUE if you want send() to sleep until the client has the 
 
 	send_asset_list(client, uncommon, FALSE)
 	send_asset_list(client, common, TRUE)
-
-/datum/asset/group/goonchat
-	children = list(
-		/datum/asset/simple/jquery,
-		/datum/asset/simple/goonchat,
-		/datum/asset/simple/fontawesome
-	)
-
-/datum/asset/simple/jquery
-	verify = FALSE
-	assets = list(
-		"jquery.min.js"            = 'code/modules/goonchat/browserassets/js/jquery.min.js',
-	)
-
-/datum/asset/simple/goonchat
-	verify = TRUE
-	assets = list(
-		"json2.min.js"             = 'code/modules/goonchat/browserassets/js/json2.min.js',
-		"browserOutput.js"         = 'code/modules/goonchat/browserassets/js/browserOutput.js',
-		"browserOutput.css"	       = 'code/modules/goonchat/browserassets/css/browserOutput.css',
-		"browserOutput_white.css"  = 'code/modules/goonchat/browserassets/css/browserOutput_white.css'
-	)
-
-/datum/asset/simple/fontawesome
-	verify = FALSE
-	assets = list(
-		"fa-regular-400.eot"  = 'html/font-awesome/webfonts/fa-regular-400.eot',
-		"fa-regular-400.woff" = 'html/font-awesome/webfonts/fa-regular-400.woff',
-		"fa-solid-900.eot"    = 'html/font-awesome/webfonts/fa-solid-900.eot',
-		"fa-solid-900.woff"   = 'html/font-awesome/webfonts/fa-solid-900.woff',
-		"font-awesome.css"    = 'html/font-awesome/css/all.min.css',
-		"v4shim.css"          = 'html/font-awesome/css/v4-shims.min.css'
-	)
 
 /*
 	Asset cache

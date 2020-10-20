@@ -97,8 +97,6 @@
 			return global.SSgarbage;
 		if("SSlegacy")
 			return global.SSlegacy;
-		if("SSao")
-			return global.SSao;
 		if("TELEBLOCK")
 			return global.TELEBLOCK;
 		if("SSopen_space")
@@ -1274,8 +1272,6 @@
 			global.SSlegacy=newval;
 		if("SStimer")
 			global.SStimer=newval;
-		if("SSao")
-			global.SSao=newval;
 		if("TELEBLOCK")
 			global.TELEBLOCK=newval;
 		if("TWITCHBLOCK")
@@ -2389,7 +2385,6 @@
 	"SSatoms",
 	"SSgarbage",
 	"SSlegacy",
-	"SSao",
 	"TELEBLOCK",
 	"TWITCHBLOCK",
 	"SSopen_space",

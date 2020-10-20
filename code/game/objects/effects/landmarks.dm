@@ -66,17 +66,7 @@
 	landmarks_list += src
 	return 1
 
-/*
 /obj/effect/landmark/artillery/
-
-/obj/effect/landmark/artillery/Crossed(A as mob|obj, var/obj/item/I)
-	var/time_passed = world.time
-	if(SSartillery.gibbing == 1)
-		if(isturf(src.loc))
-			if(istype(A, /mob/living/))
-				message_admins("Something '[A]' may have tried rushing.")
-				explosion(src, 1, 2, 4, 5, 1)
-*/
 
 /obj/effect/landmark/proc/delete()
 	delete_me = 1

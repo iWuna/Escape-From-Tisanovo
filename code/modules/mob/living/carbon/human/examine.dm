@@ -38,7 +38,7 @@
 		T = gender_datums[PLURAL]
 	else
 		if(icon)
-			msg += "[icon2html(src, user)]" //fucking BYOND: this should stop dreamseeker crashing if we -somehow- examine somebody before their icon is generated
+			msg += "\icon[icon] " //fucking BYOND: this should stop dreamseeker crashing if we -somehow- examine somebody before their icon is generated
 
 	if(!T)
 		// Just in case someone VVs the gender to something strange. It'll runtime anyway when it hits usages, better to CRASH() now with a helpful message.
@@ -61,72 +61,72 @@
 
 	//uniform
 	if(w_uniform && !skipjumpsuit)
-		msg += "[T.He] [T.is] wearing [w_uniform.get_examine_line(user)].\n"
+		msg += "[T.He] [T.is] wearing [w_uniform.get_examine_line()].\n"
 
 	//head
 	if(head)
-		msg += "[T.He] [T.is] wearing [head.get_examine_line(user)] on [T.his] head.\n"
+		msg += "[T.He] [T.is] wearing [head.get_examine_line()] on [T.his] head.\n"
 
 	//suit/armour
 	if(wear_suit)
-		msg += "[T.He] [T.is] wearing [wear_suit.get_examine_line(user)].\n"
+		msg += "[T.He] [T.is] wearing [wear_suit.get_examine_line()].\n"
 
 	if(s_store)
-		msg += "[T.He] [T.is] carrying [s_store.get_examine_line(user)] on [T.his] [wear_suit.name].\n"
+		msg += "[T.He] [T.is] carrying [s_store.get_examine_line()].\n"
 
 	//belt
 	if(belt)
-		msg += "[T.He] [T.is] carrying [belt.get_examine_line(user)].\n"
+		msg += "[T.He] [T.is] carrying [belt.get_examine_line()].\n"
 
 
 	//back
 	if(back)
-		msg += "[T.He] [T.has] [back.get_examine_line(user)] on [T.his] back.\n"
+		msg += "[T.He] [T.has] [back.get_examine_line()] on [T.his] back.\n"
 
 	//back
 	if(wear_gun)
-		msg += "[T.He] [T.has] [wear_gun.get_examine_line(user)] on [T.his] back.\n"
+		msg += "[T.He] [T.has] [wear_gun.get_examine_line()] on [T.his] back.\n"
 
 
 	//left hand
 	if(l_hand)
-		msg += "[T.He] [T.is] holding [l_hand.get_examine_line(user)] in [T.his] left hand.\n"
+		msg += "[T.He] [T.is] holding [l_hand.get_examine_line()] in [T.his] left hand.\n"
 
 	//right hand
 	if(r_hand)
-		msg += "[T.He] [T.is] holding [r_hand.get_examine_line(user)] in [T.his] right hand.\n"
+		msg += "[T.He] [T.is] holding [r_hand.get_examine_line()] in [T.his] right hand.\n"
 
 	//gloves
 	if(gloves && !skipgloves)
-		msg += "[T.He] [T.has] [gloves.get_examine_line(user)] on [T.his] hands.\n"
+		msg += "[T.He] [T.has] [gloves.get_examine_line()] on [T.his] hands.\n"
 	else if(blood_DNA)
 		msg += "<span class='warning'>[T.He] [T.has] [(hand_blood_color != SYNTH_BLOOD_COLOUR) ? "blood" : "oil"]-stained hands!</span>\n"
 
 	//shoes
 	if(shoes && !skipshoes)
-		msg += "[T.He] [T.is] wearing [shoes.get_examine_line(user)] on [T.his] feet.\n"
+		msg += "[T.He] [T.is] wearing [shoes.get_examine_line()] on [T.his] feet.\n"
 	else if(feet_blood_DNA)
 		msg += "<span class='warning'>[T.He] [T.has] [(feet_blood_color != SYNTH_BLOOD_COLOUR) ? "blood" : "oil"]-stained feet!</span>\n"
 
 	//mask
 	if(wear_mask && !skipmask)
-		msg += "[T.He] [T.has] [wear_mask.get_examine_line(user)] on [T.his] face.\n"
+		msg += "[T.He] [T.has] [wear_mask.get_examine_line()] on [T.his] face.\n"
 
 	//eyes
 	if(glasses && !skipeyes)
-		msg += "[T.He] [T.has] [glasses.get_examine_line(user)] covering [T.his] eyes.\n"
+		msg += "[T.He] [T.has] [glasses.get_examine_line()] covering [T.his] eyes.\n"
 
 	//left ear
 	if(l_ear && !skipears)
-		msg += "[T.He] [T.has] [l_ear.get_examine_line(user)] on [T.his] left ear.\n"
+		msg += "[T.He] [T.has] [l_ear.get_examine_line()] on [T.his] left ear.\n"
 
 	//right ear
 	if(r_ear && !skipears)
-		msg += "[T.He] [T.has] [r_ear.get_examine_line(user)] on [T.his] right ear.\n"
+		msg += "[T.He] [T.has] [r_ear.get_examine_line()] on [T.his] right ear.\n"
 
 	//ID
 //	if(wear_id)
-//		msg += "[T.He] [T.is] wearing [wear_id.get_examine_line(user)].\n"
+//		msg += "[T.He] [T.is] wearing [wear_id.get_examine_line()].\n"
 
 	//handcuffed?
 	if(handcuffed)

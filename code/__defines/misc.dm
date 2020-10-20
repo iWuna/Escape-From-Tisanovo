@@ -21,8 +21,7 @@
 #define SEE_INVISIBLE_CULT       INVISIBILITY_OBSERVER
 #define SEE_INVISIBLE_OBSERVER   INVISIBILITY_EYE
 #define SEE_INVISIBLE_SYSTEM     INVISIBILITY_SYSTEM
-#define FOURSPACES "&nbsp;&nbsp;&nbsp;&nbsp;"
-#define CLIENT_FROM_VAR(I) (ismob(I) ? I:client : (istype(I, /client) ? I : (istype(I, /datum/mind) ? I:current?:client : null)))
+
 #define SEE_IN_DARK_DEFAULT 2
 
 #define SEE_INVISIBLE_MINIMUM 5

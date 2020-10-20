@@ -305,8 +305,9 @@
 
 	New()
 		..()
-		reagents.add_reagent(/datum/reagent/morphine, 5)
-		reagents.add_reagent(/datum/reagent/tramadol, 2)
+		reagents.add_reagent("morphine", 2)
+		reagents.add_reagent("methylphenidate", 1)
+		reagents.add_reagent("tramadol", 2)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/combat/epinephrine
 	name = "epinephrine autoinjector"

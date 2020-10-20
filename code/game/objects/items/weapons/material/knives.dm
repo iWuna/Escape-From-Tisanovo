@@ -92,10 +92,8 @@
 	w_class = 2
 	force_divisor = 0.25
 	color = null
-	sharp = 1
-	edge = 1
 	item_state = "knife"
-	sharpness = 5
+	sharpness = 6
 
 /obj/item/weapon/material/knife/bayonet/sa/a6h4
 	name = "6h4 bayonet"

@@ -25,16 +25,6 @@
 	if (speaking)
 		message = copytext(message,2+length(speaking.key))
 
-	if ((health < maxHealth/4) || is_asystole())
-		var/verb = "whispers in their final breath"
-		whisper_say(message, speaking = null, alt_name = alt_name, verb = verb)
-		src.adjustBrainLoss(src.health + src.maxHealth * 2) // Deal 2x health in BrainLoss damage, as before but variable.
-		updatehealth()
-
-	if (src.stat)
-		return
-
-
 	whisper_say(message, speaking, alt_name)
 
 

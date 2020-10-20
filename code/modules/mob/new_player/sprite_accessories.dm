@@ -60,23 +60,23 @@
 		icon_state = "hair_a" // you do not need to define _s or _l sub-states, game automatically does this for you
 		veryshort = 1
 
-/*	twintail
+	twintail
 		name = "Twintail"
 		icon_state = "hair_twintail"
 
 	short2
 		name = "Short Hair 2"
 		icon_state = "hair_shorthair3"
-*/
+
 	cut
 		name = "Cut Hair"
 		icon_state = "hair_c"
 		veryshort = 1
-/*
+
 	flair
 		name = "Flaired Hair"
 		icon_state = "hair_flair"
-*/
+
 	long
 		name = "Shoulder-length Hair"
 		icon_state = "hair_b"
@@ -84,7 +84,7 @@
 	/*longish
 		name = "Longer Hair"
 		icon_state = "hair_b2"*/
-/*
+
 	longer
 		name = "Long Hair"
 		icon_state = "hair_vlong"
@@ -92,15 +92,15 @@
 	longest
 		name = "Very Long Hair"
 		icon_state = "hair_longest"
-*/
+
 	longfringe
 		name = "Long Fringe"
 		icon_state = "hair_longfringe"
-/*
+
 	longestalt
 		name = "Longer Fringe"
 		icon_state = "hair_vlongfringe"
-*/
+
 	halfbang
 		name = "Half-banged Hair"
 		icon_state = "hair_halfbang"
@@ -112,16 +112,16 @@
 	ponytail1
 		name = "Ponytail 1"
 		icon_state = "hair_ponytail"
-/*
+
 	ponytail2
 		name = "Ponytail 2"
 		icon_state = "hair_pa"
 		gender = FEMALE
-*/
+
 	ponytail3
 		name = "Ponytail 3"
 		icon_state = "hair_ponytail3"
-/*
+
 	ponytail4
 		name = "Ponytail 4"
 		icon_state = "hair_ponytail4"
@@ -141,7 +141,7 @@
 		name = "Side Ponytail"
 		icon_state = "hair_stail"
 		gender = FEMALE
-*/
+
 	parted
 		name = "Parted"
 		icon_state = "hair_parted"
@@ -172,7 +172,7 @@
 	bedhead3
 		name = "Bedhead 3"
 		icon_state = "hair_bedheadv3"
-/*
+
 	beehive
 		name = "Beehive"
 		icon_state = "hair_beehive"
@@ -200,7 +200,7 @@
 		icon_state = "hair_bobcutalt"
 		gender = FEMALE
 		species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI)
-*/
+
 	bowl
 		name = "Bowl"
 		icon_state = "hair_bowlcut"
@@ -237,7 +237,7 @@
 	devillock
 		name = "Devil Lock"
 		icon_state = "hair_devilock"
-/*
+
 	dreadlocks
 		name = "Dreadlocks"
 		icon_state = "hair_dreads"
@@ -258,7 +258,7 @@
 		name = "Big Afro"
 		icon_state = "hair_bigafro"
 		gender = MALE
-*/
+
 	rows
 		name = "Rows"
 		icon_state = "hair_rows1"
@@ -282,20 +282,20 @@
 	emo2
 		name = "Emo Alt"
 		icon_state = "hair_emo2"
-/*
+
 	longemo
 		name = "Long Emo"
 		icon_state = "hair_emolong"
 		gender = FEMALE
-*/
+
 	shortovereye
 		name = "Overeye Short"
 		icon_state = "hair_shortovereye"
-/*
+
 	longovereye
 		name = "Overeye Long"
 		icon_state = "hair_longovereye"
-*/
+
 	fag
 		name = "Flow Hair"
 		icon_state = "hair_f"
@@ -322,12 +322,12 @@
 		name = "Gelled Back"
 		icon_state = "hair_gelled"
 		gender = FEMALE
-/*
+
 	gentle
 		name = "Gentle"
 		icon_state = "hair_gentle"
 		gender = FEMALE
-*/
+
 	spiky
 		name = "Spiky"
 		icon_state = "hair_spikey"
@@ -335,7 +335,7 @@
 	kusangi
 		name = "Kusanagi Hair"
 		icon_state = "hair_kusanagi"
-/*
+
 	kagami
 		name = "Pigtails"
 		icon_state = "hair_kagami"
@@ -385,7 +385,7 @@
 		name = "Updo"
 		icon_state = "hair_updo"
 		gender = FEMALE
-*/
+
 	skinhead
 		name = "Skinhead"
 		icon_state = "hair_skinhead"
@@ -396,7 +396,7 @@
 		icon_state = "hair_e"
 		gender = MALE // turnoff!
 		veryshort = 1
-/*
+
 	familyman
 		name = "The Family Man"
 		icon_state = "hair_thefamilyman"
@@ -411,12 +411,12 @@
 		name = "Fringetail"
 		icon_state = "hair_fringetail"
 		gender = FEMALE
-*/
+
 	dandypomp
 		name = "Dandy Pompadour"
 		icon_state = "hair_dandypompadour"
 		gender = MALE
-/*
+
 	poofy
 		name = "Poofy"
 		icon_state = "hair_poofy"
@@ -431,7 +431,7 @@
 		name = "Vegeta"
 		icon_state = "hair_toriyama2"
 		gender = MALE
-*/
+
 	cia
 		name = "CIA"
 		icon_state = "hair_cia"
@@ -441,7 +441,7 @@
 		name = "Mulder"
 		icon_state = "hair_mulder"
 		gender = MALE
-/*
+
 	scully
 		name = "Scully"
 		icon_state = "hair_scully"
@@ -464,11 +464,11 @@
 	longeralt2
 		name = "Long Hair Alt 2"
 		icon_state = "hair_longeralt2"
-*/
+
 	shortbangs
 		name = "Short Bangs"
 		icon_state = "hair_shortbangs"
-/*
+
 	halfshaved
 		name = "Half-Shaved Emo"
 		icon_state = "hair_halfshaved"
@@ -484,7 +484,7 @@
 	doublebun
 		name = "Double-Bun"
 		icon_state = "hair_doublebun"
-*/
+
 	lowfade
 		name = "Low Fade"
 		icon_state = "hair_lowfade"
@@ -560,7 +560,7 @@
 		icon_state = "hair_hightight"
 		gender = MALE
 		veryshort = 1
-/*
+
 	rowbun
 		name = "Row Bun"
 		icon_state = "hair_rowbun"
@@ -575,13 +575,13 @@
 		name = "Row Braid"
 		icon_state = "hair_rowbraid"
 		gender = FEMALE
-*/
+
 	regulationmohawk
 		name = "Regulation Mohawk"
 		icon_state = "hair_shavedmohawk"
 		gender = MALE
 		veryshort = 1
-/*
+
 	topknot
 		name = "Topknot"
 		icon_state = "hair_topknot"
@@ -591,7 +591,7 @@
 		name = "Ronin"
 		icon_state = "hair_ronin"
 		gender = MALE
-*/
+
 	bowlcut2
 		name = "Bowl2"
 		icon_state = "hair_bowlcut2"
@@ -614,12 +614,12 @@
 		icon_state = "hair_thinningrear"
 		gender = MALE
 		veryshort = 1
-/*
+
 	manbun
 		name = "Manbun"
 		icon_state = "hair_manbun"
 		gender = MALE
-*/
+
 
 /*
 ///////////////////////////////////
@@ -659,7 +659,7 @@
 	selleck
 		name = "Selleck Mustache"
 		icon_state = "facial_selleck"
-/*
+
 	neckbeard
 		name = "Neckbeard"
 		icon_state = "facial_neckbeard"
@@ -675,16 +675,16 @@
 	vlongbeard
 		name = "Very Long Beard"
 		icon_state = "facial_wise"
-*/
+
 	elvis
 		name = "Elvis Sideburns"
 		icon_state = "facial_elvis"
 		species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI)
-/*
+
 	abe
 		name = "Abraham Lincoln Beard"
 		icon_state = "facial_abe"
-*/
+
 	chinstrap
 		name = "Chinstrap"
 		icon_state = "facial_chin"
@@ -704,11 +704,11 @@
 	volaju
 		name = "Volaju"
 		icon_state = "facial_volaju"
-/*
+
 	dwarf
 		name = "Dwarf Beard"
 		icon_state = "facial_dwarf"
-*/
+
 	threeOclock
 		name = "3 O'clock Shadow"
 		icon_state = "facial_3oclock"
@@ -732,7 +732,7 @@
 	sevenOclockstache
 		name = "7 O'clock Shadow and Moustache"
 		icon_state = "facial_7oclockmoustache"
-/*
+
 	mutton
 		name = "Mutton Chops"
 		icon_state = "facial_mutton"
@@ -740,7 +740,7 @@
 	muttonstache
 		name = "Mutton Chops and Moustache"
 		icon_state = "facial_muttonmus"
-*/
+
 	walrus
 		name = "Walrus Moustache"
 		icon_state = "facial_walrus"

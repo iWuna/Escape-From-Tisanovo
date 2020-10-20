@@ -14,6 +14,7 @@
 	anchored = 1
 	use_power = 1
 	idle_power_usage = 2
+	flags = PROXMOVE
 	var/_wifi_id
 	var/datum/wifi/receiver/button/flasher/wifi_receiver
 
@@ -30,7 +31,6 @@
 	. = ..()
 	if(_wifi_id)
 		wifi_receiver = new(_wifi_id, src)
-	proximity_monitor = new(src, 0)
 
 /obj/machinery/flasher/Destroy()
 	qdel(wifi_receiver)
@@ -104,29 +104,27 @@
 		flash()
 	..(severity)
 
-/obj/machinery/flasher/portable/HasProximity(atom/movable/AM)
-	if (disable || (last_flash && world.time < last_flash + 150))
+/obj/machinery/flasher/portable/HasProximity(atom/movable/AM as mob|obj)
+	if ((src.disable) || (src.last_flash && world.time < src.last_flash + 150))
 		return
 
-	if(iscarbon(AM))
+	if(istype(AM, /mob/living/carbon))
 		var/mob/living/carbon/M = AM
-		if ((M.m_intent != "walk") && (anchored))
-			flash()
+		if ((M.m_intent != "walk") && (src.anchored))
+			src.flash()
 
-/obj/machinery/flasher/portable/attackby(obj/item/weapon/W, mob/user)
+/obj/machinery/flasher/portable/attackby(obj/item/weapon/W as obj, mob/user as mob)
 	if (istype(W, /obj/item/weapon/wrench))
 		add_fingerprint(user)
-		anchored = !anchored
+		src.anchored = !src.anchored
 
-		if (!anchored)
+		if (!src.anchored)
 			user.show_message(text("<span class='warning'>[src] can now be moved.</span>"))
-			overlays.Cut()
-			proximity_monitor.SetRange(0)
+			src.overlays.Cut()
 
 		else if (src.anchored)
 			user.show_message(text("<span class='warning'>[src] is now secured.</span>"))
-			overlays += "[base_state]-s"
-			proximity_monitor.SetRange(range)
+			src.overlays += "[base_state]-s"
 
 /obj/machinery/button/flasher
 	name = "flasher button"

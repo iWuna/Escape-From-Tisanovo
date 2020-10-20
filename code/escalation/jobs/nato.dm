@@ -138,7 +138,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/coldwar/usmc/marksman
 	selection_color = "#B0C4DE"
 	position = "team"
-	enabled = 1
+	enabled = 0
 	amount = 1
 	whitelist_rank = "usmc_enlisted"
 	also_known_languages = list(LANGUAGE_GERMAN = 10, LANGUAGE_RUSSIAN = 10)
@@ -300,7 +300,7 @@
 	whitelist_rank = "usmc_enlisted"
 	also_known_languages = list(LANGUAGE_GERMAN = 10, LANGUAGE_RUSSIAN = 5)
 
-/datum/job/escalation/usmc/usmcftg
+/datum/job/escalation/usmc/usmcgrenadier
 	title = "USMC Fireteam Grenadier"
 	name = "Fireteam Grenadier"
 	english_name = null

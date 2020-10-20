@@ -79,7 +79,7 @@
 
 	return {"<!DOCTYPE html>
 <html>
-	<meta charset="UTF-8">
+	<<meta charset=\"utf-8\">
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		[head_content]
@@ -108,7 +108,7 @@
 	var/window_size = ""
 	if (width && height)
 		window_size = "size=[width]x[height];"
-	user << browse(cp1251_to_utf8(get_content()), "window=[window_id];[window_size][window_options]")
+	user << browse(get_content(), "window=[window_id];[window_size][window_options]")
 	if (use_onclose)
 		onclose(user, window_id, ref)
 

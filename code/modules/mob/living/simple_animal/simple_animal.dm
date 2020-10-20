@@ -10,8 +10,6 @@
 	health = 20
 	maxHealth = 20
 
-	layer
-
 	mob_bump_flag = SIMPLE_ANIMAL
 	mob_swap_flags = MONKEY|SLIME|HUMAN
 	mob_push_flags = MONKEY|SLIME|HUMAN
@@ -1699,9 +1697,6 @@
 /mob/living/simple_animal/retaliate
 	retaliate = 1
 	destroy_surroundings = 1
-
-
-
 
 ///looting///
 

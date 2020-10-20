@@ -60,8 +60,7 @@ GLOBAL_DATUM_INIT(nanomanager, /datum/nanomanager, new) // NanoManager, the mana
 			return ui
 		else
 			ui.reinitialise(new_initial_data=data)
-			ui.close()
-			//return ui
+			return ui
 
 	return null
 
@@ -260,45 +259,3 @@ GLOBAL_DATUM_INIT(nanomanager, /datum/nanomanager, new) // NanoManager, the mana
 	oldMob.open_uis.Cut()
 
 	return 1 // success
-
-/**
-  * Sends all nano assets to the client
-  * This is called on user login
-  *
-  * @param client /client The user's client
-  *
-  * @return nothing
-  */
-
-/datum/nanomanager/proc/send_resources(client)
-	for(var/file in asset_files)
-		world.log << file
-		client << browse_rsc(file)	// send the file to the client
-
- /**
-  * Sends a message to the client-side JS of UIs on the object.
-  *
-  * @param src_object /datum The object owning the interface being sent to.
-  * @param ui_key string The string key of the UI being sent to.
-  * @param js_function string The name of the JS function to execute.
-  * @param data list List of arguments to send to the JS function.
-  * @param user /mob If provided, a specific mob to send to. If null, all mobs with the UI open will be sent to.
-  *
-  * @return nothing
-  */
-/datum/nanomanager/proc/send_message(src_object, ui_key, js_function, data, mob/user = null)
-    var/src_object_key = "\ref[src_object]"
-    if (isnull(open_uis[src_object_key]))
-        return 0
-
-    var/paramlist = list2params(data)
-
-    var/update_count = 0
-    for (var/datum/nanoui/ui in open_uis[src_object_key][ui_key])
-        if (!ui.src_object || (user != null && ui.user != user))
-            continue
-
-        ui.send_message(js_function, paramlist)
-        update_count += 1
-
-    return update_count

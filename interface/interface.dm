@@ -23,14 +23,6 @@
 		to_chat(src, "<span class='warning'>The forum URL is not set in the server configuration.</span>")
 	return
 
-/client/verb/discord()
-	set name = "discord"
-	set desc = "Join the discord."
-	set hidden = 1
-	if(alert("This will invite you to the discord and will open in your browser. Are you sure?",,"Yes","No")=="No")
-		return
-	src << link("https://discord.gg/Qy6nh7F")
-
 #define RULES_FILE "config/rules.html"
 /client/verb/rules()
 	set name = "Rules"
@@ -66,14 +58,12 @@ Hotkey-Mode: (hotkey-mode must be on)
 \ts = down
 \td = right
 \tw = up
+\t, = move-upwards
+\t. = move-down
 \tq = drop
 \te = equip
 \tr = throw
 \tt = say
-\to = ooc
-\tspace = toggle_combat_mode
-\tv = toggle_dodge_parry
-\ty = surrender
 \t5 = emote
 \tx = swap-hand
 \tz = activate held object (or y)
@@ -86,8 +76,6 @@ Hotkey-Mode: (hotkey-mode must be on)
 \t4 = harm-intent
 \tCtrl = drag
 \tShift = examine
-\tPGUP = Move upwards
-\tPGDOWN = Move downwards
 </font>"}
 
 	var/other = {"<font color='purple'>
@@ -128,7 +116,6 @@ Hotkey-Mode: (hotkey-mode must be on)
 \tw = up
 \tq = unequip active module
 \tt = say
-\to = ooc
 \tx = cycle active modules
 \tz = activate held object (or y)
 \tf = cycle-intents-left

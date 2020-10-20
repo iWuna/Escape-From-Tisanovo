@@ -4,6 +4,7 @@
 	icon_state = "prox"
 	origin_tech = list(TECH_MAGNET = 1)
 	matter = list(DEFAULT_WALL_MATERIAL = 800, "glass" = 200, "waste" = 50)
+	flags = PROXMOVE
 	wires = WIRE_PULSE
 
 	secured = 0
@@ -14,15 +15,16 @@
 
 	var/range = 2
 
-/obj/item/device/assembly/prox_sensor/Initialize()
-	. = ..()
-	proximity_monitor = new(src, range, FALSE)
+/obj/item/device/assembly/prox_sensor/proc/toggle_scan()
+/obj/item/device/assembly/prox_sensor/proc/sense()
+
 
 /obj/item/device/assembly/prox_sensor/activate()
 	if(!..())	return 0//Cooldown check
 	timing = !timing
 	update_icon()
 	return 0
+
 
 /obj/item/device/assembly/prox_sensor/toggle_secure()
 	secured = !secured
@@ -35,15 +37,17 @@
 	update_icon()
 	return secured
 
-/obj/item/device/assembly/prox_sensor/HasProximity(atom/movable/AM)
-	if(!scanning)
-		return
-	if(istype(AM, /obj/effect/beam))
-		return
-	if(AM.move_speed < 12)
-		sense()
 
-/obj/item/device/assembly/prox_sensor/proc/sense()
+/obj/item/device/assembly/prox_sensor/HasProximity(atom/movable/AM as mob|obj)
+	if(!istype(AM))
+		log_debug("DEBUG: HasProximity called with [AM] on [src] ([usr]).")
+		return
+	if (istype(AM, /obj/effect/beam))	return
+	if (AM.move_speed < 12)	sense()
+	return
+
+
+/obj/item/device/assembly/prox_sensor/sense()
 	var/turf/mainloc = get_turf(src)
 //		if(scanning && cooldown <= 0)
 //			mainloc.visible_message("\icon[src] *boop* *boop*", "*boop* *boop*")
@@ -54,23 +58,37 @@
 	cooldown = 2
 	spawn(10)
 		process_cooldown()
+	return
+
 
 /obj/item/device/assembly/prox_sensor/process()
+	if(scanning)
+		var/turf/mainloc = get_turf(src)
+		for(var/mob/living/A in range(range,mainloc))
+			if (A.move_speed < 12)
+				sense()
+
 	if(timing && (time >= 0))
 		time--
 	if(timing && time <= 0)
 		timing = 0
 		toggle_scan()
 		time = 10
+	return
+
 
 /obj/item/device/assembly/prox_sensor/dropped()
-	sense()
+	spawn(0)
+		sense()
+		return
+	return
 
-/obj/item/device/assembly/prox_sensor/proc/toggle_scan()
-	if(!secured)
-		return 0
+
+/obj/item/device/assembly/prox_sensor/toggle_scan()
+	if(!secured)	return 0
 	scanning = !scanning
 	update_icon()
+	return
 
 
 /obj/item/device/assembly/prox_sensor/update_icon()
@@ -133,11 +151,8 @@
 
 	if(href_list["range"])
 		var/r = text2num(href_list["range"])
-		var/old_range = range
 		range += r
-		range = Clamp(range, 1, 5)
-		if(range != old_range)
-			proximity_monitor.SetRange(range)
+		range = min(max(range, 1), 5)
 
 	if(href_list["close"])
 		usr << browse(null, "window=prox")

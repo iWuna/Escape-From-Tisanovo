@@ -356,10 +356,10 @@ datum/controller/vote
 					for(var/name in GLOB.all_maps)
 						choices.Add(name)
 				if("custom")
-					question = cp1251_to_utf8(rhtml_encode(input(usr,"What is the vote for?") as text|null))
+					question = html_encode(input(usr,"What is the vote for?") as text|null)
 					if(!question)	return 0
 					for(var/i=1,i<=10,i++)
-						var/option = cp1251_to_utf8(capitalize(rhtml_encode(input(usr,"Please enter an option or hit cancel to finish") as text|null)))
+						var/option = capitalize(html_encode(input(usr,"Please enter an option or hit cancel to finish") as text|null))
 						if(!option || mode || !usr.client)	break
 						choices.Add(option)
 				else
@@ -369,7 +369,7 @@ datum/controller/vote
 			started_time = world.time
 			var/text = "[capitalize(mode)] vote started by [initiator]."
 			if(mode == "custom")
-				text += "\n[utf8_to_cp1251(question)]"
+				text += "\n[question]"
 
 			log_vote(text)
 			to_world("<font color='purple'><b>[text]</b>\nType <b>vote</b> or click <a href='?src=\ref[src]'>here</a> to place your votes.\nYou have [config.vote_period/10] seconds to vote.</font>")
@@ -553,7 +553,6 @@ datum/controller/vote/proc/is_addantag_allowed(var/automatic)
 /mob/verb/vote()
 	set category = "OOC"
 	set name = "Vote"
-	set hidden = 1
 
 	if(vote)
 		src << browse(vote.interface(client),"window=vote")

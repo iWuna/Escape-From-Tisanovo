@@ -1436,4 +1436,3 @@ obj/structure/sign/noshitlers
 /obj/structure/sign/flag/usmcflag
 	name = "USMC flag"
 	icon_state = "usmcflag"
-

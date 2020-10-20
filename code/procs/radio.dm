@@ -68,7 +68,7 @@
 	var/datum/signal/signal = sender.telecomms_process(do_sleep)	// Be aware that this proc calls sleep, to simulate transmition delays
 	reception.telecomms_reception |= get_sender_reception(sender, signal)
 	reception.telecomms_reception |= get_receiver_reception(receiver, signal)
-	reception.message = signal && signal.data["compression"] > 0 ? Gibberish(rhtml_decode(sanitize(message)), signal.data["compression"] + 50) : message
+	reception.message = signal && signal.data["compression"] > 0 ? Gibberish(html_decode(sanitize(message)), signal.data["compression"] + 50) : message
 
 	return reception
 

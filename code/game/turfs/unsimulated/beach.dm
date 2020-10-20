@@ -1,7 +1,6 @@
 /turf/unsimulated/beach
 	name = "Beach"
 	icon = 'icons/misc/beach.dmi'
-	permit_ao = FALSE
 
 /turf/unsimulated/beach/sand
 	name = "Sand"
