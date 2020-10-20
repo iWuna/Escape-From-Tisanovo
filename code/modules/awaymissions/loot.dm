@@ -1,3 +1,6 @@
+#define LOOT_RESPAWN 150000
+#define ZED_RESPAWN 1800000
+
 /obj/effect/spawner/lootdrop
 	icon = 'icons/mob/screen1.dmi'
 	icon_state = "x2"
@@ -6,9 +9,14 @@
 	var/lootdoubles = TRUE	//if the same item can be spawned twice
 	var/list/loot			//a list of possible items to spawn e.g. list(/obj/item, /obj/structure, /obj/effect)
 	var/fan_out_items = FALSE //Whether the items should be distributed to offsets 0,1,-1,2,-2,3,-3.. This overrides pixel_x/y on the spawner itself
+	var/mob_spawner = 0
+	invisibility = SEE_INVISIBLE_OBSERVER
 
-/obj/effect/spawner/lootdrop/Initialize(mapload)
+/obj/effect/spawner/lootdrop/New()
 	..()
+	SpawnShit()
+
+/obj/effect/spawner/lootdrop/proc/SpawnShit()
 	if(loot && loot.len)
 		var/turf/T = get_turf(src)
 		var/loot_spawned = 0
@@ -28,7 +36,14 @@
 					if (loot_spawned)
 						spawned_loot.pixel_x = spawned_loot.pixel_y = ((!(loot_spawned%2)*loot_spawned/2)*-1)+((loot_spawned%2)*(loot_spawned+1)/2*1)
 			loot_spawned++
-	return INITIALIZE_HINT_QDEL
+
+	if(!mob_spawner)
+		spawn(LOOT_RESPAWN)
+			SpawnShit()
+	else
+		spawn(ZED_RESPAWN)
+			SpawnShit()
+	//return INITIALIZE_HINT_QDEL
 
 /obj/item/nothing
 	name = "nothing"
@@ -41,7 +56,7 @@
 
 /obj/effect/spawner/lootdrop/food_common
 	name = "common food spawner"
-	lootdoubles = FALSE
+	lootdoubles = TRUE
 	loot = list(
 				/obj/item/weapon/reagent_containers/food/snacks/tincan/stewbuckwheat,
 				/obj/item/weapon/reagent_containers/food/snacks/tincan/buckwheat,
@@ -53,7 +68,7 @@
 
 /obj/effect/spawner/lootdrop/backpack_army
 	name = "rare army back"
-	lootdoubles = FALSE
+	lootdoubles = TRUE
 	loot = list(
 				/obj/item/weapon/storage/backpack/sovietpack,
 				/obj/item/weapon/storage/backpack/usmc_buttpack,
@@ -65,10 +80,20 @@
 
 /obj/effect/spawner/lootdrop/zombie_civ
 	name = "civ random zombie spawn"
-	lootdoubles = FALSE
+	lootdoubles = TRUE
+	mob_spawner = 1
 	loot = list(
 				/mob/living/simple_animal/hostile/dayz/zombie/civ,
 				/mob/living/simple_animal/hostile/dayz/zombie/civ,
 				/mob/living/simple_animal/hostile/dayz/zombie/civ,
+				/obj/item/nothing
+				)
+
+/obj/effect/spawner/lootdrop/craftable
+	name = "crafting spawn"
+	lootdoubles = TRUE
+	loot = list(
+				/obj/item/weapon/material/lstick,
+				/obj/item/weapon/crafty/knifeblade,
 				/obj/item/nothing
 				)

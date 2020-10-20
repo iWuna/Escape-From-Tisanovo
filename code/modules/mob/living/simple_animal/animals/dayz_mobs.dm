@@ -1,3 +1,5 @@
+#define COMPOST_TIME 100000
+
 /mob/living/simple_animal/hostile/dayz/zombie
 	name = "zombie"
 	desc = "B-raa-ains~"
@@ -37,6 +39,12 @@
 	death_sound = 'sound/escalation/zed/zed_dead1.ogg'
 	say_sounds = 'sound/escalation/zed/zed_say1.ogg'
 	triggered_sound = 'sound/escalation/zed/zed_triggered1.ogg'
+
+/mob/living/simple_animal/hostile/dayz/zombie/death()
+	. = ..()
+	spawn(COMPOST_TIME)
+		new/obj/effect/gibspawner/human(get_turf(src))
+		qdel(src)
 
 /mob/living/simple_animal/hostile/dayz/zombie/set_target()
 	. = ..()

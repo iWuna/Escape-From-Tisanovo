@@ -1363,6 +1363,11 @@ obj/structure/sign/noshitlers
 	icon = 'icons/obj/decals48.dmi'
 	icon_state = "stogovka"
 
+/obj/structure/sign/aerodrom
+	name = "Aerodrom"
+	icon = 'icons/obj/decorations_64x32.dmi'
+	icon_state = "AEROPORT"
+
 /obj/structure/sign/cafe
 	name = "cafe sign"
 	icon_state = "cafesign"

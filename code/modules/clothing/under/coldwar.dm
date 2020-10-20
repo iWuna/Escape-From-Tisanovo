@@ -92,6 +92,16 @@
 /obj/item/clothing/under/soviet/
 	allowed = list(/obj/item/weapon/storage/belt/suit/ammo/)
 
+/obj/item/clothing/under/soviet/gopnik
+	name = "tracksuit"
+	desc = "suka blyat"
+	icon_state = "gop"
+	worn_state = "gop"
+	armor = list(melee = 2, bullet = 1, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 5)
+	siemens_coefficient = 0.7
+	slowdown_general = 0.5
+	has_sensor = 0
+
 /obj/item/clothing/under/soviet/habe/
 	name = "'Habe' fatigues"
 	desc = "That's the generic field uniform, commonly used by regular Soviet motorized infantry."
