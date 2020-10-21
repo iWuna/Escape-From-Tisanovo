@@ -40,6 +40,23 @@
 	say_sounds = 'sound/escalation/zed/zed_say1.ogg'
 	triggered_sound = 'sound/escalation/zed/zed_triggered1.ogg'
 
+/mob/living/simple_animal/hostile/dayz/zombie/proc/infect_surv(var/obj/item/organ/external/eo)
+	src = null
+	var/weakref/limb_ref = weakref(eo)
+	spawn(rand(5 MINUTES,10 MINUTES))
+		var/obj/item/organ/external/found_limb = limb_ref.resolve()
+		if(istype(found_limb))
+			eo.germ_level += INFECTION_LEVEL_ONE+30
+
+/mob/living/simple_animal/hostile/dayz/zombie/PunchTarget()
+	. =..()
+	var/mob/living/carbon/human/H = .
+	if(istype(H))
+		if(prob(15))
+			to_chat(., "[src] bites your neck!")
+			message_admins("[src] infected [.]")
+			infect_surv()
+
 /mob/living/simple_animal/hostile/dayz/zombie/death()
 	. = ..()
 	spawn(COMPOST_TIME)
@@ -175,6 +192,7 @@
 ///NPC///
 
 /mob/living/simple_animal/hostile/dayz/human
+	icon = 'icons/escalation/mob/npc.dmi'
 	ranged = 1
 	speed = 6
 	cooperative = 1
@@ -196,7 +214,7 @@
 	reacts = 1
 	speak_chance = 50
 	speak = list("Drive to bylo jednodussi...",
-				"Palte, je tu Marauder!",
+				"Chci domu k matce.",
 				"Chybi mi stary zivot",
 				"Jednou se Cesko ozivi",
 				"Munice brzy skonci",
@@ -206,16 +224,39 @@
 	say_understood = list()
 	say_cannot = list()
 	say_maybe_target = list("Slysel jsi to?","Vypada to, ze tu nekdo je.","Co je to za hluk?","Hmm?")
-	say_got_target = list("Palte, je tu Marauder!","Kontakt s protivnikem","cil odhalen","Nasel!")
+	say_got_target = list("Palte, je tu Marauder!","Kontakt s protivnikem","cil odhalen","Nasel!","Mozna nakazeny! Ohen!","Strelejte!","Zavolej posily!","Svine, protivniku!","Budes litovat, ze jsi to prezil, ty bastarde!")
 	reactions = list("Cesko" = "volny!")
 	melee_damage_lower = 10
 	melee_damage_upper = 12
 	melee_miss_chance = 45
+	gender = MALE
+
+/mob/living/simple_animal/hostile/dayz/human/New()
+	..()
+	var/first_name = pick(first_names_male_czech)
+	var/second_name = pick(last_names_czech)
+	name = "[first_name] [second_name]"
+
+///сюжетный///
+/mob/living/simple_animal/hostile/dayz/human/czech_deserter_family
+	desc = "This is alive human, but he's very angry..."
+	reactions = list("Ahoj, jak se mas s rodinou?" = "Je to nechutne, dcera se nakazila tou cholerou.")
+	projectiletype = /obj/item/projectile/bullet
+	projectilesound = 'sound/weapons/gunshot/ak74.ogg'
+	shoot_range = 8
+	rapid = 1
+	armor = list(
+				"melee" = 25,
+				"bullet" = 50,
+				"laser" = 0,
+				"energy" = 0,
+				"bomb" = 0,
+				"bio" = 100,
+				"rad" = 100)
 
 /mob/living/simple_animal/hostile/dayz/human/deserter_pistol
 	name = "czech deserter"
 	desc = "This is alive human, but he's very angry..."
-	icon = 'icons/escalation/mob/npc.dmi'
 	icon_state = "dezertirpistol1"
 	projectiletype = /obj/item/projectile/bullet
 	projectilesound = 'sound/weapons/gunshot/makarov.ogg'
@@ -234,7 +275,6 @@
 /mob/living/simple_animal/hostile/dayz/human/deserter_vz
 	name = "czech deserter"
 	desc = "This is alive human, but he's very angry..."
-	icon = 'icons/escalation/mob/npc.dmi'
 	icon_state = "dezertirvz1"
 	projectiletype = /obj/item/projectile/bullet
 	projectilesound = 'sound/weapons/gunshot/ak74.ogg'

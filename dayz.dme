@@ -972,6 +972,7 @@
 #include "code\game\objects\structures\cover_box.dm"
 #include "code\game\objects\structures\curtains.dm"
 #include "code\game\objects\structures\dartboard.dm"
+#include "code\game\objects\structures\dayzdecor.dm"
 #include "code\game\objects\structures\displaycase.dm"
 #include "code\game\objects\structures\dogbed.dm"
 #include "code\game\objects\structures\door_assembly.dm"

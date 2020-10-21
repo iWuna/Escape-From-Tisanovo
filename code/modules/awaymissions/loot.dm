@@ -1,4 +1,4 @@
-#define LOOT_RESPAWN 150000
+#define LOOT_RESPAWN 140000
 #define ZED_RESPAWN 1800000
 
 /obj/effect/spawner/lootdrop
