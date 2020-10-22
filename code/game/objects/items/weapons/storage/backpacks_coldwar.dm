@@ -1,3 +1,47 @@
+///DAYZ///
+/obj/item/weapon/storage/backpack/civpack
+	name = "Hiking Backpack"
+	desc = "Lightweight backpack used for all day trips. Comfortably support any load that fits in."
+	icon_state = "civpack"
+	item_state = "civpack"
+	reachable = 0
+	max_storage_space = 14
+	open_delay = 20
+
+/obj/item/weapon/storage/backpack/civpack/mountain
+	name = "Mountain Backpack"
+	desc = "Tall mountaineering backpack made from hi-tech materials. Spacious but sort of noticeable."
+	icon_state = "civpack_mountain"
+	item_state = "civpack_mountain"
+	reachable = 0
+	max_storage_space = 25
+	open_delay = 25
+
+/obj/item/weapon/storage/backpack/civpack/New()
+	..()
+	var/color_rand = pick("blue", "red", "purple", "green")
+	slowdown_per_slot[slot_back] = 0.5
+	icon_state = initial(icon_state) + "_[color_rand]"
+	if(icon_state == "civpack_red")
+		item_state = "civpack_red"
+	if(icon_state == "civpack_blue")
+		item_state = "civpack_blue"
+	if(icon_state == "civpack_green")
+		item_state = "civpack_green"
+	if(icon_state == "civpack_puprle")
+		item_state = "civpack_puprle"
+
+/obj/item/weapon/storage/backpack/civpack/New()
+	..()
+	if(icon_state == "civpack_mountain_red")
+		item_state = "civpack_mountain_red"
+	if(icon_state == "civpack_mountain_blue")
+		item_state = "civpack_mountain_blue"
+	if(icon_state == "civpack_mountain_green")
+		item_state = "civpack_mountain_green"
+	if(icon_state == "civpack_mountain_puprle")
+		item_state = "civpack_mountain_puprle"
+
 /obj/item/weapon/storage/backpack/soviet_tabletbag
 	name = "tablet bag"
 	desc = "A leather tablet bag used by soviet officers and other command staff."

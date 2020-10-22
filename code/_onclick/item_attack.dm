@@ -68,6 +68,11 @@ avoid code duplication. This includes items that may sometimes act as a standard
 		if(world.time % 3) //to prevent spam
 			return
 		return 0
+
+	var/area/B = get_area(user.loc)
+	if(B.safezone)
+		to_chat(user, "<span class='warning'>You can't fight in the safezone!</span>")
+		return 0
 	/////////////////////////
 
 	if(!no_attack_log)

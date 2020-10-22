@@ -98,7 +98,7 @@
 
 /mob/living/simple_animal/hostile/dayz/zombie/civ/New()
 	..()
-	icon_state = "zed[rand(1,4)]"
+	icon_state = "zed[rand(1,10)]"
 	if(icon_state == "zed1")
 		icon_dead = "zed_dead1"
 	if(icon_state == "zed2")
@@ -107,6 +107,18 @@
 		icon_dead = "zed_dead3"
 	if(icon_state == "zed4")
 		icon_dead = "zed_dead4"
+	if(icon_state == "zed5")
+		icon_dead = "zed_dead5"
+	if(icon_state == "zed6")
+		icon_dead = "zed_dead6"
+	if(icon_state == "zed7")
+		icon_dead = "zed_dead7"
+	if(icon_state == "zed8")
+		icon_dead = "zed_dead8"
+	if(icon_state == "zed9")
+		icon_dead = "zed_dead9"
+	if(icon_state == "zed10")
+		icon_dead = "zed_dead10"
 
 /mob/living/simple_animal/hostile/dayz/zombie/police
 	name = "policeman zombie"
@@ -236,6 +248,44 @@
 	var/first_name = pick(first_names_male_czech)
 	var/second_name = pick(last_names_czech)
 	name = "[first_name] [second_name]"
+
+/mob/living/simple_animal/hostile/dayz/human/nato
+	name = "NATO soldier"
+	icon_state = "nato_sld1"
+	shoot_range = 9
+	faction = "neutral"
+	rapid = 1
+	projectiletype = /obj/item/projectile/bullet
+	projectilesound = 'sound/weapons/gunshot/ak74.ogg'
+	speak = list("We running out of supplies soon, shit...",
+				"When all this end?",
+				"We need to support survivors. They are our hope!",
+				"Where's this damn chopper?",
+				"Czech army kinda assholes.",
+				"This place are safest.")
+	say_maybe_target = list("Did you hear that?","There's someone near.","What?","Hmm?")
+	say_got_target = list("Contact!","Enemy spotted!","Fire!","Find him!","Enemy! Fire!","Call for help!","Fire! Fire! Fire!","We got situation here!")
+	armor = list(
+				"melee" = 25,
+				"bullet" = 60,
+				"laser" = 0,
+				"energy" = 0,
+				"bomb" = 0,
+				"bio" = 100,
+				"rad" = 100)
+
+/mob/living/simple_animal/hostile/dayz/human/nato/New()
+	..()
+	var/first_name = pick(first_names_male_usmc)
+	var/second_name = pick(last_names_usmc)
+	name = "[first_name] [second_name]"
+	icon_state = "nato_sld[rand(1,3)]"
+	if(icon_state == "nato_sld1")
+		icon_dead = "nato_sld1_dead"
+	if(icon_state == "nato_sld2")
+		icon_dead = "nato_sld2_dead"
+	if(icon_state == "nato_sld3")
+		icon_dead = "nato_sld3_dead"
 
 ///сюжетный///
 /mob/living/simple_animal/hostile/dayz/human/czech_deserter_family

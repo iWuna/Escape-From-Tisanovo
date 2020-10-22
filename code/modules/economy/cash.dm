@@ -109,55 +109,55 @@
 		qdel(src)
 
 /obj/item/weapon/spacecash/bundle/c1
-	name = "1 credit"
+	name = "1 Czech Koruna"
 	icon_state = "spacecash1"
 	desc = "It's worth 1 credit."
 	worth = 1
 
 /obj/item/weapon/spacecash/bundle/c10
-	name = "10 credit"
+	name = "10 Czech Koruna"
 	icon_state = "spacecash10"
 	desc = "It's worth 10 credits."
 	worth = 10
 
 /obj/item/weapon/spacecash/bundle/c20
-	name = "20 credit"
+	name = "20 Czech Koruna"
 	icon_state = "spacecash20"
 	desc = "It's worth 20 credits."
 	worth = 20
 
 /obj/item/weapon/spacecash/bundle/c50
-	name = "50 credit"
+	name = "50 Czech Koruna"
 	icon_state = "spacecash50"
 	desc = "It's worth 50 credits."
 	worth = 50
 
 /obj/item/weapon/spacecash/bundle/c100
-	name = "100 credit"
+	name = "100 Czech Koruna"
 	icon_state = "spacecash100"
 	desc = "It's worth 100 credits."
 	worth = 100
 
 /obj/item/weapon/spacecash/bundle/c200
-	name = "200 credit"
+	name = "200 Czech Koruna"
 	icon_state = "spacecash200"
 	desc = "It's worth 200 credits."
 	worth = 200
 
 /obj/item/weapon/spacecash/bundle/c500
-	name = "500 credit"
+	name = "500 Czech Koruna"
 	icon_state = "spacecash500"
 	desc = "It's worth 500 credits."
 	worth = 500
 
 /obj/item/weapon/spacecash/bundle/c1000
-	name = "1000 credit"
+	name = "1000 Czech Koruna"
 	icon_state = "spacecash1000"
 	desc = "It's worth 1000 credits."
 	worth = 1000
 
 /obj/item/weapon/spacecash/bundle/randarmy/New()
-	worth = pick(200, 500, 100)
+	worth = pick(200, 500, 100, 90, 150, 250, 350, 105, 80, 220)
 	src.update_icon()
 
 /obj/item/weapon/spacecash/bundle/randmidclass/New()

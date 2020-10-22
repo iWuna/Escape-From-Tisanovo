@@ -20,7 +20,7 @@
 	holster = null
 	left_pouch = null
 	right_pouch = null
-	r_pocket = null
+	r_pocket = /obj/item/weapon/spacecash/bundle/randarmy
 	back = null
 	head = null
 	l_pocket = null

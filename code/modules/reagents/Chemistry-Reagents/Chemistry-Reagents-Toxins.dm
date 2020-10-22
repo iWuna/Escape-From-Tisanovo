@@ -697,3 +697,14 @@
 		var/mob/living/carbon/human/H = M
 		H.zombieze()
 	remove_self(volume)
+
+/datum/reagent/toxin/cholera
+	name = "Cholera"
+	description = "A toxic bacteria."
+	color = "#CF3600"
+	strength = 0
+	taste_description = "mud"
+	metabolism = REM
+
+/datum/reagent/toxin/cholera/affect_blood(var/mob/living/human/M, var/alien, var/removed)
+	return

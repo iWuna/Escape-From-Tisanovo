@@ -144,6 +144,11 @@
 	if(HULK in M.mutations)
 		to_chat(M, "<span class='danger'>Your fingers are much too large for the trigger guard!</span>")
 		return 0
+
+	var/area/B = get_area(user.loc)
+	if(B.safezone)
+		to_chat(M, "<span class='danger'>You can't fire there!</span>")
+		return 0
 	if((CLUMSY in M.mutations) && prob(40)) //Clumsy handling
 		var/obj/P = consume_next_projectile()
 		if(P)

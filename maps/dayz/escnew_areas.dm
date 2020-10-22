@@ -19,6 +19,8 @@ var/list/interior_areas = list(/area/coldwar/house1,
 							/area/coldwar/house18
 							)
 
+/area
+	var/safezone = 0
 
 /area/coldwar
 	name = "area"
@@ -285,3 +287,11 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = PLAIN
 	requires_power = 0
 	dynamic_lighting = 1
+
+/area/coldwar/usmc_safe
+	name = "USMC FOB"
+	icon_state = "usmcfob"
+	sound_env = PLAIN
+	requires_power = 0
+	dynamic_lighting = 1
+	safezone = 1
