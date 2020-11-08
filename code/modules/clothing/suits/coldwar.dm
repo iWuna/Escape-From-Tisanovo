@@ -70,6 +70,49 @@
 	armor = list(melee = 30, bullet = 30, laser = 40, energy = 10, bomb = 25, bio = 0, rad = 0)
 	slowdown_general = 0.3
 
+/obj/item/clothing/suit/storage/hooded/ghillie
+	name = "ghillie suit (F)"
+	desc = "A common sniper outfit in last war. This one suited for forest."
+	icon_state = "ghillie_forest"
+	item_state = "armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(melee = 10, bullet = 10, laser = 20, energy = 10, bomb = 5, bio = 0, rad = 0)
+	slowdown_general = 0.2
+	action_button_name = "Toggle Ghillie Hood"
+	hoodtype = /obj/item/clothing/head/ghillie
+
+/obj/item/clothing/suit/storage/hooded/ghillie_d
+	name = "ghillie suit (D)"
+	desc = "A common sniper outfit in last war. This one suited for desert."
+	icon_state = "ghillie_desert"
+	item_state = "armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(melee = 10, bullet = 10, laser = 20, energy = 10, bomb = 5, bio = 0, rad = 0)
+	slowdown_general = 0.2
+	action_button_name = "Toggle Ghillie Hood"
+	hoodtype = /obj/item/clothing/head/ghillie_d
+
+/obj/item/clothing/head/ghillie
+	name = "ghillie hood (F)"
+	desc = "A hood attached to a ghillie suit."
+	icon_state = "ghillie_forest"
+	body_parts_covered = HEAD
+	cold_protection = HEAD
+	flags_inv = HIDEEARS | BLOCKHAIR
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/ghillie_d
+	name = "ghillie hood (D)"
+	desc = "A hood attached to a ghillie suit."
+	icon_state = "ghillie_desert"
+	body_parts_covered = HEAD
+	cold_protection = HEAD
+	flags_inv = HIDEEARS | BLOCKHAIR
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 
 //USMC
 

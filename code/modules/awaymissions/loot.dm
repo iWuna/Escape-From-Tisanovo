@@ -89,6 +89,26 @@
 				/obj/item/nothing
 				)
 
+/obj/effect/spawner/lootdrop/possible_chicken
+	name = "possible chicken spawn"
+	lootdoubles = TRUE
+	mob_spawner = 1
+	loot = list(
+				/mob/living/simple_animal/chicken,
+				/mob/living/simple_animal/chicken,
+				/obj/item/nothing
+				)
+
+/obj/effect/spawner/lootdrop/possible_goat
+	name = "possible goat spawn"
+	lootdoubles = TRUE
+	mob_spawner = 1
+	loot = list(
+				/mob/living/simple_animal/retaliate/goat,
+				/mob/living/simple_animal/retaliate/goat,
+				/obj/item/nothing
+				)
+
 /obj/effect/spawner/lootdrop/craftable
 	name = "crafting spawn"
 	lootdoubles = TRUE

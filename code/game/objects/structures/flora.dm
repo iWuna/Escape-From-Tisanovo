@@ -142,6 +142,23 @@
 	..()
 	icon_state = "snowbush[rand(1, 6)]"
 
+/obj/structure/flora/bush/attackby(var/obj/item/I, mob/user as mob)
+	if(istype(I, /obj/item/weapon/carpentry/axe))
+		user << "<span class='notice'>You chop [src] with [I].</span>"
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		playsound(src.loc, 'sound/effects/bush_chop2.ogg', 100, 1)
+		if(do_after(user, 20))
+			new/obj/item/weapon/material/lstick(src.loc)
+			new/obj/item/weapon/material/lstick(src.loc)
+			qdel(src)
+	if(istype(I, /obj/item/weapon/material/knife))
+		user << "<span class='notice'>You cut [src] with [I].</span>"
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		playsound(src.loc, 'sound/effects/bush_chop.ogg', 100, 1)
+		if(do_after(user, 45))
+			new/obj/item/weapon/material/lstick(src.loc)
+			qdel(src)
+
 /obj/structure/flora/pottedplant
 	name = "potted plant"
 	icon = 'icons/obj/plants.dmi'
@@ -169,6 +186,23 @@
 /obj/structure/flora/ausbushes/New()
 	..()
 	icon_state = "firstbush_[rand(1, 4)]"
+
+/obj/structure/flora/ausbushes/attackby(var/obj/item/I, mob/user as mob)
+	if(istype(I, /obj/item/weapon/carpentry/axe))
+		user << "<span class='notice'>You chop [src] with [I].</span>"
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		playsound(src.loc, 'sound/effects/bush_chop2.ogg', 100, 1)
+		if(do_after(user, 20))
+			new/obj/item/weapon/material/lstick(src.loc)
+			new/obj/item/weapon/material/lstick(src.loc)
+			qdel(src)
+	if(istype(I, /obj/item/weapon/material/knife))
+		user << "<span class='notice'>You cut [src] with [I].</span>"
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		playsound(src.loc, 'sound/effects/bush_chop.ogg', 100, 1)
+		if(do_after(user, 45))
+			new/obj/item/weapon/material/lstick(src.loc)
+			qdel(src)
 
 /obj/structure/flora/ausbushes/reedbush
 	icon_state = "reedbush_1"
@@ -467,7 +501,22 @@
 	pixel_x = rand(-8,8)
 	pixel_y = rand(-8,8)
 
-
+/obj/structure/flora/bush1/attackby(var/obj/item/I, mob/user as mob)
+	if(istype(I, /obj/item/weapon/carpentry/axe))
+		user << "<span class='notice'>You chop [src] with [I].</span>"
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		playsound(src.loc, 'sound/effects/bush_chop2.ogg', 100, 1)
+		if(do_after(user, 20))
+			new/obj/item/weapon/material/lstick(src.loc)
+			new/obj/item/weapon/material/lstick(src.loc)
+			qdel(src)
+	if(istype(I, /obj/item/weapon/material/knife))
+		user << "<span class='notice'>You cut [src] with [I].</span>"
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		playsound(src.loc, 'sound/effects/bush_chop.ogg', 100, 1)
+		if(do_after(user, 45))
+			new/obj/item/weapon/material/lstick(src.loc)
+			qdel(src)
 
 /obj/structure/flora/bush2
 	name = "A bush"
@@ -486,6 +535,23 @@
 	pixel_x = rand(-8,8)
 	pixel_y = rand(-8,8)
 
+/obj/structure/flora/bush2/attackby(var/obj/item/I, mob/user as mob)
+	if(istype(I, /obj/item/weapon/carpentry/axe))
+		user << "<span class='notice'>You chop [src] with [I].</span>"
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		playsound(src.loc, 'sound/effects/bush_chop2.ogg', 100, 1)
+		if(do_after(user, 20))
+			new/obj/item/weapon/material/lstick(src.loc)
+			new/obj/item/weapon/material/lstick(src.loc)
+			qdel(src)
+	if(istype(I, /obj/item/weapon/material/knife))
+		user << "<span class='notice'>You cut [src] with [I].</span>"
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		playsound(src.loc, 'sound/effects/bush_chop.ogg', 100, 1)
+		if(do_after(user, 45))
+			new/obj/item/weapon/material/lstick(src.loc)
+			qdel(src)
+
 /obj/structure/flora/bush3
 	name = "A bush"
 	desc = "Just a dry bush."
@@ -503,6 +569,23 @@
 	pixel_x = rand(-8,8)
 	pixel_y = rand(-8,8)
 
+/obj/structure/flora/bush3/attackby(var/obj/item/I, mob/user as mob)
+	if(istype(I, /obj/item/weapon/carpentry/axe))
+		user << "<span class='notice'>You chop [src] with [I].</span>"
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		playsound(src.loc, 'sound/effects/bush_chop2.ogg', 100, 1)
+		if(do_after(user, 20))
+			new/obj/item/weapon/material/lstick(src.loc)
+			new/obj/item/weapon/material/lstick(src.loc)
+			qdel(src)
+	if(istype(I, /obj/item/weapon/material/knife))
+		user << "<span class='notice'>You cut [src] with [I].</span>"
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		playsound(src.loc, 'sound/effects/bush_chop.ogg', 100, 1)
+		if(do_after(user, 45))
+			new/obj/item/weapon/material/lstick(src.loc)
+			qdel(src)
+
 /obj/structure/flora/bush4
 	name = "A bush"
 	desc = "Just a dry bush."
@@ -519,6 +602,23 @@
 /obj/structure/flora/bush4/Initialize()
 	pixel_x = rand(-8,8)
 	pixel_y = rand(-8,8)
+
+/obj/structure/flora/bush4/attackby(var/obj/item/I, mob/user as mob)
+	if(istype(I, /obj/item/weapon/carpentry/axe))
+		user << "<span class='notice'>You chop [src] with [I].</span>"
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		playsound(src.loc, 'sound/effects/bush_chop2.ogg', 100, 1)
+		if(do_after(user, 20))
+			new/obj/item/weapon/material/lstick(src.loc)
+			new/obj/item/weapon/material/lstick(src.loc)
+			qdel(src)
+	if(istype(I, /obj/item/weapon/material/knife))
+		user << "<span class='notice'>You cut [src] with [I].</span>"
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		playsound(src.loc, 'sound/effects/bush_chop.ogg', 100, 1)
+		if(do_after(user, 45))
+			new/obj/item/weapon/material/lstick(src.loc)
+			qdel(src)
 
 /obj/structure/flora/drygrass0
 	name = "A grass"

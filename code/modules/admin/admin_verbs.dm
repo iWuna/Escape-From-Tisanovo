@@ -1058,7 +1058,7 @@ var/list/admin_verbs_mentor = list(
 	world << "Changing daytime and weather to [daytime]. This may take a while. Be patient."
 	spawn(10)
 		for(var/turf/T)
-	//		if(T.z == 1)
+//			if(T.z == 1)
 			T.update_starlight()
 //			world << "noice3"
 

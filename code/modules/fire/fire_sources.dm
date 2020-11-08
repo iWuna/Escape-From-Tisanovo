@@ -13,6 +13,41 @@ var/list/fire_sounds = list(
 	'sound/ambience/comfyfire3.ogg'
 	)
 
+/obj/item/weapon/material/lstick/attackby(var/obj/item/I, mob/user as mob)
+	..()
+	if(istype(I, /obj/item/weapon/paper))
+		user << "<span class='notice'>You crafted campfire kit.</span>"
+		playsound(src.loc, 'sound/effects/bush_chop2.ogg', 100, 1)
+		if(do_after(user, 50))
+			var/obj/item/campfire_kit/new_camp = new(user.loc)
+			new_camp.dropInto(loc)
+			qdel(src)
+			qdel(I)
+	if (istype(I, /obj/item/weapon/tape_roll))
+		if(do_after(user, 50))
+			var/obj/item/stack/medical/splint/ghetto/new_splint = new(user.loc)
+			new_splint.dropInto(loc)
+			qdel(src)
+			qdel(I)
+			user.visible_message("<span class='notice'>\The [user] constructs \a [new_splint] out of a [name].</span>", \
+					"<span class='notice'>You use make \a [new_splint] out of a [name].</span>")
+			return
+
+/obj/item/campfire_kit
+	name = "campfire kit"
+	icon = 'icons/obj/fire.dmi'
+	icon_state = "campfire_kit"
+	anchored = 0
+	density = 0
+
+/obj/item/campfire_kit/attackby(var/obj/item/I, mob/user as mob)
+	..()
+	if(istype(I, /obj/item/weapon/material/lstick))
+		if(do_after(user, 50))
+			new/obj/structure/fire_source/hearth(src.loc)
+			qdel(src)
+			qdel(I)
+
 /obj/structure/fire_source
 	name = "campfire"
 	desc = "Did anyone bring any marshmallows?"
@@ -52,11 +87,20 @@ var/list/fire_sounds = list(
 	steam.attach(get_turf(src))
 	steam.set_up(3, 0, get_turf(src))
 
+/obj/structure/fire_source/attackby(var/obj/item/I, mob/user as mob)
+	..()
+	if(lit == FIRE_LIT && fuel > 0)
+		if(istype(I, /obj/item/weapon/reagent_containers/food/snacks/meat))
+			if(do_after(user, 50))
+				new/obj/item/weapon/reagent_containers/food/snacks/meatsteak(src.loc)
+				fuel -= 2
+				qdel(I)
+
 /obj/structure/fire_source/hearth
-	name = "hearth fire"
+	name = "campfire"
 	desc = "So cheery!"
 	burn_time = 80
-	density = 1
+	density = 0
 
 /obj/structure/fire_source/hearth/update_icon()
 	..()

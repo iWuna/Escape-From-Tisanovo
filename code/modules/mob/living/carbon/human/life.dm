@@ -39,6 +39,7 @@
 	var/temperature_alert = 0
 	var/in_stasis = 0
 	var/heartbeat = 0
+	var/meat_amount = 0
 
 /mob/living/carbon/human/Life()
 	set invisibility = 0

@@ -29,20 +29,7 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	dynamic_lighting = 1
 	base_turf = /turf/unsimulated/ground/
 	ambience = list (
-	'sound/ambience/coldwar/0Background0.wav',
-	'sound/ambience/coldwar/0Background1.wav',
-	'sound/ambience/coldwar/0Background2.wav',
-	'sound/ambience/coldwar/0Background3.wav',
-	'sound/ambience/coldwar/0Background4.wav',
-	'sound/ambience/coldwar/0Background5.wav',
-	'sound/ambience/coldwar/0Background6.wav',
-	'sound/ambience/coldwar/1Background1.wav',
-	'sound/ambience/coldwar/0Background2.wav',
-	'sound/ambience/coldwar/dayz/ForestDay_-30db.ogg',
-	'sound/ambience/coldwar/dayz/HousesDay_-30db.ogg',
-	'sound/ambience/coldwar/dayz/MeadowDay_-30db.ogg',
-	'sound/ambience/coldwar/dayz/MeadowDayCrickets.ogg',
-	'sound/ambience/coldwar/dayz/WindHills_-9db.ogg',
+	'sound/ambience/coldwar/dayz/MeadowDay.ogg',
 	)
 
 /area/coldwar/surrounding
@@ -89,6 +76,11 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = FOREST
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/ForestDay.ogg',
+	'sound/ambience/coldwar/dayz/ForestDayBirds.ogg',
+	'sound/ambience/coldwar/dayz/WindForestLight.ogg',
+	)
 
 /area/coldwar/surroundinglevel1
 	name = "outside"
@@ -97,6 +89,11 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	forced_ambience = null
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/ForestDay.ogg',
+	'sound/ambience/coldwar/dayz/ForestDayBirds.ogg',
+	'sound/ambience/coldwar/dayz/WindForestLight.ogg',
+	)
 
 /area/coldwar/civdef
 	name = "civil defence bunker"
@@ -112,6 +109,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/sawmill
 	name = "sawmill"
@@ -119,6 +119,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/house2
 	name = "house"
@@ -126,6 +129,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/house3
 	name = "house"
@@ -133,6 +139,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/house4
 	name = "house"
@@ -140,6 +149,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/house5
 	name = "house"
@@ -147,6 +159,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/house6
 	name = "house"
@@ -154,6 +169,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/house7
 	name = "house"
@@ -161,6 +179,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/house8
 	name = "house"
@@ -168,6 +189,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/house9
 	name = "house"
@@ -175,6 +199,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/house10
 	name = "house"
@@ -182,6 +209,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/house11
 	name = "house"
@@ -189,6 +219,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/house12
 	name = "house"
@@ -196,6 +229,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/house13
 	name = "house"
@@ -203,6 +239,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/house14
 	name = "house"
@@ -210,6 +249,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/house15
 	name = "house"
@@ -217,6 +259,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/house16
 	name = "house"
@@ -224,6 +269,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/house17
 	name = "house"
@@ -231,6 +279,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/house18
 	name = "house"
@@ -238,6 +289,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/abandonedhouse
 	name = "abandoned house"
@@ -245,6 +299,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/shop2
 	name = "shop"
@@ -252,6 +309,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/fobindoors
 	name = "USMC FOB"
@@ -266,6 +326,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/gasoline
 	name = "gasoline"
@@ -273,6 +336,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/cafe
 	name = "cafe"
@@ -280,6 +346,9 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/HousesDay.ogg',
+	)
 
 /area/coldwar/usmcfob
 	name = "USMC FOB"
@@ -295,3 +364,18 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	requires_power = 0
 	dynamic_lighting = 1
 	safezone = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/Coast.ogg',
+	'sound/ambience/coldwar/dayz/Sea.ogg',
+	)
+
+/area/coldwar/coast
+	name = "coast"
+	icon_state = "outside"
+	sound_env = PLAIN
+	requires_power = 0
+	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/Coast.ogg',
+	'sound/ambience/coldwar/dayz/Sea.ogg',
+	)

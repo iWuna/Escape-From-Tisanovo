@@ -10,7 +10,7 @@
 	var/heal_brute = 0
 	var/heal_burn = 0
 	var/animal_heal = 3
-	picksound = 'sound/items/interactions/bandages.wav'
+	picksound = 'sound/items/interactions/bandages.ogg'
 
 /obj/item/stack/medical/attack(mob/living/carbon/M as mob, mob/user as mob)
 	if (!istype(M))
@@ -380,7 +380,7 @@
 /obj/item/stack/medical/splint/ghetto
 	name = "makeshift splints"
 	singular_name = "makeshift splint"
-	desc = "For holding your limbs in place with duct tape and scrap metal."
+	desc = "For holding your limbs in place with duct tape and stick."
 	icon_state = "tape-splint"
 	amount = 1
 	splintable_organs = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG)

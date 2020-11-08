@@ -45,3 +45,11 @@
 	result = list(/obj/structure/barricade = 1)
 	time = 60
 	base_chance = 100
+
+/datum/crafting_recipe/campfire
+	name = "Campfire"
+	parts = list(/obj/item/weapon/material/lstick = 2, /obj/item/weapon/paper = 1)
+	tools = list(/obj/item/weapon/flame/lighter = 1)
+	result = list(/obj/structure/fire_source/hearth = 1)
+	time = 60
+	base_chance = 100

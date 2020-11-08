@@ -231,7 +231,10 @@
 		to_chat(usr, "\icon[cashmoney] <span class='warning'>That is not enough money.</span>")
 		return 0
 
-	visible_message("<span class='info'>\The [usr] inserts some cash into \the [src].</span>")
+	if(/obj/machinery/vending/npc)
+		visible_message("<span class='info'>\The [usr] gives some cash to \the [src].</span>")
+	else
+		visible_message("<span class='info'>\The [usr] inserts some cash into \the [src].</span>")
 	cashmoney.worth -= currently_vending.price
 
 	if(cashmoney.worth <= 0)
@@ -1118,13 +1121,15 @@
 	vend_delay = 15
 	product_slogans = null
 	product_ads = "Wanna buy something?;We run out of ammo, sorry for price.;Look at this.;The best merchant."
-	products = list(/obj/item/weapon/radioset/prc77 = 4,/obj/item/weapon/grenade/frag/rg42 = 3,
+	products = list(/obj/item/weapon/radioset/prc77 = 4,/obj/item/weapon/grenade/frag/rg42 = 3, /obj/item/ammo_magazine/c545x39m = 60, /obj/item/weapon/gun/projectile/makarov = 6,
+					/obj/item/clothing/suit/storage/hooded/ghillie = 2, /obj/item/clothing/suit/storage/hooded/ghillie_d = 2, /obj/item/stack/medical/bruise_pack/bint = 10,
 					/obj/item/weapon/reagent_containers/food/drinks/cans/dr_gibb = 10,/obj/item/weapon/reagent_containers/food/drinks/cans/starkist = 10,
 					/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle = 10,/obj/item/weapon/reagent_containers/food/drinks/cans/space_up = 10,
 					/obj/item/weapon/reagent_containers/food/drinks/cans/iced_tea = 10, /obj/item/weapon/reagent_containers/food/drinks/cans/grape_juice = 10)
 	contraband = list(/obj/item/weapon/reagent_containers/food/drinks/cans/thirteenloko = 5, /obj/item/weapon/reagent_containers/food/snacks/liquidfood = 6)
-	prices = list(/obj/item/weapon/radioset/prc77 = 150,/obj/item/weapon/grenade/frag/rg42 = 200,
-					/obj/item/weapon/reagent_containers/food/drinks/cans/dr_gibb = 1,/obj/item/weapon/reagent_containers/food/drinks/cans/starkist = 1,
-					/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle = 2,/obj/item/weapon/reagent_containers/food/drinks/cans/space_up = 1,
-					/obj/item/weapon/reagent_containers/food/drinks/cans/iced_tea = 1,/obj/item/weapon/reagent_containers/food/drinks/cans/grape_juice = 1)
+	prices = list(/obj/item/weapon/radioset/prc77 = 150,/obj/item/weapon/grenade/frag/rg42 = 200, /obj/item/ammo_magazine/c545x39m = 80, /obj/item/weapon/gun/projectile/makarov = 140,
+					/obj/item/clothing/suit/storage/hooded/ghillie = 750, /obj/item/clothing/suit/storage/hooded/ghillie_d = 600, /obj/item/stack/medical/bruise_pack/bint = 65,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/dr_gibb = 15,/obj/item/weapon/reagent_containers/food/drinks/cans/starkist = 15,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle = 20,/obj/item/weapon/reagent_containers/food/drinks/cans/space_up = 15,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/iced_tea = 17,/obj/item/weapon/reagent_containers/food/drinks/cans/grape_juice = 15)
 	idle_power_usage = 0
