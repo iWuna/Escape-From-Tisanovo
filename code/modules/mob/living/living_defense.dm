@@ -159,6 +159,10 @@
 
 //this proc handles being hit by a thrown atom
 /mob/living/hitby(atom/movable/AM as mob|obj,var/speed = THROWFORCE_SPEED_DIVISOR)//Standardization and logging -Sieve
+	var/area/B = get_area(AM.loc)
+	if(B.safezone)
+		to_chat(AM, "<span class='warning'>You can't pull someone in the safezone!</span>")
+		return 0
 	if(istype(AM,/obj/))
 		var/obj/O = AM
 		var/dtype = O.damtype

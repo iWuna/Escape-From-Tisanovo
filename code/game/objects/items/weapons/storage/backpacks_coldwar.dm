@@ -5,7 +5,7 @@
 	icon_state = "civpack"
 	item_state = "civpack"
 	reachable = 0
-	max_storage_space = 14
+	max_storage_space = 10
 	open_delay = 20
 
 /obj/item/weapon/storage/backpack/civpack/mountain
@@ -14,7 +14,7 @@
 	icon_state = "civpack_mountain"
 	item_state = "civpack_mountain"
 	reachable = 0
-	max_storage_space = 25
+	max_storage_space = 15
 	open_delay = 25
 
 /obj/item/weapon/storage/backpack/civpack/New()
@@ -105,6 +105,19 @@
 	reachable = 0
 	max_storage_space = 12
 	open_delay = 5
+
+/obj/item/weapon/storage/backpack/sovietpack/New()
+	..()
+	slowdown_per_slot[slot_back] = 1
+
+/obj/item/weapon/storage/backpack/czechpack
+	name = "czech backpack"
+	desc = "Commonly used by Czech Army."
+	icon_state = "czech_back"
+	item_state = "czech_back"
+	reachable = 0
+	max_storage_space = 14
+	open_delay = 4
 
 /obj/item/weapon/storage/backpack/sovietpack/New()
 	..()

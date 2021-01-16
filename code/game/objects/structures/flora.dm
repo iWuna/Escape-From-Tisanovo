@@ -843,6 +843,20 @@
 	density = 1
 	alpha = 150
 
+#define APPLEWHEN 1200
+
+/obj/structure/flora/tree/summer/apple
+	name = "apple tree"
+	icon = 'icons/obj/flora/96tree.dmi'
+	icon_state = "appletree"
+	plane = -9
+	density = 1
+	alpha = 150
+
+/obj/structure/flora/tree/summer/apple/Initialize()
+	spawn(APPLEWHEN)
+		new/obj/item/weapon/reagent_containers/food/snacks/apple(get_turf(src), 3)
+
 /obj/structure/flora/tree/summer/alt1
 	icon = 'icons/obj/flora/96tree.dmi'
 	icon_state = "hbtree96"

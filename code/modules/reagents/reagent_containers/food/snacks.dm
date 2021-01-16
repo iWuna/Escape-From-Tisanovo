@@ -3268,6 +3268,23 @@
 	nutriment_desc = list("bread" = 3)
 	nutriment_amt = 3
 
+#define APPLEWHENROTTEN 1500
+
+/obj/item/weapon/reagent_containers/food/snacks/apple
+	name = "apple"
+	icon = 'icons/obj/hydroponics_products.dmi'
+	icon_state = "apple-dayz"
+	bitesize = 1
+	nutriment_desc = list("apple" = 3)
+	nutriment_amt = 3
+	New()
+		..()
+		spawn(APPLEWHENROTTEN)
+			icon_state = "apple-dayz-rotten"
+			reagents.add_reagent(/datum/reagent/sugar, 1)
+			nutriment_amt = 1
+		reagents.add_reagent(/datum/reagent/sugar, 3)
+
 // potato + knife = raw sticks
 /obj/item/weapon/reagent_containers/food/snacks/grown/potato/attackby(obj/item/weapon/W as obj, mob/user as mob)
 	if(istype(W,/obj/item/weapon/material/kitchen/utensil/knife))

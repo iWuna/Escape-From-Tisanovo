@@ -1,4 +1,4 @@
-#define COMPOST_TIME 100000
+#define COMPOST_TIME 1000
 
 /mob/living/simple_animal/hostile/dayz/zombie
 	name = "zombie"
@@ -40,22 +40,13 @@
 	say_sounds = 'sound/escalation/zed/zed_say1.ogg'
 	triggered_sound = 'sound/escalation/zed/zed_triggered1.ogg'
 
-/mob/living/simple_animal/hostile/dayz/zombie/proc/infect_surv(var/obj/item/organ/external/eo)
-	src = null
-	var/weakref/limb_ref = weakref(eo)
-	spawn(rand(5 MINUTES,10 MINUTES))
-		var/obj/item/organ/external/found_limb = limb_ref.resolve()
-		if(istype(found_limb))
-			eo.germ_level += INFECTION_LEVEL_ONE+30
-
 /mob/living/simple_animal/hostile/dayz/zombie/PunchTarget()
 	. =..()
 	var/mob/living/carbon/human/H = .
 	if(istype(H))
 		if(prob(15))
 			to_chat(., "[src] bites your neck!")
-			message_admins("[src] infected [.]")
-			infect_surv()
+
 
 /mob/living/simple_animal/hostile/dayz/zombie/death()
 	. = ..()
