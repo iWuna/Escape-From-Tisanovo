@@ -31,4 +31,6 @@ var/list/obj/effect/bump_teleporter/BUMP_TELEPORTERS = list()
 	for(var/obj/effect/bump_teleporter/BT in BUMP_TELEPORTERS)
 		if(BT.id == src.id_target)
 			usr.forceMove(BT.loc)	//Teleport to location with correct id.
+			if(usr.pulling)
+				usr.pulling.forceMove(BT.loc)
 			return

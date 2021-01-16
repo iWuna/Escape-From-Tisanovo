@@ -16,14 +16,6 @@
 	id_desc = "Special operations ID."
 	id_pda_assignment = "Special Operations Officer"
 
-/decl/hierarchy/outfit/spec_op_officer/space
-	name = "Special ops - Officer in space"
-	suit = /obj/item/clothing/suit/space/void/swat
-	back = /obj/item/weapon/tank/jetpack/oxygen
-	mask = /obj/item/clothing/mask/gas/swat
-
-	flags = OUTFIT_HAS_JETPACK
-
 /decl/hierarchy/outfit/ert
 	name = "Spec ops - Emergency response team"
 	uniform = /obj/item/clothing/under/ert

@@ -118,6 +118,10 @@ var/list/slot_equipment_priority = list( \
 			newitem.forceMove(S)
 			return S
 
+//drop the inventory item on a specific location
+/mob/proc/drop_inv_item_to_loc(obj/item/I, atom/newloc, nomoveupdate, force)
+	return u_equip(I, newloc, nomoveupdate, force)
+
 //These procs handle putting s tuff in your hand. It's probably best to use these rather than setting l_hand = ...etc
 //as they handle all relevant stuff like adding it to the player's screen and updating their overlays.
 

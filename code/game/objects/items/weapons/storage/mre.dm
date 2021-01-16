@@ -1,6 +1,7 @@
 /obj/item/weapon/storage/box/rations
 	name = "MRE No.1"
 	w_class = 2
+	max_w_class = 2
 	max_storage_space = 8
 	desc = "That's a meal-ready-to eat, a 12-hour ration pack used by US army."
 	icon_state = "rations"
@@ -56,7 +57,8 @@
 
 /obj/item/weapon/storage/box/irp/var1
 	name = "'Etalon-1' rations"
-	w_class = 3
+	w_class = 2
+	max_w_class = 2
 	max_storage_space = 12
 	desc = "That's a ration pack used by Soviet army."
 	icon_state = "irp"
@@ -71,7 +73,8 @@
 
 /obj/item/weapon/storage/box/irp/var2
 	name = "'Etalon-2' rations"
-	w_class = 3
+	w_class = 2
+	max_w_class = 2
 	max_storage_space = 12
 	desc = "That's a ration pack used by Soviet army."
 	icon_state = "irp"

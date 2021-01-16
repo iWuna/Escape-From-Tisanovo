@@ -25,21 +25,23 @@
 /obj/item/grab/New(mob/living/carbon/human/attacker, mob/living/carbon/human/victim)
 	..()
 
+	last_upgrade = world.time
 	assailant = attacker
 	affecting = victim
 	target_zone = attacker.zone_sel.selecting
 	var/obj/item/O = get_targeted_organ()
-	name = "[name] ([O.name])"
+	SetName("[name] ([O.name])")
 
 	if(start_grab_name)
 		current_grab = all_grabstates[start_grab_name]
 
-/obj/item/grab/process()
-	current_grab.process(src)
 /obj/item/grab/examine(var/user)
 	..()
 	var/obj/item/O = get_targeted_organ()
 	to_chat(user,"A grab on \the [affecting]'s [O.name].")
+
+/obj/item/grab/process()
+	current_grab.process(src)
 
 /obj/item/grab/attack_self(mob/user)
 	switch(assailant.a_intent)

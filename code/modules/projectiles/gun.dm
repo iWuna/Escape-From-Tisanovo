@@ -100,8 +100,8 @@
 	var/dist_shot_sound = null
 
 
-/obj/item/weapon/gun/New()
-	..()
+/obj/item/weapon/gun/Initialize()
+	. = ..()
 	for(var/i in 1 to firemodes.len)
 		firemodes[i] = new /datum/firemode(src, firemodes[i])
 
@@ -211,10 +211,10 @@
 
 	if(world.time < next_fire_time)
 		if (world.time % 3) //to prevent spam
-			return
+			to_chat(user, "<span class='warning'>[src] is not ready to fire again!</span>")
 		return
 
-	var/shoot_time = (burst - 1)* burst_delay//burst - bullets count for one gun's burst so 1*0 = 0?
+	var/shoot_time = (burst - 1)* burst_delay
 	user.setClickCooldown(shoot_time / 3) //no clicking on things while shooting
 	user.setMoveCooldown(shoot_time / 3) //no moving while shooting either
 	next_fire_time = world.time + shoot_time
@@ -245,10 +245,8 @@
 			target = targloc
 			pointblank = 0
 
-	//update timing
 	user.setClickCooldown(DEFAULT_QUICK_COOLDOWN / 3)
 	user.setMoveCooldown(move_delay / 3)
-	next_fire_time = world.time + fire_delay
 
 //obtains the next projectile to fire
 /obj/item/weapon/gun/proc/consume_next_projectile()
@@ -265,10 +263,7 @@
 //called if there was no projectile to shoot
 /obj/item/weapon/gun/proc/handle_click_empty(mob/user)
 	if (user)
-		user.visible_message("*click click*", "<span class='danger'>*click*</span>")
-	else
-		src.visible_message("*click click*")
-	playsound(src.loc, src.empty_sound, 80, 1)
+		playsound(src.loc, src.empty_sound, 80, 1)
 
 //called after successfully firing
 /obj/item/weapon/gun/proc/handle_post_fire(mob/user, atom/target, var/pointblank=0, var/reflex=0)
@@ -312,20 +307,6 @@
 				new /obj/item/weapon/metalparts(user.loc)
 				return
 
-	if(!silenced)
-		if(reflex)
-			user.visible_message(
-				"<span class='reflex_shoot'><b>\The [user] fires \the [src][pointblank ? " point blank at \the [target]":""] by reflex!</b></span>",
-				"<span class='reflex_shoot'>You fire \the [src] by reflex!</span>",
-				"You hear a [fire_sound_text]!"
-			)
-		else
-			user.visible_message(
-				"<span class='danger'>\The [user] fires \the [src][pointblank ? " point blank at \the [target]":""]!</span>",
-				"<span class='warning'>You fire \the [src]!</span>",
-				"You hear a [fire_sound_text]!"
-				)
-
 	if(one_hand_penalty)
 		if(!src.is_held_twohanded(user))
 			switch(one_hand_penalty)
@@ -353,7 +334,7 @@
 	var/mob/living/carbon/human/H = user
 	if(screen_shake || !H.arm_actuators)
 		spawn()
-			shake_camera(user, screen_shake+1/user.accstatmodifier(user.skill_ranged), screen_shake)
+			shake_camera(user, screen_shake/user.accstatmodifier(user.skill_ranged), screen_shake)
 	update_icon()
 
 

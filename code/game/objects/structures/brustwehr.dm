@@ -46,7 +46,7 @@
 
 /obj/structure/brutswehr
 	name = "brustwehr"
-	desc = "Land structure to cover your ass!" //change this stupid description
+	desc = "A breast-high earthwork structure meant to provide cover."
 	icon = 'icons/obj/sandbags.dmi'
 	icon_state = "brustwehr_0"
 	density = 1

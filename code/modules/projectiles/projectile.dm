@@ -1,4 +1,4 @@
-#define SEGMENT_DELETION_DELAY 5
+#define SEGMENT_DELETION_DELAY 4
 
 /obj/item/projectile
 	name = "projectile"
@@ -76,19 +76,39 @@
 	. = ..()
 
 /obj/item/projectile/Destroy()
-	spawn(step_delay)
-		QDEL_NULL_LIST(segments)
 	return ..()
+
+/obj/item/projectile/forceMove()
+	..()
+	if(istype(loc, /turf/space/) && istype(loc.loc, /area/space))
+		qdel(src)
 
 //TODO: make it so this is called more reliably, instead of sometimes by bullet_act() and sometimes not
 /obj/item/projectile/proc/on_hit(var/atom/target, var/blocked = 0, var/def_zone = null)
+	var/turf/target_loca = get_turf(target)
 	if(blocked >= 100)		return 0//Full block
 	if(!isliving(target))	return 0
 	if(isanimal(target))	return 0
 
 	var/mob/living/L = target
+	if(damage && damage_type == BRUTE)//&& L.blood_volume
+		var/splatter_dir = dir
+		if(starting)
+			splatter_dir = get_dir(starting, target_loca)
+			target_loca = get_step(target_loca, splatter_dir)
+		if(isalien(L))
+			new /obj/effect/overlay/temp/dir_setting/bloodsplatter/xenosplatter(target_loca, splatter_dir)
+		else
+			var/blood_color = "#C80000"
+			if(ishuman(target))
+				var/mob/living/carbon/human/H = target
+				blood_color = H.species.blood_color
+			new /obj/effect/overlay/temp/dir_setting/bloodsplatter(target_loca, splatter_dir, blood_color)
+		if(prob(50))
+			target_loca.add_blood(L)
 
-	L.apply_effects(stun, weaken, paralyze, 0, stutter, eyeblur, drowsy, agony, blocked)
+	L.apply_effects(0, weaken, paralyze, 0, stutter, eyeblur, drowsy, agony, blocked)
+	L.stun_effect_act(stun, agony, def_zone, src)
 	//radiation protection is handled separately from other armour types.
 	L.apply_effect(irradiate, IRRADIATE, L.getarmor(null, "rad"))
 
@@ -97,11 +117,10 @@
 //called when the projectile stops flying because it collided with something
 /obj/item/projectile/proc/on_impact(var/atom/A)
 	impact_effect(effect_transform)		// generate impact effect
-	return
-
-/obj/item/projectile/proc/do_supression_aoe(var/location)
-	for(var/mob/living/carbon/human/h in orange(1,location))
-		h.supression_act(src)
+	if(damage && damage_type == BURN)
+		var/turf/T = get_turf(A)
+		if(T)
+			T.hotspot_expose(700, 5)
 
 //Checks if the projectile is eligible for embedding. Not that it necessarily will.
 /obj/item/projectile/proc/can_embed()
@@ -137,7 +156,7 @@
 		p_y = between(0, p_y + rand(-radius, radius), world.icon_size)
 
 //called to launch a projectile
-/obj/item/projectile/proc/launch(atom/target, var/target_zone, var/x_offset=0, var/y_offset=0, var/angle_offset=0)
+/obj/item/projectile/proc/launch(atom/target, target_zone, x_offset=0, y_offset=0, angle_offset=0)
 	var/turf/curloc = get_turf(src)
 	var/turf/targloc = get_turf(target)
 	if (!istype(targloc) || !istype(curloc))
@@ -152,15 +171,13 @@
 	original = target
 	def_zone = target_zone
 
-	addtimer(CALLBACK(src, .proc/finalize_launch, curloc, targloc, x_offset, y_offset, angle_offset),0)
+	spawn()
+		setup_trajectory(curloc, targloc, x_offset, y_offset, angle_offset) //plot the initial trajectory
+		process()
+		spawn(SEGMENT_DELETION_DELAY)
+			QDEL_NULL_LIST(segments)
+
 	return 0
-
-/obj/item/projectile/proc/finalize_launch(var/turf/curloc, var/turf/targloc, var/x_offset, var/y_offset, var/angle_offset)
-	setup_trajectory(curloc, targloc, x_offset, y_offset, angle_offset) //plot the initial trajectory
-	process()
-	spawn(SEGMENT_DELETION_DELAY) //running this from a proc wasn't working.
-		QDEL_NULL_LIST(segments)
-
 
 //called to launch a projectile from a gun
 /obj/item/projectile/proc/launch_from_gun(atom/target, mob/user, obj/item/weapon/gun/launcher, var/target_zone, var/x_offset=0, var/y_offset=0)
@@ -193,7 +210,10 @@
 		return
 
 	//roll to-hit
-	miss_modifier = max(15*(distance-2) - round(15*accuracy) + miss_modifier, 0)
+	//miss_modifier = max(15*(distance-2) - round(15*accuracy) + miss_modifier, 0)
+	miss_modifier = 15*(distance-2) - round(15*accuracy) + miss_modifier
+	if(target_mob == src.original)
+		miss_modifier -= 60
 	var/hit_zone = get_zone_with_miss_chance(def_zone, target_mob, miss_modifier, ranged_attack=(distance > 1 || original != target_mob)) //if the projectile hits a target we weren't originally aiming at then retain the chance to miss
 
 	var/result = PROJECTILE_FORCE_MISS
@@ -203,16 +223,18 @@
 
 	if(result == PROJECTILE_FORCE_MISS)
 		if(!silenced)
+			var/miss_sounds = "sound/weapons/guns/misc/miss[rand(1,4)].ogg"
 			target_mob.visible_message("<span class='notice'>\The [src] misses [target_mob] narrowly!</span>")
+			if(LAZYLEN(miss_sounds))
+				playsound(target_mob.loc, pick(miss_sounds), 60, 1)
 		return 0
 
 	//hit messages
 	if(silenced)
 		to_chat(target_mob, "<span class='danger'>You've been hit in the [parse_zone(def_zone)] by \the [src]!</span>")
-		playsound(loc, hitsound, 25, 1, -1)
 	else
 		target_mob.visible_message("<span class='danger'>\The [target_mob] is hit by \the [src] in the [parse_zone(def_zone)]!</span>")//X has fired Y is now given by the guns so you cant tell who shot you if you could not see the shooter
-		playsound(loc, hitsound, 50, 1, -1)
+	playsound(loc, hitsound, 50, 1, -1)
 
 	//admin logs
 	if(!no_attack_log)
@@ -304,7 +326,13 @@
 /obj/item/projectile/process()
 	var/first_step = 1
 
+	var/i = 0
+
 	spawn while(src && src.loc)
+		if (++i > 512)
+			var/turf/T = src.loc
+			qdel(src)
+			throw EXCEPTION("Projectile stuck! Type: [type], Shot from: [shot_from], Position: [PRINT_ATOM(T)], Source location: [PRINT_ATOM(trajectory.source)], Target location: [PRINT_ATOM(trajectory.target)], Trajectory offset: ([trajectory.offset_x], [trajectory.offset_y])")
 		if(kill_count-- < 1)
 			on_impact(src.loc) //for any final impact behaviours
 			qdel(src)
@@ -371,7 +399,7 @@
 	// generate this now since all visual effects the projectile makes can use it
 	effect_transform = new()
 	effect_transform.Scale(round(trajectory.return_hypotenuse() + 0.005, 0.001) , 1) //Seems like a weird spot to truncate, but it minimizes gaps.
-	effect_transform.Turn(round(-trajectory.return_angle(), 0.1))		//no idea why this has to be inverted, but it works
+	effect_transform.Turn(round(-trajectory.return_angle(), 0.1) )		//no idea why this has to be inverted, but it works
 
 	transform = turn(transform, -(trajectory.return_angle() + 90)) //no idea why 90 needs to be added, but it works
 
@@ -401,8 +429,8 @@
 			P.pixel_x = round(location.pixel_x, 1)
 			P.pixel_y = round(location.pixel_y, 1)
 			if(!hitscan)
-				spawn(1)
-					qdel(M)
+				spawn(step_delay)	//if not a hitscan projectile, remove after a single delay. Do not spawn hitscan projectiles. EVER.
+					qdel(P)
 			else
 				segments += P
 
@@ -448,7 +476,12 @@
 	return process(targloc)
 
 /obj/item/projectile/test/process(var/turf/targloc)
+	var/i = 0
 	while(src) //Loop on through!
+		if (++i > 512)
+			var/turf/T = src.loc
+			qdel(src)
+			throw EXCEPTION("Projectile stuck! Type: [type], Shot from: [shot_from], Position: [PRINT_ATOM(T)], Source location: [PRINT_ATOM(trajectory.source)], Target location: [PRINT_ATOM(trajectory.target)], Trajectory offset: ([trajectory.offset_x], [trajectory.offset_y])")
 		if(result)
 			return (result - 1)
 		if((!( targloc ) || loc == targloc))
@@ -468,7 +501,7 @@
 				return 1
 
 //Helper proc to check if you can hit them or not.
-/proc/check_trajectory(atom/target as mob|obj, atom/firer as mob|obj, var/pass_flags=PASSTABLE|PASSGLASS|PASSGRILLE, flags=null)
+/proc/check_trajectory(atom/target as mob|obj, atom/firer as mob|obj, var/pass_flags=PASSTABLE|PASSGLASS|PASSGRILLE, flags = null)
 	if(!istype(target) || !istype(firer))
 		return 0
 
@@ -482,3 +515,8 @@
 	var/output = trace.launch(target) //Test it!
 	qdel(trace) //No need for it anymore
 	return output //Send it back to the gun!
+
+//suppresion!!!!
+/obj/item/projectile/proc/do_supression_aoe(var/location)
+    for(var/mob/living/carbon/human/h in orange(1,location))
+        h.supression_act(src)

@@ -711,9 +711,6 @@ var/list/ai_verbs_default = list(
 	set category = "IC"
 
 	resting = 0
-	var/obj/item/weapon/rig/rig = src.get_rig()
-	if(rig)
-		rig.force_rest(src)
 
 #undef AI_CHECK_WIRELESS
 #undef AI_CHECK_RADIO

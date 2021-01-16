@@ -77,7 +77,6 @@
 	QDEL_NULL(sound_token)
 
 /obj/item/device/boombox/proc/StartPlaying()
-	StopPlaying()
 	if(isnull(casseta))
 		return
 	if(!casseta.sound_inside)

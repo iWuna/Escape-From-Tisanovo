@@ -92,51 +92,6 @@
 	"<span class='warning'>Your hand slips, smearing [tool] in the incision in [target]'s [affected.name]!</span>")
 	affected.take_damage(5, used_weapon = tool)
 
-
-//////////////////////////////////////////////////////////////////
-//	 Hardsuit removal surgery step
-//////////////////////////////////////////////////////////////////
-/datum/surgery_step/hardsuit
-	allowed_tools = list(
-		/obj/item/weapon/weldingtool = 80,
-		/obj/item/weapon/circular_saw = 60,
-		/obj/item/weapon/pickaxe/plasmacutter = 100
-		)
-
-	can_infect = 0
-	blood_level = 0
-
-	min_duration = 120
-	max_duration = 180
-
-/datum/surgery_step/hardsuit/can_use(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
-	if(!istype(target))
-		return 0
-	if(istype(tool,/obj/item/weapon/weldingtool))
-		var/obj/item/weapon/weldingtool/welder = tool
-		if(!welder.isOn() || !welder.remove_fuel(1,user))
-			return 0
-	return (target_zone == BP_CHEST) && istype(target.back, /obj/item/weapon/rig) && !(target.back.canremove)
-
-/datum/surgery_step/hardsuit/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
-	user.visible_message("[user] starts cutting through the support systems of [target]'s [target.back] with \the [tool]." , \
-	"You start cutting through the support systems of [target]'s [target.back] with \the [tool].")
-	..()
-
-/datum/surgery_step/hardsuit/end_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
-
-	var/obj/item/weapon/rig/rig = target.back
-	if(!istype(rig))
-		return
-	rig.reset()
-	user.visible_message("<span class='notice'>[user] has cut through the support systems of [target]'s [rig] with \the [tool].</span>", \
-		"<span class='notice'>You have cut through the support systems of [target]'s [rig] with \the [tool].</span>")
-
-/datum/surgery_step/hardsuit/fail_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
-	user.visible_message("<span class='danger'>[user]'s [tool] can't quite seem to get through the metal...</span>", \
-	"<span class='danger'>Your [tool] can't quite seem to get through the metal. It's weakening, though - try again.</span>")
-
-
 //////////////////////////////////////////////////////////////////
 //	 Disinfection step
 //////////////////////////////////////////////////////////////////

@@ -7,6 +7,7 @@
 
 /var/global/log_end= world.system_type == UNIX ? ascii2text(13) : ""
 
+#define PRINT_ATOM(A) "[A] ([A.x], [A.y], [A.z])"
 
 /proc/error(msg)
 	to_world_log("## ERROR: [msg][log_end]")

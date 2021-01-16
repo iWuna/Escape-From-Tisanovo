@@ -31,23 +31,12 @@
 	meat_amount = 4
 	meat_type = /obj/item/weapon/reagent_containers/food/snacks/meat
 
-	var/datum/reagents/udder = null
-
 /mob/living/simple_animal/retaliate/goat/New()
-	udder = new(50)
-	udder.my_atom = src
 	..()
 
 /mob/living/simple_animal/retaliate/goat/Life()
 	. = ..()
 	if(.)
-		if(stat == CONSCIOUS)
-			if(udder && prob(5))
-				udder.add_reagent("Milk", rand(5, 10))
-
-		if(locate(/obj/effect/plant) in loc)
-			var/obj/effect/plant/SV = locate() in loc
-			SV.die_off(1)
 
 		if(locate(/obj/machinery/portable_atmospherics/hydroponics/soil/invisible) in loc)
 			var/obj/machinery/portable_atmospherics/hydroponics/soil/invisible/SP = locate() in loc
@@ -72,16 +61,8 @@
 			SV.die_off(1)
 
 /mob/living/simple_animal/retaliate/goat/attackby(var/obj/item/O as obj, var/mob/user as mob)
-	var/obj/item/weapon/reagent_containers/glass/G = O
-	if(stat == CONSCIOUS && istype(G) && G.is_open_container())
-		user.visible_message("<span class='notice'>[user] milks [src] using \the [O].</span>")
-		var/transfered = udder.trans_type_to(G, /datum/reagent/drink/milk, rand(5,10))
-		if(G.reagents.total_volume >= G.volume)
-			user << "<font color='red'>The [O] is full.</font>"
-		if(!transfered)
-			user << "<font color='red'>The udder is dry. Wait a bit longer...</font>"
-	else
 		..()
+
 //cow
 /mob/living/simple_animal/cow
 	name = "cow"

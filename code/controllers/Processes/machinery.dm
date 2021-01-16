@@ -6,11 +6,6 @@
 	start_delay = 12
 
 /datum/controller/process/machinery/doWork()
-	internal_sort()
-	internal_process_pipenets()
-	internal_process_machinery()
-	internal_process_power()
-	internal_process_power_drain()
 
 /datum/controller/process/machinery/proc/internal_sort()
 	if(machinery_sort_required)

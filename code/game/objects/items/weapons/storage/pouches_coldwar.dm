@@ -8,7 +8,7 @@
 	icon_state = "holster"
 	item_state = null
 	slot_flags = SLOT_NHOLSTER
-	storage_slots = 3
+	storage_slots = 2
 	use_sound = 'sound/items/interactions/holsteropen.wav'
 	close_sound = 'sound/items/interactions/holsterclose.wav'
 	var/icon_closed = "holster_empty" //Empty for now.
@@ -164,12 +164,15 @@
 	storage_slots = 3
 	open_delay = 8
 
-	desc = "This holster can hold an APS."
+	desc = "This holster can hold an APS and two magazines."
 	startswith = list(
 		/obj/item/weapon/gun/projectile/aps,
+		/obj/item/ammo_magazine/a9x18b,
+		/obj/item/ammo_magazine/a9x18b,
 		)
 	can_hold = list(
 		/obj/item/weapon/gun/projectile/aps,
+		/obj/item/ammo_magazine/a9x18b,
 		)
 
 /obj/item/weapon/storage/belt/holster/bdw
@@ -203,6 +206,7 @@
 	name = "sheath"
 	desc = "This sheath can hold a bayonet."
 	max_storage_space = 2
+	slot_flags = SLOT_NHOLSTER | SLOT_LPOUCH | SLOT_RPOUCH
 
 /obj/item/weapon/storage/belt/holster/sheath/bdw
 	special_item = /obj/item/weapon/material/knife/bayonet/bdw
@@ -273,6 +277,7 @@
 	desc = "This one can hold some kind of flask."
 	max_storage_space = 2
 	w_class = 2
+	slot_flags = SLOT_NHOLSTER | SLOT_LPOUCH | SLOT_RPOUCH
 
 /obj/item/weapon/storage/belt/holster/flaskstorage/nato
 	special_item = /obj/item/weapon/reagent_containers/food/drinks/flask/wornflask/nato

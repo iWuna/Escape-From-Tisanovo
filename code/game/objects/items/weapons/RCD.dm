@@ -142,24 +142,6 @@
 /obj/item/weapon/rcd/borg/can_use(var/mob/user,var/turf/T)
 	return (user.Adjacent(T) && !user.incapacitated())
 
-
-/obj/item/weapon/rcd/mounted/useResource(var/amount, var/mob/user)
-	var/cost = amount*130 //so that a rig with default powercell can build ~2.5x the stuff a fully-loaded RCD can.
-	if(istype(loc,/obj/item/rig_module))
-		var/obj/item/rig_module/module = loc
-		if(module.holder && module.holder.cell)
-			if(module.holder.cell.charge >= cost)
-				module.holder.cell.use(cost)
-				return 1
-	return 0
-
-/obj/item/weapon/rcd/mounted/attackby()
-	return
-
-/obj/item/weapon/rcd/mounted/can_use(var/mob/user,var/turf/T)
-	return (user.Adjacent(T) && !user.incapacitated())
-
-
 /decl/hierarchy/rcd_mode
 	hierarchy_type = /decl/hierarchy/rcd_mode
 	var/cost

@@ -10,13 +10,13 @@
 
 # CIV
 Reserve 1:civ
-/datum/job/escalation/dayz/neutral
+/datum/job/escalation/dayz/neutral_respawn
 
 Reserve 2:civ
-/datum/job/escalation/dayz/neutral
+/datum/job/escalation/dayz/neutral_respawn
 
 Reserve 3:civ
-/datum/job/escalation/dayz/neutral
+/datum/job/escalation/dayz/neutral_respawn
 
 # WARPAC
 

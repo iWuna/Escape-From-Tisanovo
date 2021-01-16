@@ -176,10 +176,9 @@
 
 				if(istype(H))
 					if(H.wear_suit)
-						if(istype(H.wear_suit, /obj/item/clothing/suit/space))
-							injtime = injtime * 2
-						else if(!H.can_inject(user, 1))
-							return
+						injtime = injtime * 1 ///Change this to balance out vests in the future, right now its 1 and it means that there will be no "looking for opening" message visible
+					else if(!H.can_inject(user, 1))
+						return
 
 				else if(isliving(target))
 
@@ -190,7 +189,7 @@
 				if(injtime == time)
 					user.visible_message("<span class='warning'>[user] is trying to inject [target] with [visible_name]!</span>")
 				else
-					user.visible_message("<span class='warning'>[user] begins hunting for an injection port on [target]'s suit!</span>")
+					user.visible_message("<span class='warning'>[user] begins looking for an opening in [target]'s suit!</span>")
 
 				user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
 

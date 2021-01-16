@@ -281,15 +281,7 @@
 		var/iscrayon = 0
 		var/isfancy = 0
 		if(!istype(i, /obj/item/weapon/pen))
-			if(usr.back && istype(usr.back,/obj/item/weapon/rig))
-				var/obj/item/weapon/rig/r = usr.back
-				var/obj/item/rig_module/device/pen/m = locate(/obj/item/rig_module/device/pen) in r.installed_modules
-				if(!r.offline && m)
-					i = m.device
-				else
-					return
-			else
-				return
+			return
 
 		if(istype(i, /obj/item/weapon/pen/crayon))
 			iscrayon = 1

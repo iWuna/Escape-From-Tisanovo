@@ -71,7 +71,7 @@
 /obj/item/organ/external/arm/stun_act(var/stun_amount, var/agony_amount)
 	if(!owner || (agony_amount < 5))
 		return
-	if(prob(25))
+	if(prob(35))
 		owner.grasp_damage_disarm(src)
 
 
@@ -104,7 +104,7 @@
 /obj/item/organ/external/leg/stun_act(var/stun_amount, var/agony_amount)
 	if(!owner || agony_amount < 5)
 		return
-	if(prob(agony_amount*2))
+	if(prob(35))
 		to_chat(owner, "<span class='warning'>Your [src] buckles from the shock!</span>")
 		owner.Weaken(5)
 

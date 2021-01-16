@@ -70,6 +70,28 @@
 	armor = list(melee = 30, bullet = 30, laser = 40, energy = 10, bomb = 25, bio = 0, rad = 0)
 	slowdown_general = 0.3
 
+/obj/item/clothing/head/hood_ww2
+	name = "hood"
+	desc = "A hood attached to a coat."
+	icon_state = "palatka"
+	body_parts_covered = HEAD
+	cold_protection = HEAD
+	flags_inv = HIDEEARS | BLOCKHAIR
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/storage/hooded/coat_ww2
+	name = "coat"
+	desc = "A common sniper outfit in past war."
+	icon_state = "palatka"
+	item_state = "armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(melee = 10, bullet = 10, laser = 20, energy = 10, bomb = 5, bio = 0, rad = 0)
+	slowdown_general = 0.2
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/hood_ww2
+
 /obj/item/clothing/suit/storage/hooded/ghillie
 	name = "ghillie suit (F)"
 	desc = "A common sniper outfit in last war. This one suited for forest."

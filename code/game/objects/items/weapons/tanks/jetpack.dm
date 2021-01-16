@@ -107,34 +107,3 @@
 	..()
 	air_contents.adjust_gas("carbon_dioxide", (6*ONE_ATMOSPHERE)*volume/(R_IDEAL_GAS_EQUATION*T20C))
 	return
-
-/obj/item/weapon/tank/jetpack/rig
-	name = "jetpack"
-	var/obj/item/weapon/rig/holder
-
-/obj/item/weapon/tank/jetpack/rig/examine()
-	. = ..()
-	to_chat(usr, "It's a jetpack. If you can see this, report it on the bug tracker.")
-	return 0
-
-/obj/item/weapon/tank/jetpack/rig/allow_thrust(num, mob/living/user as mob)
-
-	if(!(src.on))
-		return 0
-
-	if(!istype(holder) || !holder.air_supply)
-		return 0
-
-	var/obj/item/weapon/tank/pressure_vessel = holder.air_supply
-
-	if((num < 0.005 || pressure_vessel.air_contents.total_moles < num))
-		src.ion_trail.stop()
-		return 0
-
-	var/datum/gas_mixture/G = pressure_vessel.air_contents.remove(num)
-
-	var/allgases = G.gas["carbon_dioxide"] + G.gas["nitrogen"] + G.gas["oxygen"] + G.gas["phoron"]
-	if(allgases >= 0.005)
-		return 1
-	qdel(G)
-	return

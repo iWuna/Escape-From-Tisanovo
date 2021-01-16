@@ -125,9 +125,10 @@
 /obj/item/clothing/accessory/storage/machteharness/New()
 	..()
 	hold.can_hold = list(
-		/obj/item/weapon/material/hatchet/machete
+		/obj/item/weapon/material/hatchet/machete,
 	)
 
+	new /obj/item/weapon/material/hatchet/machete(hold)
 
 /obj/item/clothing/accessory/storage/bandolier
 	name = "bandolier"

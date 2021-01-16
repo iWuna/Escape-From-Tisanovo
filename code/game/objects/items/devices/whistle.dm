@@ -1,3 +1,34 @@
+/obj/item/device/whistle
+	name = "\improper whistle"
+	desc = "A metal pea-whistle. Can be blown while held, or worn in the mouth"
+	icon_state = "whistle"
+	w_class = 1.0
+
+	var/volume = 60
+	var/spamcheck = 0
+
+/obj/item/device/whistle/attack_self(mob/user as mob)
+	whistle_playsound(user)
+	add_fingerprint(user)
+	return
+
+/obj/item/device/whistle/attack_hand(mob/user)
+	if(user.wear_mask == src)
+		whistle_playsound(user)
+	else
+		..()
+
+/obj/item/device/whistle/proc/whistle_playsound(mob/user as mob)
+	if (spamcheck)
+		return
+
+	user.visible_message("<span class='warning'>[user] blows into [src]!</span>")
+	playsound(get_turf(src), 'sound/items/whistle.ogg', volume, 1, vary = 0)
+
+	spamcheck = 1
+	spawn(30)
+		spamcheck = 0
+
 /obj/item/device/hailer
 	name = "hailer"
 	desc = "Used by obese officers to save their breath for running."

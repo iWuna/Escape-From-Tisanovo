@@ -166,9 +166,9 @@
 		if(contents.len)
 			var/obj/O = contents[1]
 			user.put_in_active_hand(O)
-			user << "<span class='notice'>You ripped the [src.name] and took out an [O.name].</span>"
+			to_chat(user, "<span class='notice'>You ripped the [src.name] and took out an [O.name].</span>")
 		else
-			user << "<span class='warning'>You ripped the [src.name] but it's empty!</span>"
+			to_chat(user, "<span class='warning'>You ripped the [src.name] but it's empty!</span>")
 		update_icon()
 	else
 		..()
@@ -176,20 +176,18 @@
 /obj/item/weapon/gauze_pack/attack_self(mob/user as mob)
 	if(packed)
 		if(prob(50))
-			packed = 1
+			packed = 0
 			if(rip_sound)
 				playsound(src.loc, rip_sound, 50, 1)
 			if(contents.len)
 				var/obj/O = contents[1]
 				O.loc = user.loc
-				user << "<span class='notice'>You ripped the [src.name] by one hand and [O] falls out.</span>"
-			else
-				user << "<span class='warning'>You ripped the [src.name] but it's empty!</span>"
+				to_chat(user, "<span class='notice'>You ripped the [src.name] by one hand and [O] falls out.</span>")
 			update_icon()
 		else
-			user << "<span class='warning'>You tried to rip the [src.name] but failed!</span>"
+			to_chat(user, "<span class='warning'>You tried to rip the [src.name] but failed!</span>")
 	else
-		user << "<span class='warning'>[name] is already unpacked!</span>"
+		to_chat(user, "<span class='warning'>[name] is already unpacked!</span>")
 
 /obj/item/weapon/gauze_pack/update_icon()
 	icon_state = "[initial(icon_state)][packed]"

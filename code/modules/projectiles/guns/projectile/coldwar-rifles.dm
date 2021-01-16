@@ -129,9 +129,11 @@
 
 	if(ammo_magazine)
 		icon_state = "ak74"
+		item_state = "ak74"
 		wielded_item_state = "ak74-wielded"
 	else
 		icon_state = "ak74-empty"
+		item_state = "ak74-empty"
 		wielded_item_state = "ak74-wielded-empty"
 	update_held_icon()
 
@@ -942,9 +944,11 @@
 	update_held_icon()
 	if(ammo_magazine)
 		icon_state = "mpik74"
+		item_state = "mpik74"
 		wielded_item_state = "mpik74-wielded"
 	else
 		icon_state = "mpik74-empty"
+		item_state = "mpik74-empty"
 		wielded_item_state = "mpik74-wielded-empty"
 
 /obj/item/weapon/gun/projectile/automatic/rifle/mpiaks74n

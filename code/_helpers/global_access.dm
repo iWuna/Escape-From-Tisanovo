@@ -283,10 +283,6 @@
 			return global.bomb_set;
 		if("borers")
 			return global.borers;
-		if("breach_brute_descriptors")
-			return global.breach_brute_descriptors;
-		if("breach_burn_descriptors")
-			return global.breach_burn_descriptors;
 		if("button_sound")
 			return global.button_sound;
 		if("cable_list")
@@ -749,10 +745,6 @@
 			return global.next_duration_update;
 		if("next_station_date_change")
 			return global.next_station_date_change;
-		if("ninjas")
-			return global.ninjas;
-		if("ninjastart")
-			return global.ninjastart;
 		if("not_incapacitated_turf_state")
 			return global.not_incapacitated_turf_state;
 		if("ntnet_card_uid")
@@ -849,8 +841,6 @@
 			return global.processScheduler;
 		if("processing_turfs")
 			return global.processing_turfs;
-		if("prometheans")
-			return global.prometheans;
 		if("protected_objects")
 			return global.protected_objects;
 		if("punch_sound")
@@ -863,14 +853,8 @@
 			return global.radio_controller;
 		if("radiochannels")
 			return global.radiochannels;
-		if("raiders")
-			return global.raiders;
-//		if("random_junk_")
-//			return global.random_junk_;
 		if("random_maps")
 			return global.random_maps;
-//		if("random_useful_")
-//			return global.random_useful_;
 		if("recentmessages")
 			return global.recentmessages;
 		if("registered_macros_by_ckey_")
@@ -1448,10 +1432,6 @@
 			global.bomb_set=newval;
 		if("borers")
 			global.borers=newval;
-		if("breach_brute_descriptors")
-			global.breach_brute_descriptors=newval;
-		if("breach_burn_descriptors")
-			global.breach_burn_descriptors=newval;
 		if("button_sound")
 			global.button_sound=newval;
 		if("cable_list")
@@ -1912,10 +1892,6 @@
 			global.next_duration_update=newval;
 		if("next_station_date_change")
 			global.next_station_date_change=newval;
-		if("ninjas")
-			global.ninjas=newval;
-		if("ninjastart")
-			global.ninjastart=newval;
 		if("not_incapacitated_turf_state")
 			global.not_incapacitated_turf_state=newval;
 		if("ntnet_card_uid")
@@ -2012,8 +1988,6 @@
 			global.processScheduler=newval;
 		if("processing_turfs")
 			global.processing_turfs=newval;
-		if("prometheans")
-			global.prometheans=newval;
 		if("protected_objects")
 			global.protected_objects=newval;
 		if("punch_sound")
@@ -2026,14 +2000,8 @@
 			global.radio_controller=newval;
 		if("radiochannels")
 			global.radiochannels=newval;
-		if("raiders")
-			global.raiders=newval;
-//		if("random_junk_")
-//			global.random_junk_=newval;
 		if("random_maps")
 			global.random_maps=newval;
-//		if("random_useful_")
-//			global.random_useful_=newval;
 		if("recentmessages")
 			global.recentmessages=newval;
 		if("registered_macros_by_ckey_")

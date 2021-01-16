@@ -873,7 +873,6 @@ obj/random/obstruction/spawn_choices()
 /obj/random/suit/spawn_choices()
 	return list(/obj/item/clothing/suit/storage/hazardvest = 4,
 				/obj/item/clothing/suit/storage/toggle/labcoat = 4,
-				/obj/item/clothing/suit/space/emergency = 1,
 				/obj/item/clothing/suit/armor/vest = 4,
 				/obj/item/clothing/suit/storage/vest/tactical = 1,
 				/obj/item/clothing/suit/storage/vest = 3,
@@ -1026,9 +1025,6 @@ something, make sure it's not in one of the other lists.*/
 /obj/random/loot/spawn_choices()
 	return list(/obj/random/energy = 10,
 				/obj/random/projectile = 10,
-				/obj/random/voidhelmet = 10,
-				/obj/random/voidsuit = 10,
-				/obj/random/hardsuit = 10,
 				/obj/item/clothing/mask/muzzle = 7,
 				/obj/item/clothing/mask/gas/vox = 8,
 				/obj/item/clothing/mask/gas/syndicate = 10,
@@ -1088,65 +1084,6 @@ something, make sure it's not in one of the other lists.*/
 				/obj/item/weapon/rasp = 3,
 				/obj/item/weapon/lhammer = 2,
 				/obj/item/weapon/brassk = 1)
-
-
-
-/obj/random/voidhelmet
-	name = "Random Voidsuit Helmet"
-	desc = "This is a random voidsuit helmet."
-	icon = 'icons/obj/clothing/hats.dmi'
-	icon_state = "void"
-
-/obj/random/voidhelmet/spawn_choices()
-	return list(/obj/item/clothing/head/helmet/space/void,
-				/obj/item/clothing/head/helmet/space/void/engineering,
-				/obj/item/clothing/head/helmet/space/void/engineering/alt,
-				/obj/item/clothing/head/helmet/space/void/engineering/salvage,
-				/obj/item/clothing/head/helmet/space/void/mining,
-				/obj/item/clothing/head/helmet/space/void/mining/alt,
-				/obj/item/clothing/head/helmet/space/void/security,
-				/obj/item/clothing/head/helmet/space/void/security/alt,
-				/obj/item/clothing/head/helmet/space/void/atmos,
-				/obj/item/clothing/head/helmet/space/void/atmos/alt,
-				/obj/item/clothing/head/helmet/space/void/merc,
-				/obj/item/clothing/head/helmet/space/void/medical,
-				/obj/item/clothing/head/helmet/space/void/medical/alt)
-
-/obj/random/voidsuit
-	name = "Random Voidsuit"
-	desc = "This is a random voidsuit."
-	icon = 'icons/obj/clothing/suits.dmi'
-	icon_state = "void"
-
-/obj/random/voidsuit/spawn_choices()
-	return list(/obj/item/clothing/suit/space/void,
-				/obj/item/clothing/suit/space/void/engineering,
-				/obj/item/clothing/suit/space/void/engineering/alt,
-				/obj/item/clothing/suit/space/void/engineering/salvage,
-				/obj/item/clothing/suit/space/void/mining,
-				/obj/item/clothing/suit/space/void/mining/alt,
-				/obj/item/clothing/suit/space/void/security,
-				/obj/item/clothing/suit/space/void/security/alt,
-				/obj/item/clothing/suit/space/void/atmos,
-				/obj/item/clothing/suit/space/void/atmos/alt,
-				/obj/item/clothing/suit/space/void/merc,
-				/obj/item/clothing/suit/space/void/medical,
-				/obj/item/clothing/suit/space/void/medical/alt)
-
-/obj/random/hardsuit
-	name = "Random Hardsuit"
-	desc = "This is a random hardsuit control module."
-	icon = 'icons/obj/rig_modules.dmi'
-	icon_state = "generic"
-
-/obj/random/hardsuit/spawn_choices()
-	return list(/obj/item/weapon/rig/industrial,
-				/obj/item/weapon/rig/eva,
-				/obj/item/weapon/rig/light/hacker,
-				/obj/item/weapon/rig/light/stealth,
-				/obj/item/weapon/rig/light,
-				/obj/item/weapon/rig/unathi,
-				/obj/item/weapon/rig/unathi/fancy)
 
 /obj/random/hostile
 	name = "Random Hostile Mob"

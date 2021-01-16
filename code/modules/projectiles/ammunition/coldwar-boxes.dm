@@ -240,6 +240,7 @@
 	icon_state = "9x19a"
 	mag_type = MAGAZINE
 	ammo_type = /obj/item/ammo_casing/a9x19
+	w_class = ITEM_SIZE_SMALL
 	matter = list(DEFAULT_WALL_MATERIAL = 1200)
 	caliber = "9x19"
 	max_ammo = 8
@@ -254,6 +255,7 @@
 	icon_state = "9x18a"
 	mag_type = MAGAZINE
 	ammo_type = /obj/item/ammo_casing/a9x18
+	w_class = ITEM_SIZE_SMALL
 	matter = list(DEFAULT_WALL_MATERIAL = 1200)
 	caliber = "9x18"
 	max_ammo = 8
@@ -264,6 +266,7 @@
 	icon_state = "9x18b"
 	mag_type = MAGAZINE
 	ammo_type = /obj/item/ammo_casing/a9x18
+	w_class = ITEM_SIZE_SMALL
 	matter = list(DEFAULT_WALL_MATERIAL = 1200)
 	caliber = "9x18"
 	max_ammo = 20
@@ -306,6 +309,7 @@
 	initial_ammo = 0
 
 /obj/item/ammo_magazine/c556x45s/ap
+	desc = "A STANAG magazine that fits twenty armor-piercing 5.56x45mm rounds."
 	name = "AP magazine (5.56x45mm)"
 	ammo_type = /obj/item/ammo_casing/a556x45/ap
 

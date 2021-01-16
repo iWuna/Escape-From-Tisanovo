@@ -550,8 +550,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	else if(!MayRespawn(1, config.respawn_delay))
 		return
 
-	to_chat(usr, "You can respawn now, enjoy your new life!")
-	to_chat(usr, "<span class='notice'><B>Make sure to play a different character, and please roleplay correctly!</B></span>")
+	to_chat(usr, "You can respawn now.")
 	announce_ghost_joinleave(client, 0)
 
 	var/mob/new_player/M = new /mob/new_player()

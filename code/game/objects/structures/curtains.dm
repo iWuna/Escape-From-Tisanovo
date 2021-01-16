@@ -6,6 +6,7 @@
 	layer = ABOVE_WINDOW_LAYER
 	opacity = 1
 	density = 0
+	anchored = 1
 
 /obj/structure/curtain/open
 	icon_state = "open"

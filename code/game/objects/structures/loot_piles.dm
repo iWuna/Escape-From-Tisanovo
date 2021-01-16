@@ -166,7 +166,6 @@ Loot piles can be depleted, if loot_depleted is turned on.  Note that players wh
 		/obj/item/clothing/head/ushanka,
 		/obj/item/clothing/head/welding,
 		/obj/item/clothing/suit/storage/hazardvest,
-		/obj/item/clothing/suit/space/emergency,
 		/obj/item/clothing/suit/storage/toggle/bomber,
 		/obj/item/clothing/suit/bio_suit/general,
 		/obj/item/clothing/suit/storage/toggle/hoodie/black,
@@ -370,15 +369,6 @@ Loot piles can be depleted, if loot_depleted is turned on.  Note that players wh
 		/obj/item/borg/upgrade/tasercooler,
 		/obj/item/mecha_parts/mecha_equipment/weapon/energy/riggedlaser,
 		/obj/item/mecha_parts/mecha_equipment/tool/drill/diamonddrill,
-		/obj/item/rig_module/device/drill,
-		/obj/item/rig_module/device/plasmacutter,
-		/obj/item/rig_module/device/healthscanner,
-		/obj/item/rig_module/device/orescanner,
-		/obj/item/rig_module/device/anomaly_scanner,
-		/obj/item/rig_module/datajack,
-		/obj/item/rig_module/vision/medhud,
-		/obj/item/rig_module/vision/meson,
-		/obj/item/rig_module/vision/sechud,
 	)
 
 	rare_loot = list(

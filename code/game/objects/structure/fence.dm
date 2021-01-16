@@ -281,6 +281,9 @@
 
 /obj/structure/newfence/
 	flags = OBJ_CLIMBABLE
+	layer = ABOVE_OBJ_LAYER + 0.1
+	plane = ABOVE_HUMAN_PLANE
+
 /obj/structure/newfence/New()
 	update_nearby_icons()
 
@@ -303,6 +306,46 @@
 
 		icon_state = "fence_[junction]"
 		return
+
+/obj/structure/newfence/CheckExit(atom/movable/O as mob|obj, target as turf)
+	if(istype(O) && O.checkpass(PASSTABLE))
+		return 1
+	if(get_dir(O.loc, target) == dir)
+		return 0
+	return 1
+
+/obj/structure/newfence/do_climb(var/mob/living/user)
+	if(!can_climb(user))
+		return
+
+	usr.visible_message("<span class='warning'>[user] starts climbing onto \the [src]!</span>")
+	climbers |= user
+
+	if(!do_after(user,(issmall(user) ? 20 : 34 / user.sstatmodifier(user.dex))))
+		climbers -= user
+		return
+
+	if(!can_climb(user, post_climb_check=1))
+		climbers -= user
+		return
+
+	if(get_turf(user) == get_turf(src))
+		usr.forceMove(get_step(src, src.dir))
+	else
+		usr.forceMove(get_turf(src))
+
+	usr.visible_message("<span class='warning'>[user] climbed over \the [src]!</span>")
+	climbers -= user
+
+/obj/structure/newfence/CanPass(atom/movable/mover, turf/target, height=0, air_group=0)
+	if(!mover)
+		return 1
+	if(istype(mover) && mover.checkpass(PASSTABLE))
+		return 1
+	if(get_dir(get_turf(src), target) == dir)
+		return 0
+	else
+		return 1
 
 /obj/structure/newfence/wooden
 	name = "wooden fence"

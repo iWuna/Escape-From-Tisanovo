@@ -39,14 +39,18 @@
 	return
 
 /obj/item/weapon/grenade/smokebomb/nato
-	desc = "It is set to detonate in 2 seconds."
 	name = "M18 smoke grenade"
+	desc = "It is set to detonate in 2 seconds."
 	icon_state = "m18"
+	throw_speed = 4
+	throw_range = 16
 
 /obj/item/weapon/grenade/smokebomb/wp
-	desc = "It is set to detonate in 2 seconds."
 	name = "RDG2 smoke grenade"
+	desc = "It is set to detonate in 2 seconds."
 	icon_state = "rdg2"
+	throw_speed = 4
+	throw_range = 16
 
 /obj/item/weapon/grenade/tear
 	desc = "It is set to detonate in 4 seconds."

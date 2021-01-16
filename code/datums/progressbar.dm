@@ -24,7 +24,10 @@
 /datum/progressbar/Destroy()
 	if (client)
 		client.images -= bar
-	qdel(bar)
+	if (user)
+		user = null
+	if (bar)
+		bar = null
 	. = ..()
 
 /datum/progressbar/proc/update(progress)

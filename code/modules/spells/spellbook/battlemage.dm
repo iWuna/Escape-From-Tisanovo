@@ -20,7 +20,6 @@
 				/spell/aoe_turf/conjure/mirage = 					1,
 				/spell/targeted/shapeshift/corrupt_form = 			1,
 				/spell/noclothes = 									1,
-				/obj/structure/closet/wizard/armor = 				1,
 				/obj/item/weapon/gun/energy/staff/focus = 			1,
 				/obj/item/weapon/dice/d20/cursed = 					1,
 				/obj/item/weapon/monster_manual = 					2,

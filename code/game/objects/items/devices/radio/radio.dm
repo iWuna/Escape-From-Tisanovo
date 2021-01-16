@@ -347,7 +347,7 @@
 			// so that they can be logged even AFTER the mob is deleted or something
 
 		  // Other tags:
-			"compression" = rand(45,50), // compressed radio signal
+			"compression" = rand(0,5), // compressed radio signal
 			"message" = message, // the actual sent message
 			"connection" = connection, // the radio connection to use
 			"radio" = src, // stores the radio used for transmission

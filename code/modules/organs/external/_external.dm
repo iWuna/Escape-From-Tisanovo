@@ -950,13 +950,6 @@ Note that amputating the affected organ does in fact remove the infection from t
 	if (prob(25))
 		release_restraints()
 
-	// This is mostly for the ninja suit to stop ninja being so crippled by breaks.
-	// TODO: consider moving this to a suit proc or process() or something during
-	// hardsuit rewrite.
-	if(!splinted && owner && istype(owner.wear_suit, /obj/item/clothing/suit/space/rig))
-		var/obj/item/clothing/suit/space/rig/suit = owner.wear_suit
-		suit.handle_fracture(owner, src)
-
 /obj/item/organ/external/proc/mend_fracture()
 	if(robotic >= ORGAN_ROBOT)
 		return 0	//ORGAN_BROKEN doesn't have the same meaning for robot limbs
@@ -1173,7 +1166,7 @@ Note that amputating the affected organ does in fact remove the infection from t
 			owner.visible_message("<span class='danger'>\The [owner]'s [name] melts away, turning into mangled mess!</span>",	\
 			"<span class='danger'>Your [name] melts away!</span>",	\
 			"<span class='danger'>You hear a sickening sizzle.</span>")
-	disfigured = 1
+	disfigured = 0
 
 /obj/item/organ/external/proc/get_incision(var/strict)
 	var/datum/wound/cut/incision

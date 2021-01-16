@@ -79,47 +79,6 @@
 		M.equip_to_slot_or_del(W, slot_wear_id)
 	qdel(src)
 
-
-
-// I'll work on making a list of corpses people request for maps, or that I think will be commonly used. Syndicate operatives for example.
-
-
-
-
-
-/obj/effect/landmark/corpse/syndicatesoldier
-	name = "Syndicate Operative"
-	corpseuniform = /obj/item/clothing/under/syndicate
-	corpsesuit = /obj/item/clothing/suit/armor/vest
-	corpseshoes = /obj/item/clothing/shoes/swat
-	corpsegloves = /obj/item/clothing/gloves/thick/swat
-	corpseradio = /obj/item/device/radio/headset
-	corpsemask = /obj/item/clothing/mask/gas
-	corpsehelmet = /obj/item/clothing/head/helmet/swat
-	corpseback = /obj/item/weapon/storage/backpack
-	corpseid = 1
-	corpseidjob = "Operative"
-	corpseidaccess = "Syndicate"
-
-
-
-/obj/effect/landmark/corpse/syndicatecommando
-	name = "Syndicate Commando"
-	corpseuniform = /obj/item/clothing/under/syndicate
-	corpsesuit = /obj/item/clothing/suit/space/void/merc
-	corpseshoes = /obj/item/clothing/shoes/swat
-	corpsegloves = /obj/item/clothing/gloves/thick/swat
-	corpseradio = /obj/item/device/radio/headset
-	corpsemask = /obj/item/clothing/mask/gas/syndicate
-	corpsehelmet = /obj/item/clothing/head/helmet/space/void/merc
-	corpseback = /obj/item/weapon/tank/jetpack/oxygen
-	corpsepocket1 = /obj/item/weapon/tank/emergency/oxygen
-	corpseid = 1
-	corpseidjob = "Operative"
-	corpseidaccess = "Syndicate"
-
-
-
 ///////////Civilians//////////////////////
 
 /obj/effect/landmark/corpse/chef
@@ -147,87 +106,10 @@
 	corpseidjob = "Medical Doctor"
 	corpseidaccess = "Medical Doctor"
 
-/obj/effect/landmark/corpse/engineer
-	name = "Engineer"
-	corpseradio = /obj/item/device/radio/headset/headset_eng
-	corpseuniform = /obj/item/clothing/under/rank/engineer
-	corpseback = /obj/item/weapon/storage/backpack/industrial
-	corpseshoes = /obj/item/clothing/shoes/orange
-	corpsebelt = /obj/item/weapon/storage/belt/utility/full
-	corpsegloves = /obj/item/clothing/gloves/insulated
-	corpsehelmet = /obj/item/clothing/head/hardhat
-	corpseid = 1
-	corpseidjob = "Engineer"
-	corpseidaccess = "Engineer"
-
-/obj/effect/landmark/corpse/engineer/rig
-	corpsesuit = /obj/item/clothing/suit/space/void/engineering
-	corpsemask = /obj/item/clothing/mask/breath
-	corpsehelmet = /obj/item/clothing/head/helmet/space/void/engineering
-
-/obj/effect/landmark/corpse/clown
-	name = "Clown"
-	corpseuniform = /obj/item/clothing/under/rank/clown
-	corpseshoes = /obj/item/clothing/shoes/clown_shoes
-	corpseradio = /obj/item/device/radio/headset
-	corpsemask = /obj/item/clothing/mask/gas/clown_hat
-	corpsepocket1 = /obj/item/weapon/bikehorn
-	corpseback = /obj/item/weapon/storage/backpack/clown
-	corpseid = 1
-	corpseidjob = "Clown"
-	corpseidaccess = "Clown"
-
-/obj/effect/landmark/corpse/scientist
-	name = "Scientist"
-	corpseradio = /obj/item/device/radio/headset/headset_sci
-	corpseuniform = /obj/item/clothing/under/rank/scientist
-	corpsesuit = /obj/item/clothing/suit/storage/toggle/labcoat/science
-	corpseback = /obj/item/weapon/storage/backpack
-	corpseshoes = /obj/item/clothing/shoes/white
-	corpseid = 1
-	corpseidjob = "Scientist"
-	corpseidaccess = "Scientist"
-
-/obj/effect/landmark/corpse/miner
-	corpseradio = /obj/item/device/radio/headset/headset_cargo
-	corpseuniform = /obj/item/clothing/under/rank/miner
-	corpsegloves = /obj/item/clothing/gloves/thick
-	corpseback = /obj/item/weapon/storage/backpack/industrial
+/obj/effect/landmark/corpse/hunter
+	name = "hunter"
+	icon_state = "hunter"
+	corpseuniform = /obj/item/clothing/under/soviet/habe
+	corpsesuit = /obj/item/clothing/suit/storage/hooded/coat_ww2
 	corpseshoes = /obj/item/clothing/shoes/black
-	corpseid = 1
-	corpseidjob = "Shaft Miner"
-	corpseidaccess = "Shaft Miner"
-
-/obj/effect/landmark/corpse/miner/rig
-	corpsesuit = /obj/item/clothing/suit/space/void/mining
-	corpsemask = /obj/item/clothing/mask/breath
-	corpsehelmet = /obj/item/clothing/head/helmet/space/void/mining
-
-
-/////////////////Officers//////////////////////
-
-/obj/effect/landmark/corpse/bridgeofficer
-	name = "Bridge Officer"
-	corpseradio = /obj/item/device/radio/headset/heads/hop
-	corpseuniform = /obj/item/clothing/under/rank/centcom_officer
-	corpsesuit = /obj/item/clothing/suit/armor/bulletproof
-	corpseshoes = /obj/item/clothing/shoes/black
-	corpseglasses = /obj/item/clothing/glasses/sunglasses
-	corpseid = 1
-	corpseidjob = "Bridge Officer"
-	corpseidaccess = "Captain"
-
-/obj/effect/landmark/corpse/commander
-	name = "Commander"
-	corpseuniform = /obj/item/clothing/under/rank/centcom_captain
-	corpsesuit = /obj/item/clothing/suit/armor/bulletproof
-	corpseradio = /obj/item/device/radio/headset/heads/captain
-	corpseglasses = /obj/item/clothing/glasses/eyepatch
-	corpsemask = /obj/item/clothing/mask/smokable/cigarette/cigar/cohiba
-	corpsehelmet = /obj/item/clothing/head/centhat
-	corpsegloves = /obj/item/clothing/gloves/thick/swat
-	corpseshoes = /obj/item/clothing/shoes/swat
-	corpsepocket1 = /obj/item/weapon/flame/lighter/zippo
-	corpseid = 1
-	corpseidjob = "Commander"
-	corpseidaccess = "Captain"
+	corpseid = 0

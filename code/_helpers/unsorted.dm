@@ -1142,6 +1142,18 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 #define NOT_FLAG(flag) (!(flag & use_flags))
 #define HAS_FLAG(flag) (flag & use_flags)
 
+//Offuscate x for coord system
+#define obfuscate_x(x) (x + obfs_x)
+
+//Offuscate y for coord system
+#define obfuscate_y(y) (y + obfs_y)
+
+//Deoffuscate x for coord system
+#define deobfuscate_x(x) (x - obfs_x)
+
+//Deoffuscate y for coord system
+#define deobfuscate_y(y) (y - obfs_y)
+
 // Checks if user can use this object. Set use_flags to customize what checks are done.
 // Returns 0 if they can use it, a value representing why they can't if not.
 // Flags are in `code/__defines/misc.dm`

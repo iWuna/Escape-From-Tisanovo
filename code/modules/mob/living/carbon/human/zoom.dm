@@ -28,10 +28,10 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 
 	if(!zoom && !cannotzoom)
 		src.toggle_zoom_hud()	// If the user has already limited their HUD this avoids them having a HUD when they zoom in
-		src.client.view = 9
+		src.client.view = 10
 		zoom = 1
 
-		var/tilesize = 35
+		var/tilesize = 50
 		var/viewoffset = tilesize * 6
 
 		switch(src.dir)
