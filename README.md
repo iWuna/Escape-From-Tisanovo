@@ -1,2 +1,2 @@
-# Escalation: 1985
-# Share this and die.
+# Escalation: DayZ
+# Билд про выживание в постапокалипсисе на востоке европы. Прекрасно? Да.
