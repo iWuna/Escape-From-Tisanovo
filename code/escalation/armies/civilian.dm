@@ -1,6 +1,11 @@
 /datum/army_faction/civ
 	group_name = "CIVILIAN"
 	enabled = 1
+	faction_tag = "civ"
+	flag_state = "white"
+	base_color = "white"
+	num_fireteams = 3
+	language = "Czech"
 
 /datum/army_faction/civ/civilians
 	name = "Civilians"
@@ -8,7 +13,7 @@
 	faction_tag = "civ"
 	flag_state = "white"
 	base_color = "white"
-	num_fireteams = 3
+	fireteam_names = list("Respawn #1", "Respawn #2", "Respawn #3", "Respawn #4")
 	language = "Czech"
 
 /datum/army_faction/civ/redcross
