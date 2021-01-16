@@ -843,7 +843,7 @@
 	density = 1
 	alpha = 150
 
-#define APPLEWHEN 1200
+#define APPLEWHEN 1500
 
 /obj/structure/flora/tree/summer/apple
 	name = "apple tree"
