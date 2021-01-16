@@ -1,4 +1,4 @@
-#define COMPOST_TIME 1000
+#define COMPOST_TIME 10000
 
 /mob/living/simple_animal/hostile/dayz/zombie
 	name = "zombie"
@@ -51,7 +51,7 @@
 /mob/living/simple_animal/hostile/dayz/zombie/death()
 	. = ..()
 	spawn(COMPOST_TIME)
-		new/obj/effect/gibspawner/human(get_turf(src))
+		visible_message("Zombie corpse decomposes...")
 		qdel(src)
 
 /mob/living/simple_animal/hostile/dayz/zombie/set_target()

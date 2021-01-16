@@ -3269,6 +3269,7 @@
 	nutriment_amt = 3
 
 #define APPLEWHENROTTEN 1500
+#define APPLEWHENROTTEN_DEL 1000
 
 /obj/item/weapon/reagent_containers/food/snacks/apple
 	name = "apple"
@@ -3282,7 +3283,10 @@
 		spawn(APPLEWHENROTTEN)
 			icon_state = "apple-dayz-rotten"
 			reagents.add_reagent(/datum/reagent/sugar, 1)
+			nutriment_desc = list("apple" = 1)
 			nutriment_amt = 1
+			spawn(APPLEWHENROTTEN_DEL)
+				qdel(src)
 		reagents.add_reagent(/datum/reagent/sugar, 3)
 
 // potato + knife = raw sticks

@@ -854,8 +854,9 @@
 	alpha = 150
 
 /obj/structure/flora/tree/summer/apple/Initialize()
-	spawn(APPLEWHEN)
-		new/obj/item/weapon/reagent_containers/food/snacks/apple(get_turf(src), 3)
+	for(var/i in 1 to 3 step 1)
+		spawn(APPLEWHEN * i)
+			new/obj/item/weapon/reagent_containers/food/snacks/apple(get_turf(src))
 
 /obj/structure/flora/tree/summer/alt1
 	icon = 'icons/obj/flora/96tree.dmi'

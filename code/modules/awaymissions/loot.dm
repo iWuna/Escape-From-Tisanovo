@@ -73,7 +73,7 @@
 				/obj/item/weapon/storage/backpack/sovietpack,
 				/obj/item/weapon/storage/backpack/usmc_buttpack,
 				/obj/item/weapon/storage/backpack/soviet_tabletbag,
-				/obj/item/nothing,
+				/obj/item/weapon/storage/backpack/czechpack,
 				/obj/item/nothing,
 				/obj/item/nothing
 				)
