@@ -558,7 +558,6 @@
 #include "code\game\machinery\mass_driver.dm"
 #include "code\game\machinery\navbeacon.dm"
 #include "code\game\machinery\newscaster.dm"
-#include "code\game\machinery\npc_trader.dm"
 #include "code\game\machinery\nuclear_bomb.dm"
 #include "code\game\machinery\OpTable.dm"
 #include "code\game\machinery\oxygen_pump.dm"

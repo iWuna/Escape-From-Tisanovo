@@ -69,6 +69,9 @@
 	var/obj/item/weapon/coin/coin
 	var/datum/wires/vending/wires = null
 
+	var/human = FALSE
+	var/trader_coefficent = 0.5
+
 /obj/machinery/vending/New()
 	..()
 	wires = new(src)
@@ -202,7 +205,10 @@
 		W.forceMove(src)
 		coin = W
 		categories |= CAT_COIN
-		to_chat(user, "<span class='notice'>You insert \the [W] into \the [src].</span>")
+		if(human)
+			to_chat(user, "<span class='notice'>You gives \the [W] to [src].</span>")
+		else
+			to_chat(user, "<span class='notice'>You insert \the [W] into \the [src].</span>")
 		GLOB.nanomanager.update_uis(src)
 		return
 	else if(attempt_to_stock(W, user))
@@ -218,6 +224,8 @@
 /obj/machinery/vending/proc/attempt_to_stock(var/obj/item/I as obj, var/mob/user as mob)
 	for(var/datum/stored_items/vending_products/R in product_records)
 		if(I.type == R.item_path)
+			var/money = R.price * 0.5
+			spawn_money(money,src.loc)
 			stock(I, R, user)
 			return 1
 
@@ -231,7 +239,7 @@
 		to_chat(usr, "\icon[cashmoney] <span class='warning'>That is not enough money.</span>")
 		return 0
 
-	if(/obj/machinery/vending/npc)
+	if(human)
 		visible_message("<span class='info'>\The [usr] gives some cash to \the [src].</span>")
 	else
 		visible_message("<span class='info'>\The [usr] inserts some cash into \the [src].</span>")
@@ -431,7 +439,10 @@
 					src.status_message = "This machine is currently unable to process payments due to problems with the associated account."
 					src.status_error = 1
 				else
-					src.status_message = "Please swipe a card or insert cash to pay for the item."
+					if(human)
+						src.status_message = "Pay with some cash for the item."
+					else
+						src.status_message = "Please swipe a card or insert cash to pay for the item."
 					src.status_error = 0
 
 		else if (href_list["cancelpurchase"])
@@ -485,7 +496,10 @@
 			src.visible_message("<span class='notice'>\The [src] makes an odd grinding noise before coming to screeching halt as \a [S.name] slurmps out!</span>")
 		else //Just a normal vend, then
 			R.get_product(get_turf(src))
-			src.visible_message("\The [src] whirs as it vends \the [R.item_name].")
+			if(human)
+				src.visible_message("\The [src] gives \the [R.item_name].")
+			else
+				src.visible_message("\The [src] whirs as it vends \the [R.item_name].")
 			if(prob(1)) //The vending gods look favorably upon you
 				sleep(3)
 				if(R.get_product(get_turf(src)))
@@ -511,7 +525,6 @@
 		to_chat(user, "<span class='notice'>You insert \the [W] in the product receptor.</span>")
 		GLOB.nanomanager.update_uis(src)
 		return 1
-
 	GLOB.nanomanager.update_uis(src)
 
 /obj/machinery/vending/process()
@@ -543,7 +556,10 @@
 		return
 
 	for(var/mob/O in hearers(src, null))
-		O.show_message("<span class='game say'><span class='name'>\The [src]</span> beeps, \"[message]\"</span>",2)
+		if(human)
+			O.show_message("<span class='game say'><span class='name'>[src]</span> says, \"[message]\"</span>",2)
+		else
+			O.show_message("<span class='game say'><span class='name'>\The [src]</span> beeps, \"[message]\"</span>",2)
 	return
 
 /obj/machinery/vending/powered()
@@ -1119,17 +1135,63 @@
 	icon_state = "human"
 	icon_vend = "human"
 	vend_delay = 15
-	product_slogans = null
+	human = TRUE
+	trader_coefficent = 0.6
+	product_slogans = "Need ammo? Food? Water?;The best merchant in nearest country. Huh."
 	product_ads = "Wanna buy something?;We run out of ammo, sorry for price.;Look at this.;The best merchant."
-	products = list(/obj/item/weapon/radioset/prc77 = 4,/obj/item/weapon/grenade/frag/rg42 = 3, /obj/item/ammo_magazine/c545x39m = 60, /obj/item/weapon/gun/projectile/makarov = 6,
-					/obj/item/clothing/suit/storage/hooded/ghillie = 2, /obj/item/clothing/suit/storage/hooded/ghillie_d = 2, /obj/item/stack/medical/bruise_pack/bint = 10,
-					/obj/item/weapon/reagent_containers/food/drinks/cans/dr_gibb = 10,/obj/item/weapon/reagent_containers/food/drinks/cans/starkist = 10,
-					/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle = 10,/obj/item/weapon/reagent_containers/food/drinks/cans/space_up = 10,
-					/obj/item/weapon/reagent_containers/food/drinks/cans/iced_tea = 10, /obj/item/weapon/reagent_containers/food/drinks/cans/grape_juice = 10)
-	contraband = list(/obj/item/weapon/reagent_containers/food/drinks/cans/thirteenloko = 5, /obj/item/weapon/reagent_containers/food/snacks/liquidfood = 6)
-	prices = list(/obj/item/weapon/radioset/prc77 = 150,/obj/item/weapon/grenade/frag/rg42 = 200, /obj/item/ammo_magazine/c545x39m = 80, /obj/item/weapon/gun/projectile/makarov = 140,
-					/obj/item/clothing/suit/storage/hooded/ghillie = 750, /obj/item/clothing/suit/storage/hooded/ghillie_d = 600, /obj/item/stack/medical/bruise_pack/bint = 65,
-					/obj/item/weapon/reagent_containers/food/drinks/cans/dr_gibb = 15,/obj/item/weapon/reagent_containers/food/drinks/cans/starkist = 15,
-					/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle = 20,/obj/item/weapon/reagent_containers/food/drinks/cans/space_up = 15,
-					/obj/item/weapon/reagent_containers/food/drinks/cans/iced_tea = 17,/obj/item/weapon/reagent_containers/food/drinks/cans/grape_juice = 15)
+	products = list(/obj/item/weapon/radioset/prc77 = 4,
+					/obj/item/weapon/grenade/frag/rg42 = 3,
+					/obj/item/ammo_magazine/c545x39m = 60,
+					/obj/item/weapon/gun/projectile/makarov = 6,
+					/obj/item/clothing/suit/storage/hooded/ghillie = 2,
+					/obj/item/clothing/suit/storage/hooded/ghillie_d = 2,
+					/obj/item/stack/medical/bruise_pack/bint = 10,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/dr_gibb = 10,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/starkist = 10,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle = 10,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/space_up = 10,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/iced_tea = 10,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/grape_juice = 10
+					)
+
+	contraband = list(/obj/item/weapon/reagent_containers/food/drinks/cans/thirteenloko = 5,
+					/obj/item/weapon/reagent_containers/food/snacks/liquidfood = 6)
+
+	prices = list(/obj/item/weapon/radioset/prc77 = 150,
+					/obj/item/weapon/grenade/frag/rg42 = 200,
+					/obj/item/ammo_magazine/c545x39m = 80,
+					/obj/item/weapon/gun/projectile/makarov = 200,
+					/obj/item/clothing/suit/storage/hooded/ghillie = 750,
+					/obj/item/clothing/suit/storage/hooded/ghillie_d = 600,
+					/obj/item/stack/medical/bruise_pack/bint = 65,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/dr_gibb = 15,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/starkist = 15,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle = 20,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/space_up = 15,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/iced_tea = 17,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/grape_juice = 15)
 	idle_power_usage = 0
+
+/obj/machinery/vending/npc/weapon
+	name = "Martin Goebbels"
+	icon_state = "human2"
+	icon_vend = "human2"
+	trader_coefficent = 0.9
+	products = list(/obj/item/weapon/gun/projectile/automatic/rifle/ak74 = 2,
+					/obj/item/weapon/gun/projectile/cz82 = 4,
+					/obj/item/weapon/gun/projectile/berettam9 = 3,
+					/obj/item/ammo_magazine/cz9x18 = 16,
+					/obj/item/ammo_magazine/a9x19 = 8,
+					/obj/item/ammo_magazine/c545x39m = 8,
+					)
+
+	contraband = list(/obj/item/weapon/reagent_containers/food/drinks/cans/thirteenloko = 5,
+					/obj/item/weapon/reagent_containers/food/snacks/liquidfood = 6)
+
+	prices = list(/obj/item/weapon/gun/projectile/automatic/rifle/ak74 = 6000,
+					/obj/item/weapon/gun/projectile/berettam9 = 1500,
+					/obj/item/weapon/gun/projectile/cz82 = 900,
+					/obj/item/ammo_magazine/cz9x18 = 85,
+					/obj/item/ammo_magazine/a9x19 = 95,
+					/obj/item/ammo_magazine/c545x39m = 250
+					)

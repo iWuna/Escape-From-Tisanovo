@@ -108,6 +108,11 @@
 	if(!worth)
 		qdel(src)
 
+/obj/item/weapon/spacecash/bundle/trader
+	name = "Czech Koruna"
+	icon_state = "spacecash1"
+	worth = 1
+
 /obj/item/weapon/spacecash/bundle/c1
 	name = "1 Czech Koruna"
 	icon_state = "spacecash1"
