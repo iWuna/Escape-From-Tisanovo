@@ -6,6 +6,7 @@
 	base_color = "white"
 	num_fireteams = 2
 	language = "Czech"
+	fireteam_names = list("Respawn #1", "Respawn #2", "Respawn #3")
 
 /datum/army_faction/civ/civilians
 	name = "Civilians"
