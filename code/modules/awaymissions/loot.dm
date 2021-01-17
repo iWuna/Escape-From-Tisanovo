@@ -1,5 +1,5 @@
-#define LOOT_RESPAWN 140000
-#define ZED_RESPAWN 1800000
+#define LOOT_RESPAWN 100000
+#define ZED_RESPAWN 100000
 
 /obj/effect/spawner/lootdrop
 	icon = 'icons/mob/screen1.dmi'
@@ -37,12 +37,13 @@
 						spawned_loot.pixel_x = spawned_loot.pixel_y = ((!(loot_spawned%2)*loot_spawned/2)*-1)+((loot_spawned%2)*(loot_spawned+1)/2*1)
 			loot_spawned++
 
-	if(!mob_spawner)
-		spawn(LOOT_RESPAWN)
-			SpawnShit()
-	else
-		spawn(ZED_RESPAWN)
-			SpawnShit()
+	for(var/i in 1 to 3 step 1)
+		if(!mob_spawner)
+			spawn(LOOT_RESPAWN * i)
+				SpawnShit()
+		else
+			spawn(ZED_RESPAWN * i)
+				SpawnShit()
 	//return INITIALIZE_HINT_QDEL
 
 /obj/item/nothing

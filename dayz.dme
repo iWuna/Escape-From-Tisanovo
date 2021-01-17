@@ -2440,6 +2440,7 @@
 #include "code\modules\turbolift\turbolift_process.dm"
 #include "code\modules\turbolift\turbolift_turfs.dm"
 #include "code\modules\vehicles\bike.dm"
+#include "code\modules\vehicles\buggy.dm"
 #include "code\modules\vehicles\cargo_train.dm"
 #include "code\modules\vehicles\engine.dm"
 #include "code\modules\vehicles\train.dm"

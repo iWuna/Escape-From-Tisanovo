@@ -84,6 +84,13 @@
 	'sound/escalation/zed/zed_triggered3.ogg',
 	'sound/escalation/zed/zed_triggered4.ogg',)
 
+/mob/living/simple_animal/hostile/dayz/zombie/pahom
+	name = "strange zombie"
+	icon_state = "zombie_sitting"
+	icon_dead = "zombie_sittingdead"
+	speed = 9
+	health = 250
+
 /mob/living/simple_animal/hostile/dayz/zombie/civ
 	speed = 6
 
@@ -110,6 +117,23 @@
 		icon_dead = "zed_dead9"
 	if(icon_state == "zed10")
 		icon_dead = "zed_dead10"
+
+/mob/living/simple_animal/hostile/dayz/zombie/runner
+	name = "zombie runner"
+	icon_state = "zed_runner1"
+	speed = 8
+	view_range = 6
+	health = 60
+
+/mob/living/simple_animal/hostile/dayz/zombie/runner/New()
+	..()
+	icon_state = "zed_runner[rand(1,3)]"
+	if(icon_state == "zed_runner1")
+		icon_dead = "zed_runnerdead1"
+	if(icon_state == "zed_runner2")
+		icon_dead = "zed_runnerdead2"
+	if(icon_state == "zed_runner3")
+		icon_dead = "zed_runnerdead3"
 
 /mob/living/simple_animal/hostile/dayz/zombie/police
 	name = "policeman zombie"
@@ -164,6 +188,10 @@
 		icon_dead = "zed_armored_armydead1"
 	if(icon_state == "zed_armored_army2")
 		icon_dead = "zed_armored_armydead2"
+	if(icon_state == "zed_armored_army3")
+		icon_dead = "zed_armored_armydead3"
+	if(icon_state == "zed_armored_army4")
+		icon_dead = "zed_armored_armydead4"
 
 /mob/living/simple_animal/hostile/dayz/zombie/soldier_nato
 	name = "zombie soldier"

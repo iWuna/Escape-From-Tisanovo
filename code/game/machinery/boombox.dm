@@ -3,11 +3,11 @@
 	icon = 'icons/obj/boombox.dmi'
 	icon_state = "boombox"
 	item_state = "boombox"
-	var/obj/item/device/cassete/casseta = null
+	var/obj/item/device/cassette/casseta = null
 	var/datum/sound_token/sound_token
 	var/playing = 0
 	var/sound_id
-	w_class = ITEM_SIZE_LARGE
+	w_class = ITEM_SIZE_NO_CONTAINER
 
 /obj/item/device/boombox/nato
 	icon_state = "boombox_nato"
@@ -18,15 +18,15 @@
 
 
 /obj/item/device/boombox/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/device/cassete))
+	if(istype(I, /obj/item/device/cassette))
 		if(casseta)
-			to_chat(user, "<span class='warning'>There is already cassete inside.</span>")
+			to_chat(user, "<span class='warning'>There is already cassette inside.</span>")
 			return
 		if(!user.unEquip(I))
 			return
 		I.forceMove(src)
 		casseta = I
-		visible_message("<span class='notice'>[user] insert cassete into [src].</span>")
+		visible_message("<span class='notice'>[user] insert cassette into [src].</span>")
 		playsound(get_turf(src), 'sound/items/boombox_casette.wav', 50, 1)
 		return
 	..()
@@ -39,20 +39,15 @@
 	if (!(src.loc == usr))
 		return
 
-	switch(over_object.name)
-		if("r_hand")
-			eject()
-		if("l_hand")
-			eject()
+/obj/item/device/boombox/verb/eject()
+	set name = "Eject tape"
+	set category = "Object"
+	set src in view(0)
 
-
-
-
-/obj/item/device/boombox/proc/eject()
 	if(usr.incapacitated())
 		return
 	if(!casseta)
-		to_chat(usr, "<span class='warning'>There is no cassete inside.</span>")
+		to_chat(usr, "<span class='warning'>There is no cassette inside.</span>")
 		return
 
 	if(playing)
@@ -72,67 +67,81 @@
 		playsound(get_turf(src), 'sound/items/boombox_play.wav', 50, 1)
 
 
-/obj/item/device/boombox/proc/StopPlaying() //TODO запилить аптейдус иконс
+/obj/item/device/boombox/proc/StopPlaying()
 	playing = 0
 	QDEL_NULL(sound_token)
 
 /obj/item/device/boombox/proc/StartPlaying()
+	StopPlaying()
 	if(isnull(casseta))
 		return
 	if(!casseta.sound_inside)
 		return
 
-	sound_token = sound_player.PlayLoopingSound(src, sound_id, casseta.sound_inside, volume = 50, range = 14, falloff = 3, prefer_mute = TRUE, ignore_vis = TRUE)
+	sound_token = sound_player.PlayLoopingSound(src, sound_id, casseta.sound_inside, volume = 40, range = 10, falloff = 3, prefer_mute = TRUE, ignore_vis = TRUE)
 	playing = 1
 
-/obj/item/device/cassete
-	name = "cassette"
+/obj/item/device/cassette
+	name = "cassette tape"
+	desc = "A cassette tape."
 	icon = 'icons/obj/boombox.dmi'
 	icon_state = "cassette"
 	var/sound/sound_inside
 	w_class = ITEM_SIZE_TINY
+	var/uploader_idiot
+	var/current_side = 1
+	var/sound/a_side
+	var/sound/b_side
 
+/obj/item/device/cassette/attack_self(mob/user)
+	. = ..()
+	if(current_side == 1)
+		sound_inside = b_side
+		current_side = 2
+		to_chat(user, "<span class='notice'>You flip the cassette over to the b-side.")
+	else
+		sound_inside = a_side
+		current_side = 1
+		to_chat(user, "<span class='notice'>You flip the cassette over to the a-side.")
 
-/obj/item/cassetka_console
-	name = "Downloading Console"
-	icon = 'icons/obj/boombox.dmi'
-	icon_state = "console"
+/obj/item/device/cassette/tape1/New()
+	..()
+	name = "Tape No. 1"
+	a_side = 'sound/music/keineheimat.ogg'
+	b_side = 'sound/music/derkommisar.ogg'
+	sound_inside = a_side
 
-// will write console cooldown later $_$ <==== my_ebalo
+/obj/item/device/cassette/tape2/New()
+	..()
+	name = "Tape No. 2"
+	a_side = 'sound/music/dasliedvomvaterland.ogg'
+	b_side = 'sound/music/sagmirwodustehst.ogg'
+	sound_inside = a_side
 
-obj/item/cassetka_console/attack_hand(mob/user) //later do file size check %_%
-	var/N = input("Music name") as text|null
-	if(N)
-		var/sound/S = input("Pick a song") as sound|null
-		if(S)
-			var/obj/item/device/cassete/casseta = new()
-			casseta.sound_inside = S
-			casseta.name = "[N]"
-			casseta.loc = src.loc
-			to_chat(user, "Tape completed.")
+/obj/item/device/cassette/tape3/New()
+	..()
+	name = "Tape No. 3"
+	a_side = 'sound/music/elektrichka.ogg'
+	b_side = 'sound/music/luftballons.ogg'
+	sound_inside = a_side
 
+/obj/item/device/cassette/tape4/New()
+	..()
+	name = "Tape No. 4"
+	a_side = 'sound/music/hardtimes.ogg'
+	b_side = 'sound/music/outoftouch.ogg'
+	sound_inside = a_side
 
+/obj/item/device/cassette/tape5/New()
+	..()
+	name = "Tape No. 5"
+	a_side = 'sound/music/soldworld.ogg'
+	b_side = 'sound/music/youvegotanotherthingcoming.ogg'
+	sound_inside = a_side
 
-/obj/item/device/cassete/keineheimat
-	name = "cassette - 'Gasolina'"
-	sound_inside = 'sound/music/gasolina.ogg'
-
-/obj/item/device/cassete/derkommissar
-	name = "cassette - 'Dandole'"
-	sound_inside = 'sound/music/dandole.ogg'
-
-/obj/item/device/cassete/luftballons
-	name = "cassette - 'NGYYU'"
-	sound_inside = 'sound/music/nevergonna.ogg'
-
-/obj/item/device/cassete/liedvonvaterland
-	name = "cassette - 'PRA'"
-	sound_inside = 'sound/music/partyrock.ogg'
-
-/obj/item/device/cassete/sagmirwodustehst
-	name = "cassette - 'Tunak Tunak Tun'"
-	sound_inside = 'sound/music/tunak.ogg'
-
-/obj/item/device/cassete/elektrichka
-	name = "cassette - 'Ёлектричка'"
-	sound_inside = 'sound/music/nevergonna.ogg'
+/obj/item/device/cassette/tape6/New()
+	..()
+	name = "Tape No. 946"
+	a_side = 'sound/music/katanazero.ogg'
+	b_side = 'sound/music/blackntans.ogg'
+	sound_inside = a_side
