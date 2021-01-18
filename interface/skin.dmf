@@ -1233,7 +1233,7 @@ window "outputwindow"
 		is-default = true
 		saved-params = "max-lines"
 		link-color = #0080c0
-		visited-color = #400080
+		visited-color = #009900
 		style = ".system {color:#ff0000;}"
 		max-lines = 0
 
@@ -1358,18 +1358,22 @@ window "text_editor"
 		size = 360x488
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		is-visible = false
 		border = sunken
 		saved-params = "pos;size;is-minimized;is-maximized"
 		title = "Text Editor"
 		can-minimize = false
 		can-resize = false
+		outer-size = 376x546
+		inner-size = 360x507
 	elem "exit"
 		type = BUTTON
 		pos = 248,456
 		size = 104x24
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		saved-params = "is-checked"
 		text = "Exit without saving"
 		command = ""
@@ -1379,6 +1383,7 @@ window "text_editor"
 		size = 104x24
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		saved-params = "is-checked"
 		text = "Save"
 		command = ""
@@ -1388,6 +1393,7 @@ window "text_editor"
 		size = 104x24
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		saved-params = "is-checked"
 		text = "Save + Exit"
 		command = ""
@@ -1397,6 +1403,9 @@ window "text_editor"
 		size = 360x448
 		anchor1 = none
 		anchor2 = none
+		font-family = "Zeppelin 32"
+		text-color = #669900
+		background-color = #3b3827
 		border = line
 		saved-params = ""
 		multi-line = true
