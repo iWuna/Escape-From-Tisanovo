@@ -1110,13 +1110,15 @@ window "mainwindow"
 		size = 640x440
 		anchor1 = none
 		anchor2 = none
-		background-color = #1b2025
+		background-color = #312e1d
 		is-default = true
 		saved-params = "pos;size;is-minimized;is-maximized"
 		is-maximized = true
 		icon = 'icons\\ss13_64.png'
 		macro = "macro"
 		menu = "menu"
+		outer-size = 1936x1056
+		inner-size = 1920x997
 	elem "asset_cache_browser"
 		type = BROWSER
 		pos = 424,208
@@ -1132,8 +1134,9 @@ window "mainwindow"
 		size = 80x20
 		anchor1 = 100,100
 		anchor2 = none
-		text-color = #c0c0c0
-		background-color = #2f3942
+		font-family = "Zeppelin 32"
+		text-color = #669900
+		background-color = #312e1d
 		saved-params = ""
 		text = "Hotkey Toggle"
 		command = ".winset \"mainwindow.macro!=macro ? mainwindow.macro=macro hotkey_toggle.is-checked=false input.focus=true : mainwindow.macro=hotkeymode hotkey_toggle.is-checked=true mapwindow.map.focus=true\""
@@ -1144,7 +1147,7 @@ window "mainwindow"
 		size = 634x416
 		anchor1 = 0,0
 		anchor2 = 100,100
-		background-color = #1b2025
+		background-color = #312e1d
 		saved-params = "splitter"
 		right = "rpane"
 		is-vert = true
@@ -1154,8 +1157,8 @@ window "mainwindow"
 		size = 517x20
 		anchor1 = 0,100
 		anchor2 = 100,100
-		text-color = #c0c0c0
-		background-color = #2f3942
+		text-color = #292929
+		background-color = #f8f8f8
 		is-default = true
 		border = sunken
 		saved-params = "command"
@@ -1165,8 +1168,9 @@ window "mainwindow"
 		size = 40x20
 		anchor1 = 100,100
 		anchor2 = none
-		text-color = #c0c0c0
-		background-color = #2f3942
+		font-family = "Zeppelin 32"
+		text-color = #669900
+		background-color = #312e1d
 		saved-params = "is-checked"
 		text = "Chat"
 		command = ".winset \"saybutton.is-checked=true?input.command=\"!say \\\"\" macrobutton.is-checked=false:input.command=\""
@@ -1187,13 +1191,14 @@ window "mapwindow"
 		can-minimize = false
 		can-resize = false
 		is-pane = true
+		outer-size = 654x494
 	elem "map"
 		type = MAP
 		pos = 0,0
 		size = 640x480
 		anchor1 = 0,0
 		anchor2 = 100,100
-		font-family = "Arial Rounded MT Bold,Arial Black,Arial,sans-serif"
+		font-family = "Zeppelin 32,Arial Rounded MT Bold,Arial Black,Arial,sans-serif"
 		font-size = 7
 		is-default = true
 		saved-params = "icon-size"
@@ -1215,13 +1220,16 @@ window "outputwindow"
 		can-minimize = false
 		can-resize = false
 		is-pane = true
+		outer-size = 654x494
 	elem "output"
 		type = OUTPUT
 		pos = 0,0
 		size = 640x480
 		anchor1 = 0,0
 		anchor2 = 100,100
-		background-color = #b5c0ca
+		font-family = "Zeppelin 32"
+		text-color = #669900
+		background-color = #36352b
 		is-default = true
 		saved-params = "max-lines"
 		link-color = #0080c0
@@ -1236,7 +1244,7 @@ window "rpane"
 		size = 640x480
 		anchor1 = none
 		anchor2 = none
-		background-color = #1b2025
+		background-color = #312e1d
 		saved-params = "pos;size;is-minimized;is-maximized"
 		titlebar = false
 		statusbar = false
@@ -1244,13 +1252,14 @@ window "rpane"
 		can-minimize = false
 		can-resize = false
 		is-pane = true
+		outer-size = 654x494
 	elem "rpanewindow"
 		type = CHILD
 		pos = 0,0
 		size = 638x474
 		anchor1 = 0,0
 		anchor2 = 100,100
-		background-color = #1b2025
+		background-color = #312e1d
 		saved-params = "splitter"
 		right = "outputwindow"
 		is-vert = false
@@ -1260,8 +1269,9 @@ window "rpane"
 		size = 60x18
 		anchor1 = none
 		anchor2 = none
-		text-color = #c0c0c0
-		background-color = #2f3942
+		font-family = "Zeppelin 32"
+		text-color = #669900
+		background-color = #312e1d
 		is-visible = false
 		saved-params = "is-checked"
 		text = "Text"
@@ -1275,8 +1285,9 @@ window "rpane"
 		size = 60x18
 		anchor1 = none
 		anchor2 = none
-		text-color = #c0c0c0
-		background-color = #2f3942
+		font-family = "Zeppelin 32"
+		text-color = #669900
+		background-color = #312e1d
 		is-visible = false
 		saved-params = "is-checked"
 		text = "Info"
@@ -1291,17 +1302,19 @@ window "browserwindow"
 		size = 640x480
 		anchor1 = none
 		anchor2 = none
-		background-color = none
+		background-color = #312e1d
 		saved-params = "pos;size;is-minimized;is-maximized"
 		title = "Browser"
 		is-pane = true
+		outer-size = 656x538
+		inner-size = 640x499
 	elem "browser"
 		type = BROWSER
 		pos = 0,0
 		size = 640x499
 		anchor1 = 0,0
 		anchor2 = 100,100
-		background-color = #ffffff
+		background-color = #312e1d
 		is-default = true
 		saved-params = ""
 		on-show = ".winset\"rpane.infob.is-visible=true?rpane.infob.pos=130,0;rpane.textb.is-visible=true;rpane.browseb.is-visible=true;rpane.browseb.is-checked=true;rpane.rpanewindow.pos=0,30;rpane.rpanewindow.size=0x0;rpane.rpanewindow.left=browserwindow\""
@@ -1314,23 +1327,27 @@ window "infowindow"
 		size = 640x480
 		anchor1 = none
 		anchor2 = none
-		background-color = none
+		background-color = #312e1d
 		saved-params = "pos;size;is-minimized;is-maximized"
 		title = "Info"
 		is-pane = true
+		outer-size = 656x538
+		inner-size = 640x499
 	elem "info"
 		type = INFO
 		pos = 0,0
 		size = 638x477
 		anchor1 = 0,0
 		anchor2 = 100,100
-		text-color = #c0c0c0
-		background-color = #2f3942
+		font-family = "Zeppelin 32"
+		text-color = #669900
+		background-color = #312e1d
 		is-default = true
 		saved-params = ""
 		highlight-color = #2d96ff
-		tab-text-color = #c0c0c0
-		tab-background-color = #2f3942
+		tab-text-color = #669900
+		tab-background-color = #312e1d
+		tab-font-family = "Zeppelin 32"
 		on-show = ".winset\"rpane.infob.is-visible=true;rpane.browseb.is-visible=true?rpane.infob.pos=130,0:rpane.infob.pos=65,0 rpane.textb.is-visible=true rpane.infob.is-checked=true rpane.rpanewindow.pos=0,30 rpane.rpanewindow.size=0x0 rpane.rpanewindow.left=infowindow\""
 		on-hide = ".winset\"rpane.infob.is-visible=false;rpane.browseb.is-visible=true?rpane.browseb.is-checked=true rpane.rpanewindow.left=browserwindow:rpane.textb.is-visible=true rpane.rpanewindow.pos=0,30 rpane.rpanewindow.size=0x0 rpane.rpanewindow.left=\""
 
