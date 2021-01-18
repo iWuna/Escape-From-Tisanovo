@@ -419,6 +419,14 @@
 	name = "Judgement"
 	info = "For crimes as specified, the offender is sentenced to:<BR>\n<BR>\n"
 
+/obj/item/weapon/paper/Cholera_en
+	name = "Cholera warning"
+	info = "\[large]\[center]\[u]NOTICE\[/u]\[hr]PREVENTS OF \[b]CHOLERA\[/b]!\[/large]\[br]\[small]Published order of the Sanitary Committee, under sanction of the Medical Counsel\[/small]\[br]Be temperate in eating and drinking! Avoid raw vegetables and unwashed fruits.\[br]Abstain \[b]COLD WATER\[/b].\[/center]"
+
+/obj/item/weapon/paper/Cholera_cz
+	name = "Cholera warning"
+	info = "\[large]\[center]\[u]OZNAMENI\[/u]\[hr]ZABRANUJE \[b]CHOLERE\[/b]!\[/large]\[br]\[small]Zverejneno poradi sanitarniho vyboru, pod sankci lekarskeho poradce\[/small]\[br]Budte mirni v jedle a pite! Vyvarujte se surove zeleniny a nemyteho ovoce.\[br]Zdrzet se\[b] STUDENY VODY\[/b].\[/center]"
+
 /obj/item/weapon/paper/crumpled
 	name = "paper scrap"
 	icon_state = "scrap"
