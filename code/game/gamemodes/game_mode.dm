@@ -41,7 +41,7 @@ var/global/list/additional_antag_types = list()
 //1983 stuff
 	var/minimum_teams = 1
 	var/minimum_neutrals = 0
-	var/list/datum/army_faction/teams = list("Civilians")	//A list of the teams fighting
+	var/list/datum/army_faction/teams = list()	//A list of the teams fighting
 	var/list/datum/army_faction/neutral_teams = list() //A list of the neutral teams in the game
 	var/admin_ended_round = 0
 	var/admin_enabled_joining = 1

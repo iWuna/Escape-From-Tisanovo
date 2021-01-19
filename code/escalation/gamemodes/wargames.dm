@@ -10,7 +10,7 @@
 	addantag_allowed = ADDANTAG_ADMIN //Only admins can add antags. This should be disabled in config anyway
 	wargames = 1
 	autobalance = 0
-	admin_enabled_joining = 1 //Has to be accepted by admins before round can start
+	admin_enabled_joining = 0 //Has to be accepted by admins before round can start
 
 /datum/game_mode/wargames/announce()
 /*	to_world("<B>The current game mode is [capitalize(name)]!</B> [round_description]")
