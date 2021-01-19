@@ -1,5 +1,5 @@
 #if !defined(using_map_DATUM)
-	#include "escnew_areas.dm"
+	#include "dayz_areas.dm"
 
 	#include "tisanovo.dmm"
 

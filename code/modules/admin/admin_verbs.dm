@@ -20,6 +20,7 @@ var/list/admin_verbs_admin = list(
 	/client/proc/show_armies_tags,
 	/client/proc/show_separated_stat,
 	/client/proc/show_general_stat,	//allows us to set a custom colour for everythign we say in ooc,
+	/client/proc/add_to_esc_whitelist,
 	/datum/admins/proc/show_game_mode,  //Configuration window for the current game mode.,
 	/datum/admins/proc/force_mode_latespawn, //Force the mode to try a latespawn proc,
 	/datum/admins/proc/toggleahelp,
@@ -1019,6 +1020,18 @@ var/list/admin_verbs_mentor = list(
 		world << "NATO: [alive_usmc] alive and [heavily_injured_usmc] heavily injured in US Army. [alive_bdw] alive and [heavily_injured_bdw] heavily injured in Bundeswehr."
 		world << "Warsaw Pact: [alive_sov] alive and [heavily_injured_sov] heavily injured in Soviet Army. [alive_nvaddr] alive and [heavily_injured_nvaddr] heavily injured in NVA DDR."
 
+/client/proc/add_to_esc_whitelist()
+	set name = "Add to WL"
+	set category = "EscAdmin"
+	if(!holder)
+		return
+	var/WL_playerkey  = input("CKEY:", "Escalation whitelist")
+	var/WL_playerrank = input("RANK:", "Escalation whitelist")
+	if(WL_playerkey && WL_playerrank)
+		add_player_to_escalation_whitelist(WL_playerkey, WL_playerrank)
+		init_whitelist()
+		update_escpanels_for_all()
+	feedback_add_details("admin_verb", "ESCW")
 
 /client/proc/show_general_stat()
 	set name = "Show generally armies stats"

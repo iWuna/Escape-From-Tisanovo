@@ -9,15 +9,17 @@
 # @END@
 
 # CIV
-Reserve 1:civ
-/datum/job/escalation/dayz/neutral_respawn
+Czech Police:civ
+/datum/job/escalation/dayz/czech_police
+/datum/job/escalation/dayz/czech_police
+/datum/job/escalation/dayz/czech_police
 @END@
 
-Reserve 2:civ
+Reserve:civ
 /datum/job/escalation/dayz/neutral_respawn
-@END@
-
-Reserve 3:civ
+/datum/job/escalation/dayz/neutral_respawn
+/datum/job/escalation/dayz/neutral_respawn
+/datum/job/escalation/dayz/neutral_respawn
 /datum/job/escalation/dayz/neutral_respawn
 @END@
 
