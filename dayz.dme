@@ -1645,6 +1645,7 @@
 #include "code\modules\mob\living\carbon\brain\posibrain.dm"
 #include "code\modules\mob\living\carbon\brain\robot.dm"
 #include "code\modules\mob\living\carbon\brain\say.dm"
+#include "code\modules\mob\living\carbon\human\ANPC.dm"
 #include "code\modules\mob\living\carbon\human\appearance.dm"
 #include "code\modules\mob\living\carbon\human\death.dm"
 #include "code\modules\mob\living\carbon\human\examine.dm"

@@ -21,7 +21,7 @@ datum/pipeline
 			qdel(air)
 		for(var/obj/machinery/atmospherics/pipe/P in members)
 			P.parent = null
-
+		members = null
 		. = ..()
 
 	proc/process()//This use to be called called from the pipe networks
