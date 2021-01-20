@@ -498,7 +498,6 @@ obj/random/closet/spawn_choices()
 				/obj/structure/closet/crate/medical,
 				/obj/structure/closet/boxinggloves,
 				/obj/structure/largecrate,
-				/obj/structure/closet/wardrobe/xenos,
 				/obj/structure/closet/wardrobe/mixed,
 				/obj/structure/closet/wardrobe/suit,
 				/obj/structure/closet/wardrobe/orange)

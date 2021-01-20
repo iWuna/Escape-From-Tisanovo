@@ -638,7 +638,7 @@
 		name = "Shaved"
 		icon_state = "bald"
 		gender = NEUTER
-		species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI,SPECIES_TAJARA,SPECIES_SKRELL,SPECIES_VOX,SPECIES_IPC)
+		species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI,SPECIES_TAJARA,SPECIES_SKRELL,SPECIES_IPC)
 
 	watson
 		name = "Watson Mustache"
@@ -883,11 +883,6 @@
 		name = "Tajara Finger Curls"
 		icon_state = "hair_fingerwave"
 		species_allowed = list(SPECIES_TAJARA)
-
-	vox_quills_long
-		name = "Long Vox Quills"
-		icon_state = "vox_longquills"
-		species_allowed = list(SPECIES_VOX)
 
 /datum/sprite_accessory/facial_hair
 

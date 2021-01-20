@@ -360,22 +360,6 @@ var/list/name_to_material
 	sheet_singular_name = "pile"
 	sheet_plural_name = "pile"
 
-/material/diona
-	name = "biomass"
-	icon_colour = null
-	stack_type = null
-	integrity = 600
-	icon_base = "diona"
-	icon_reinf = "noreinf"
-	hitsound = 'sound/effects/attackblob.ogg'
-	conductive = 0
-
-/material/diona/place_dismantled_product()
-	return
-
-/material/diona/place_dismantled_girder(var/turf/target)
-	spawn_diona_nymph(target)
-
 /material/steel/holographic
 	name = "holo" + DEFAULT_WALL_MATERIAL
 	display_name = DEFAULT_WALL_MATERIAL
@@ -803,22 +787,6 @@ var/list/name_to_material
 
 /material/cult/reinf/place_dismantled_product(var/turf/target)
 	new /obj/item/remains/human(target)
-
-/material/resin
-	name = "resin"
-	icon_colour = "#e85dd8"
-	dooropen_noise = 'sound/effects/attackblob.ogg'
-	door_icon_base = "resin"
-	melting_point = T0C+300
-	sheet_singular_name = "blob"
-	sheet_plural_name = "blobs"
-	conductive = 0
-
-/material/resin/can_open_material_door(var/mob/living/user)
-	var/mob/living/carbon/M = user
-	if(istype(M) && locate(/obj/item/organ/internal/xenos/hivenode) in M.internal_organs)
-		return 1
-	return 0
 
 /material/aliumium
 	name = "alien alloy"

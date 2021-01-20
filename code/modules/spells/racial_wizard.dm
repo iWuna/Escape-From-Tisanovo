@@ -11,10 +11,8 @@
 	force = 15
 	var/list/potentials = list(
 		SPECIES_HUMAN = /obj/item/weapon/storage/bag/cash/infinite,
-		SPECIES_VOX = /spell/targeted/shapeshift/true_form,
 		SPECIES_TAJARA = /spell/messa_shroud,
 		SPECIES_UNATHI = /spell/moghes_blessing,
-		SPECIES_DIONA = /spell/aoe_turf/conjure/grove/gestalt,
 		SPECIES_SKRELL = /obj/item/weapon/contract/apprentice/skrell,
 		SPECIES_IPC = /spell/camera_connection)
 
@@ -152,26 +150,6 @@
 	I.force += 10
 	I.throwforce += 14
 	I.color = "#663300"
-
-//DIONA
-/spell/aoe_turf/conjure/grove/gestalt
-	name = "Convert Gestalt"
-	desc = "Converts the surrounding area into a Dionaea gestalt."
-
-	school = "racial"
-	spell_flags = 0
-	invocation_type = SpI_EMOTE
-	invocation = "rumbles as green alien plants grow quickly along the floor."
-
-	charge_type = Sp_HOLDVAR
-	holder_var_type = "bruteloss"
-	holder_var_amount = 20
-
-	spell_flags = Z2NOCAST | IGNOREPREV | IGNOREDENSE
-	summon_type = list(/turf/simulated/floor/diona)
-	seed_type = /datum/seed/diona
-
-	hud_state = "wiz_diona"
 
 //SKRELL
 /obj/item/weapon/contract/apprentice/skrell

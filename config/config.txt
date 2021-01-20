@@ -78,7 +78,7 @@ LOG_WORLD_OUTPUT
 ##LOG_ADMINWARN  ## Also duplicates a bunch of other messages.
 
 ## sql switching
-# SQL_ENABLED
+SQL_ENABLED
 
 ## disconnect players who did nothing during the set amount of minutes
 # KICK_INACTIVE 10
@@ -344,7 +344,7 @@ EVENT_CUSTOM_START_MAJOR 80;100
 #DISABLE_ENTRY
 
 ## Uncomment to disable the OOC channel by default.
-DISABLE_OOC
+#DISABLE_OOC
 
 ## Uncomment to disable the AHELP channel by default.
 #DISABLE_AHELP
@@ -363,7 +363,7 @@ DISABLE_AOOC
 #DISABLE_RESPAWN
 
 ## Respawn delay in minutes before one may respawn as a crew member.
-RESPAWN_DELAY 5
+RESPAWN_DELAY 1
 
 ## Strength of ambient star light. Set to 0 or less to turn off. A value of 1 is unlikely to have a noticeable effect in most lighting systems.
 STARLIGHT 1

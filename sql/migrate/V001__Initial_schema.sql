@@ -409,3 +409,4 @@ ALTER TABLE `population`
 --
 ALTER TABLE `whitelist`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+dayz

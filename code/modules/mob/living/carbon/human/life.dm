@@ -204,20 +204,6 @@
 			set_light(0.3, 0.1, max(1,min(20,radiation/20)), 2, species.get_flesh_colour(src))
 		// END DOGSHIT SNOWFLAKE
 
-		var/obj/item/organ/internal/diona/nutrients/rad_organ = locate() in internal_organs
-		if (rad_organ && !rad_organ.is_broken())
-			var/rads = radiation/25
-
-			radiation -= rads
-			nutrition += rads
-
-			if (radiation < 2)
-				radiation = 0
-
-			nutrition = Clamp(nutrition, 0, 550)
-
-			return
-
 		var/damage = 0
 		radiation -= 1 * RADIATION_SPEED_COEFFICIENT
 		if(prob(25))
@@ -517,25 +503,8 @@
 					total_phoronloss += vsc.plc.CONTAMINATION_LOSS
 			if(!(status_flags & GODMODE)) adjustToxLoss(total_phoronloss)
 
-	if(status_flags & GODMODE)	return 0	//godmode
-
-	var/obj/item/organ/internal/diona/node/light_organ = locate() in internal_organs
-
-	if(!isSynthetic())
-		// Handles adding nutrient for light organs.
-		if(light_organ && !light_organ.is_broken())
-			var/light_amount = 0 //how much light there is in the place, affects receiving nutrition and healing
-			if(isturf(loc)) //else, there's considered to be no light
-				var/turf/T = loc
-				var/atom/movable/lighting_overlay/L = locate(/atom/movable/lighting_overlay) in T
-				if(L)
-					light_amount = max(0, min(14,(L.lum_r + L.lum_g + L.lum_b)) * 1.5) //hardcapped so it's not abused by having a ton of flashlights
-				else
-					light_amount =  5
-				light_amount = T.get_lumcount() * 10
-			nutrition += light_amount
-			shock_stage -= light_amount
-			nutrition = Clamp(nutrition, 0, 550)
+	if(status_flags & GODMODE)
+		return 0	//godmode
 
 	if(species.light_dam)
 		var/light_amount = 0

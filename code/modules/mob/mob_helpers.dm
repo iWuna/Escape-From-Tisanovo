@@ -24,11 +24,6 @@
 	animate(src, color=colour_to, time=time, easing=SINE_EASING)
 
 // fun if you want to typecast humans/monkeys/etc without writing long path-filled lines.
-/proc/isxenomorph(A)
-	if(istype(A, /mob/living/carbon/human))
-		var/mob/living/carbon/human/H = A
-		return istype(H.species, /datum/species/xenos)
-	return 0
 
 /proc/issmall(A)
 	if(A && istype(A, /mob/living))

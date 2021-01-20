@@ -392,21 +392,6 @@
 	set_trait(TRAIT_PLANT_COLOUR,"#9e4f9d")
 	set_trait(TRAIT_PLANT_ICON,"mushroom2")
 
-/datum/seed/mushroom/plump/walking
-	name = "walkingmushroom"
-	seed_name = "walking mushroom"
-	display_name = "walking mushrooms"
-	mutants = null
-	can_self_harvest = 1
-	has_mob_product = /mob/living/simple_animal/mushroom
-
-/datum/seed/mushroom/plump/walking/New()
-	..()
-	set_trait(TRAIT_MATURATION,5)
-	set_trait(TRAIT_YIELD,1)
-	set_trait(TRAIT_PRODUCT_COLOUR,"#fac0f2")
-	set_trait(TRAIT_PLANT_COLOUR,"#c4b1c2")
-
 /datum/seed/mushroom/hallucinogenic
 	name = "reishi"
 	seed_name = "reishi"
@@ -1036,27 +1021,6 @@
 	set_trait(TRAIT_PLANT_COLOUR,"#6f7a63")
 	set_trait(TRAIT_PLANT_ICON,"vine2")
 	set_trait(TRAIT_WATER_CONSUMPTION, 0.5)
-
-/datum/seed/diona
-	name = "diona"
-	seed_name = "diona"
-	seed_noun = "nodes"
-	display_name = "replicant pods"
-	can_self_harvest = 1
-	has_mob_product = /mob/living/carbon/alien/diona
-
-/datum/seed/diona/New()
-	..()
-	set_trait(TRAIT_IMMUTABLE,1)
-	set_trait(TRAIT_ENDURANCE,8)
-	set_trait(TRAIT_MATURATION,5)
-	set_trait(TRAIT_PRODUCTION,10)
-	set_trait(TRAIT_YIELD,1)
-	set_trait(TRAIT_POTENCY,30)
-	set_trait(TRAIT_PRODUCT_ICON,"diona")
-	set_trait(TRAIT_PRODUCT_COLOUR,"#799957")
-	set_trait(TRAIT_PLANT_COLOUR,"#66804b")
-	set_trait(TRAIT_PLANT_ICON,"alien4")
 
 /datum/seed/shand
 	name = "shand"

@@ -3,8 +3,10 @@
 # TITLE ROLE
 # TITLE ROLE
 # }
-iwuna = {
-dz_cz_police
-Policista
+iWuna = {
+Policeman
 }
 
+NotOverlyTastedBread = {
+Policeman
+}

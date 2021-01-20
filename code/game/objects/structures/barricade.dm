@@ -232,3 +232,45 @@
 		icon_state = "sandbag"
 	else
 		icon_state = "sandbag_empty"
+
+/obj/structure/sandbag_wall
+	name = "sandbag"
+	icon = 'icons/escalation/sandbags.dmi'
+	icon_state = "sandbag_big"
+	density = 1
+	throwpass = 0
+	anchored = 1
+
+/obj/structure/sandbag_wall/CheckExit(atom/movable/O as mob|obj, target as turf)
+	if(istype(O) && O.checkpass(PASSTABLE))
+		return 1
+	if (get_dir(loc, target) == dir)
+		return !density
+	else
+		return 1
+	return 1
+
+/obj/structure/sandbag_wall/New()
+	..()
+	flags |= ON_BORDER
+	update_layers()
+
+/obj/structure/sandbag_wall/proc/update_layers()
+	if(dir != SOUTH)
+		layer = initial(layer) + 0.1
+		plane = initial(plane)
+	else
+		layer = ABOVE_OBJ_LAYER + 0.1
+		plane = ABOVE_HUMAN_PLANE
+
+/obj/structure/sandbag_wall/set_dir()
+	..()
+	update_layers()
+
+/obj/structure/sandbag_wall/end
+	icon_state = "sandbag_big_end"
+	throwpass = 1
+
+/obj/structure/sandbag_wall/end2
+	icon_state = "sandbag_big_end2"
+	throwpass = 1

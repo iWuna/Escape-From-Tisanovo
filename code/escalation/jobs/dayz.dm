@@ -47,8 +47,8 @@
 
 /datum/job/escalation/dayz/czech_police
 	title = "Policeman"
-	name = "Policista"
-	english_name = "Policeman"
+	name = "Policeman"
+	english_name = "Policista"
 	minimal_player_age = 21
 	economic_modifier = 5
 	ideal_character_age = 28
