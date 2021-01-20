@@ -40,8 +40,6 @@
 	icon_state = "soviet_officer"
 	body_parts_covered = HEAD
 
-
-
 //Soviet helmets
 
 /obj/item/clothing/head/helmet/coldwar/

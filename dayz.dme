@@ -376,7 +376,6 @@
 #include "code\escalation\armies\civilian.dm"
 #include "code\escalation\armies\escalation_whitelist.dm"
 #include "code\escalation\gamemodes\wargames.dm"
-#include "code\escalation\jobs\dayz.dm"
 #include "code\escalation\jobs\escalation_job.dm"
 #include "code\escalation\jobs\nato.dm"
 #include "code\escalation\jobs\warsaw_pact.dm"
