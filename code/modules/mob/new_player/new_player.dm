@@ -718,7 +718,7 @@ mob/new_player/proc/StatRand()
 		if(character.mind.assigned_role != "Cyborg")
 			CreateModularRecord(character)
 			ticker.minds += character.mind//Cyborgs and AIs handle this in the transform proc.	//TODO!!!!! ~Carn
-			AnnounceArrival(character, job, spawnpoint.msg)
+			//AnnounceArrival(character, job, spawnpoint.msg)
 		else
 			AnnounceCyborg(character, job, spawnpoint.msg)
 		matchmaker.do_matchmaking()

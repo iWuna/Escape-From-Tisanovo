@@ -132,3 +132,17 @@
 	body_parts_covered = 0
 	filtered_gases = list("phoron", "sleeping_agent", "oxygen")
 	visor_color = 0
+
+/obj/item/clothing/mask/gas/hazmat
+	name = "gas mask"
+	desc = "A face-covering mask that can be connected to an air supply. Filters harmful gases from the air."
+	icon_state = "hazmat"
+	tint = 0.5
+	visor_color = 0
+
+/obj/item/clothing/mask/gas/hazmat_nato
+	name = "gas mask"
+	desc = "A face-covering mask that can be connected to an air supply. Filters harmful gases from the air."
+	icon_state = "gasmask_new"
+	tint = 0.5
+	visor_color = 0

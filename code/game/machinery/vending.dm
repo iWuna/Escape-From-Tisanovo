@@ -1190,3 +1190,27 @@
 					/obj/item/ammo_magazine/a9x19 = 95,
 					/obj/item/ammo_magazine/c545x39m = 250
 					)
+
+/obj/machinery/vending/npc/medic
+	name = "Henry Shoers"
+	icon_state = "human3"
+	icon_vend = "human3"
+	trader_coefficent = 0.9
+	products = list(/obj/item/weapon/reagent_containers/pill/dexalin = 20,
+					/obj/item/weapon/reagent_containers/pill/paracetamol = 15,
+					/obj/item/weapon/reagent_containers/pill/paroxetine = 6,
+					/obj/item/weapon/reagent_containers/pill/phenazepam = 10,
+					/obj/item/weapon/reagent_containers/syrette/morphine = 8,
+					/obj/item/weapon/storage/backpack/usmcm3 = 2,
+					)
+
+	contraband = list(/obj/item/weapon/reagent_containers/pill/dexalin_plus = 2,
+					/obj/item/weapon/reagent_containers/pill/happy = 6)
+
+	prices = list(/obj/item/weapon/reagent_containers/pill/dexalin = 50,
+					/obj/item/weapon/reagent_containers/pill/paracetamol = 37,
+					/obj/item/weapon/reagent_containers/pill/paroxetine = 41,
+					/obj/item/weapon/reagent_containers/pill/phenazepam = 53,
+					/obj/item/weapon/reagent_containers/syrette/morphine = 95,
+					/obj/item/weapon/storage/backpack/usmcm3 = 250
+					)

@@ -16,11 +16,13 @@ var/list/interior_areas = list(/area/coldwar/house1,
 							/area/coldwar/house15,
 							/area/coldwar/house16,
 							/area/coldwar/house17,
-							/area/coldwar/house18
+							/area/coldwar/house18,
+							/area/coldwar/usmc_safe
 							)
 
 /area
 	var/safezone = 0
+	var/radiated = 0
 
 /area/coldwar
 	name = "area"
@@ -360,13 +362,13 @@ var/list/interior_areas = list(/area/coldwar/house1,
 /area/coldwar/usmc_safe
 	name = "USMC FOB"
 	icon_state = "usmcfob"
-	sound_env = PLAIN
+	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
 	safezone = 1
 	ambience = list (
-	'sound/ambience/coldwar/dayz/Coast.ogg',
-	'sound/ambience/coldwar/dayz/Sea.ogg',
+	'sound/ambience/coldwar/dayz/bunker1.ogg',
+	'sound/ambience/coldwar/dayz/bunker2.ogg',
 	)
 
 /area/coldwar/coast

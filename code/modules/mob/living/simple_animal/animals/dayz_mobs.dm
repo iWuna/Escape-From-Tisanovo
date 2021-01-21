@@ -86,7 +86,7 @@
 
 /mob/living/simple_animal/hostile/dayz/zombie/pahom
 	name = "strange zombie"
-	icon_state = "zombie_sitting"
+	icon_state = "zombie_sitting_gop"
 	icon_dead = "zombie_sittingdead"
 	speed = 9
 	health = 250
@@ -164,7 +164,7 @@
 
 /mob/living/simple_animal/hostile/dayz/zombie/soldier/New()
 	..()
-	icon_state = "zed_army[rand(1,4)]"
+	icon_state = "zed_army[rand(1,5)]"
 	if(icon_state == "zed_army1")
 		icon_dead = "zed_armydead1"
 	if(icon_state == "zed_army2")
@@ -173,6 +173,8 @@
 		icon_dead = "zed_armydead3"
 	if(icon_state == "zed_army4")
 		icon_dead = "zed_armydead4"
+	if(icon_state == "zed_army5")
+		icon_dead = "zed_armydead5"
 
 /mob/living/simple_animal/hostile/dayz/zombie/soldier/armored
 	desc = "Wait, he's wearing armor?!"
@@ -290,8 +292,39 @@
 				"laser" = 0,
 				"energy" = 0,
 				"bomb" = 0,
+				"bio" = 5,
+				"rad" = 5)
+
+/mob/living/simple_animal/hostile/dayz/human/nato_hazmat
+	name = "NATO soldier"
+	icon_state = "nato_hazmat1"
+	icon_dead = "nato_hazmat1_dead"
+	shoot_range = 5
+	faction = "neutral"
+	rapid = 0
+	projectiletype = /obj/item/projectile/bullet
+	projectilesound = 'sound/weapons/gunshot/ak74.ogg'
+	speak = list("Move along.",
+				"This area are danger.",
+				"I wish all this end...",
+				"Where's this damn chopper?",
+				"We need figure out how to destroy this virus...")
+	say_maybe_target = list("Did you hear that?","There's someone near.","What?","Hmm?")
+	say_got_target = list("Contact!","Enemy spotted!","Fire!","Find him!","Enemy! Fire!","Call for help!","Fire! Fire! Fire!","We got situation here!")
+	armor = list(
+				"melee" = 15,
+				"bullet" = 20,
+				"laser" = 0,
+				"energy" = 0,
+				"bomb" = 0,
 				"bio" = 100,
 				"rad" = 100)
+
+/mob/living/simple_animal/hostile/dayz/human/nato_hazmat/New()
+	..()
+	var/first_name = pick(first_names_male_usmc)
+	var/second_name = pick(last_names_usmc)
+	name = "[first_name] [second_name]"
 
 /mob/living/simple_animal/hostile/dayz/human/nato/New()
 	..()
@@ -305,6 +338,9 @@
 		icon_dead = "nato_sld2_dead"
 	if(icon_state == "nato_sld3")
 		icon_dead = "nato_sld3_dead"
+
+/mob/living/simple_animal/hostile/dayz/human/nato/standing
+	wander = 0
 
 ///сюжетный///
 /mob/living/simple_animal/hostile/dayz/human/czech_deserter_family

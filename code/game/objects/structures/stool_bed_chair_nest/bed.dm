@@ -358,6 +358,7 @@
 	icon_state = "bunkbed_soviet"
 	anchored = 1
 	buckle_pixel_shift = "x=0;y=6"
+	var/nato = 0
 
 /obj/structure/bed/foldbed/update_icon()
 	return // Doesn't care about material or anything else.
@@ -379,19 +380,23 @@
 /obj/structure/bed/foldbed/MouseDrop(over_object, src_location, over_location)
 	..()
 	if((over_object == usr && (in_range(src, usr) || usr.contents.Find(src))))
-		if(!ishuman(usr))	return
-		if(buckled_mob)	return 0
-		visible_message("[usr] collapses \the [src.name].")
-		new/obj/item/foldbed(get_turf(src))
-		spawn(0)
-			qdel(src)
-		return
+		if(!ishuman(usr))
+			return
+		if(buckled_mob)
+			return 0
+		if(!nato)
+			visible_message("[usr] collapses \the [src.name].")
+			new/obj/item/foldbed(get_turf(src))
+			spawn(0)
+				qdel(src)
+			return
 
 
 
 ////nato foldbed
 /obj/structure/bed/foldbed/nato
 	icon_state = "bunkbed_nato"
+	nato = 1
 
 /obj/structure/bed/foldbed/nato/MouseDrop(over_object, src_location, over_location)
 	..()

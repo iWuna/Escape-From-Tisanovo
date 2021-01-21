@@ -17,13 +17,12 @@
 	uniform = /obj/item/clothing/under/vpp
 	shoes = /obj/item/clothing/shoes/tactical
 	id_type = /obj/item/weapon/card/id
-	r_pocket = /obj/item/weapon/key/vppkey
 	l_hand = /obj/item/weapon/melee/classic_baton
 	l_pocket = /obj/item/weapon/spacecash/bundle/randmidclass/
 
 /decl/hierarchy/outfit/job/redline/remnantssoldier/pre_equip(mob/living/carbon/human/H)
 	..()
-	belt = pick(/obj/item/weapon/gun/projectile/revolver/chevalier, /obj/item/weapon/gun/projectile/revolver/archer, /obj/item/weapon/gun/projectile/pistol/deputy, /obj/item/weapon/gun/projectile/pistol/guardian)
+	belt = pick(/obj/item/weapon/gun/projectile/revolver/chevalier)
 
 /decl/hierarchy/outfit/job/redline/remnantssoldier/sarge
 	name = OUTFIT_JOB_NAME("VPP Sergeant")
@@ -40,7 +39,6 @@
 	back = /obj/item/weapon/gun/projectile/shotgun/pump/redline
 	id_type = /obj/item/weapon/card/id
 	l_pocket = /obj/item/weapon/storage/wallet/random/
-	r_pocket = /obj/item/weapon/key/armory
 	belt = /obj/item/weapon/melee/classic_baton/wooden
 
 /decl/hierarchy/outfit/job/redline/adjutant
@@ -51,7 +49,6 @@
 	back = /obj/item/weapon/gun/projectile/shotgun/pump/redline
 	id_type = /obj/item/weapon/card/id
 	l_pocket = /obj/item/weapon/storage/wallet/random/
-	r_pocket = /obj/item/weapon/key/adjutant
 
 /decl/hierarchy/outfit/job/redline/chief
 	name = OUTFIT_JOB_NAME("Station Commanding Officer")
@@ -61,8 +58,6 @@
 	id_type = /obj/item/weapon/card/id
 	belt = /obj/item/weapon/gun/projectile/revolver/chevalier
 	l_pocket = /obj/item/weapon/storage/wallet/random/
-	r_pocket = /obj/item/weapon/storage/fancy/keypouch/stationcommander
-
 
 /decl/hierarchy/outfit/job/redline/therapist
 	name = OUTFIT_JOB_NAME("Therapist")
@@ -70,7 +65,6 @@
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat/blue
 	shoes = /obj/item/clothing/shoes/laceup
 	id_type = /obj/item/weapon/card/id
-	r_pocket = /obj/item/weapon/key/hospital
 	l_pocket = /obj/item/weapon/spacecash/bundle/randarmy/
 
 /decl/hierarchy/outfit/job/redline/surgerist
@@ -80,7 +74,6 @@
 	shoes = /obj/item/clothing/shoes/black
 	head = /obj/item/clothing/head/surgery/blue
 	id_type = /obj/item/weapon/card/id
-	r_pocket = /obj/item/weapon/key/hospital
 	l_pocket = /obj/item/weapon/storage/wallet/random/
 
 /decl/hierarchy/outfit/job/redline/nurse
@@ -90,7 +83,6 @@
 	head = /obj/item/clothing/head/surgery/purple
 	shoes = /obj/item/clothing/shoes/leather
 	id_type = /obj/item/weapon/card/id/shittycivvie
-	r_pocket = /obj/item/weapon/key/hospital
 	l_pocket = /obj/item/weapon/spacecash/bundle/randlowclass/
 /decl/hierarchy/outfit/job/redline/nurse/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -106,14 +98,12 @@
 	shoes = /obj/item/clothing/shoes/leather
 	id_type = /obj/item/weapon/card/id/
 	l_pocket = /obj/item/weapon/storage/wallet/random/
-	r_pocket = /obj/item/weapon/key/merchant
 
 /decl/hierarchy/outfit/job/redline/technician
 	name = OUTFIT_JOB_NAME("Technician Deputy")
 	uniform = /obj/item/clothing/under/tech
 	shoes = /obj/item/clothing/shoes/workboots
 	id_type = /obj/item/weapon/card/id/shittycivvie
-	r_pocket = /obj/item/weapon/key/engineering
 	l_pocket = /obj/item/weapon/spacecash/bundle/randlowclass/
 /decl/hierarchy/outfit/job/redline/technician/pre_equip(mob/living/carbon/human/H)
 	l_pocket = pick(/obj/item/weapon/spacecash/bundle/c10, /obj/item/weapon/spacecash/bundle/c20, /obj/item/weapon/spacecash/bundle/c50, /obj/item/weapon/spacecash/bundle/c100)
@@ -128,7 +118,6 @@
 	shoes = /obj/item/clothing/shoes/combat
 	l_pocket = /obj/item/weapon/storage/wallet/random/
 	id_type = /obj/item/weapon/card/id
-	r_pocket = /obj/item/weapon/storage/fancy/keypouch/techchief
 
 /decl/hierarchy/outfit/job/redline/refugee
 	name = OUTFIT_JOB_NAME("Dweller")
@@ -166,12 +155,10 @@
 	shoes = /obj/item/clothing/shoes/leather
 	l_pocket = /obj/item/weapon/storage/wallet/random/
 	id_type = /obj/item/weapon/card/id
-	r_pocket = /obj/item/weapon/storage/fancy/keypouch/barkeeper
 
 /decl/hierarchy/outfit/job/redline/waiter
 	name = OUTFIT_JOB_NAME("Waiter")
 	uniform = /obj/item/clothing/under/gardenersuit
 	shoes = /obj/item/clothing/shoes/black
 	id_type = /obj/item/weapon/card/id/
-	r_pocket = /obj/item/weapon/key/barkeeper
 	l_pocket = /obj/item/weapon/spacecash/bundle/randmidclass/
