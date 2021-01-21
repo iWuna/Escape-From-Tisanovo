@@ -2533,7 +2533,6 @@
 #include "maps\dayz\dayz_outfits.dm"
 #include "maps\dayz\tisanovo.dmm"
 #include "maps\europe-2\escnew_outfits.dm"
-#include "maps\redline\redline_areas.dm"
 #include "maps\~mapsystem\map_preferences.dm"
 #include "maps\~mapsystem\map_ranks.dm"
 #include "maps\~mapsystem\maps.dm"
