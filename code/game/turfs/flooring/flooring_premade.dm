@@ -5,7 +5,6 @@
 	icon_state = "plating"
 	plane = PLATING_PLANE
 
-
 /turf/simulated/floor/carpet
 	name = "brown carpet"
 	icon = 'icons/turf/flooring/carpet.dmi'
@@ -77,6 +76,23 @@
 	icon = 'icons/turf/bunk.dmi'
 	icon_state = "plating"
 	initial_flooring = /decl/flooring/tiling/bunker/
+
+/turf/simulated/floor/tiled/bunker/lattice
+	name = "lattice"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "lattice_new"
+	plane = PLATING_PLANE
+
+/turf/simulated/floor/tiled/bunker/plitka
+	name = "floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "plitka1"
+	plane = PLATING_PLANE
+
+/turf/simulated/floor/tiled/bunker/plitka/New()
+	..()
+	icon_state = "plitka[rand(1,3)]"
+
 /turf/simulated/floor/tiled/bunker/elevator
 	permit_ao = 0
 

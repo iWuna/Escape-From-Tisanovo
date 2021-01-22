@@ -15,12 +15,10 @@ Czech Police:civ
 /datum/job/escalation/dayz/czech_police
 @END@
 
-Reserve:civ
-/datum/job/escalation/dayz/neutral_respawn
-/datum/job/escalation/dayz/neutral_respawn
-/datum/job/escalation/dayz/neutral_respawn
-/datum/job/escalation/dayz/neutral_respawn
-/datum/job/escalation/dayz/neutral_respawn
+Military Police:civ
+/datum/job/escalation/dayz/military_police
+/datum/job/escalation/dayz/military_police
+/datum/job/escalation/dayz/military_police
 @END@
 
 # WARPAC

@@ -1,6 +1,7 @@
 /datum/map/escnew
 	allowed_jobs = list(/datum/job/escalation/dayz/neutral,
-	/datum/job/escalation/dayz/czech_police
+	/datum/job/escalation/dayz/czech_police,
+	/datum/job/escalation/dayz/military_police
 	)
 
 /datum/job/escalation/dayz
@@ -68,3 +69,22 @@
 	total_positions = 3
 	spawn_positions = 5
 	also_known_languages = list(LANGUAGE_CZECH = 100, LANGUAGE_RUSSIAN = 10)
+
+/datum/job/escalation/dayz/military_police
+	title = "Military Police"
+	name = "Military Police"
+	english_name = null
+	minimal_player_age = 5
+	economic_modifier = 5
+	ideal_character_age = 28
+	outfit_type = /decl/hierarchy/outfit/job/dayz/mp_police
+	selection_color = "#B0C4DE"
+	account_allowed = 0
+	announced = FALSE
+	amount = 3
+	enabled = 1
+	position = "fireteam"
+	whitelist_rank = "dz_mp_police"
+	total_positions = 3
+	spawn_positions = 5
+	also_known_languages = list(LANGUAGE_ENGLISH = 100, LANGUAGE_CZECH = 100)

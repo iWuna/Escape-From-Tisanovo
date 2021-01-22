@@ -175,6 +175,16 @@ var/list/turf_edge_cache = list()
 	blend_with_neighbors = 2
 	movement_delay = 2
 
-
 /turf/unsimulated/ground/grass/New()
 	icon_state = "grass[rand(1,3)]"
+
+/turf/unsimulated/ground/mud
+	name = "mud"
+	icon = 'icons/turf/ground.dmi'
+	icon_state = "gryaz1"
+	blend_with_neighbors = 1
+	movement_delay = 2
+	outdoors = 0
+
+/turf/unsimulated/ground/mud/New()
+	icon_state = "gryaz[rand(1,11)]"

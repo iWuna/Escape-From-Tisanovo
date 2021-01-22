@@ -43,10 +43,6 @@ var/list/mining_floors = list()
 /turf/simulated/mineral/New()
 	icon_state = "rock[rand(1,6)]"
 	mining_walls += src
-//	spawn(0)
-//		MineralSpread()
-//	spawn(2)
-//		update_icon(1)
 
 /turf/simulated/mineral/Destroy()
 	mining_walls -= src

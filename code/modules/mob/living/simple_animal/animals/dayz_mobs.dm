@@ -222,6 +222,38 @@
 	if(.)
 		audible_emote("unintelligible growls at [.]")
 
+/mob/living/simple_animal/hostile/dayz/zombie/nato_hazmat
+	name = "zombie hazmat"
+	desc = "Once he was a soldier, but now he's just a brainless shell resembling a human. This one wearing NBO suit."
+	icon_state = "zed_hazmat"
+	icon_dead = "zed_hazmatdead"
+	speed = 6
+	cooperative = 1
+	wander_distance = 4
+	view_range = 8
+	health = 100
+
+/mob/living/simple_animal/hostile/dayz/zombie/nato_hazmat/set_target()
+	. = ..()
+	if(.)
+		audible_emote("makes muffled growl at [.]")
+
+/mob/living/simple_animal/hostile/dayz/zombie/sci
+	name = "zombie"
+	desc = "This walker is wearing a shirt and a lab coat. A scientist?"
+	icon_state = "zed_sci"
+	icon_dead = "zed_scidead"
+	speed = 7
+	cooperative = 1
+	wander_distance = 5
+	view_range = 6
+	health = 95
+
+/mob/living/simple_animal/hostile/dayz/zombie/nato_hazmat/set_target()
+	. = ..()
+	if(.)
+		audible_emote("makes muffled growl at [.]")
+
 ///NPC///
 
 /mob/living/simple_animal/hostile/dayz/human
@@ -341,6 +373,7 @@
 
 /mob/living/simple_animal/hostile/dayz/human/nato/standing
 	wander = 0
+	speak_chance = 0
 
 ///сюжетный///
 /mob/living/simple_animal/hostile/dayz/human/czech_deserter_family

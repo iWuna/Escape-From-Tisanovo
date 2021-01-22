@@ -82,6 +82,27 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	'sound/ambience/coldwar/dayz/ForestDay.ogg',
 	'sound/ambience/coldwar/dayz/ForestDayBirds.ogg',
 	'sound/ambience/coldwar/dayz/WindForestLight.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_3.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_4.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_5.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_6.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_7.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_8.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_9.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_10.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_11.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_12.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_13.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_14.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_15.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_3.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_3.ogg',
 	)
 
 /area/coldwar/surroundinglevel1
@@ -95,6 +116,27 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	'sound/ambience/coldwar/dayz/ForestDay.ogg',
 	'sound/ambience/coldwar/dayz/ForestDayBirds.ogg',
 	'sound/ambience/coldwar/dayz/WindForestLight.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_3.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_4.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_5.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_6.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_7.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_8.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_9.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_10.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_11.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_12.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_13.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_14.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_15.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_3.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_3.ogg',
 	)
 
 /area/coldwar/civdef
@@ -362,13 +404,38 @@ var/list/interior_areas = list(/area/coldwar/house1,
 /area/coldwar/usmc_safe
 	name = "USMC FOB"
 	icon_state = "usmcfob"
-	sound_env = LIVINGROOM
+	sound_env = LARGE_ENCLOSED
 	requires_power = 0
 	dynamic_lighting = 1
 	safezone = 1
 	ambience = list (
 	'sound/ambience/coldwar/dayz/bunker1.ogg',
 	'sound/ambience/coldwar/dayz/bunker2.ogg',
+	)
+
+/area/coldwar/bunker_lab
+	name = "LAB"
+	icon_state = "civildefence"
+	sound_env = LARGE_ENCLOSED
+	requires_power = 0
+	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/lab/lab1.ogg',
+	'sound/ambience/coldwar/dayz/lab/lab2.ogg',
+	'sound/ambience/coldwar/dayz/lab/lab3.ogg',
+	'sound/ambience/coldwar/dayz/lab/lab4.ogg',
+	'sound/ambience/coldwar/dayz/lab/lab5.ogg',
+	'sound/ambience/coldwar/dayz/lab/lab6.ogg',
+	)
+
+/area/coldwar/cave
+	name = "CAVE"
+	icon_state = "cave"
+	sound_env = LARGE_ENCLOSED
+	requires_power = 0
+	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/cave.ogg',
 	)
 
 /area/coldwar/coast
@@ -380,4 +447,25 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	ambience = list (
 	'sound/ambience/coldwar/dayz/Coast.ogg',
 	'sound/ambience/coldwar/dayz/Sea.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_3.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_4.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_5.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_6.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_7.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_8.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_9.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_10.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_11.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_12.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_13.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_14.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_15.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_3.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_3.ogg',
 	)

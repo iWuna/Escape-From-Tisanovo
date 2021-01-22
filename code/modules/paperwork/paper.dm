@@ -419,6 +419,10 @@
 	name = "Judgement"
 	info = "For crimes as specified, the offender is sentenced to:<BR>\n<BR>\n"
 
+/obj/item/weapon/paper/lab_doc16
+	name = "Document #016"
+	info = "\[center]Studies of a strain of \[u]Black Cholera\[/u]. \[br]\[i]April 12, 1986\[/i].\[/center] \[br]According to the results of the analysis, the virus enters the body, proceeds in the form of ordinary cholera, however, when an infected person dies, Black Cholera somehow affects the brain, causing the resumption of the work of the main organs, including the brain. At the same time, there is a degradation of mental processes."
+
 /obj/item/weapon/paper/Cholera_en
 	name = "Cholera warning"
 	info = "\[large]\[center]\[u]NOTICE\[/u]\[hr]PREVENTS OF \[b]CHOLERA\[/b]!\[/large]\[br]\[small]Published order of the Sanitary Committee, under sanction of the Medical Counsel\[/small]\[br]Be temperate in eating and drinking! Avoid raw vegetables and unwashed fruits.\[br]Abstain \[b]COLD WATER\[/b].\[/center]"

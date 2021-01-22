@@ -5,6 +5,7 @@
 # }
 iWuna = {
 Policeman
+Military Police
 }
 
 NotOverlyTastedBread = {
