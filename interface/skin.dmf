@@ -1134,7 +1134,6 @@ window "mainwindow"
 		size = 80x20
 		anchor1 = 100,100
 		anchor2 = none
-		font-family = "Zeppelin 32"
 		text-color = #669900
 		background-color = #312e1d
 		saved-params = ""
@@ -1168,7 +1167,6 @@ window "mainwindow"
 		size = 40x20
 		anchor1 = 100,100
 		anchor2 = none
-		font-family = "Zeppelin 32"
 		text-color = #669900
 		background-color = #312e1d
 		saved-params = "is-checked"
@@ -1183,7 +1181,6 @@ window "mapwindow"
 		size = 640x480
 		anchor1 = none
 		anchor2 = none
-		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		titlebar = false
 		statusbar = false
@@ -1191,7 +1188,6 @@ window "mapwindow"
 		can-minimize = false
 		can-resize = false
 		is-pane = true
-		outer-size = 654x494
 	elem "map"
 		type = MAP
 		pos = 0,0
@@ -1227,7 +1223,6 @@ window "outputwindow"
 		size = 640x480
 		anchor1 = 0,0
 		anchor2 = 100,100
-		font-family = "Zeppelin 32"
 		text-color = #669900
 		background-color = #36352b
 		is-default = true
@@ -1252,7 +1247,6 @@ window "rpane"
 		can-minimize = false
 		can-resize = false
 		is-pane = true
-		outer-size = 654x494
 	elem "rpanewindow"
 		type = CHILD
 		pos = 0,0
@@ -1339,7 +1333,6 @@ window "infowindow"
 		size = 638x477
 		anchor1 = 0,0
 		anchor2 = 100,100
-		font-family = "Zeppelin 32"
 		text-color = #669900
 		background-color = #312e1d
 		is-default = true
@@ -1347,7 +1340,6 @@ window "infowindow"
 		highlight-color = #2d96ff
 		tab-text-color = #669900
 		tab-background-color = #312e1d
-		tab-font-family = "Zeppelin 32"
 		on-show = ".winset\"rpane.infob.is-visible=true;rpane.browseb.is-visible=true?rpane.infob.pos=130,0:rpane.infob.pos=65,0 rpane.textb.is-visible=true rpane.infob.is-checked=true rpane.rpanewindow.pos=0,30 rpane.rpanewindow.size=0x0 rpane.rpanewindow.left=infowindow\""
 		on-hide = ".winset\"rpane.infob.is-visible=false;rpane.browseb.is-visible=true?rpane.browseb.is-checked=true rpane.rpanewindow.left=browserwindow:rpane.textb.is-visible=true rpane.rpanewindow.pos=0,30 rpane.rpanewindow.size=0x0 rpane.rpanewindow.left=\""
 
@@ -1358,22 +1350,18 @@ window "text_editor"
 		size = 360x488
 		anchor1 = none
 		anchor2 = none
-		background-color = none
 		is-visible = false
 		border = sunken
 		saved-params = "pos;size;is-minimized;is-maximized"
 		title = "Text Editor"
 		can-minimize = false
 		can-resize = false
-		outer-size = 376x546
-		inner-size = 360x507
 	elem "exit"
 		type = BUTTON
 		pos = 248,456
 		size = 104x24
 		anchor1 = none
 		anchor2 = none
-		background-color = none
 		saved-params = "is-checked"
 		text = "Exit without saving"
 		command = ""
@@ -1383,7 +1371,6 @@ window "text_editor"
 		size = 104x24
 		anchor1 = none
 		anchor2 = none
-		background-color = none
 		saved-params = "is-checked"
 		text = "Save"
 		command = ""
@@ -1393,7 +1380,6 @@ window "text_editor"
 		size = 104x24
 		anchor1 = none
 		anchor2 = none
-		background-color = none
 		saved-params = "is-checked"
 		text = "Save + Exit"
 		command = ""
