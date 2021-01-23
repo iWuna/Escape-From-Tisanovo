@@ -122,6 +122,14 @@
 	icon_state = "hazmat_nato"
 	hoodtype = /obj/item/clothing/head/hood_hazmat/nato
 
+/obj/item/clothing/suit/storage/hooded/hazmat/un
+	icon_state = "ecolog"
+	hoodtype = /obj/item/clothing/head/hood_hazmat
+
+/obj/item/clothing/suit/storage/hooded/hazmat/un2
+	icon_state = "ecologg"
+	hoodtype = /obj/item/clothing/head/hood_hazmat/nato
+
 /obj/item/clothing/suit/storage/hooded/ghillie
 	name = "ghillie suit (F)"
 	desc = "A common sniper outfit in last war. This one suited for forest."

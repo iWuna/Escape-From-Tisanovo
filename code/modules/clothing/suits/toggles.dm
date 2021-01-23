@@ -136,7 +136,7 @@
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
 	action_button_name = "Toggle Hood"
 	hoodtype = /obj/item/clothing/head/hoodiehood
-	
+
 /obj/item/clothing/head/hoodiehood
 	name = "hoodie hood"
 	desc = "A hood attached to a warm sweatshirt."
@@ -145,3 +145,57 @@
 	min_cold_protection_temperature = T0C - 20
 	cold_protection = HEAD
 	flags_inv = HIDEEARS | BLOCKHAIR
+
+/obj/item/clothing/suit/storage/hooded/brown_jacket
+	name = "brown jacket"
+	desc = "A warm jacket."
+	icon_state = "kozhanka"
+	item_state = "hoodie"
+	min_cold_protection_temperature = T0C - 20
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/jacket_hood
+
+/obj/item/clothing/head/jacket_hood
+	name = "jacket hood"
+	desc = "A hood attached to a warm leather jacket."
+	icon_state = "generic_hood"
+	body_parts_covered = HEAD
+	min_cold_protection_temperature = T0C - 20
+	cold_protection = HEAD
+	flags_inv = HIDEEARS | BLOCKHAIR
+
+/obj/item/clothing/suit/storage/hooded/white_jacket
+	name = "white jacket"
+	desc = "A warm sweatshirt."
+	icon_state = "kozhanka_wh"
+	item_state = "hoodie"
+	min_cold_protection_temperature = T0C - 20
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/jacket_hood
+
+/obj/item/clothing/suit/storage/hooded/black_jacket
+	name = "black jacket"
+	desc = "A warm black jacket."
+	icon_state = "banditka"
+	item_state = "hoodie"
+	min_cold_protection_temperature = T0C - 20
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/jacket_hood
+
+/obj/item/clothing/suit/storage/hooded/leather_coat
+	name = "black leather coat"
+	desc = "A warm black coat."
+	icon_state = "banditcoat"
+	item_state = "hoodie"
+	min_cold_protection_temperature = T0C - 20
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/jacket_hood
+
+/obj/item/clothing/suit/storage/hooded/leather_coat/brown
+	name = "brown leather coat"
+	desc = "A warm brown coat."
+	icon_state = "banditcoatbrown"

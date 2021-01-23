@@ -25,7 +25,6 @@
 	shoes = /obj/item/clothing/shoes/soviet/field
 	holster = /obj/item/weapon/storage/belt/holster/csla
 	r_pocket = /obj/item/weapon/spacecash/bundle/randarmy
-	l_pocket = /obj/item/weapon/key/natoof
 	suit = /obj/item/clothing/suit/storage/toggle/vppjacket
 	head = /obj/item/clothing/head/soviet/officer
 	belt = /obj/item/weapon/storage/belt/harness/sa/belt

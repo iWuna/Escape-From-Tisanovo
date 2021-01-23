@@ -99,11 +99,11 @@
 	desc = "This holster can hold CZ82 pistol and one magazine."
 	startswith = list(
 		/obj/item/weapon/gun/projectile/cz82,
-		/obj/item/ammo_magazine/a9x18
+		/obj/item/ammo_magazine/cz9x18
 		)
 	can_hold = list(
 		/obj/item/weapon/gun/projectile/cz82,
-		/obj/item/ammo_magazine/a9x18
+		/obj/item/ammo_magazine/cz9x18
 		)
 
 /obj/item/weapon/storage/belt/holster/csla/empty

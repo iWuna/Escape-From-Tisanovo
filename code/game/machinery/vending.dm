@@ -1135,36 +1135,47 @@
 	product_slogans = "Need ammo? Food? Water?;The best merchant in nearest country. Huh."
 	product_ads = "Wanna buy something?;We run out of ammo, sorry for price.;Look at this.;The best merchant."
 	products = list(/obj/item/weapon/radioset/prc77 = 4,
-					/obj/item/weapon/grenade/frag/rg42 = 3,
-					/obj/item/ammo_magazine/c545x39m = 60,
+					/obj/item/clothing/suit/storage/hooded/brown_jacket = 2,
+					/obj/item/clothing/suit/storage/hooded/white_jacket = 1,
+					/obj/item/clothing/suit/storage/hooded/black_jacket = 1,
+					/obj/item/weapon/storage/backpack/civpack = 2,
+					/obj/item/weapon/storage/backpack/sovietpack = 1,
 					/obj/item/weapon/gun/projectile/makarov = 6,
-					/obj/item/clothing/suit/storage/hooded/ghillie = 2,
-					/obj/item/clothing/suit/storage/hooded/ghillie_d = 2,
-					/obj/item/stack/medical/bruise_pack/bint = 10,
+					/obj/item/ammo_magazine/a9x18 = 6,
 					/obj/item/weapon/reagent_containers/food/drinks/cans/dr_gibb = 10,
 					/obj/item/weapon/reagent_containers/food/drinks/cans/starkist = 10,
 					/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle = 10,
 					/obj/item/weapon/reagent_containers/food/drinks/cans/space_up = 10,
 					/obj/item/weapon/reagent_containers/food/drinks/cans/iced_tea = 10,
-					/obj/item/weapon/reagent_containers/food/drinks/cans/grape_juice = 10
+					/obj/item/weapon/reagent_containers/food/drinks/cans/grape_juice = 10,
+					/obj/item/weapon/reagent_containers/food/snacks/tincan/stew = 4,
+					/obj/item/weapon/reagent_containers/food/snacks/tincan/stewpearlbarley = 2,
+					/obj/item/weapon/reagent_containers/food/snacks/tincan/stewbuckwheat = 1,
+					/obj/item/weapon/reagent_containers/food/snacks/armymaindish/burrito = 1
 					)
 
 	contraband = list(/obj/item/weapon/reagent_containers/food/drinks/cans/thirteenloko = 5,
 					/obj/item/weapon/reagent_containers/food/snacks/liquidfood = 6)
 
 	prices = list(/obj/item/weapon/radioset/prc77 = 150,
-					/obj/item/weapon/grenade/frag/rg42 = 200,
-					/obj/item/ammo_magazine/c545x39m = 80,
+					/obj/item/clothing/suit/storage/hooded/brown_jacket = 200,
+					/obj/item/clothing/suit/storage/hooded/white_jacket = 190,
+					/obj/item/clothing/suit/storage/hooded/black_jacket = 210,
+					/obj/item/weapon/storage/backpack/civpack = 200,
+					/obj/item/weapon/storage/backpack/sovietpack = 600,
 					/obj/item/weapon/gun/projectile/makarov = 200,
-					/obj/item/clothing/suit/storage/hooded/ghillie = 750,
-					/obj/item/clothing/suit/storage/hooded/ghillie_d = 600,
-					/obj/item/stack/medical/bruise_pack/bint = 65,
+					/obj/item/ammo_magazine/a9x18 = 50,
 					/obj/item/weapon/reagent_containers/food/drinks/cans/dr_gibb = 15,
 					/obj/item/weapon/reagent_containers/food/drinks/cans/starkist = 15,
 					/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle = 20,
 					/obj/item/weapon/reagent_containers/food/drinks/cans/space_up = 15,
 					/obj/item/weapon/reagent_containers/food/drinks/cans/iced_tea = 17,
-					/obj/item/weapon/reagent_containers/food/drinks/cans/grape_juice = 15)
+					/obj/item/weapon/reagent_containers/food/drinks/cans/grape_juice = 15,
+					/obj/item/weapon/reagent_containers/food/snacks/tincan/stew = 50,
+					/obj/item/weapon/reagent_containers/food/snacks/tincan/stewpearlbarley = 70,
+					/obj/item/weapon/reagent_containers/food/snacks/tincan/stewbuckwheat = 60,
+					/obj/item/weapon/reagent_containers/food/snacks/armymaindish/burrito = 60)
+
 	idle_power_usage = 0
 
 /obj/machinery/vending/npc/weapon
@@ -1172,22 +1183,36 @@
 	icon_state = "human2"
 	icon_vend = "human2"
 	trader_coefficent = 0.9
-	products = list(/obj/item/weapon/gun/projectile/automatic/rifle/ak74 = 2,
-					/obj/item/weapon/gun/projectile/cz82 = 4,
-					/obj/item/weapon/gun/projectile/berettam9 = 3,
+	products = list(/obj/item/clothing/suit/storage/hooded/leather_coat = 2,
+					/obj/item/clothing/suit/storage/hooded/ghillie = 2,
+					/obj/item/clothing/suit/storage/hooded/ghillie_d = 2,
+					/obj/item/clothing/under/officersweater = 1,
+					/obj/item/weapon/gun/projectile/automatic/rifle/ak74 = 2,
+					/obj/item/weapon/gun/projectile/cz82 = 2,
+					/obj/item/weapon/gun/projectile/berettam9 = 2,
+					/obj/item/weapon/gun/projectile/colt911 = 1,
+					/obj/item/weapon/grenade/frag/rg42 = 3,
 					/obj/item/ammo_magazine/cz9x18 = 16,
 					/obj/item/ammo_magazine/a9x19 = 8,
-					/obj/item/ammo_magazine/c545x39m = 8,
+					/obj/item/ammo_magazine/c45m = 4,
+					/obj/item/ammo_magazine/c545x39m = 8
 					)
 
 	contraband = list(/obj/item/weapon/reagent_containers/food/drinks/cans/thirteenloko = 5,
 					/obj/item/weapon/reagent_containers/food/snacks/liquidfood = 6)
 
-	prices = list(/obj/item/weapon/gun/projectile/automatic/rifle/ak74 = 6000,
+	prices = list(/obj/item/clothing/suit/storage/hooded/leather_coat = 260,
+					/obj/item/clothing/suit/storage/hooded/ghillie = 750,
+					/obj/item/clothing/suit/storage/hooded/ghillie_d = 600,
+					/obj/item/clothing/under/officersweater = 350,
+					/obj/item/weapon/gun/projectile/automatic/rifle/ak74 = 6000,
 					/obj/item/weapon/gun/projectile/berettam9 = 1500,
+					/obj/item/weapon/gun/projectile/colt911 = 1200,
 					/obj/item/weapon/gun/projectile/cz82 = 900,
+					/obj/item/weapon/grenade/frag/rg42 = 350,
 					/obj/item/ammo_magazine/cz9x18 = 85,
 					/obj/item/ammo_magazine/a9x19 = 95,
+					/obj/item/ammo_magazine/c45m = 90,
 					/obj/item/ammo_magazine/c545x39m = 250
 					)
 
@@ -1196,21 +1221,27 @@
 	icon_state = "human3"
 	icon_vend = "human3"
 	trader_coefficent = 0.9
-	products = list(/obj/item/weapon/reagent_containers/pill/dexalin = 20,
-					/obj/item/weapon/reagent_containers/pill/paracetamol = 15,
+	products = list(
+					/obj/item/stack/medical/bruise_pack/bint = 3,
+					/obj/item/weapon/reagent_containers/pill/dexalin = 4,
+					/obj/item/weapon/reagent_containers/pill/paracetamol = 7,
 					/obj/item/weapon/reagent_containers/pill/paroxetine = 6,
-					/obj/item/weapon/reagent_containers/pill/phenazepam = 10,
-					/obj/item/weapon/reagent_containers/syrette/morphine = 8,
+					/obj/item/weapon/reagent_containers/pill/phenazepam = 4,
+					/obj/item/weapon/reagent_containers/syrette/morphine = 2,
 					/obj/item/weapon/storage/backpack/usmcm3 = 2,
+					/obj/item/weapon/storage/backpack/bundes_med = 1
 					)
 
 	contraband = list(/obj/item/weapon/reagent_containers/pill/dexalin_plus = 2,
 					/obj/item/weapon/reagent_containers/pill/happy = 6)
 
-	prices = list(/obj/item/weapon/reagent_containers/pill/dexalin = 50,
+	prices = list(
+					/obj/item/stack/medical/bruise_pack/bint = 80,
+					/obj/item/weapon/reagent_containers/pill/dexalin = 50,
 					/obj/item/weapon/reagent_containers/pill/paracetamol = 37,
 					/obj/item/weapon/reagent_containers/pill/paroxetine = 41,
 					/obj/item/weapon/reagent_containers/pill/phenazepam = 53,
 					/obj/item/weapon/reagent_containers/syrette/morphine = 95,
-					/obj/item/weapon/storage/backpack/usmcm3 = 250
+					/obj/item/weapon/storage/backpack/usmcm3 = 250,
+					/obj/item/weapon/storage/backpack/bundes_med = 230
 					)
