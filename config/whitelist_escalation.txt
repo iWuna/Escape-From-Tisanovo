@@ -11,3 +11,7 @@ Military Police
 NotOverlyTastedBread = {
 Policeman
 }
+
+Stalkeros = {
+Policeman
+}
