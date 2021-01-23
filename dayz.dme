@@ -2532,6 +2532,7 @@
 #include "maps\dayz\dayz_define.dm"
 #include "maps\dayz\dayz_jobs.dm"
 #include "maps\dayz\dayz_outfits.dm"
+#include "maps\dayz\dayz_special.dm"
 #include "maps\dayz\tisanovo.dmm"
 #include "maps\europe-2\escnew_outfits.dm"
 #include "maps\~mapsystem\map_preferences.dm"

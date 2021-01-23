@@ -586,10 +586,12 @@ var/global/list/damage_icon_parts = list()
 
 	update_collar(0)
 
-	if(update_icons)   update_icons()
+	if(update_icons)
+		update_icons()
 
 /mob/living/carbon/human/update_inv_pockets(var/update_icons=1)
-	if(update_icons)	update_icons()
+	if(update_icons)
+		update_icons()
 
 
 /mob/living/carbon/human/update_inv_wear_mask(var/update_icons=1)
@@ -597,7 +599,8 @@ var/global/list/damage_icon_parts = list()
 		overlays_standing[FACEMASK_LAYER]	= wear_mask.get_mob_overlay(src,slot_wear_mask_str)
 	else
 		overlays_standing[FACEMASK_LAYER]	= null
-	if(update_icons)   update_icons()
+	if(update_icons)
+		update_icons()
 
 /mob/living/carbon/human/update_inv_back(var/update_icons=1)
 	if(back)

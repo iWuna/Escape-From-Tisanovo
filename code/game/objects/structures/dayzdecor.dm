@@ -140,3 +140,23 @@
 
 /obj/structure/barrier_dz/right
 	icon_state = "right"
+
+/obj/structure/stolb_dz
+	name = "pillar"
+	desc = "Pillar with wires"
+	icon = 'icons/obj/32x64.dmi'
+	icon_state = "stolb"
+	plane = ABOVE_HUMAN_PLANE
+	layer = ABOVE_HUMAN_LAYER
+	density = 1
+	anchored = 1
+
+/obj/structure/shkaf_dz
+	name = "closet"
+	desc = "Old soviet closet"
+	icon = 'icons/obj/32x64.dmi'
+	icon_state = "shkaf64"
+	plane = ABOVE_HUMAN_PLANE
+	layer = ABOVE_HUMAN_LAYER
+	density = 1
+	anchored = 1

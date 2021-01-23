@@ -100,6 +100,7 @@
 	cold_protection = HEAD
 	flags_inv = HIDEEARS | BLOCKHAIR
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(melee = 5, bullet = 5, laser = 20, energy = 10, bomb = 5, bio = 90, rad = 95)
 
 /obj/item/clothing/head/hood_hazmat/nato
 	icon_state = "hazmat_hood_nato"
@@ -112,7 +113,7 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
-	armor = list(melee = 5, bullet = 5, laser = 20, energy = 10, bomb = 5, bio = 90, rad = 90)
+	armor = list(melee = 5, bullet = 5, laser = 20, energy = 10, bomb = 5, bio = 90, rad = 95)
 	slowdown_general = 0.2
 	action_button_name = "Toggle Hood"
 	hoodtype = /obj/item/clothing/head/hood_hazmat
