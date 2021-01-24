@@ -60,13 +60,13 @@
 			return 1
 
 /obj/item/weapon/storage/belt/holster/sa
+	name = "Makarov holster"
 	storage_slots = 2
 	holster_sound = 'sound/effects/holster/holsterin.ogg'
 	unholster_sound = 'sound/effects/holster/holsterout.ogg'
 	special_item = /obj/item/weapon/gun/projectile/makarov
 	desc = "This holster can hold Makarov pistol and one magazine."
 	special_item = /obj/item/weapon/gun/projectile/makarov
-	open_delay = 5
 	startswith = list(
 		/obj/item/weapon/gun/projectile/makarov,
 		/obj/item/ammo_magazine/a9x18
@@ -83,7 +83,6 @@
 	special_item = /obj/item/weapon/gun/projectile/makarov
 	desc = "This holster can hold Makarov pistol and one magazine."
 	special_item = /obj/item/weapon/gun/projectile/makarov
-	open_delay = 5
 	startswith = null
 	can_hold = list(
 		/obj/item/weapon/gun/projectile/makarov,
@@ -91,9 +90,9 @@
 		)
 
 /obj/item/weapon/storage/belt/holster/csla
+	name = "CZ82 holster"
 	storage_slots = 2
 	holster_sound = 'sound/effects/holster/holsterin.ogg'
-	open_delay = 5
 	unholster_sound = 'sound/effects/holster/holsterout.ogg'
 	special_item = /obj/item/weapon/gun/projectile/cz82
 	desc = "This holster can hold CZ82 pistol and one magazine."
@@ -120,6 +119,7 @@
 		)
 
 /obj/item/weapon/storage/belt/holster/usmc
+	name = "Colt 1911 holster"
 	special_item = /obj/item/weapon/gun/projectile/colt911
 	holster_sound = 'sound/effects/holster/tactiholsterin.ogg'
 	unholster_sound = 'sound/effects/holster/tactiholsterout.ogg'
@@ -162,7 +162,6 @@
 	icon_state = "apsholster"
 	icon_closed = "apsholster_empty"
 	storage_slots = 3
-	open_delay = 8
 
 	desc = "This holster can hold an APS and two magazines."
 	startswith = list(

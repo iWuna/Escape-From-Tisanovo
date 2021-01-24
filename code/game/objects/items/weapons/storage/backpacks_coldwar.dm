@@ -186,6 +186,7 @@
 	icon_state = "sa_rpg2"
 	item_state = "sa_rpg"
 	storage_slots = 2
+	reachable = 1
 	can_hold = list (/obj/item/ammo_casing/rpg_missile)
 
 /obj/item/weapon/storage/backpack/rpgsa/assistant
@@ -194,6 +195,7 @@
 	icon_state = "sa_rpg3"
 	item_state = "sa_rpg"
 	storage_slots = 3
+	reachable = 1
 	can_hold = list (/obj/item/ammo_casing/rpg_missile)
 
 /obj/item/weapon/storage/backpack/rpgcsla
@@ -210,4 +212,5 @@
 	icon_state = "csla_rpg3"
 	item_state = "csla_rpg"
 	storage_slots = 3
+	reachable = 1
 	can_hold = list(/obj/item/ammo_casing/rpg_missile)

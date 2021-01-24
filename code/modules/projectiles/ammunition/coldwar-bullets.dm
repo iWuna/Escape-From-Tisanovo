@@ -129,11 +129,13 @@
 /obj/item/ammo_casing/rpg_missile/rg7
 	name = "RG-7"
 	desc = "RG-7 missile. Fucking deadly, don't shoout yourself, Abu Hajaar!"
+	layer = 4
 
 /obj/item/ammo_casing/rpg_missile/og7
 	name = "OG-7"
 	desc = "OG-7"
 	icon_state = "og-7"
+	layer = 4
 
 /obj/item/ammo_casing/oneuserocket
 	name = "rocket"
