@@ -702,9 +702,43 @@
 	name = "Cholera"
 	description = "A toxic bacteria."
 	color = "#CF3600"
-	strength = 0
+	strength = 3
 	taste_description = "mud"
-	metabolism = REM
+	metabolism = REM * 0.3
+	reagent_state = LIQUID
 
-/datum/reagent/toxin/cholera/affect_blood(var/mob/living/human/M, var/alien, var/removed)
+/datum/reagent/toxin/cholera/affect_blood(var/mob/living/carbon/human/H, var/alien, var/removed)
+	..()
+	if(prob(5))
+		if(H.chem_doses[type] < 15)
+			to_chat(H, "<span class='warning'>You feel ague...</span>")
 	return
+
+/datum/reagent/toxin/black_cholera
+	name = "Black Cholera"
+	description = "A very toxic bacteria."
+	color = "#CF3600"
+	strength = 1
+	taste_description = "mud"
+	metabolism = REM * 0.3
+	reagent_state = LIQUID
+
+/datum/reagent/toxin/black_cholera/affect_blood(var/mob/living/carbon/human/H, var/alien, var/removed)
+	..()
+	if(H.chem_doses[type] <= 5)
+		if(prob(10))
+			to_chat(H, "<span class='warning'>You feel ague...</span>")
+			H.emote("twitch")
+			H.adjustToxLoss(0, 1)
+		if(prob(15))
+			to_chat(H,"<span class='warning'>Your stomach grumbles unsettlingly.</span>")
+			H.adjustToxLoss(0, 5)
+	if(H.chem_doses[type] >= 10)
+		if(prob(5))
+			to_chat(H, "<span class='warning'>You feel bad...</span>")
+			H.reagents.add_reagent(/datum/reagent/toxin/black_cholera, 0.5)
+			H.adjustOxyLoss(1)
+			H.eye_blurry = max(H.eye_blurry, 10)
+		if(prob(4))
+			H.Weaken(10)
+			H.adjustToxLoss(0, 15)

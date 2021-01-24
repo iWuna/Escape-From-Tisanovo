@@ -44,8 +44,11 @@
 	. =..()
 	var/mob/living/carbon/human/H = .
 	if(istype(H))
-		if(prob(15))
+		if(prob(20))
 			to_chat(., "[src] bites your neck!")
+			if(isliving(.))
+				var/mob/living/L = .
+				L.reagents.add_reagent(/datum/reagent/toxin/black_cholera, 2)
 
 
 /mob/living/simple_animal/hostile/dayz/zombie/death()

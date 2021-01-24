@@ -8,7 +8,7 @@
 	description_info = "By using this item, you may toggle its scanning mode on and off. Examine it while it's on to check for ambient radiation."
 	description_fluff = "For centuries geiger counters have been saving the lives of unsuspecting laborers and technicians. You can never be too careful around radiation."
 	icon_state = "geiger_off"
-	item_state = "multitool"
+	item_state = "geiger"
 	w_class = ITEM_SIZE_SMALL
 	var/scanning = 0
 	var/radiation_count = 0

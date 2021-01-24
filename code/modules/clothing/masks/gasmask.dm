@@ -146,3 +146,17 @@
 	icon_state = "gasmask_new"
 	tint = 0.5
 	visor_color = 0
+
+/obj/item/clothing/mask/gas/hazmat_un
+	name = "gas mask"
+	desc = "A face-covering mask that can be connected to an air supply. Filters harmful gases from the air."
+	icon_state = "hazmat_un"
+	tint = 0.5
+	visor_color = 0
+
+/obj/item/clothing/mask/gas/ppm88
+	name = "gas mask"
+	desc = "A face-covering mask that can be connected to an air supply. Filters harmful gases from the air."
+	icon_state = "ppm88"
+	tint = 0.5
+	visor_color = 0
