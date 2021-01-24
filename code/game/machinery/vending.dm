@@ -68,7 +68,6 @@
 	var/scan_id = 1
 	var/obj/item/weapon/coin/coin
 	var/datum/wires/vending/wires = null
-
 	var/human = FALSE
 	var/trader_coefficent = 0.5
 
@@ -225,8 +224,8 @@
 	for(var/datum/stored_items/vending_products/R in product_records)
 		if(I.type == R.item_path)
 			var/money = R.price * 0.5
-			spawn_money(money,src.loc)
 			stock(I, R, user)
+			spawn_money(money,src.loc)
 			return 1
 
 /**
@@ -460,7 +459,10 @@
 		flick(src.icon_deny,src)
 		return
 	src.vend_ready = 0 //One thing at a time!!
-	src.status_message = "Vending..."
+	if(human)
+		src.status_message = "Vending..."
+	else
+		src.status_message = "Gives..."
 	src.status_error = 0
 	GLOB.nanomanager.update_uis(src)
 

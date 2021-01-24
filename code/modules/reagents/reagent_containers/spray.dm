@@ -107,8 +107,9 @@
 	reagents.add_reagent(/datum/reagent/space_cleaner, volume)
 
 /obj/item/weapon/reagent_containers/spray/sterilizine
-	name = "sterilizine"
+	name = "sterilizer bottle"
 	desc = "Great for hiding incriminating bloodstains and sterilizing scalpels."
+	volume = 50
 
 /obj/item/weapon/reagent_containers/spray/sterilizine/New()
 	..()

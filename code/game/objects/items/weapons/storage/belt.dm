@@ -253,7 +253,6 @@
 	icon_state = "bdw_harness"
 	item_state = "bdw_harness"
 	storage_slots = 4
-	can_hold = null
 	can_hold = list(/obj/item/weapon/shovel/etool,
 	/obj/item/weapon/storage/belt/holster/flaskstorage/nato,
 	/obj/item/weapon/storage/firstaid/usmc_ifak)

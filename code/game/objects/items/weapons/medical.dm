@@ -25,7 +25,7 @@
 			if(pop_sound)
 				playsound(src.loc, pop_sound, 50, 1)
 			var/obj/item/weapon/reagent_containers/pill/pill = contents[1]
-			user << "<span class='notice'>You took one [pill.name] from [src.name]</span>"
+			to_chat(user, "<span class='notice'>You took one [pill.name] from [src.name]</span>")
 			user.put_in_active_hand(pill)
 			update_icon()
 		else
@@ -39,13 +39,13 @@
 		if(prob(30))
 			if(pop_sound)
 				playsound(src.loc, pop_sound, 50, 1)
-			user << "<span class='notice'>You took one [pill.name] from [src.name]</span>"
+			to_chat(user, "<span class='notice'>You took one [pill.name] from [src.name]</span>")
 			pill.loc = user.loc
 			update_icon()
 		else
-			user << "<span class='warning'>You tried to take one [pill.name] from [src.name] by one hand but failed</span>"
+			to_chat(user, "<span class='warning'>You tried to take one [pill.name] from [src.name] by one hand but failed</span>")
 	else
-		user << "<span class='warning'>[name] is empty!</span>"
+		to_chat(user, "<span class='warning'>[name] is empty!</span>")
 
 /obj/item/weapon/pill_pack/update_icon()
 	icon_state = "[initial(icon_state)][contents.len]"
@@ -302,7 +302,7 @@
 			user.put_in_active_hand(ampule)
 			update_icon()
 		else
-			user << "<span class='warning'>It's empty!</span>"
+			to_chat(user, "<span class='warning'>It's empty!</span>")
 	else
 		..()
 
@@ -310,13 +310,13 @@
 	if(src.contents.len > 0)
 		var/obj/item/weapon/reagent_containers/glass/ampule/ampule = contents[1]
 		if(prob(30))
-			user << "<span class='notice'>You took one [ampule.name] from [src.name]</span>"
+			to_chat(user, "<span class='notice'>You took one [ampule.name] from [src.name]</span>")
 			ampule.loc = user.loc
 			update_icon()
 		else
-			user << "<span class='warning'>You tried to take one [ampule.name] from [src.name] by one hand but failed</span>"
+			to_chat(user, "<span class='warning'>You tried to take one [ampule.name] from [src.name] by one hand but failed</span>")
 	else
-		user << "<span class='warning'>[name] is empty!</span>"
+		to_chat(user, "<span class='warning'>[name] is empty!</span>")
 
 /obj/item/weapon/ampule_pack/update_icon()
 	icon_state = "[initial(icon_state)][contents.len]"
