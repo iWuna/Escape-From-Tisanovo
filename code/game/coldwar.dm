@@ -35,6 +35,9 @@ var/wlg_selected_cuttree = 0
 			if(istype(T, /turf/unsimulated/ground/sand))
 				continue
 
+			if(istype(T, /turf/unsimulated/ground/mud))
+				continue
+
 			wlg_total++
 
 			var/rejected = FALSE

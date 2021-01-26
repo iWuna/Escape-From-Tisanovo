@@ -2,11 +2,9 @@ var/decl/sound_player/sound_player = new()
 
 /*
 	A sound player/manager for looping 3D sound effects.
-
 	Due to how the BYOND sound engine works a sound datum must be played on a specific channel for updates to work properly.
 	If a channel is not assigned it will just result in a new sound effect playing, even if re-using the same datum instance.
 	We also use the channel to play a null-sound on Stop(), just in case BYOND clients don't like having a large nuber, albeit stopped, looping sounds.
-
 	As such there is a maximum limit of 1024 sound sources, with further limitations due to some channels already being potentially in use.
 	However, multiple sources may share the same sound_id and there is a best-effort attempt to play the closest source where possible.
 	The line above is currently a lie. Will probably just have to enforce moderately short sound ranges.
@@ -32,7 +30,6 @@ var/decl/sound_player/sound_player = new()
 	if(!channel)
 		log_warning("All available sound channels are in active use.")
 		return
-
 	return new/datum/sound_token(source, sound_id, sound, volume, channel, range, falloff, prefer_mute, ignore_vis)
 
 /decl/sound_player/proc/PrivStopSound(var/datum/sound_token/sound_token)
@@ -152,6 +149,7 @@ datum/sound_token/proc/Mute()
 
 	can_be_heard_from = current_turfs
 	var/current_listeners = all_hearers(source, range, ignore_vis)
+
 	var/former_listeners = listeners - current_listeners
 	var/new_listeners = current_listeners - listeners
 
@@ -190,7 +188,7 @@ datum/sound_token/proc/PrivAddListener(var/atom/listener)
 	GLOB.moved_event.register(listener, src, /datum/sound_token/proc/PrivUpdateListenerLoc)
 	GLOB.destroyed_event.register(listener, src, /datum/sound_token/proc/PrivRemoveListener)
 
-	PrivUpdateListenerLoc(listener)
+	PrivUpdateListenerLoc(listener, FALSE)
 
 /datum/sound_token/proc/PrivRemoveListener(var/atom/listener, var/sound/null_sound)
 	if(!null_sound)
@@ -200,13 +198,14 @@ datum/sound_token/proc/PrivAddListener(var/atom/listener)
 	GLOB.destroyed_event.unregister(listener, src, /datum/sound_token/proc/PrivRemoveListener)
 	listeners -= listener
 
-/datum/sound_token/proc/PrivUpdateListenerLoc(var/atom/listener)
+/datum/sound_token/proc/PrivUpdateListenerLoc(var/atom/listener, var/update_sound = TRUE)
 	var/sound/S = listeners[listener]
 
 	var/turf/source_turf = get_turf(source)
 	var/turf/listener_turf = get_turf(listener)
 
 	var/distance = get_dist(source_turf, listener_turf)
+
 	if(!listener_turf || (distance > range) || (!(listener_turf in can_be_heard_from) && !ignore_vis) )
 		if(prefer_mute)
 			listener_status[listener] |= SOUND_MUTE
@@ -222,16 +221,18 @@ datum/sound_token/proc/PrivAddListener(var/atom/listener)
 	// Far as I can tell from testing, sound priority just doesn't work.
 	// Sounds happily steal channels from each other no matter what.
 	S.priority = Clamp(255 - distance, 0, 255)
-	PrivUpdateListener(listener)
+	PrivUpdateListener(listener, update_sound)
 
 /datum/sound_token/proc/PrivUpdateListeners()
 	for(var/listener in listeners)
 		PrivUpdateListener(listener)
 
-/datum/sound_token/proc/PrivUpdateListener(var/listener)
+/datum/sound_token/proc/PrivUpdateListener(var/listener, var/update_sound = TRUE)
 	var/sound/S = listeners[listener]
 	S.volume = volume
-	S.status = status|listener_status[listener]|SOUND_UPDATE
+	S.status = status|listener_status[listener]
+	if(update_sound)
+		S.status |= SOUND_UPDATE
 	sound_to(listener, S)
 
 /obj/sound_test

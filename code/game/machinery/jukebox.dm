@@ -11,7 +11,7 @@ datum/track/New(var/title_name, var/audio)
 /obj/machinery/media/jukebox
 	name = "music player"
 	icon = 'icons/obj/jukebox.dmi'
-	icon_state = "radiochechnya-nopower"
+	icon_state = "radiochechnya"
 	var/state_base = "radiochechnya"
 	anchored = 1
 	density = 0
@@ -30,11 +30,15 @@ datum/track/New(var/title_name, var/audio)
 
 	var/datum/track/current_track
 	var/list/datum/track/tracks = list(
-//		new/datum/track("Yound Man Dead", 'sound/music/No Country For Old Men - Young Men Dead.ogg'),
-//		new/datum/track("Behing The Wheel", 'sound/music/Depeche Mode - Behing The Wheel.ogg'),
-//		new/datum/track("Putting Out Fire", 'sound/music/David Bowie - Cat People.ogg'),
-//		new/datum/track("99 Luftballons", 'sound/music/Nena - 99 Luftballons.ogg'),
-//		new/datum/track("London Calling", 'sound/music/The Clash - London Calling.ogg'),
+		new/datum/track("Nena - 99 Luftballons", 'sound/music/luftballons.ogg'),
+		new/datum/track("Midge Ure - The Man Who Sold The World", 'sound/music/soldworld.ogg'),
+		new/datum/track("Kay Kyser - Jingle Jangle Jingle", 'sound/music/jinglejangle.ogg'),
+		new/datum/track("Marty Robbins - Big Iron", 'sound/music/bigiron.ogg'),
+		new/datum/track("Ink Spotts - Maybe", 'sound/music/maybe.ogg'),
+		new/datum/track("Firelake - Dirge for the Planet", 'sound/music/sidor_music2.ogg'),
+		new/datum/track("Boney M - Sunny", 'sound/music/sunny.ogg'),
+		new/datum/track("A-ha - Take On Me", 'sound/music/takeonme.ogg'),
+		new/datum/track("Da-Da-Da", 'sound/music/tunak.ogg')
 	)
 /obj/machinery/media/jukebox/New()
 	..()
