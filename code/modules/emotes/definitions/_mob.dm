@@ -76,7 +76,6 @@
 		/decl/emote/audible/snore,
 		/decl/emote/audible/whimper,
 		/decl/emote/audible/yawn,
-		/decl/emote/audible/whistle,
 		/decl/emote/audible/clap,
 		/decl/emote/audible/chuckle,
 		/decl/emote/audible/cough,
@@ -120,7 +119,12 @@
 		/decl/emote/visible/hug,
 		/decl/emote/visible/dap,
 		/decl/emote/visible/signal,
-		/decl/emote/visible/handshake
+		/decl/emote/visible/handshake,
+		/decl/emote/human/poo,
+		/decl/emote/human/pee,
+		/decl/emote/audible/clearthroat,
+		/decl/emote/audible/whistle,
+		/decl/emote/audible/hem
 	)
 
 /mob/living/silicon/robot

@@ -43,6 +43,10 @@
 
 	if(!uvi)
 		uvi = "¹[rand(1,9)]"
+
+	bladder = rand(0,100)
+	bowels = rand(0, 100)
+
 	if(dna)
 		dna.ready_dna(src)
 		dna.real_name = real_name
@@ -50,6 +54,7 @@
 	make_blood()
 	nutrition = rand(300,400)
 	hydratation = rand(300, 400)
+
 /mob/living/carbon/human/Destroy()
 	GLOB.human_mob_list -= src
 	worn_underwear = null

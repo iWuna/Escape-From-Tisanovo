@@ -47,3 +47,4 @@
 	var/job = null//Living
 
 	var/obj/screen/cells = null
+	var/list/in_vision_cones = list()

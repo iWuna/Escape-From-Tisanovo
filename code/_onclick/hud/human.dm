@@ -306,6 +306,16 @@
 	mymob.radio_use_icon.color = ui_color
 	mymob.radio_use_icon.alpha = ui_alpha
 */
+
+	mymob.fov = new /obj/screen()
+	mymob.fov.icon = 'icons/mob/hide.dmi'
+	mymob.fov.icon_state = "combat"
+	mymob.fov.name = " "
+	mymob.fov.screen_loc = "1,1"
+	mymob.fov.mouse_opacity = 0
+	mymob.fov.layer = UNDER_HUD_LAYER
+	hud_elements |= mymob.fov
+
 	mymob.client.screen = list()
 
 	mymob.client.screen += hud_elements

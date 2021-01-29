@@ -293,68 +293,73 @@
 	return
 
 /mob/living/carbon/throw_item(atom/target)
-	src.throw_mode_off()
-	if(usr.stat || !target)
+	var/area/B = get_area(src.loc)
+	if(!B.safezone)
+		src.throw_mode_off()
+		if(usr.stat || !target)
+			return
+		if(target.type == /obj/screen) return
+
+		var/atom/movable/item = src.get_active_hand()
+
+		if(!item) return
+
+	//	var/throw_range = item.throw_range
+		if (istype(item, /obj/item/grab))
+			var/obj/item/grab/G = item
+			item = G.throw_held() //throw the person instead of the grab
+			if(ismob(item))
+				var/mob/M = item
+
+				//limit throw range by relative mob size
+				throw_range = round(M.throw_range * min(src.mob_size/M.mob_size, 1))
+	//			var/itemsize = round(M.mob_size/4)
+				var/turf/start_T = get_turf(loc) //Get the start and target tile for the descriptors
+				var/turf/end_T = get_turf(target)
+				if(start_T && end_T)
+					var/start_T_descriptor = "<font color='#6b5d00'>[start_T] \[[start_T.x],[start_T.y],[start_T.z]\] ([start_T.loc])</font>"
+					var/end_T_descriptor = "<font color='#6b4400'>[start_T] \[[end_T.x],[end_T.y],[end_T.z]\] ([end_T.loc])</font>"
+					admin_attack_log(usr, M, "Threw the victim from [start_T_descriptor] to [end_T_descriptor].", "Was from [start_T_descriptor] to [end_T_descriptor].", "threw, from [start_T_descriptor] to [end_T_descriptor], ")
+
+		playsound(src, 'sound/effects/throw.wav', 50, TRUE)
+
+		var/throwtime_divider = 5
+		if (isitem(item))
+			var/obj/item/I = item
+			switch (I.w_class)
+				if (3)
+					throwtime_divider = 4
+				if (4)
+					throwtime_divider = 3
+				if (5)
+					throwtime_divider = 2
+		else if (ismob(item))
+			throwtime_divider = 2
+
+		//actually throw it!
+		if (item && do_after(src, max(1, round(abs_dist(src, target)/throwtime_divider*3)), get_turf(src)))
+			remove_from_mob(item)
+			item.loc = loc
+			visible_message("<span class = 'red'>[src] throws the [item].</span>")
+
+			if(!lastarea)
+				lastarea = get_area(loc)
+			if((istype(loc, /turf/space)) || (lastarea.has_gravity == FALSE))
+				inertia_dir = get_dir(target, src)
+				step(src, inertia_dir)
+
+
+	/*
+			if(istype(loc, /turf/space) || (flags & NOGRAV)) //they're in space, move em one space in the opposite direction
+				inertia_dir = get_dir(target, src)
+				step(src, inertia_dir)
+	*/
+
+
+			item.throw_at(target, item.throw_range, item.throw_speed, src)
+	else
+		to_chat(src, "You can't do that here, this zone are safe.")
 		return
-	if(target.type == /obj/screen) return
-
-	var/atom/movable/item = src.get_active_hand()
-
-	if(!item) return
-
-//	var/throw_range = item.throw_range
-	if (istype(item, /obj/item/grab))
-		var/obj/item/grab/G = item
-		item = G.throw_held() //throw the person instead of the grab
-		if(ismob(item))
-			var/mob/M = item
-
-			//limit throw range by relative mob size
-			throw_range = round(M.throw_range * min(src.mob_size/M.mob_size, 1))
-//			var/itemsize = round(M.mob_size/4)
-			var/turf/start_T = get_turf(loc) //Get the start and target tile for the descriptors
-			var/turf/end_T = get_turf(target)
-			if(start_T && end_T)
-				var/start_T_descriptor = "<font color='#6b5d00'>[start_T] \[[start_T.x],[start_T.y],[start_T.z]\] ([start_T.loc])</font>"
-				var/end_T_descriptor = "<font color='#6b4400'>[start_T] \[[end_T.x],[end_T.y],[end_T.z]\] ([end_T.loc])</font>"
-				admin_attack_log(usr, M, "Threw the victim from [start_T_descriptor] to [end_T_descriptor].", "Was from [start_T_descriptor] to [end_T_descriptor].", "threw, from [start_T_descriptor] to [end_T_descriptor], ")
-
-	playsound(src, 'sound/effects/throw.wav', 50, TRUE)
-
-	var/throwtime_divider = 5
-	if (isitem(item))
-		var/obj/item/I = item
-		switch (I.w_class)
-			if (3)
-				throwtime_divider = 4
-			if (4)
-				throwtime_divider = 3
-			if (5)
-				throwtime_divider = 2
-	else if (ismob(item))
-		throwtime_divider = 2
-
-	//actually throw it!
-	if (item && do_after(src, max(1, round(abs_dist(src, target)/throwtime_divider*3)), get_turf(src)))
-		remove_from_mob(item)
-		item.loc = loc
-		visible_message("<span class = 'red'>[src] throws the [item].</span>")
-
-		if(!lastarea)
-			lastarea = get_area(loc)
-		if((istype(loc, /turf/space)) || (lastarea.has_gravity == FALSE))
-			inertia_dir = get_dir(target, src)
-			step(src, inertia_dir)
-
-
-/*
-		if(istype(loc, /turf/space) || (flags & NOGRAV)) //they're in space, move em one space in the opposite direction
-			inertia_dir = get_dir(target, src)
-			step(src, inertia_dir)
-*/
-
-
-		item.throw_at(target, item.throw_range, item.throw_speed, src)
 
 
 /mob/living/carbon/fire_act(datum/gas_mixture/air, exposed_temperature, exposed_volume)

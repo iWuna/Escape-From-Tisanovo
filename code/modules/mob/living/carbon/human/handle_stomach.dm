@@ -143,3 +143,5 @@
 
 				if(prob(10))
 					Weaken(15)
+
+	handle_excrement()

@@ -71,16 +71,19 @@
 		return
 
 	var/area/B = get_area(user.loc)
-	if(user && !B.safezone)
-		msg_admin_attack("[user.name] ([user.ckey]) primed \a [src] (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[user.x];Y=[user.y];Z=[user.z]'>JMP</a>)")
+	if(!B.safezone)
+		if(user)
+			msg_admin_attack("[user.name] ([user.ckey]) primed \a [src] (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[user.x];Y=[user.y];Z=[user.z]'>JMP</a>)")
 
-	icon_state = initial(icon_state) + "_active"
-	active = 1
-	playsound(loc, arm_sound, 75, 0, -3)
+		icon_state = initial(icon_state) + "_active"
+		active = 1
+		playsound(loc, arm_sound, 75, 0, -3)
 
-	spawn(det_time)
-		detonate()
-		return
+		spawn(det_time)
+			detonate()
+			return
+	else
+		to_chat(user, "<span class='notice'>You can't do that here.</span>")
 
 
 /obj/item/weapon/grenade/proc/detonate()

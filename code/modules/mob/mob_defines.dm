@@ -175,9 +175,14 @@
 
 	var/has_limbs = 1
 	var/scrambling = 0
+
+	var/emote_cd = 0//Emote cooldown.
+
 	var/obj/screen/rest = null
 	var/obj/screen/whitenoise = null
 
+	var/obj/screen/fov = null //The screen object because I can't figure out how the hell TG does their screen objects so I'm just using legacy code.
+	var/usefov = 1
 
 	// Escalation
 

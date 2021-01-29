@@ -257,7 +257,46 @@
 		if(emote_sound)
 			playsound(M, emote_sound, 100, 0, extrarange = 4)
 
-
 /decl/emote/audible/grunt
 	key = "grunt"
 	emote_message_3p = "USER grunts."
+
+/decl/emote/audible/clearthroat
+	key = "clearthroat"
+
+/decl/emote/audible/clearthroat/do_emote(var/mob/living/carbon/human/user)
+	var/emotesound = null
+	if(user.isMonkey())
+		return
+
+	else if(user.gender == MALE)
+		emotesound = 'sound/voice/emotes/throatclear_male.ogg'
+
+	else
+		emotesound = 'sound/voice/emotes/throatclear_female.ogg'
+
+	if(emotesound)
+		playsound(user, emotesound, 50, 0, 1)
+
+	user.custom_emote(2,"clears their throat.")
+	user.handle_emote_CD()
+
+/decl/emote/audible/hem
+	key = "hem"
+
+/decl/emote/audible/hem/do_emote(var/mob/living/carbon/human/user)
+	var/emotesound = null
+	if(user.isMonkey())
+		return
+
+	else if(user.gender == MALE)
+		emotesound = 'sound/voice/emotes/hem_male.ogg'
+
+	else
+		emotesound = 'sound/voice/emotes/hem_female.ogg'
+
+	if(emotesound)
+		playsound(user, emotesound, 50, 0, 1)
+
+	user.custom_emote(2,"hems.")
+	user.handle_emote_CD()

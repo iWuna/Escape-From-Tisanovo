@@ -70,6 +70,11 @@
 		handle_organs()
 		if(species.death_sound)
 			playsound(loc, species.death_sound, 80, 1, 1)
+		spawn(50)
+			if(bowels >= 30)
+				handle_shit()
+			if(bladder >= 30)
+				handle_piss()
 	handle_hud_list()
 
 /mob/living/carbon/human/proc/ChangeToHusk()

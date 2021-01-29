@@ -1,8 +1,25 @@
+#define EMOTE_COOLDOWN 20		//Time in deciseconds that the cooldown lasts
+
 /mob/proc/can_emote(var/emote_type)
 	return (stat == CONSCIOUS)
 
 /mob/living/can_emote(var/emote_type)
 	return (..() && !(silent && emote_type == AUDIBLE_MESSAGE))
+
+//Emote Cooldown System (it's so simple!)
+/mob/proc/handle_emote_CD()
+	if(emote_cd == 2)
+		return 1			// Cooldown emotes were disabled by an admin, prevent use
+	if(emote_cd == 1)
+		return 1		// Already on CD, prevent use
+
+	emote_cd = 1		// Starting cooldown
+	spawn(EMOTE_COOLDOWN)
+		if(emote_cd == 2)
+			return 1		// Don't reset if cooldown emotes were disabled by an admin during the cooldown
+		emote_cd = 0				// Cooldown complete, ready for more!
+
+	return 0		// Proceed with emote
 
 /mob/proc/emote(var/act, var/m_type, var/message)
 	// s-s-snowflake

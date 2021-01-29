@@ -48,6 +48,7 @@
 	switch(alien)
 		if(IS_UNATHI) removed *= 0.1 // Unathi get most of their nutrition from meat.
 	M.nutrition += nutriment_factor * removed // For hunger and fatness
+	M.bowels += nutriment_factor * removed	//For pooping
 
 /datum/reagent/nutriment/glucose
 	name = "Glucose"

@@ -559,11 +559,6 @@
 			to_chat(src, "<span class='warning'>It won't budge!</span>")
 			return
 
-		var/area/B = get_area(AM.loc)
-		if(B.safezone)
-			to_chat(AM, "<span class='warning'>You can't pull someone in the safezone!</span>")
-			return 0
-
 		// If your size is larger than theirs and you have some
 		// kind of mob pull value AT ALL, you will be able to pull
 		// them, so don't bother checking that explicitly.

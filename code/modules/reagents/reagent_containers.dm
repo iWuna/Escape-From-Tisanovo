@@ -150,6 +150,7 @@
 				return
 
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //puts a limit on how fast people can eat/drink things
+		user.bladder += amount_per_transfer_from_this //For peeing
 		self_feed_message(user)
 		reagents.trans_to_mob(user, issmall(user) ? ceil(amount_per_transfer_from_this/2) : amount_per_transfer_from_this, CHEM_INGEST)
 		feed_sound(user)

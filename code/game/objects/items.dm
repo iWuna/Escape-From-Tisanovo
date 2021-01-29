@@ -672,6 +672,9 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 		playsound(src.loc, 'sound/effects/ironsight_on.wav', 20, 1, -1)
 		user.set_face_dir()
 		user.m_intent = "walk"
+		if(ishuman(user))
+			var/mob/living/carbon/human/HM = user
+			HM.SetFov(0)
 
 
 	else
@@ -687,6 +690,10 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 			playsound(src.loc, 'sound/effects/ironsight_off.wav', 20, 1, -1)
 			user.set_face_dir()
 			user.m_intent = "run"
+
+		if(ishuman(user))
+			var/mob/living/carbon/human/HM = user
+			HM.SetFov(1)
 
 	return
 
