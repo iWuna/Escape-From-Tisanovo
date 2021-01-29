@@ -182,6 +182,7 @@
 
 
 /client/Move(n, direct)
+	var/mob/living/user
 	if(!mob)
 		return // Moved here to avoid nullrefs below
 
@@ -225,6 +226,7 @@
 			if (mob.lying || mob.stat == DEAD || mob.stat == UNCONSCIOUS || mob.loc != oloc)
 				return
 			mob.visible_message("<span class = 'warning'>[mob] climbs through the window frame.</span>")
+			user.adjustStaminaLoss(10)
 			break
 
 	if (isliving(mob))

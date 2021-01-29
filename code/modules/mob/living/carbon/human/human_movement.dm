@@ -82,6 +82,12 @@
 
 	tally /= healthmodifier(dex)
 
+	if(staminaloss >= 80)
+		tally += 2
+
+	if(fatigueloss >= 100)
+		tally += 1
+
 	if(mRun in mutations)
 		tally = 0
 

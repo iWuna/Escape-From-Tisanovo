@@ -310,7 +310,7 @@
 	icon_state = "nato_sld1"
 	shoot_range = 9
 	faction = "neutral"
-	rapid = 1
+	rapid = 0
 	projectiletype = /obj/item/projectile/bullet
 	projectilesound = 'sound/weapons/gunshot/ak74.ogg'
 	speak = list("We running out of supplies soon, shit...",
@@ -385,7 +385,7 @@
 	projectiletype = /obj/item/projectile/bullet
 	projectilesound = 'sound/weapons/gunshot/ak74.ogg'
 	shoot_range = 8
-	rapid = 1
+	rapid = 0
 	armor = list(
 				"melee" = 25,
 				"bullet" = 50,
@@ -420,7 +420,7 @@
 	projectiletype = /obj/item/projectile/bullet
 	projectilesound = 'sound/weapons/gunshot/ak74.ogg'
 	shoot_range = 8
-	rapid = 1
+	rapid = 0
 	armor = list(
 				"melee" = 25,
 				"bullet" = 50,

@@ -8,6 +8,9 @@
 #define PAIN        "pain"
 #define ELECTROCUTE "electrocute"
 
+#define STAMINA 	"stamina"
+#define FATIGUE 	"fatigue"
+
 #define CUT       "cut"
 #define BRUISE    "bruise"
 #define PIERCE    "pierce"

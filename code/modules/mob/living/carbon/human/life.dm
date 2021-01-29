@@ -662,10 +662,12 @@
 			dizziness = max(0, dizziness - 15)
 			jitteriness = max(0, jitteriness - 15)
 			adjustHalLoss(-3)
+			adjustStaminaLoss(-3)
 		else
 			dizziness = max(0, dizziness - 3)
 			jitteriness = max(0, jitteriness - 3)
 			adjustHalLoss(-1)
+			adjustStaminaLoss(-1)
 
 		if (drowsyness > 0)
 			drowsyness = max(0, drowsyness-1)
@@ -680,6 +682,8 @@
 		if(gloves && germ_level > gloves.germ_level && prob(10))
 			gloves.germ_level += 1
 
+		CheckStamina()
+		CheckFatigue()
 	return 1
 
 /mob/living/carbon/human/handle_regular_hud_updates()
@@ -781,6 +785,34 @@
 					health_images += image('icons/mob/screen1_health.dmi',"fullhealth")
 
 				healths.overlays += health_images
+
+		if(fatigue_icon)
+			switch(fatigueloss)
+				if(100 to INFINITY)		fatigue_icon.icon_state = "fatigue10"
+				if(90 to 100)			fatigue_icon.icon_state = "fatigue9"
+				if(80 to 90)			fatigue_icon.icon_state = "fatigue8"
+				if(70 to 80)			fatigue_icon.icon_state = "fatigue7"
+				if(60 to 70)			fatigue_icon.icon_state = "fatigue6"
+				if(50 to 60)			fatigue_icon.icon_state = "fatigue5"
+				if(40 to 50)			fatigue_icon.icon_state = "fatigue4"
+				if(30 to 40)			fatigue_icon.icon_state = "fatigue3"
+				if(20 to 30)			fatigue_icon.icon_state = "fatigue2"
+				if(10 to 20)			fatigue_icon.icon_state = "fatigue1"
+				else					fatigue_icon.icon_state = "fatigue0"
+
+		if(stamina_icon)
+			switch((staminaloss))
+				if(100 to INFINITY)		stamina_icon.icon_state = "stamina10"
+				if(90 to 100)			stamina_icon.icon_state = "stamina9"
+				if(80 to 90)			stamina_icon.icon_state = "stamina8"
+				if(70 to 80)			stamina_icon.icon_state = "stamina7"
+				if(60 to 70)			stamina_icon.icon_state = "stamina6"
+				if(50 to 60)			stamina_icon.icon_state = "stamina5"
+				if(40 to 50)			stamina_icon.icon_state = "stamina4"
+				if(30 to 40)			stamina_icon.icon_state = "stamina3"
+				if(20 to 30)			stamina_icon.icon_state = "stamina2"
+				if(10 to 20)			stamina_icon.icon_state = "stamina1"
+				else					stamina_icon.icon_state = "stamina0"
 
 		if(nutrition_icon)
 			switch(nutrition)

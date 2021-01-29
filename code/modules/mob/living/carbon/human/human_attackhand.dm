@@ -207,6 +207,8 @@
 					miss_type = 2
 
 				H.do_attack_animation(src)
+				H.adjustStaminaLoss(rand(2,3))
+				H.adjustFatigueLoss(rand(2,3))
 				if(!attack_message)
 					attack.show_attack(H, src, hit_zone, rand_damage)
 				else
@@ -240,6 +242,8 @@
 			if(!B.safezone)
 				admin_attack_log(M, src, "Disarmed their victim.", "Was disarmed.", "disarmed")
 				M.do_attack_animation(src)
+				M.adjustStaminaLoss(rand(2,3))//No more spamming disarm without consequences.
+				M.adjustFatigueLoss(rand(2,3))
 
 				if(w_uniform)
 					w_uniform.add_fingerprint(M)

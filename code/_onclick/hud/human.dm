@@ -252,6 +252,20 @@
 		mymob.nutrition_icon.screen_loc = ui_nutrition
 		hud_elements |= mymob.nutrition_icon
 
+	mymob.stamina_icon = new /obj/screen()//STAMINA
+	mymob.stamina_icon.icon = ui_style
+	mymob.stamina_icon.icon_state = "stamina0"
+	mymob.stamina_icon.name = "stamina"
+	mymob.stamina_icon.screen_loc = ui_stamina
+	hud_elements |= mymob.stamina_icon
+
+	mymob.fatigue_icon = new /obj/screen()//SLEEPING
+	mymob.fatigue_icon.icon = ui_style
+	mymob.fatigue_icon.icon_state = "fatigue0"
+	mymob.fatigue_icon.name = "fatigue"
+	mymob.fatigue_icon.screen_loc = ui_fatigue
+	hud_elements |= mymob.fatigue_icon
+
 	if(hud_data.has_hydratation)
 		mymob.hydratation_icon = new /obj/screen()
 		mymob.hydratation_icon.icon = ui_style

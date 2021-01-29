@@ -9,10 +9,12 @@
 	var/hud_updateflag = 0
 
 	//Damage related vars, NOTE: THESE SHOULD ONLY BE MODIFIED BY PROCS // what a joke
-	//var/bruteloss = 0 //Brutal damage caused by brute force (punching, being clubbed by a toolbox ect... this also accounts for pressure damage)
-	//var/oxyloss = 0   //Oxygen depravation damage (no air in lungs)
-	//var/toxloss = 0   //Toxic damage caused by being poisoned or radiated
-	//var/fireloss = 0  //Burn damage caused by being way too hot, too cold or burnt.
+	var/bruteloss = 0 //Brutal damage caused by brute force (punching, being clubbed by a toolbox ect... this also accounts for pressure damage)
+	var/oxyloss = 0   //Oxygen depravation damage (no air in lungs)
+	var/toxloss = 0   //Toxic damage caused by being poisoned or radiated
+	var/fireloss = 0  //Burn damage caused by being way too hot, too cold or burnt.
+	var/staminaloss = 0	//Stamina damage, or exhaustion. You recover it slowly naturally, and are stunned if it gets too high.
+	var/fatigueloss = 0
 	//var/halloss = 0   //Hallucination damage. 'Fake' damage obtained through hallucinating or the holodeck. Sleeping should cause it to wear off.
 	var/last_special = 0 //Used by the resist verb, likely used to prevent players from bypassing next_move by logging in/out.
 

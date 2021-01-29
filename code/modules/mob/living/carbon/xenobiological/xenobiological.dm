@@ -19,7 +19,7 @@
 	// for the sake of cleanliness, though, here they are.
 	status_flags = CANPARALYSE|CANPUSH
 
-	var/toxloss = 0
+	//var/toxloss = 0
 	var/is_adult = 0
 	var/number = 0 // Used to understand when someone is talking to it
 	var/cores = 1 // the number of /obj/item/slime_extract's the slime has left inside

@@ -41,6 +41,9 @@
 	var/canflop = 1			//Carbon. Used to play the flop sound when disarmed or otherwise floored.
 	var/obj/using_object = null
 
+	var/obj/screen/stamina_icon = null
+	var/obj/screen/fatigue_icon = null
+
 	var/obj/screen/movable/ability_master/ability_master = null
 
 	/*A bunch of this stuff really needs to go under their own defines instead of being globally attached to mob.

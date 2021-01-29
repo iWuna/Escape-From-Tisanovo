@@ -1,7 +1,7 @@
 /mob/living/silicon/ai
-	var/fireloss = 0
-	var/bruteloss = 0
-	var/oxyloss = 0
+	//var/fireloss = 0
+	//var/bruteloss = 0
+	//var/oxyloss = 0
 
 /mob/living/silicon/ai/getFireLoss()
 	return fireloss

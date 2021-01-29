@@ -273,6 +273,28 @@ default behaviour is:
 /mob/living/proc/setHalLoss(var/amount)
 	adjustBruteLoss((amount * 0.5)-getBruteLoss())
 
+/mob/living/proc/getStaminaLoss()//Stamina shit.
+	return staminaloss
+
+/mob/living/proc/adjustStaminaLoss(var/amount)
+	if(status_flags & GODMODE)	return 0
+	staminaloss = min(max(staminaloss + amount, 0),(maxHealth*2))
+
+/mob/living/proc/setStaminaLoss(var/amount)
+	if(status_flags & GODMODE)	return 0
+	staminaloss = amount
+
+/mob/living/proc/getFatigueLoss()//Fatigue shit.
+	return fatigueloss
+
+/mob/living/proc/adjustFatigueLoss(var/amount)
+	if(status_flags & GODMODE)	return 0
+	fatigueloss = min(max(fatigueloss + amount, 0),(maxHealth*2))
+
+/mob/living/proc/setFatigueLoss(var/amount)
+	if(status_flags & GODMODE)	return 0
+	fatigueloss = amount
+
 /mob/living/proc/getBrainLoss()
 	return 0
 
@@ -418,6 +440,8 @@ default behaviour is:
 	SetParalysis(0)
 	SetStunned(0)
 	SetWeakened(0)
+	setStaminaLoss(0)
+	setFatigueLoss(0)
 
 	// shut down ongoing problems
 	radiation = 0
@@ -585,6 +609,36 @@ default behaviour is:
 /mob/living/proc/handle_footstep(turf/T)
 	return FALSE
 
+/mob/living/proc/CheckStamina()
+	if(staminaloss <= 0)
+		setStaminaLoss(0)
+	if(staminaloss)//If we're not doing anything and we've lost stamina we can wait to gain it back.
+		adjustStaminaLoss(-1)
+
+	if(staminaloss >= 120 && !stat)//Oh shit we've lost too much stamina and now we're tired!
+		Exhaust()
+		return
+
+/mob/living/proc/Exhaust()//Called when you run out of stamina.
+	Weaken(10)
+
+/mob/living/proc/CheckFatigue(var/mob/living/L)
+	if(fatigueloss <= 0)
+		setFatigueLoss(0)
+
+	if(fatigueloss)
+		adjustFatigueLoss(0.1)
+
+	if(fatigueloss >= 100 && fatigueloss <= 150)
+		to_chat(L, "You should sleep...")
+	if(fatigueloss >= 90 && fatigueloss <= 100)
+		to_chat(L, "You better sleep.")
+
+	if(fatigueloss >= 150 && !stat)
+		to_chat(L, "You too tired...")
+		Exhaust()
+		return
+
 /mob/living/verb/resist()
 	set name = "Resist"
 	set category = "IC"
@@ -592,8 +646,10 @@ default behaviour is:
 	if(!incapacitated(INCAPACITATION_KNOCKOUT) && canClick())
 		setClickCooldown(20)
 		resist_grab()
+		adjustStaminaLoss(5)
 		if(!weakened)
 			process_resist()
+			adjustStaminaLoss(15)
 
 /mob/living/proc/process_resist()
 	//Getting out of someone's inventory.
