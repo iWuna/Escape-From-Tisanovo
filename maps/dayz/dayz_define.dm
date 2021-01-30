@@ -3,7 +3,7 @@
 	name = "Tisanovo"
 	full_name = "Tisanovo"
 	path = "tisanovo"
-	lobby_icon = 'icons/escalation/dayz3.png'
+	lobby_icon = 'icons/escalation/Tisanovo.gif'
 	station_levels = list(1, 2, 3)
 	contact_levels = list(1, 2, 3)
 	player_levels = list(1, 2, 3)

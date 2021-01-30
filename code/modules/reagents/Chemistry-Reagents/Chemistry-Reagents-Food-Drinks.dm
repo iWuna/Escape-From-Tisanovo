@@ -1970,6 +1970,14 @@
 	nutriment_factor = 0.8
 	color = "#302000"
 
+/datum/reagent/nutriment/dogfood
+	name = "Dogfood"
+	description = "This is most tasty yummy for dogs."
+	taste_description = "shitty mass"
+	taste_mult = 1
+	nutriment_factor = 0.3
+	color = "#ab4911"
+
 /datum/reagent/nutriment/pearlbarley
 	name = "Pearl barley"
 	description = "Worse than the buckwheat."

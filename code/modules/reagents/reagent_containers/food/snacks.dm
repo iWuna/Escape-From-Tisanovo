@@ -17,6 +17,7 @@
 	var/wrapped = 0
 	var/closed = 0
 	var/unwrapped_icon
+	var/rand_taste = ""
 
 /obj/item/weapon/reagent_containers/food/snacks/New()
 	..()

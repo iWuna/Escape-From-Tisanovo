@@ -192,6 +192,20 @@
 	reagents.add_reagent(/datum/reagent/nutriment/protein, 10)
 	bitesize = 3
 
+/obj/item/weapon/reagent_containers/food/snacks/tincan/dogfood
+	name = "dog food"
+	desc = "Red tin can with dog food inside, this one with something weird."
+	icon_state = "dogfood"
+	trash = /obj/item/trash/tincan/dogfood
+
+/obj/item/weapon/reagent_containers/food/snacks/tincan/dogfood/New()
+	..()
+	rand_taste = pick("beef","chicken","turkey")
+	desc = "Red tin can with dog food inside, this one with [rand_taste]."
+	reagents.add_reagent(/datum/reagent/nutriment/dogfood, 10)
+	reagents.add_reagent(/datum/reagent/nutriment/protein, 2)
+	bitesize = 2
+
 /obj/item/weapon/reagent_containers/food/snacks/tincan/buckwheat
 	name = "buckwheat"
 	desc = "No 'tushenka'. Better luck next time, comrade!"

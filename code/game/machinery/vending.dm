@@ -223,9 +223,12 @@
 /obj/machinery/vending/proc/attempt_to_stock(var/obj/item/I as obj, var/mob/user as mob)
 	for(var/datum/stored_items/vending_products/R in product_records)
 		if(I.type == R.item_path)
-			var/money = R.price * 0.5
-			stock(I, R, user)
-			spawn_money(money,src.loc)
+			if(human)
+				var/money = R.price * 0.5
+				spawn_money(money,src.loc,usr)
+				qdel(I)
+			else
+				stock(I, R, user)
 			return 1
 
 /**

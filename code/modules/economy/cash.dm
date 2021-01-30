@@ -1,6 +1,6 @@
 /obj/item/weapon/spacecash
-	name = "0 credits"
-	desc = "It's worth 0 credit."
+	name = "0 Czech Koruna"
+	desc = "It's worth 0 Czech Koruna."
 	gender = PLURAL
 	icon = 'icons/obj/items.dmi'
 	icon_state = "spacecash1"
@@ -37,7 +37,7 @@
 			h_user.drop_from_inventory(src)
 			h_user.drop_from_inventory(bundle)
 			h_user.put_in_hands(bundle)
-		to_chat(user, "<span class='notice'>You add [src.worth] credits worth of money to the bundles.<br>It holds [bundle.worth] credits now.</span>")
+		to_chat(user, "<span class='notice'>You add [src.worth] credits worth of money to the bundles.<br>It holds [bundle.worth] Czech Koruna now.</span>")
 		qdel(src)
 
 /obj/item/weapon/spacecash/proc/getMoneyImages()
@@ -45,9 +45,9 @@
 		return list(icon_state)
 
 /obj/item/weapon/spacecash/bundle
-	name = "pile of credits"
+	name = "pile of Czech Koruna"
 	icon_state = ""
-	desc = "They are worth 0 credits."
+	desc = "They are worth 0 korunas."
 	worth = 0
 
 /obj/item/weapon/spacecash/bundle/getMoneyImages()
@@ -76,11 +76,11 @@
 		banknote.transform = M
 		src.overlays += banknote
 
-	src.desc = "They are worth [worth] credits."
+	src.desc = "They are worth [worth] Czech Koruna."
 	if(worth in denominations)
 		src.name = "[worth] credit"
 	else
-		src.name = "pile of [worth] credits"
+		src.name = "pile of [worth] Czech Koruna"
 
 	if(overlays.len <= 2)
 		w_class = ITEM_SIZE_TINY

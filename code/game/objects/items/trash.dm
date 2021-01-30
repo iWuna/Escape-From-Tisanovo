@@ -117,6 +117,10 @@
 	name = "tin can"
 	icon_state = "stewbuckwheat_empty"
 
+/obj/item/trash/tincan/dogfood
+	name = "tin can"
+	icon_state = "dogfood_empty"
+
 /obj/item/trash/tincan/buckwheat
 	name = "tin can"
 	icon_state = "buckwheat_empty"
