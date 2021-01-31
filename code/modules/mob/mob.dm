@@ -375,6 +375,67 @@
 	return
 */
 
+/*
+/client/verb/nato_site()
+	set name = "LORE"
+	set category = "OOC"
+	getFiles(
+		'html/NATO/NATO_home.html',
+		'html/NATO/NATO_intro.html',
+		'html/NATO/NATO_partner.html',
+		'html/NATO/NATO_Requiem.html',
+		'html/bacteria.png',
+		'html/NATO/NATO_home_files/balkans2.gif',
+		'html/NATO/NATO_home_files/balkans3.gif',
+		'html/NATO/NATO_home_files/banner2.jpg',
+		'html/NATO/NATO_home_files/banner-styles.css',
+		'html/NATO/NATO_home_files/btn-update.jpg',
+		'html/NATO/NATO_home_files/chernobyl.jpg',
+		'html/NATO/NATO_home_files/czech.gif',
+		'html/NATO/NATO_home_files/horiz_bl.gif',
+		'html/NATO/NATO_home_files/horiz_gr.gif',
+		'html/NATO/NATO_home_files/i2_a3.jpg',
+		'html/NATO/NATO_home_files/iconochive.css',
+		'html/NATO/NATO_home_files/isn.jpg',
+		'html/NATO/NATO_home_files/partners.jpg',
+		'html/NATO/NATO_home_files/prague.jpg',
+		'html/NATO/NATO_home_files/review.gif',
+		'html/NATO/NATO_home_files/science.gif',
+		'html/NATO/NATO_home_files/search.jpg',
+		'html/NATO/NATO_home_files/summit-prague-75.gif',
+		'html/NATO/NATO_home_files/vert_bl.gif',
+		'html/NATO/NATO_home_files/warsaw.gif',
+		'html/NATO/NATO_home_files/wlcm-new.jpg',
+		'html/NATO/NATO_home_files/xperience.gif',
+		'html/NATO/NATO_intro_files/backgrnd.gif',
+		'html/NATO/NATO_intro_files/balkans.gif',
+		'html/NATO/NATO_intro_files/banner-styles.css',
+		'html/NATO/NATO_intro_files/framewrk.gif',
+		'html/NATO/NATO_intro_files/iconochive.css',
+		'html/NATO/NATO_intro_files/logo.jpg',
+		'html/NATO/NATO_intro_files/mainmenu.gif',
+		'html/NATO/NATO_intro_files/saying.jpg',
+		'html/NATO/NATO_intro_files/summ-wsh.gif',
+		'html/NATO/NATO_intro_files/third-dim.gif',
+		'html/NATO/NATO_intro_files/transfor.gif',
+		'html/NATO/NATO_intro_files/whatis.gif',
+		'html/NATO/NATO_partner_files/banner-styles.css',
+		'html/NATO/NATO_partner_files/bd-serv.jpg',
+		'html/NATO/NATO_partner_files/compass.gif',
+		'html/NATO/NATO_partner_files/hd-partn-e.jpg',
+		'html/NATO/NATO_partner_files/iconochive.css',
+		'html/NATO/NATO_partner_files/med-dial2.jpg',
+		'html/NATO/NATO_partner_files/pfplogo.gif',
+		'html/NATO/NATO_partner_files/thmb-map.jpg',
+		'html/NATO/NATO_Requiem_files/banner-styles.css',
+		'html/NATO/NATO_Requiem_files/bd-serv.jpg',
+		'html/NATO/NATO_Requiem_files/cholera.jpg',
+		'html/NATO/NATO_Requiem_files/compass.gif',
+		'html/NATO/NATO_Requiem_files/iconochive.css'
+		)
+	src << browse('html/NATO/NATO_home.html', "window=changes;size=675x650")
+*/
+
 /client/verb/changes()
 	set name = "Changelog"
 	set category = "OOC"

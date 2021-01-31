@@ -6,6 +6,7 @@
 #define DMG_TYPE_IGNITION 32
 #define DMG_TYPE_BIO 64
 #define DMG_TYPE_LASTER 128
+#define RADFUCK 25
 GLOBAL_LIST_EMPTY(anomalies)
 
 /obj/anomaly
@@ -254,6 +255,11 @@ GLOBAL_LIST_EMPTY(anomalies)
 /obj/rad/Initialize()
 	..()
 	GLOB.processing_objects += src
+	var/mob/living/L
+	for(var/i in 1 to 3 step 1)
+		spawn(RADFUCK * i)
+			L.rad_act(src.damage_amount)
+			L << sound(src.sound, repeat = 0, wait = 0, volume = 50, channel = 3)
 
 /obj/rad/Destroy()
 	..()
@@ -281,7 +287,7 @@ GLOBAL_LIST_EMPTY(anomalies)
 		src.trapped -= H
 		GLOB.processing_objects -= src
 
-/obj/rad/process()
+/obj/rad/process(var/mob/living/L)
 	. = 1
 
 	if(src.trapped.len < 1)
@@ -307,7 +313,12 @@ GLOBAL_LIST_EMPTY(anomalies)
 			trapped -= H
 			continue
 
-	for(var/mob/living/L in loc)
+	for(var/i in 1 to 3 step 1)
+		spawn(RADFUCK * i)
+			L.rad_act(src.damage_amount)
+			L << sound(src.sound, repeat = 0, wait = 0, volume = 50, channel = 3)
+
+	for(L in loc)
 		L.rad_act(src.damage_amount)
 
 		L << sound(src.sound, repeat = 0, wait = 0, volume = 50, channel = 3)

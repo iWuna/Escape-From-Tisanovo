@@ -64,6 +64,10 @@
 	if(num == 0) // Less than one credit, let's just make it look like 1 for ease
 		. += "spacecash1"
 
+/obj/item/weapon/spacecash/bundle/New()
+	..()
+	src.update_icon()
+
 /obj/item/weapon/spacecash/bundle/update_icon()
 	overlays.Cut()
 	var/list/images = src.getMoneyImages()
@@ -107,6 +111,10 @@
 		usr.put_in_hands(bundle)
 	if(!worth)
 		qdel(src)
+
+/obj/item/weapon/spacecash/proc/add(worth) //костыль потому что я мразь.
+	src.worth += worth
+	src.update_icon()
 
 /obj/item/weapon/spacecash/bundle/trader
 	name = "Czech Koruna"
