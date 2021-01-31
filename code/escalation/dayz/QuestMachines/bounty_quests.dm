@@ -61,7 +61,7 @@
 	target_items = list(/mob/living/simple_animal/hostile/dayz/zombie = 3)
 	koruna_reward = 160
 
-/datum/bounty_quest/faction/nato/qst_2
+/datum/bounty_quest/faction/nato/qst_3
 	name = "Zed question"
 	desc = "Excuse me, I'm a lab technician, could you prepare some of infected mutant for transport? Dead or alive, it doesn't matter."
 	employer = "Lab technician"
@@ -70,3 +70,13 @@
 	end_message = "Finally! Some good music!"
 	target_items = list(/mob/living/simple_animal/hostile/dayz/zombie/runner = 2)
 	koruna_reward = 100
+
+/datum/bounty_quest/faction/nato/qst_4
+	name = "Paper Bird"
+	desc = "We running out of paper supplies, for some reason. Can you send us some paper?"
+	employer = "Lab technician"
+	employer_icon = "sci_1.gif"
+	need_message = "5 paper"
+	end_message = "Finally! Some paper!"
+	target_items = list(/obj/item/weapon/paper = 5)
+	koruna_reward = 15
