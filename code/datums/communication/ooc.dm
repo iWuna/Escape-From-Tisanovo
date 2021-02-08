@@ -35,6 +35,8 @@
 		if(holder.rights & R_ADMIN)
 			ooc_style = "admin"
 
+	message = emoji_parse_test(message)
+
 	var/can_badmin = !is_stealthed && can_select_ooc_color(C) && (C.prefs.ooccolor != initial(C.prefs.ooccolor))
 	var/ooc_color = C.prefs.ooccolor
 

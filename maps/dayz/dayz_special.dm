@@ -255,11 +255,6 @@ GLOBAL_LIST_EMPTY(anomalies)
 /obj/rad/Initialize()
 	..()
 	GLOB.processing_objects += src
-	var/mob/living/L
-	for(var/i in 1 to 3 step 1)
-		spawn(RADFUCK * i)
-			L.rad_act(src.damage_amount)
-			L << sound(src.sound, repeat = 0, wait = 0, volume = 50, channel = 3)
 
 /obj/rad/Destroy()
 	..()

@@ -1,3 +1,5 @@
+#define MAX_MESSAGE_LEN			10
+
 /client/verb/ooc(message as text)
 	set name = "OOC"
 	set category = "OOC"

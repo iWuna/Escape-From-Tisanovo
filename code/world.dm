@@ -676,7 +676,7 @@ var/world_topic_spam_protect_time = world.timeofday
 
 	GLOB.world_runtime_log << "\n\nStarting up round ID [game_id]. [time_stamp()]\n---------------------"
 
-#define FAILED_DB_CONNECTION_CUTOFF 5
+#define FAILED_DB_CONNECTION_CUTOFF 10
 var/failed_db_connections = 0
 var/failed_old_db_connections = 0
 
