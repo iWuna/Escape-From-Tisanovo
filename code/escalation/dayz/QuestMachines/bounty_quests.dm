@@ -100,3 +100,23 @@
 	end_message = "Taken off dead walkers, I guess? Whatever, that'll do."
 	target_items = list(/obj/item/weapon/storage/backpack/piligrim = 1)
 	koruna_reward = 400
+
+/datum/bounty_quest/faction/nato/qst_7
+	name = "Postman"
+	desc = "Good afternoon. Someone told me that you are the one young man who will help us to reconnect and find the lost parcel. Great! I'll be waiting."
+	employer = "Lab technician"
+	employer_icon = "sci_1.gif"
+	need_message = "1 lost parcel"
+	end_message = "Well, thank you! No wonder Prapor recommended you as a reliable and responsible person"
+	target_items = list(/obj/item/quest/parcel = 1)
+	koruna_reward = 100
+
+/datum/bounty_quest/faction/nato/qst_8
+	name = "Food Problem"
+	desc = "Good afternoon. Someone told me that you are the one young man who will help us to reconnect and find the lost parcel. Great! I'll be waiting."
+	employer = "Peacekeeper"
+	employer_icon = "crg_1.gif"
+	need_message = "2 food supplies"
+	end_message = "I assume you don't need to be reminded that all this is only between us."
+	target_items = list(/obj/item/quest/food_supplies = 2)
+	koruna_reward = 200

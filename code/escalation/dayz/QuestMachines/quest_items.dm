@@ -27,3 +27,8 @@
 
 /obj/item/quest/box/Initialize()
 	icon_state = "box[rand(1,2)]"
+
+/obj/item/quest/food_supplies
+	name = "supplies container"
+	desc = "This is an container which contains some food."
+	icon_state = "food_supplies"

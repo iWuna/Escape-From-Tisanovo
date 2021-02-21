@@ -44,8 +44,8 @@
 	UpdateActiveQuests()
 
 
-/*	---
- *	Quest management
+/*
+ * Quest management
  */
 
 /* Create all quests list */
@@ -58,11 +58,12 @@
 
 /* Returns random quest from database */
 /obj/machinery/bounty_machine/proc/GetRandomQuest()
-	if(all_quests.len == 0) return null
+	if(all_quests.len == 0)
+		return null
 	var/random_index = rand(1, all_quests.len)
 	var/quest_type = all_quests[random_index]
 	var/Q = new quest_type()
-	last_rand = random_index
+	//last_rand = random_index
 	return Q
 
 /* Create new quests until its count not equal to quest limit */
@@ -114,15 +115,12 @@
 			return 0
 
 	// Here we know - quest is complete
-	// 1. Remove quest objects. ALL QUEST OBJECTS WILL BE REMOVED! IF YOU PUT 2 GHOULS AND QUEST NEEDS ONLY ONE - ALL GHOULES ON POD TURF WILL BE DESTROYED
+	// 1. Remove quest objects. ALL QUEST OBJECTS WILL BE REMOVED! IF YOU PUT 2 ITEMS AND QUEST NEEDS ONLY ONE - ALL ITEMS ON POD TURF WILL BE DESTROYED
 	flick("conveyor1", connected_pod)
 	for(var/Itm in quest_objects)
 		qdel(Itm)
 
 	// 2. Spawn reward
-	//var/obj/item/weapon/spacecash/bundle/B = new/obj/item/weapon/spacecash/bundle
-	//B.add(current_quest.koruna_reward - 1)
-	//B.forceMove(connected_pod.loc)
 	spawn_money(current_quest.koruna_reward,connected_pod.loc)
 
 	// 3. Delete quest
