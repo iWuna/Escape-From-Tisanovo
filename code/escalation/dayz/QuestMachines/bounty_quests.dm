@@ -80,3 +80,23 @@
 	end_message = "Finally! Some paper!"
 	target_items = list(/obj/item/weapon/paper = 5)
 	koruna_reward = 15
+
+/datum/bounty_quest/faction/nato/qst_5
+	name = "Dressed to kill"
+	desc = "Best of a day! Everybody's so stylish nowadays, folks come by asking for things that weren't much of a hit even back in peaceful times. Doesn't matter if the thing is hit through by a PM like paper, they'll still take it as long as it makes them stand out. It turns out, people are still having a life, want to party or whatever. Look for different kinds of hats on mannequins or shelves, you know, those like in western movies, or our ushankas."
+	employer = "Ragman"
+	employer_icon = "crg_1.gif"
+	need_message = "2 Soviet Ushanka"
+	end_message = "Beauty will save the world as they say."
+	target_items = list(/obj/item/clothing/head/ushanka/soviet = 2)
+	koruna_reward = 150
+
+/datum/bounty_quest/faction/nato/qst_6
+	name = "Sew it good"
+	desc = "Hi there drifter, I have a solid business proposal for you. Don't you worry, I'm not shitting you, the real deal. Can't say what it is right now, but if it starts off good, I'll be sure to tell you. I need a couple of large backpacks, purple \"Pilgrim\" ones, and a couple of mask hats, you know, with ninja-type slits."
+	employer = "Ragman"
+	employer_icon = "sci_1.gif"
+	need_message = "1 Piligrim backpack"
+	end_message = "Taken off dead walkers, I guess? Whatever, that'll do."
+	target_items = list(/obj/item/weapon/storage/backpack/piligrim = 1)
+	koruna_reward = 400

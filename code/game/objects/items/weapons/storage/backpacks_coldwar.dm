@@ -42,6 +42,15 @@
 	if(icon_state == "civpack_mountain_puprle")
 		item_state = "civpack_mountain_puprle"
 
+/obj/item/weapon/storage/backpack/piligrim
+	name = "Piligrim backpack"
+	desc = "Large and roomy tourist backpack of bright colors."
+	icon_state = "piligrim"
+	item_state = "piligrim"
+	reachable = 0
+	max_storage_space = 20
+	open_delay = 30
+
 /obj/item/weapon/storage/backpack/soviet_tabletbag
 	name = "tablet bag"
 	desc = "A leather tablet bag used by soviet officers and other command staff."
