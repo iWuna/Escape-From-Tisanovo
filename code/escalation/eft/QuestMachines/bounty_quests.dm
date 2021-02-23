@@ -136,7 +136,7 @@
 	desc = "Well, we running out of fuel for generator, can you find some?."
 	employer = "Cargo Worker"
 	employer_icon = "crg_1.gif"
-	need_message = "2 food supplies"
+	need_message = "1 Fuel Canister"
 	end_message = "I assume you don't need to be reminded that all this is only between us, he-he."
 	target_items = list(/obj/item/quest/fuel_supplies = 1)
 	koruna_reward = 80
