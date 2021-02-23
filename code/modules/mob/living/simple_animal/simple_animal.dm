@@ -1710,7 +1710,8 @@
 	/obj/item/weapon/reagent_containers/food/drinks/bottle/andropovka = 10,
 	/obj/item/weapon/reagent_containers/food/drinks/cans/cola = 20,
 	/obj/item/weapon/reagent_containers/food/drinks/cans/space_up = 15,
-	/obj/item/weapon/reagent_containers/food/snacks/tincan/stewpearlbarley = 20
+	/obj/item/weapon/reagent_containers/food/snacks/tincan/stewpearlbarley = 20,
+	/obj/item/quest/fuel_supplies = 5
 	)
 
 	var/list/unusual = list (/obj/item/weapon/reagent_containers/food/snacks/tincan/stewbuckwheat = 50,
@@ -1726,14 +1727,16 @@
 	/obj/item/weapon/reagent_containers/food/drinks/cans/space_mountain_wind = 10,
 	/obj/item/weapon/reagent_containers/food/drinks/flask/wornflask/small = 15,
 	/obj/item/weapon/reagent_containers/food/snacks/armymaindish/armychocolate = 10,
-	/obj/item/ammo_magazine/c545x39m/empty = 10
+	/obj/item/ammo_magazine/c545x39m/empty = 10,
+	/obj/item/quest/food_supplies = 20
 	)
 
 	var/list/rare = list (/obj/item/weapon/storage/firstaid/usmc_ifak = 15,
 	/obj/item/weapon/reagent_containers/syrette/morphine  = 15,
 	/obj/item/weapon/ampule_pack/morphine = 2,
 	/obj/item/ammo_magazine/cz9x18 = 15,
-	/obj/item/weapon/storage/backpack/usmc_buttpack = 15
+	/obj/item/weapon/storage/backpack/usmc_buttpack = 15,
+	/obj/item/quest/parcel = 5
 	)
 
 	var/rarity = rand(1, 100)
@@ -1776,7 +1779,7 @@
 
 	player.visible_message("[player] searching in [src] body.")
 
-	var/modifer = 1
+	var/modifer = 0.8
 	var/itemType = getLootObject(1 / modifer)
 	if(itemType == null)
 		player.visible_message("<span class='notice'>Empty.</span>")

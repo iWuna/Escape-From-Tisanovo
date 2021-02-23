@@ -20,6 +20,14 @@
 /obj/item/quest/parcel/Initialize()
 	icon_state = "parcel[rand(1,3)]"
 
+/obj/item/quest/tape
+	name = "important tape"
+	desc = "This is an important tape with maybe useful information."
+	icon_state = "tape1"
+
+/obj/item/quest/tape/Initialize()
+	icon_state = "tape[rand(1,3)]"
+
 /obj/item/quest/box
 	name = "important box"
 	desc = "This is an important box with documents, Cholera samples, etc."
@@ -32,3 +40,8 @@
 	name = "supplies container"
 	desc = "This is an container which contains some food."
 	icon_state = "food_supplies"
+
+/obj/item/quest/fuel_supplies
+	name = "fuel canister"
+	desc = "This is an container which contains some fuel for generator."
+	icon_state = "fuel_supply"

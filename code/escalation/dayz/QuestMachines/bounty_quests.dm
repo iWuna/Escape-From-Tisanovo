@@ -120,3 +120,23 @@
 	end_message = "I assume you don't need to be reminded that all this is only between us."
 	target_items = list(/obj/item/quest/food_supplies = 2)
 	koruna_reward = 200
+
+/datum/bounty_quest/faction/nato/qst_9
+	name = "Sit and listen"
+	desc = "Hello there, we lost a bunch of tapes with IMPORTANT notes, can you find one of them?"
+	employer = "Lab technician"
+	employer_icon = "sci_1.gif"
+	need_message = "1 important tape"
+	end_message = "Ah, this makes sense now..."
+	target_items = list(/obj/item/quest/tape = 1)
+	koruna_reward = 100
+
+/datum/bounty_quest/faction/nato/qst_10
+	name = "Desert Rat"
+	desc = "Well, we running out of fuel for generator, can you find some?."
+	employer = "Cargo Worker"
+	employer_icon = "crg_1.gif"
+	need_message = "2 food supplies"
+	end_message = "I assume you don't need to be reminded that all this is only between us, he-he."
+	target_items = list(/obj/item/quest/fuel_supplies = 1)
+	koruna_reward = 80
