@@ -1,4 +1,5 @@
-///DAYZ///
+///Escape From Tisanovo///
+
 /obj/item/weapon/storage/backpack/civpack
 	name = "Hiking Backpack"
 	desc = "Lightweight backpack used for all day trips. Comfortably support any load that fits in."
