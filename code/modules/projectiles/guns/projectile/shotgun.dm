@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/projectile/shotgun/pump
-	name = "shotgun"
-	desc = "The mass-produced W-T Remmington 29x shotgun is a favourite of police and security forces on many worlds. Useful for sweeping alleys."
+	name = "MP-133"
+	desc = "Multi-shot, smoothbore MP-133 pump-action shotgun produced by IzhMekh. Reliable and practical hunting and self-defense weapon. Considered unique in its class for having a slide stop."
 	icon_state = "shotgun"
 	item_state = "shotgun"
 	max_shells = 4
@@ -47,6 +47,10 @@
 		chambered = AC
 
 	update_icon()
+
+/obj/item/weapon/gun/projectile/shotgun/pump/mp133_short
+	one_hand_penalty = 1
+	icon_state = "mp133_short"
 
 /obj/item/weapon/gun/projectile/shotgun/pump/combat
 	name = "combat shotgun"

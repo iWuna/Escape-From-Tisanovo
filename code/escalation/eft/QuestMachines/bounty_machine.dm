@@ -26,7 +26,7 @@
 	var/datum/bounty_quest/BQ
 
 	/* Max active quest count */
-	var/quest_limit = 4
+	var/quest_limit = 6
 
 	/* Connected bounty pod */
 	var/obj/machinery/bounty_pod/connected_pod

@@ -45,3 +45,8 @@
 	name = "fuel canister"
 	desc = "This is an container which contains some fuel for generator."
 	icon_state = "fuel_supply"
+
+/obj/item/quest/battery
+	name = "6-STEN-140-M"
+	desc = "Tank battery with increased capacity. Milspec electronics."
+	icon_state = "battery"

@@ -52,7 +52,7 @@
 	koruna_reward = 200
 
 /datum/bounty_quest/faction/nato/qst_2
-	name = "Zed question"
+	name = "Zed question part 1"
 	desc = "Excuse me, I'm a lab technician, could you prepare some samples of the infected for transport? Dead or alive, it doesn't matter."
 	employer = "Lab technician"
 	employer_icon = "sci_1.gif"
@@ -62,7 +62,7 @@
 	koruna_reward = 160
 
 /datum/bounty_quest/faction/nato/qst_3
-	name = "Zed question"
+	name = "Zed question part 2"
 	desc = "Excuse me, I'm a lab technician, could you prepare some of infected mutant for transport? Dead or alive, it doesn't matter."
 	employer = "Lab technician"
 	employer_icon = "sci_1.gif"
@@ -133,10 +133,40 @@
 
 /datum/bounty_quest/faction/nato/qst_10
 	name = "Desert Rat"
-	desc = "Well, we running out of fuel for generator, can you find some?."
+	desc = "Well, we running out of fuel for generator, can you find some?"
 	employer = "Cargo Worker"
 	employer_icon = "crg_1.gif"
 	need_message = "1 Fuel Canister"
 	end_message = "I assume you don't need to be reminded that all this is only between us, he-he."
 	target_items = list(/obj/item/quest/fuel_supplies = 1)
 	koruna_reward = 80
+
+/datum/bounty_quest/faction/nato/qst_11
+	name = "Debut"
+	desc = "I need one Pump Shotgun. Don't ask what for. Just need it."
+	employer = "Prapor"
+	employer_icon = "crg_1.gif"
+	need_message = "1 pump shotgun"
+	end_message = "What's up, warrior? Implying you really put'em thugs down? Or just picked up some rubbish others were too embarrassed to take, no? Okay, don't get your jimmies rustled. I'll believe you until you screw up for real."
+	target_items = list(/obj/item/weapon/gun/projectile/shotgun/pump = 1)
+	koruna_reward = 4500
+
+/datum/bounty_quest/faction/nato/qst_12
+	name = "Delivery from the past"
+	desc = "Stay well, fighter. Still, in our fallen world, I see? But enough of that. There is one thing. So to say, rather sensitive. We kind of reached trust with you? So I'll be trusting you now. I won't go into details of why who and for what, not really related to the task at hand."
+	employer = "Prapor"
+	employer_icon = "crg_1.gif"
+	need_message = "1 important box"
+	end_message = "What, success again? Bit of a warrior, eh? The Terror of Tisanovo, my arse! Don't be offended now! Everything's done right, I owe you one. Important business is taken care of - I feel good. And when I feel good, proper people around me start feeling good as well. Got it?"
+	target_items = list(/obj/item/quest/box = 1)
+	koruna_reward = 400
+
+/datum/bounty_quest/faction/nato/qst_13
+	name = "Regulated materials"
+	desc = "Come on in, warrior! Still breathing aye? That's fine. Look, there is a problem. There's this customer, showed up outta nowhere, an urgent order and the bitch himself wants specific parts of equipment, the ones our glorious mother Russia produced, and it’s notorious for me that the good of the state has to be sold and judging by the accent, the fucker is from abroad. But the cash is noble and connections he provides are no joke. In general, you need one military battery and a dozen or so of 30mm shells. I bet you'll have to sneak on the military base for it... The place is inhospitable, I know, but you won't regret it when the checkout time comes. Plus, I’ll provide you with a special gift for this. Will you take the risk?"
+	employer = "Prapor"
+	employer_icon = "crg_1.gif"
+	need_message = "1 military battery"
+	end_message = "You actually did it! Well fucking done. So I keep my word. Here's your reward."
+	target_items = list(/obj/item/quest/battery = 1)
+	koruna_reward = 600
