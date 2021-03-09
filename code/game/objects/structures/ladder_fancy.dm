@@ -103,3 +103,6 @@
 		. = ..()
 	else
 		return QDEL_HINT_LETMELIVE
+
+/obj/structure/ladder_fancy/hatch
+	icon_state = "hatch"

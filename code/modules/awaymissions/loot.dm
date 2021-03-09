@@ -1,6 +1,29 @@
 #define LOOT_RESPAWN 100000
 #define ZED_RESPAWN 100000
 
+/obj/structure/lootable
+	icon = 'icons/obj/objects.dmi'
+	var/list/loot = list()
+	var/lootleft = 2
+	var/emptyprob = 30
+
+/obj/structure/lootable/New()
+	..()
+	if(prob(emptyprob))
+		lootleft = 0
+
+/obj/structure/lootable/attack_hand(mob/user)
+	if(lootleft <= 0)
+		to_chat(user, "<span class='warning'>There's nothing left in this one but unusable garbage...</span>")
+		return
+	visible_message("[user] starts searching inside of [src].")
+	if(do_after(user, 30))
+		var/obj/item/booty = pick(loot)
+		booty = new booty(loc)
+		lootleft--
+		update_icon()
+		to_chat(user, "<span class='notice'>You find \a [booty] inside of [src].</span>")
+
 /obj/effect/spawner/lootdrop
 	icon = 'icons/mob/screen1.dmi'
 	icon_state = "x2"
@@ -10,11 +33,15 @@
 	var/list/loot			//a list of possible items to spawn e.g. list(/obj/item, /obj/structure, /obj/effect)
 	var/fan_out_items = FALSE //Whether the items should be distributed to offsets 0,1,-1,2,-2,3,-3.. This overrides pixel_x/y on the spawner itself
 	var/mob_spawner = 0
-	invisibility = SEE_INVISIBLE_OBSERVER
+	var/emptyprob = 30
+	invisibility = 101
 
 /obj/effect/spawner/lootdrop/New()
 	..()
-	SpawnShit()
+	if(prob(emptyprob))
+		qdel(src)
+	else
+		SpawnShit()
 
 /obj/effect/spawner/lootdrop/proc/SpawnShit()
 	if(loot && loot.len)
@@ -54,40 +81,35 @@
 /obj/item/nothing/New()
 	qdel(src)
 
-
 /obj/effect/spawner/lootdrop/food_common
 	name = "common food spawner"
 	lootdoubles = TRUE
+	emptyprob = 40
 	loot = list(
 				/obj/item/weapon/reagent_containers/food/snacks/tincan/stewbuckwheat,
 				/obj/item/weapon/reagent_containers/food/snacks/tincan/buckwheat,
 				/obj/item/weapon/reagent_containers/food/snacks/tincan/condensedmilk,
 				/obj/item/weapon/reagent_containers/food/snacks/armymaindish/burrito,
-				/obj/item/nothing,
-				/obj/item/nothing
 				)
 
 /obj/effect/spawner/lootdrop/backpack_army
 	name = "rare army back"
 	lootdoubles = TRUE
+	emptyprob = 70
 	loot = list(
 				/obj/item/weapon/storage/backpack/sovietpack,
 				/obj/item/weapon/storage/backpack/usmc_buttpack,
 				/obj/item/weapon/storage/backpack/soviet_tabletbag,
 				/obj/item/weapon/storage/backpack/czechpack,
-				/obj/item/nothing,
-				/obj/item/nothing
 				)
 
 /obj/effect/spawner/lootdrop/zombie_civ
 	name = "civ random zombie spawn"
 	lootdoubles = TRUE
 	mob_spawner = 1
+	emptyprob = 30
 	loot = list(
-				/mob/living/simple_animal/hostile/dayz/zombie/civ,
-				/mob/living/simple_animal/hostile/dayz/zombie/civ,
-				/mob/living/simple_animal/hostile/dayz/zombie/civ,
-				/obj/item/nothing
+				/mob/living/simple_animal/hostile/eft/zombie/civ,
 				)
 
 /obj/effect/spawner/lootdrop/possible_chicken
@@ -96,8 +118,6 @@
 	mob_spawner = 1
 	loot = list(
 				/mob/living/simple_animal/chicken,
-				/mob/living/simple_animal/chicken,
-				/obj/item/nothing
 				)
 
 /obj/effect/spawner/lootdrop/possible_goat
@@ -106,8 +126,18 @@
 	mob_spawner = 1
 	loot = list(
 				/mob/living/simple_animal/retaliate/goat,
-				/mob/living/simple_animal/retaliate/goat,
-				/obj/item/nothing
+				)
+
+/obj/effect/spawner/lootdrop/possible_supply_spawn
+	name = "possible supply spawn"
+	icon_state = "supply_possible"
+	lootdoubles = FALSE
+	emptyprob = 50
+	mob_spawner = 0
+	loot = list(
+				/obj/structure/eft/supply/soviet,
+				/obj/structure/eft/supply/redcross,
+				/obj/structure/eft/supply/nato
 				)
 
 /obj/effect/spawner/lootdrop/craftable
@@ -116,5 +146,4 @@
 	loot = list(
 				/obj/item/weapon/material/lstick,
 				/obj/item/weapon/crafty/knifeblade,
-				/obj/item/nothing
 				)

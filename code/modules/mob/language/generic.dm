@@ -38,21 +38,6 @@
 	return speech_verb
 
 // Galactic common languages (systemwide accepted standards).
-/datum/language/lunar
-	name = LANGUAGE_LUNAR
-	desc = "An older language, another useless try to create something like Esperanto - a language is simple to use and easy to learn. Now it is spoken mostly by medical workers thanks to it latin base."
-	speech_verb = "enunciates"
-	colour = "moon"
-	key = "2"
-	space_chance = 100
-	syllables = list("lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipiscing", "elit",
-					 "sed", "do", "eiusmod", "tempor", "incididunt", "ut", "labore", "et", "dolore",
-					 "magna", "aliqua", "ut", "enim", "ad", "minim", "veniam", "quis", "nostrud",
-					 "exercitation", "ullamco", "laboris", "nisi", "ut", "aliquip", "ex", "ea", "commodo",
-					 "consequat", "duis", "aute", "irure", "dolor", "in", "reprehenderit", "in",
-					 "voluptate", "velit", "esse", "cillum", "dolore", "eu", "fugiat", "nulla",
-					 "pariatur", "excepteur", "sint", "occaecat", "cupidatat", "non", "proident", "sunt",
-					 "in", "culpa", "qui", "officia", "deserunt", "mollit", "anim", "id", "est", "laborum")
 
 // Criminal language.
 /datum/language/gutter

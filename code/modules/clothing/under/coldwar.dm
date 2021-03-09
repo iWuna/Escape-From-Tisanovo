@@ -3,6 +3,15 @@
 	allowed = list(/obj/item/weapon/storage/belt/suit/ammo/)
 
 
+/obj/item/clothing/under/usmc/shirt
+	name = "shirt and shorts"
+	desc = "Typical USMC sport uniform."
+	icon_state = "usmc_shirt"
+	worn_state = "usmc_shirt"
+	siemens_coefficient = 0.7
+	slowdown_general = 0.1
+	has_sensor = 0
+
 /obj/item/clothing/under/usmc/woodland/
 	name = "woodland fatigues"
 	desc = "That's the M.1981 Woodland pattern uniform, commonly used by United States Army."

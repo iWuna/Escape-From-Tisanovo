@@ -13,11 +13,15 @@ var/global/list/seen_religions = list()
 	return
 
 var/global/list/citizenship_choices = list(
-	"Earth",
-	"Mars",
-	"Moghes",
-	"Ahdomai",
-	"Qerrbalak"
+	"Russian",
+	"FRG",
+	"GDR",
+	"Czech",
+	"France",
+	"United States",
+	"Ukrainian Republic",
+	"Polish",
+	"United Kingdom"
 	)
 
 var/global/list/home_system_choices = list(

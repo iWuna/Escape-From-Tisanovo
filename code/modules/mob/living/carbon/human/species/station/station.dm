@@ -8,11 +8,12 @@
 	While the central Sol government maintains control of its far-flung people, powerful corporate \
 	interests, rampant cyber and bio-augmentation and secretive factions make life on most human \
 	worlds tumultous at best."
-	num_alternate_languages = 2
-	secondary_langs = list(LANGUAGE_SOL_COMMON)
+	num_alternate_languages = 1
+	default_language = LANGUAGE_CZECH
+	secondary_langs = list(LANGUAGE_RUSSIAN, LANGUAGE_GERMAN, LANGUAGE_POLISH, LANGUAGE_ENGLISH, LANGUAGE_FRANCE)
 	name_language = null // Use the first-name last-name generator rather than a language scrambler
 	min_age = 17
-	max_age = 100
+	max_age = 70
 	gluttonous = GLUT_TINY
 
 	spawn_flags = SPECIES_CAN_JOIN

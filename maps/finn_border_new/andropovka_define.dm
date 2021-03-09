@@ -1,12 +1,9 @@
 
 /datum/map/escnew
-	name = "Europe on Flame"
-	full_name = "The Example"
-	path = "example"
-
-	lobby_icon = 'maps/finn_river/escnew_lobby.dmi'
-	lobby_screens = list("valour")
-
+	name = "Andropovka"
+	full_name = "Andropovka"
+	path = "andropovka"
+	lobby_icon = 'icons/escalation/Tisanovo.gif'
 	station_levels = list(1, 2, 3)
 	contact_levels = list(1, 2, 3)
 	player_levels = list(1, 2, 3)

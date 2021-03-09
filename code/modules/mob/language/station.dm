@@ -81,7 +81,7 @@
 	whisper_verb = "whispers"
 	colour = "solcom"
 	key = "1"
-	flags = WHITELISTED
+	flags = RESTRICTED
 
 	//syllables are at the bottom of the file
 
@@ -190,16 +190,6 @@
 	colour = "tajaran"
 	key = "l"
 	flags = WHITELISTED | SIGNLANG | NO_STUTTER | NONVERBAL | RESTRICTED
-
-/datum/language/confederate
-	name = LANGUAGE_INDEPENDENT
-	speech_verb = "speaks"
-	desc = "A hybrid language formerly used by Eastern Europe countries."
-	colour = "terran"
-	key = "r"
-	syllables = list("rus","zem","ave","groz","ski","ska","ven","konst","pol","lin","svy",
-	"danya","da","mied","zan","das","krem","myka","to","st","no","na","ni",
-	"ko","ne","en","po","ra","li","on","byl","cto","eni","ost","ol","ego","ver","stv","pro")
 
 /datum/language/nabber
 	name = LANGUAGE_NABBER

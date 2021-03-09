@@ -191,7 +191,6 @@
 /obj/item/clothing/suit/storage/vest/pasgt/woodland
 	icon_state = "pasgt_vest_woodland"
 
-
 /obj/item/clothing/suit/storage/vest/flakvest
 	name = "M69 flak vest"
 	desc = "An outdated flak vest used by NATO personnel."
@@ -200,7 +199,17 @@
 	armor = list(melee = 20, bullet = 15, laser = 0, energy = 25, bomb = 40, bio = 0, rad = 0)
 	slowdown_general = 0.2
 
-
 /obj/item/clothing/suit/storage/vest/flakvest/New()
 	..()
 	pockets = new/obj/item/weapon/storage/internal/pockets(src, slots = 2, slot_size = 2)
+
+/obj/item/clothing/suit/armor/vest/makeshift
+	name = "makeshift armor"
+	desc = "An armored vest that protects against some damage. Made from metal scrap."
+	icon_state = "makeshift"
+	item_state = "armor"
+	blood_overlay_type = "armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	cold_protection = UPPER_TORSO|LOWER_TORSO
+	heat_protection = UPPER_TORSO|LOWER_TORSO
+	armor = list(melee = 40, bullet = 10, laser = 30, energy = 5, bomb = 5, bio = 0, rad = 0)

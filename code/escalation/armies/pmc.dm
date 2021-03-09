@@ -1,7 +1,7 @@
 /datum/army_faction/civ
-	group_name = "CIVILIAN"
+	group_name = "PMC"
 	enabled = 1
-	faction_tag = "civ"
+	faction_tag = "pmc"
 	flag_state = "white"
 	base_color = "white"
 	num_fireteams = 2
@@ -9,9 +9,9 @@
 	fireteam_names = list("Respawn #1", "Respawn #2", "Respawn #3")
 
 /datum/army_faction/civ/civilians
-	name = "Civilians"
+	name = "PMC"
 	enabled = 1
-	faction_tag = "civ"
+	faction_tag = "pmc"
 	flag_state = "white"
 	base_color = "white"
 	language = "Czech"

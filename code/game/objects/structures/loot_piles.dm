@@ -192,10 +192,7 @@ Loot piles can be depleted, if loot_depleted is turned on.  Note that players wh
 		/obj/item/weapon/material/butterfly/switchblade
 	)
 
-	rare_loot = list(
-
-
-	)
+	rare_loot = list()
 
 // Contains mostly useless garbage.
 /obj/structure/loot_pile/maint/trash
@@ -389,3 +386,40 @@ Loot piles can be depleted, if loot_depleted is turned on.  Note that players wh
 	loot_depletion = TRUE
 	loot_left = 5 // This is to prevent people from asking the whole station to go down to some alien ruin to get massive amounts of phat lewt.
 
+/obj/structure/loot_pile/eft
+	var/list/icon_states_to_use = list()
+
+/obj/structure/loot_pile/eft/New()
+	icon_state = pick(icon_states_to_use)
+	..()
+
+/obj/structure/loot_pile/eft/city
+	name = "pile of junk"
+	desc = "Lots of junk lying around.  They say one man's trash is another man's treasure."
+	icon_states_to_use = list("junk_pile1", "junk_pile2", "junk_pile3", "junk_pile4", "junk_pile5")
+
+	common_loot = list(
+		/obj/item/device/flashlight/flare,
+		/obj/item/device/flashlight/glowstick,
+		/obj/item/device/flashlight/glowstick/blue,
+		/obj/item/device/flashlight/glowstick/orange,
+		/obj/item/device/flashlight/glowstick/red,
+		/obj/item/device/flashlight/glowstick/yellow,
+		/obj/item/weapon/cell/device,
+		/obj/item/clothing/mask/gas,
+		/obj/item/weapon/reagent_containers/glass/rag,
+		/obj/item/clothing/shoes/black,
+		/obj/item/clothing/shoes/laceup,
+		/obj/item/clothing/shoes/black,
+		/obj/item/clothing/shoes/leather,
+		/obj/item/clothing/glasses/sunglasses,
+		/obj/item/clothing/head/ushanka,
+		/obj/item/clothing/suit/storage/toggle/bomber,
+		/obj/item/clothing/suit/storage/toggle/hoodie/black,
+		/obj/item/clothing/suit/storage/toggle/leather_jacket/brown,
+		/obj/item/weapon/caution/cone
+	)
+
+	uncommon_loot = list()
+
+	rare_loot = list()

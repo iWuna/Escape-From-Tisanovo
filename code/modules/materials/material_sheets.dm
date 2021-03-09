@@ -233,7 +233,7 @@
 /obj/item/stack/material/deuterium/fifty
 	amount = 50
 
-/obj/item/stack/material/steel		//yee boi
+/obj/item/stack/material/steel
 	desc = "All that stuff have seen better days."
 	icon_state = "scrap"
 	default_type = DEFAULT_WALL_MATERIAL

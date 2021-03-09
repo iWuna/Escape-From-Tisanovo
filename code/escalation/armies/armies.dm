@@ -118,7 +118,7 @@ proc/show_statistic_by_faction()
 						cccp_dead++
 					else
 						cccp_live++
-				if("surv")
+				if("pmc")
 					if(H.stat == DEAD)
 						pmc_dead++
 					else

@@ -10,15 +10,15 @@
 
 # CIV
 Czech Police:civ
-/datum/job/escalation/dayz/czech_police
-/datum/job/escalation/dayz/czech_police
-/datum/job/escalation/dayz/czech_police
+/datum/job/escalation/eft/czech_police
+/datum/job/escalation/eft/czech_police
+/datum/job/escalation/eft/czech_police
 @END@
 
 Military Police:civ
-/datum/job/escalation/dayz/military_police
-/datum/job/escalation/dayz/military_police
-/datum/job/escalation/dayz/military_police
+/datum/job/escalation/eft/military_police
+/datum/job/escalation/eft/military_police
+/datum/job/escalation/eft/military_police
 @END@
 
 # WARPAC

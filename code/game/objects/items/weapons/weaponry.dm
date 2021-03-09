@@ -331,7 +331,7 @@ obj/effect/energy_net/user_unbuckle_mob(mob/user)
 	applies_material_colour = 0
 	sharpness = 10
 
-/obj/item/weapon/material/sharprock	//phleg
+/obj/item/weapon/material/sharprock
 	name = "sharp rock"
 	desc = "God damn it, do you really can't found something better than that?"
 	icon = 'icons/obj/weapons.dmi'
@@ -371,7 +371,7 @@ obj/effect/energy_net/user_unbuckle_mob(mob/user)
 	return
 
 
-/obj/item/weapon/material/knife/sharpening	//phleg
+/obj/item/weapon/material/knife/sharpening
 	name = "sharpening"
 	desc = "Thrust, thrust, thrust."
 	icon_state = "sharpening"

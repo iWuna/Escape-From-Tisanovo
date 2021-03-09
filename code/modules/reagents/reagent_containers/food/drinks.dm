@@ -308,13 +308,22 @@
 		..()
 		reagents.add_reagent(/datum/reagent/water, 30)
 
+/obj/item/weapon/reagent_containers/food/drinks/glassbottle
+	name = "glass bottle"
+	desc = "Just a glass bottle."
+	icon_state = "glassbottle"
+	volume = 40
+	center_of_mass = "x=17;y=3"
+	filling_states = "5;20;50;80;100"
+	base_name = "glassbottle"
+	base_icon = "glassbottle"
+
 /obj/item/weapon/reagent_containers/food/drinks/flask/wornflask/small
 	icon_state = "smallflask"
 	volume = 30
 
 /obj/item/weapon/reagent_containers/food/drinks/flask/wornflask/nato
 	icon_state = "natoflask"
-
 
 /obj/item/weapon/reagent_containers/food/drinks/coffeecup
 	name = "coffee cup"

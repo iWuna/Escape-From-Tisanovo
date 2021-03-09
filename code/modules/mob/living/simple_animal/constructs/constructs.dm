@@ -8,6 +8,7 @@
 	response_help  = "thinks better of touching"
 	response_disarm = "flailed at"
 	response_harm   = "punched"
+	icon_state = "floating"
 	icon_dead = "shade_dead"
 	speed = -1
 	a_intent = I_HURT
@@ -86,8 +87,6 @@
 
 /////////////////Juggernaut///////////////
 
-
-
 /mob/living/simple_animal/construct/armoured
 	name = "Juggernaut"
 	real_name = "Juggernaut"
@@ -136,11 +135,7 @@
 
 	return (..(P))
 
-
-
 ////////////////////////Wraith/////////////////////////////////////////////
-
-
 
 /mob/living/simple_animal/construct/wraith
 	name = "Wraith"
@@ -163,8 +158,6 @@
 
 
 /////////////////////////////Artificer/////////////////////////
-
-
 
 /mob/living/simple_animal/construct/builder
 	name = "Artificer"

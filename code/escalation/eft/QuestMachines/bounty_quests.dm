@@ -58,7 +58,7 @@
 	employer_icon = "sci_1.gif"
 	need_message = "3 zombie body"
 	end_message = "Finally! Some good music!"
-	target_items = list(/mob/living/simple_animal/hostile/dayz/zombie = 3)
+	target_items = list(/mob/living/simple_animal/hostile/eft/zombie = 3)
 	koruna_reward = 160
 
 /datum/bounty_quest/faction/nato/qst_3
@@ -68,7 +68,7 @@
 	employer_icon = "sci_1.gif"
 	need_message = "2 zombie runner body"
 	end_message = "Finally! Some good music!"
-	target_items = list(/mob/living/simple_animal/hostile/dayz/zombie/runner = 2)
+	target_items = list(/mob/living/simple_animal/hostile/eft/zombie/runner = 2)
 	koruna_reward = 100
 
 /datum/bounty_quest/faction/nato/qst_4

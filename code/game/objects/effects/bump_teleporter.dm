@@ -34,3 +34,21 @@ var/list/obj/effect/bump_teleporter/BUMP_TELEPORTERS = list()
 			if(usr.pulling)
 				usr.pulling.forceMove(BT.loc)
 			return
+
+/obj/effect/bump_teleporter/tis_to_andr
+	id = "tis_to_andr"
+	id_target = "andr_enter"
+
+/obj/effect/bump_teleporter/andr_to_tis
+	id = "andr_to_tis"
+	id_target = "tis_enter"
+
+/obj/effect/bump_teleporter/andre_enter
+	id = "andr_enter"
+	id_target = null
+	density = 0
+
+/obj/effect/bump_teleporter/tis_enter
+	id = "tis_enter"
+	id_target = null
+	density = 0

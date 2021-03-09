@@ -401,6 +401,7 @@
 		return
 	attack_animation(user)
 	visible_message("<span class='danger'>[user] [attack_message] the [src]!</span>")
+	damage()
 	dump_contents()
 	spawn(1) qdel(src)
 	return 1

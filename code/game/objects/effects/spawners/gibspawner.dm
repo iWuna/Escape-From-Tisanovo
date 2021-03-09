@@ -32,3 +32,12 @@
 			..()
 			spawn(GIB_DELETE)
 				qdel(src)
+	crate
+		gibtypes = list(/obj/effect/decal/cleanable/blood/gibs/crate, /obj/effect/decal/cleanable/blood/gibs/crate, /obj/effect/decal/cleanable/blood/gibs/crate)
+		gibamounts = list(2,2,1)
+
+		New()
+			gibdirections = list(list(WEST, NORTHWEST, SOUTHWEST, NORTH),list(EAST, NORTHEAST, SOUTHEAST, SOUTH), list())
+			..()
+			spawn(GIB_DELETE)
+				qdel(src)

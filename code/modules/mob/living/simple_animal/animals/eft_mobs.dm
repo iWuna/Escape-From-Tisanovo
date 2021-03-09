@@ -1,6 +1,6 @@
 #define COMPOST_TIME 10000
 
-/mob/living/simple_animal/hostile/dayz/zombie
+/mob/living/simple_animal/hostile/eft/zombie
 	name = "zombie"
 	desc = "B-raa-ains~"
 	icon = 'icons/escalation/mob/zombie.dmi'
@@ -40,7 +40,7 @@
 	say_sounds = 'sound/escalation/zed/zed_say1.ogg'
 	triggered_sound = 'sound/escalation/zed/zed_triggered1.ogg'
 
-/mob/living/simple_animal/hostile/dayz/zombie/PunchTarget()
+/mob/living/simple_animal/hostile/eft/zombie/PunchTarget()
 	. =..()
 	var/mob/living/carbon/human/H = .
 	if(istype(H))
@@ -51,18 +51,18 @@
 				L.reagents.add_reagent(/datum/reagent/toxin/black_cholera, 2)
 
 
-/mob/living/simple_animal/hostile/dayz/zombie/death()
+/mob/living/simple_animal/hostile/eft/zombie/death()
 	. = ..()
 	spawn(COMPOST_TIME)
 		visible_message("Zombie corpse decomposes...")
 		qdel(src)
 
-/mob/living/simple_animal/hostile/dayz/zombie/set_target()
+/mob/living/simple_animal/hostile/eft/zombie/set_target()
 	. = ..()
 	if(.)
 		audible_emote("growls at [.]")
 
-/mob/living/simple_animal/hostile/dayz/zombie/New()
+/mob/living/simple_animal/hostile/eft/zombie/New()
 	..()
 	attack_sound = pick('sound/escalation/zed/zed_attack1.ogg',
 	'sound/escalation/zed/zed_attack2.ogg',
@@ -87,17 +87,17 @@
 	'sound/escalation/zed/zed_triggered3.ogg',
 	'sound/escalation/zed/zed_triggered4.ogg',)
 
-/mob/living/simple_animal/hostile/dayz/zombie/pahom
+/mob/living/simple_animal/hostile/eft/zombie/pahom
 	name = "strange zombie"
 	icon_state = "zombie_sitting_gop"
 	icon_dead = "zombie_sittingdead"
 	speed = 9
 	health = 250
 
-/mob/living/simple_animal/hostile/dayz/zombie/civ
+/mob/living/simple_animal/hostile/eft/zombie/civ
 	speed = 6
 
-/mob/living/simple_animal/hostile/dayz/zombie/civ/New()
+/mob/living/simple_animal/hostile/eft/zombie/civ/New()
 	..()
 	icon_state = "zed[rand(1,10)]"
 	if(icon_state == "zed1")
@@ -121,14 +121,14 @@
 	if(icon_state == "zed10")
 		icon_dead = "zed_dead10"
 
-/mob/living/simple_animal/hostile/dayz/zombie/runner
+/mob/living/simple_animal/hostile/eft/zombie/runner
 	name = "zombie runner"
 	icon_state = "zed_runner1"
 	speed = 8
 	view_range = 6
 	health = 60
 
-/mob/living/simple_animal/hostile/dayz/zombie/runner/New()
+/mob/living/simple_animal/hostile/eft/zombie/runner/New()
 	..()
 	icon_state = "zed_runner[rand(1,3)]"
 	if(icon_state == "zed_runner1")
@@ -138,7 +138,7 @@
 	if(icon_state == "zed_runner3")
 		icon_dead = "zed_runnerdead3"
 
-/mob/living/simple_animal/hostile/dayz/zombie/police
+/mob/living/simple_animal/hostile/eft/zombie/police
 	name = "policeman zombie"
 	desc = "Once he was a policeman, but now he's just a brainless stupid shell with blood in jaws. He is thicc..."
 	icon_state = "zed_police1"
@@ -147,7 +147,7 @@
 	view_range = 7
 	health = 100
 
-/mob/living/simple_animal/hostile/dayz/zombie/police/New()
+/mob/living/simple_animal/hostile/eft/zombie/police/New()
 	..()
 	icon_state = "zed_police[rand(1,2)]"
 	if(icon_state == "zed_police1")
@@ -155,7 +155,7 @@
 	if(icon_state == "zed_police2")
 		icon_dead = "zed_policedead2"
 
-/mob/living/simple_animal/hostile/dayz/zombie/soldier
+/mob/living/simple_animal/hostile/eft/zombie/soldier
 	name = "zombie soldier"
 	desc = "Once he was a soldier, but now he's just a brainless shell resembling a human. Good physical training in a previous life still makes itself felt."
 	icon_state = "zed_army1"
@@ -165,7 +165,7 @@
 	view_range = 8
 	health = 130
 
-/mob/living/simple_animal/hostile/dayz/zombie/soldier/New()
+/mob/living/simple_animal/hostile/eft/zombie/soldier/New()
 	..()
 	icon_state = "zed_army[rand(1,5)]"
 	if(icon_state == "zed_army1")
@@ -179,14 +179,14 @@
 	if(icon_state == "zed_army5")
 		icon_dead = "zed_armydead5"
 
-/mob/living/simple_animal/hostile/dayz/zombie/soldier/armored
+/mob/living/simple_animal/hostile/eft/zombie/soldier/armored
 	desc = "Wait, he's wearing armor?!"
 	speed = 6
 	view_range = 7
 	health = 180
 	icon_state = "zed_armored_army1"
 
-/mob/living/simple_animal/hostile/dayz/zombie/soldier/armored/New()
+/mob/living/simple_animal/hostile/eft/zombie/soldier/armored/New()
 	..()
 	icon_state = "zed_armored_army[rand(1,2)]"
 	if(icon_state == "zed_armored_army1")
@@ -198,7 +198,7 @@
 	if(icon_state == "zed_armored_army4")
 		icon_dead = "zed_armored_armydead4"
 
-/mob/living/simple_animal/hostile/dayz/zombie/soldier_nato
+/mob/living/simple_animal/hostile/eft/zombie/soldier_nato
 	name = "zombie soldier"
 	desc = "Once he was a soldier, but now he's just a brainless shell resembling a human. Good physical training in a previous life still makes itself felt."
 	icon_state = "zed_army_nato3"
@@ -208,7 +208,7 @@
 	view_range = 8
 	health = 130
 
-/mob/living/simple_animal/hostile/dayz/zombie/soldier_nato/New()
+/mob/living/simple_animal/hostile/eft/zombie/soldier_nato/New()
 	..()
 	icon_state = "zed_army_nato[rand(1,4)]"
 	if(icon_state == "zed_army_nato1")
@@ -220,12 +220,12 @@
 	if(icon_state == "zed_army_nato4")
 		icon_dead = "zed_army_nato4_dead"
 
-/mob/living/simple_animal/hostile/dayz/zombie/soldier/set_target()
+/mob/living/simple_animal/hostile/eft/zombie/soldier/set_target()
 	. = ..()
 	if(.)
 		audible_emote("unintelligible growls at [.]")
 
-/mob/living/simple_animal/hostile/dayz/zombie/nato_hazmat
+/mob/living/simple_animal/hostile/eft/zombie/nato_hazmat
 	name = "zombie hazmat"
 	desc = "Once he was a soldier, but now he's just a brainless shell resembling a human. This one wearing NBO suit."
 	icon_state = "zed_hazmat"
@@ -236,12 +236,12 @@
 	view_range = 8
 	health = 100
 
-/mob/living/simple_animal/hostile/dayz/zombie/nato_hazmat/set_target()
+/mob/living/simple_animal/hostile/eft/zombie/nato_hazmat/set_target()
 	. = ..()
 	if(.)
 		audible_emote("makes muffled growl at [.]")
 
-/mob/living/simple_animal/hostile/dayz/zombie/sci
+/mob/living/simple_animal/hostile/eft/zombie/sci
 	name = "zombie"
 	desc = "This walker is wearing a shirt and a lab coat. A scientist?"
 	icon_state = "zed_sci"
@@ -252,14 +252,14 @@
 	view_range = 6
 	health = 95
 
-/mob/living/simple_animal/hostile/dayz/zombie/nato_hazmat/set_target()
+/mob/living/simple_animal/hostile/eft/zombie/nato_hazmat/set_target()
 	. = ..()
 	if(.)
 		audible_emote("makes muffled growl at [.]")
 
 ///NPC///
 
-/mob/living/simple_animal/hostile/dayz/human
+/mob/living/simple_animal/hostile/eft/human
 	icon = 'icons/escalation/mob/npc.dmi'
 	ranged = 1
 	speed = 6
@@ -299,13 +299,13 @@
 	melee_miss_chance = 45
 	gender = MALE
 
-/mob/living/simple_animal/hostile/dayz/human/New()
+/mob/living/simple_animal/hostile/eft/human/New()
 	..()
 	var/first_name = pick(first_names_male_czech)
 	var/second_name = pick(last_names_czech)
 	name = "[first_name] [second_name]"
 
-/mob/living/simple_animal/hostile/dayz/human/nato
+/mob/living/simple_animal/hostile/eft/human/nato
 	name = "NATO soldier"
 	icon_state = "nato_sld1"
 	shoot_range = 9
@@ -330,7 +330,7 @@
 				"bio" = 5,
 				"rad" = 5)
 
-/mob/living/simple_animal/hostile/dayz/human/nato_hazmat
+/mob/living/simple_animal/hostile/eft/human/nato_hazmat
 	name = "NATO soldier"
 	icon_state = "nato_hazmat1"
 	icon_dead = "nato_hazmat1_dead"
@@ -355,13 +355,13 @@
 				"bio" = 100,
 				"rad" = 100)
 
-/mob/living/simple_animal/hostile/dayz/human/nato_hazmat/New()
+/mob/living/simple_animal/hostile/eft/human/nato_hazmat/New()
 	..()
 	var/first_name = pick(first_names_male_usmc)
 	var/second_name = pick(last_names_usmc)
 	name = "[first_name] [second_name]"
 
-/mob/living/simple_animal/hostile/dayz/human/nato/New()
+/mob/living/simple_animal/hostile/eft/human/nato/New()
 	..()
 	var/first_name = pick(first_names_male_usmc)
 	var/second_name = pick(last_names_usmc)
@@ -374,12 +374,12 @@
 	if(icon_state == "nato_sld3")
 		icon_dead = "nato_sld3_dead"
 
-/mob/living/simple_animal/hostile/dayz/human/nato/standing
+/mob/living/simple_animal/hostile/eft/human/nato/standing
 	wander = 0
 	speak_chance = 0
 
 ///сюжетный///
-/mob/living/simple_animal/hostile/dayz/human/czech_deserter_family
+/mob/living/simple_animal/hostile/eft/human/czech_deserter_family
 	desc = "This is alive human, but he's very angry..."
 	reactions = list("Ahoj, jak se mas s rodinou?" = "Je to nechutne, dcera se nakazila tou cholerou.")
 	projectiletype = /obj/item/projectile/bullet
@@ -395,7 +395,7 @@
 				"bio" = 100,
 				"rad" = 100)
 
-/mob/living/simple_animal/hostile/dayz/human/deserter_pistol
+/mob/living/simple_animal/hostile/eft/human/deserter_pistol
 	name = "czech deserter"
 	desc = "This is alive human, but he's very angry..."
 	icon_state = "dezertirpistol1"
@@ -403,7 +403,7 @@
 	projectilesound = 'sound/weapons/gunshot/makarov.ogg'
 	shoot_range = 6
 
-/mob/living/simple_animal/hostile/dayz/human/deserter_pistol/New()
+/mob/living/simple_animal/hostile/eft/human/deserter_pistol/New()
 	..()
 	icon_state = "dezertirpistol[rand(1,3)]"
 	if(icon_state == "dezertirpistol1")
@@ -413,7 +413,7 @@
 	if(icon_state == "dezertirpistol3")
 		icon_dead = "dezertirpistol3_dead"
 
-/mob/living/simple_animal/hostile/dayz/human/deserter_vz
+/mob/living/simple_animal/hostile/eft/human/deserter_vz
 	name = "czech deserter"
 	desc = "This is alive human, but he's very angry..."
 	icon_state = "dezertirvz1"
@@ -431,7 +431,7 @@
 				"rad" = 100)
 
 
-/mob/living/simple_animal/hostile/dayz/human/deserter_vz/New()
+/mob/living/simple_animal/hostile/eft/human/deserter_vz/New()
 	..()
 	icon_state = "dezertirvz[rand(1,3)]"
 	if(icon_state == "dezertirvz1")

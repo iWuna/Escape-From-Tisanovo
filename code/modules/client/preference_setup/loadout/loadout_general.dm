@@ -73,6 +73,26 @@
 	path = /obj/item/weapon/material/knife/sharpening
 	cost = 4
 
+/datum/gear/weapon2
+	display_name = "Sharp rock"
+	path = /obj/item/weapon/material/sharprock
+	cost = 2
+
+/datum/gear/weapon3
+	display_name = "Makarov"
+	path = /obj/item/weapon/gun/projectile/makarov
+	cost = 8
+
+/datum/gear/tool1
+	display_name = "Crowbar"
+	path = /obj/item/weapon/crowbar/prybar
+	cost = 5
+
+/datum/gear/medical1
+	display_name = "IFAK"
+	path = /obj/item/weapon/storage/firstaid/usmc_ifak
+	cost = 7
+
 /datum/gear/water1
 	display_name = "Pipsi"
 	path = /obj/item/weapon/reagent_containers/food/drinks/cans/grape_juice

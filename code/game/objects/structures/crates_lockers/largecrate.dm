@@ -6,6 +6,7 @@
 	density = 1
 	flags = OBJ_CLIMBABLE
 	var/material = /obj/item/stack/material/wood
+
 /obj/structure/largecrate/Initialize()
 	. = ..()
 	for(var/obj/I in src.loc)

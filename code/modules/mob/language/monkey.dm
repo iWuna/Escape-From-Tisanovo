@@ -5,6 +5,7 @@
 	ask_verb = "chimpers"
 	exclaim_verb = "screeches"
 	key = "m"
+	flags = RESTRICTED
 
 /datum/language/unathi/monkey
 	name = "Stok"

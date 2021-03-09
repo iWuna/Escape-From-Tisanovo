@@ -24,13 +24,13 @@ var/global/list/robot_modules = list(
 	var/networks = list()
 	var/languages = list(
 		LANGUAGE_SOL_COMMON = 1,
-		LANGUAGE_LUNAR = 1,
+		LANGUAGE_ENGLISH = 1,
 		LANGUAGE_UNATHI = 0,
 		LANGUAGE_SIIK_MAAS = 0,
 		LANGUAGE_SKRELLIAN = 0,
 		LANGUAGE_GUTTER = 0,
 		LANGUAGE_SIGN = 0,
-		LANGUAGE_INDEPENDENT = 0,
+		LANGUAGE_RUSSIAN = 0,
 		LANGUAGE_SPACER = 1)
 	var/sprites = list()
 	var/can_be_pushed = 1
@@ -484,9 +484,9 @@ var/global/list/robot_modules = list(
 					LANGUAGE_SIIK_MAAS	= 1,
 					LANGUAGE_SIIK_TAJR	= 0,
 					LANGUAGE_SKRELLIAN	= 1,
-					LANGUAGE_LUNAR	= 1,
+					LANGUAGE_ENGLISH	= 1,
 					LANGUAGE_GUTTER		= 1,
-					LANGUAGE_INDEPENDENT= 1,
+					LANGUAGE_RUSSIAN= 1,
 					LANGUAGE_SPACER = 1
 					)
 
@@ -642,7 +642,7 @@ var/global/list/robot_modules = list(
 					LANGUAGE_SIIK_TAJR = 0,
 					LANGUAGE_SKRELLIAN = 0,
 					LANGUAGE_GUTTER = 1,
-					LANGUAGE_INDEPENDENT = 1
+					LANGUAGE_RUSSIAN = 1
 					)
 	sprites = list(
 					"Dread" = "securityrobot",

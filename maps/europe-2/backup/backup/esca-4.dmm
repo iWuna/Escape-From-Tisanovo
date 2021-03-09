@@ -1,0 +1,410 @@
+"aa" = (/turf,/area/coldwar)
+"ad" = (/turf/unsimulated/floor/road{icon_state = "concreteroad"},/area/coldwar)
+"ag" = (/turf/unsimulated/floor/road{icon_state = "parking"},/area/coldwar)
+"ai" = (/obj/structure/window/classicsteel,/turf/simulated/floor/plating,/area/coldwar)
+"aj" = (/obj/machinery/door/unpowered/simple/woodalt,/turf/simulated/floor/plating,/area/coldwar)
+"al" = (/obj/machinery/door/unpowered/simple/woodalt,/turf/simulated/floor/wood,/area/coldwar)
+"an" = (/obj/machinery/door/unpowered/simple/metalglass1{dir = 2},/turf/simulated/floor/lino,/area/coldwar)
+"ao" = (/obj/machinery/door/unpowered/simple/wood/glass,/turf/simulated/floor/plating,/area/coldwar)
+"ar" = (/obj/machinery/door/unpowered/simple/woodalt,/turf/simulated/floor/tiled/dark,/area/coldwar)
+"as" = (/obj/machinery/door/unpowered/simple/wood/alt,/turf/simulated/floor/tiled/white,/area/coldwar)
+"at" = (/obj/machinery/door/unpowered/simple/wood/alt,/turf/simulated/floor/plating,/area/coldwar)
+"au" = (/obj/machinery/door/unpowered/simple/bars,/turf/simulated/floor/plating,/area/coldwar)
+"av" = (/turf/unsimulated/floor/river/deep,/area/coldwar/sea)
+"az" = (/turf/simulated/floor/tiled/ramp{dir = 4},/area/coldwar)
+"aB" = (/turf/simulated/wall/woodalt,/area/coldwar)
+"aE" = (/turf/simulated/wall/concrete_grey,/area/coldwar)
+"aF" = (/obj/structure/sandbag{pixel_y = -5},/turf/unsimulated/ground/sand,/area/coldwar)
+"aG" = (/turf/unsimulated/floor/road{dir = 4; icon_state = "sidewalkconcrete"},/area/coldwar)
+"aH" = (/obj/structure/sign/hospital{pixel_x = 32},/turf/unsimulated/ground/sand,/area/coldwar)
+"aJ" = (/obj/structure/brutswehr,/obj/structure/sandbag{icon_state = "sandbag"; dir = 1},/obj/structure/sandbag{icon_state = "sandbag"; dir = 8},/turf/unsimulated/ground,/area/coldwar)
+"aM" = (/obj/structure/newfence/metal,/turf/unsimulated/ground/sand,/area/coldwar)
+"aN" = (/obj/structure/carcosa/statue/broken,/turf/unsimulated/ground/sand,/area/coldwar)
+"aQ" = (/turf/simulated/floor/tiled/ramp/bottom{icon_state = "rampbot"; dir = 1},/area/coldwar)
+"aT" = (/obj/structure/brutswehr,/obj/structure/sandbag{icon_state = "sandbag"; dir = 1},/turf/unsimulated/ground,/area/coldwar)
+"aU" = (/obj/structure/brutswehr,/turf/unsimulated/ground,/area/coldwar)
+"aV" = (/obj/structure/sandbag/concrete_block{icon_state = "concrete_block"; dir = 1},/turf/unsimulated/ground/sand,/area/coldwar)
+"aX" = (/obj/structure/brutswehr,/obj/structure/sandbag{icon_state = "sandbag"; dir = 8},/turf/unsimulated/ground,/area/coldwar)
+"bb" = (/obj/structure/sign/flag/ussr,/turf/unsimulated/ground/sand,/area/coldwar)
+"be" = (/obj/structure/sign/flag/ddrflag,/turf/unsimulated/ground/sand,/area/coldwar)
+"bf" = (/obj/structure/sandbag/concrete_block{icon_state = "concrete_block"; dir = 8},/turf/unsimulated/ground/sand,/area/coldwar)
+"bg" = (/obj/structure/fire_source/hearth,/turf/unsimulated/ground,/area/coldwar)
+"bj" = (/obj/structure/sandbag/concrete_block{icon_state = "concrete_block"; dir = 8},/turf/unsimulated/ground,/area/coldwar)
+"bC" = (/obj/structure/table/rack/shelf,/turf/unsimulated/ground/sand,/area/coldwar)
+"bE" = (/obj/structure/table/rack/foldtable,/turf/unsimulated/ground/sand,/area/coldwar)
+"bK" = (/obj/structure/bed/chair/wood/soviet,/turf/simulated/floor/wood,/area/coldwar)
+"bP" = (/obj/structure/sign/carpetright{pixel_y = 32},/turf/simulated/floor/wood,/area/coldwar)
+"bQ" = (/obj/machinery/door/unpowered/simple/woodalt,/turf/simulated/floor/tiled/white,/area/coldwar)
+"bX" = (/obj/machinery/door/unpowered/simple/wood/alt,/turf/simulated/floor/lino,/area/coldwar)
+"cc" = (/turf/simulated/floor/plating,/area/coldwar/sea)
+"cd" = (/turf/simulated/floor/wood,/area/coldwar/sea)
+"ce" = (/turf/simulated/wall/woodalt,/area/coldwar/sea)
+"cj" = (/obj/machinery/door/unpowered/simple/metalglass1{dir = 2},/turf/simulated/floor/plating,/area/coldwar)
+"cq" = (/obj/structure/window/classic,/turf/simulated/floor/plating,/area/coldwar)
+"cy" = (/obj/structure/bed/soviet,/turf/simulated/floor/tiled/white,/area/coldwar)
+"cD" = (/obj/structure/table/greenmetal,/turf/simulated/floor/tiled/white,/area/coldwar)
+"cJ" = (/obj/structure/table/greenmetal,/turf/simulated/floor/tiled/freezer,/area/coldwar)
+"cN" = (/obj/structure/sandbag,/turf/unsimulated/ground,/area/coldwar)
+"cO" = (/obj/structure/sandbag,/turf/unsimulated/ground/sand,/area/coldwar)
+"cQ" = (/obj/structure/sandbag{dir = 1},/turf/simulated/floor/tiled/bunker/cafe,/area/coldwar)
+"cR" = (/obj/structure/sandbag{dir = 4},/turf/simulated/floor/tiled/bunker/cafe,/area/coldwar)
+"cS" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 8},/turf/unsimulated/floor/road{icon_state = "sidewalkconcrete"},/area/coldwar)
+"cT" = (/obj/structure/bed/chair/wood/goon{dir = 8},/obj/structure/sandbag{dir = 4},/turf/simulated/floor/tiled/bunker/cafe,/area/coldwar)
+"cU" = (/obj/structure/sandbag,/turf/simulated/floor/tiled/bunker/cafe,/area/coldwar)
+"cV" = (/obj/structure/table/rack/shelf,/turf/simulated/floor/tiled/bunker/cafe,/area/coldwar)
+"cW" = (/obj/structure/sandbag,/turf/unsimulated/floor/road{icon_state = "concreteroad"; temperature = 293.15},/area/coldwar)
+"cZ" = (/turf/unsimulated/floor/river,/area/coldwar)
+"da" = (/obj/structure/sandbag{dir = 4},/turf/unsimulated/floor/road{icon_state = "sidewalkconcrete"},/area/coldwar)
+"db" = (/obj/structure/brutswehr,/obj/structure/sandbag{dir = 1},/obj/structure/sandbag,/turf/unsimulated/floor/road{icon_state = "concreteroad"; temperature = 293.15},/area/coldwar)
+"dc" = (/obj/structure/fire_source/hearth,/turf/unsimulated/floor/road{icon_state = "concreteroad"; temperature = 293.15},/area/coldwar)
+"de" = (/obj/structure/bed/chair/wood/goon{icon_state = "chairgoon_preview"; dir = 1},/turf/unsimulated/floor/road{icon_state = "concreteroad"; temperature = 293.15},/area/coldwar)
+"df" = (/obj/structure/sandbag{dir = 1},/turf/simulated/floor/wood,/area/coldwar)
+"dg" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 8},/turf/simulated/floor/wood,/area/coldwar/sea)
+"dh" = (/obj/structure/sandbag{dir = 4},/turf/simulated/floor/plating,/area/coldwar/sea)
+"di" = (/obj/structure/sandbag,/turf/simulated/floor/plating,/area/coldwar/sea)
+"dl" = (/obj/structure/sandbag{dir = 4},/turf/unsimulated/ground,/area/coldwar)
+"dm" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 8},/turf/unsimulated/ground,/area/coldwar)
+"do" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 8},/turf/unsimulated/ground/sand,/area/coldwar)
+"dp" = (/obj/structure/sandbag{dir = 1},/turf/unsimulated/ground,/area/coldwar)
+"dr" = (/obj/structure/bed/chair/wood/goon{icon_state = "chairgoon_preview"; dir = 1},/turf/simulated/floor/tiled/bunker/cafe,/area/coldwar)
+"du" = (/obj/item/weapon/storage/wardrobe/alt1{pixel_y = 16},/turf/simulated/floor/wood,/area/coldwar)
+"dv" = (/obj/item/weapon/storage/wardrobe/alt2{pixel_y = 16},/turf/simulated/floor/wood,/area/coldwar)
+"dy" = (/obj/item/weapon/storage/wardrobe/tumbo4ka/cupboard{pixel_y = 16},/turf/simulated/floor/tiled/white,/area/coldwar)
+"dF" = (/obj/item/weapon/storage/wardrobe/tumbo4ka/alt{pixel_y = 8},/turf/simulated/floor/wood,/area/coldwar)
+"dG" = (/obj/structure/bed/chair/wood/goon,/turf/simulated/floor/wood,/area/coldwar)
+"dJ" = (/obj/structure/table/army,/turf/simulated/floor/tiled/white,/area/coldwar)
+"dO" = (/obj/structure/bed,/turf/simulated/floor/wood,/area/coldwar)
+"dP" = (/obj/structure/bed/chair/wood/goon{dir = 8},/turf/simulated/floor/wood,/area/coldwar)
+"dS" = (/obj/machinery/door/unpowered/simple/interiorroom,/turf/simulated/floor/wood,/area/coldwar)
+"dZ" = (/obj/structure/bed/chair/wood/goon{dir = 1},/turf/simulated/floor/wood,/area/coldwar)
+"ea" = (/obj/structure/fire_source/stove,/turf/simulated/floor/wood,/area/coldwar)
+"eb" = (/obj/structure/bed/chair/wood/goon{dir = 4},/turf/simulated/floor/wood,/area/coldwar)
+"ee" = (/obj/structure/sign/rubin714,/obj/structure/table/army,/turf/simulated/floor/wood,/area/coldwar)
+"eh" = (/obj/structure/table/army,/turf/simulated/floor/wood,/area/coldwar)
+"eM" = (/obj/structure/sandbag{dir = 4},/turf/unsimulated/ground/sand,/area/coldwar)
+"eN" = (/obj/structure/sandbag{dir = 1},/turf/unsimulated/ground/sand,/area/coldwar)
+"eO" = (/obj/structure/brutswehr,/obj/structure/sandbag,/obj/structure/sandbag{icon_state = "sandbag"; dir = 1},/turf/unsimulated/ground,/area/coldwar)
+"eP" = (/obj/structure/barbwire,/turf/unsimulated/ground,/area/coldwar)
+"eQ" = (/obj/structure/brutswehr,/obj/structure/sandbag,/obj/structure/sandbag{dir = 1},/turf/simulated/floor/tiled/bunker/polar,/area/coldwar)
+"eR" = (/obj/structure/barbwire{dir = 8},/turf/unsimulated/ground,/area/coldwar)
+"eS" = (/obj/structure/brutswehr,/obj/structure/sandbag{dir = 4},/obj/structure/sandbag{dir = 8},/turf/simulated/floor/tiled/bunker/polar,/area/coldwar)
+"eX" = (/turf/simulated/floor/tiled/ramp/bottom,/area/coldwar)
+"fe" = (/obj/structure/bed/chair/wood/soviet{dir = 8},/turf/simulated/floor/wood,/area/coldwar)
+"fy" = (/turf/unsimulated/ground/sand,/area/coldwar/sea)
+"fJ" = (/turf/simulated/floor/tiled/bunker/cafe,/area/coldwar)
+"fK" = (/obj/structure/bed/chair/wood/goon,/turf/simulated/floor/tiled/bunker/cafe,/area/coldwar)
+"fN" = (/obj/structure/sandbag{pixel_y = -5},/turf/simulated/floor/wood,/area/coldwar)
+"fQ" = (/obj/structure/bed/foldbed/soviet,/turf/simulated/floor/tiled/white,/area/coldwar)
+"fU" = (/obj/structure/table/rack/shelf,/turf/simulated/floor/tiled/white,/area/coldwar)
+"fV" = (/obj/structure/sandbag{dir = 4},/turf/unsimulated/floor/road{icon_state = "concreteroad"; temperature = 293.15},/area/coldwar)
+"fY" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 8},/turf/unsimulated/floor/road{icon_state = "concreteroad"; temperature = 293.15},/area/coldwar)
+"ga" = (/obj/structure/fence/corner{icon_state = "corner"; dir = 8},/turf/unsimulated/floor/river,/area/coldwar/sea)
+"gb" = (/obj/structure/fence{dir = 4},/turf/unsimulated/ground/sand,/area/coldwar/sea)
+"gc" = (/obj/structure/fence{dir = 4},/turf/unsimulated/ground/sand,/area/coldwar)
+"gd" = (/obj/structure/fence{dir = 4},/turf/unsimulated/ground,/area/coldwar)
+"ge" = (/obj/structure/fence/corner,/turf/unsimulated/floor/road{icon_state = "sidewalkconcrete"},/area/coldwar)
+"gf" = (/obj/structure/sign/clock{pixel_x = -32},/turf/simulated/floor/wood,/area/coldwar)
+"gl" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 1},/turf/simulated/floor/wood,/area/coldwar)
+"gm" = (/turf/unsimulated/ground,/area/coldwar/sea)
+"gr" = (/obj/structure/bed/chair/wood/goon{dir = 8},/turf/simulated/floor/tiled/bunker/cafe,/area/coldwar)
+"gs" = (/obj/structure/bed/chair/wood/goon{icon_state = "chairgoon_preview"; dir = 4},/turf/simulated/floor/wood,/area/coldwar)
+"gB" = (/obj/structure/bed/chair/wood/goon{dir = 4},/turf/simulated/floor/tiled/bunker/cafe,/area/coldwar)
+"gG" = (/obj/structure/bed/foldbed/soviet,/turf/simulated/floor/tiled/bunker/cafe,/area/coldwar)
+"gV" = (/obj/structure/sign/russian/staff_only{pixel_x = 32},/obj/structure/bed/foldbed/soviet,/turf/simulated/floor/wood,/area/coldwar)
+"gZ" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 1},/turf/unsimulated/floor/road{icon_state = "concreteroad"; temperature = 293.15},/area/coldwar)
+"ha" = (/obj/structure/table/greenmetal,/turf/simulated/floor/wood,/area/coldwar)
+"hb" = (/obj/structure/table/greenmetal,/turf/unsimulated/ground,/area/coldwar/sea)
+"hc" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 1},/obj/structure/sandbag,/turf/unsimulated/ground,/area/coldwar)
+"hd" = (/obj/structure/bed/chair/wood/goon{icon_state = "chairgoon_preview"; dir = 1},/turf/simulated/floor/wood,/area/coldwar)
+"hi" = (/obj/structure/bed/foldbed/soviet,/turf/simulated/floor/wood,/area/coldwar)
+"hp" = (/obj/structure/table/fancy,/turf/simulated/floor/tiled/bunker/cafe,/area/coldwar)
+"ht" = (/obj/structure/sandbag,/obj/structure/sandbag{dir = 8},/turf/unsimulated/ground/sand{outdoors = 0; temperature = 293.15},/area/coldwar)
+"hv" = (/obj/structure/sandbag,/turf/unsimulated/ground/sand{outdoors = 0; temperature = 293.15},/area/coldwar)
+"hy" = (/turf/unsimulated/floor/road{icon_state = "concreteroad"; temperature = 293.15},/area/coldwar/sea)
+"hz" = (/turf/unsimulated/floor/road{icon_state = "sidewalkconcrete"},/area/coldwar/sea)
+"hA" = (/obj/structure/barbwire,/turf/unsimulated/ground/sand,/area/coldwar)
+"hB" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 4},/turf/unsimulated/ground,/area/coldwar)
+"hC" = (/obj/structure/brutswehr,/obj/structure/sandbag{dir = 1},/obj/structure/sandbag,/turf/unsimulated/ground,/area/coldwar)
+"hF" = (/turf/unsimulated/floor/river,/area/coldwar/sea)
+"hG" = (/obj/structure/brutswehr,/obj/structure/sandbag{dir = 1},/obj/structure/sandbag,/turf/unsimulated/ground/sand,/area/coldwar)
+"hH" = (/turf/simulated/floor/tiled/ramp/bottom{dir = 4; outdoors = 1},/area/coldwar)
+"hI" = (/obj/structure/newfence/metal,/turf/unsimulated/ground,/area/coldwar)
+"hJ" = (/obj/structure/newfence/metal,/turf/unsimulated/ground/grass,/area/coldwar)
+"ic" = (/obj/structure/table/greenmetal,/turf/unsimulated/ground/sand,/area/coldwar)
+"iz" = (/turf/unsimulated/floor/road{icon_state = "zebracrossing"; dir = 4},/area/coldwar)
+"iA" = (/turf/unsimulated/floor/road{icon_state = "zebracrossing"},/area/coldwar)
+"iC" = (/turf/unsimulated/floor/road{dir = 2; icon_state = "sidewalkconcrete"},/area/coldwar)
+"iF" = (/obj/structure/sandbag,/turf/unsimulated/floor/road{icon_state = "sidewalkconcrete"},/area/coldwar)
+"iK" = (/obj/structure/table/greenmetal,/turf/unsimulated/floor/road{icon_state = "concreteroad"; temperature = 293.15},/area/coldwar)
+"iM" = (/obj/structure/sandbag{dir = 8},/turf/unsimulated/floor/road{icon_state = "sidewalkconcrete"},/area/coldwar)
+"iR" = (/turf/unsimulated/floor/road{icon_state = "parking"; dir = 4},/area/coldwar)
+"iW" = (/turf/unsimulated/ground/grass,/area/coldwar)
+"jc" = (/obj/structure/brutswehr,/obj/structure/sandbag{icon_state = "sandbag"; dir = 1},/obj/structure/sandbag,/turf/simulated/floor/tiled/bunker/polar,/area/coldwar)
+"jd" = (/obj/structure/brutswehr,/obj/structure/sandbag{icon_state = "sandbag"; dir = 1},/turf/simulated/floor/tiled/bunker/polar,/area/coldwar)
+"je" = (/obj/structure/brutswehr,/obj/structure/sandbag{dir = 8},/obj/structure/sandbag{icon_state = "sandbag"; dir = 4},/turf/simulated/floor/tiled/bunker/polar,/area/coldwar)
+"jf" = (/obj/structure/brutswehr,/obj/structure/sandbag{icon_state = "sandbag"; dir = 4},/obj/structure/sandbag{dir = 8},/turf/simulated/floor/tiled/bunker/polar,/area/coldwar)
+"jj" = (/obj/structure/barbwire,/turf/unsimulated/floor/road{icon_state = "sidewalkconcrete"},/area/coldwar)
+"jk" = (/turf/unsimulated/ground/sand,/area/coldwar)
+"jl" = (/turf/unsimulated/ground,/area/coldwar)
+"jo" = (/obj/machinery/door/unpowered/simple/metalglass1{dir = 2},/turf/simulated/floor/tiled/bunker/polar,/area/coldwar)
+"jq" = (/turf/unsimulated/floor/road{icon_state = "sidewalkconcrete"},/area/coldwar)
+"jr" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 1},/turf/unsimulated/ground/sand,/area/coldwar)
+"js" = (/obj/structure/table/greenmetal,/turf/simulated/floor/tiled/bunker/polar,/area/coldwar)
+"jt" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 1},/turf/unsimulated/floor/road{icon_state = "sidewalkconcrete"},/area/coldwar)
+"ju" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 1},/turf/unsimulated/ground,/area/coldwar)
+"jw" = (/obj/structure/sandbag{dir = 8},/obj/structure/sandbag,/turf/unsimulated/floor/road{icon_state = "sidewalkconcrete"},/area/coldwar)
+"jx" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 4},/obj/structure/sandbag,/turf/unsimulated/floor/road{icon_state = "sidewalkconcrete"},/area/coldwar)
+"jy" = (/obj/machinery/door/unpowered/simple/metalglass1{dir = 2},/turf/simulated/floor/tiled/dark,/area/coldwar)
+"jz" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 4},/turf/unsimulated/floor/road{icon_state = "sidewalkconcrete"},/area/coldwar)
+"jA" = (/obj/structure/sandbag{dir = 8},/turf/simulated/floor/tiled/ramp/bottom{dir = 4; outdoors = 1},/area/coldwar)
+"jB" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 1},/turf/unsimulated/floor/road{dir = 2; icon_state = "sidewalkconcrete"},/area/coldwar)
+"jD" = (/obj/structure/bed/chair/wood/lyoha,/turf/simulated/floor/wood,/area/coldwar)
+"jF" = (/obj/structure/table/rack/shelf,/turf/simulated/floor/tiled/dark,/area/coldwar)
+"jH" = (/obj/structure/table/fancy,/obj/structure/sign/clock{pixel_y = 32},/turf/simulated/floor/wood,/area/coldwar)
+"jI" = (/obj/structure/table/rack/steriletable,/turf/simulated/floor/tiled/freezer,/area/coldwar)
+"jJ" = (/obj/structure/table/rack/shelf,/turf/simulated/floor/plating,/area/coldwar)
+"jK" = (/obj/structure/sign/andropovportrait{pixel_y = 32},/turf/simulated/floor/wood,/area/coldwar)
+"jL" = (/obj/structure/bed/chair/office/dark,/turf/simulated/floor/wood,/area/coldwar)
+"jM" = (/obj/structure/table/rack/steriletable,/turf/simulated/floor/tiled/white,/area/coldwar)
+"jN" = (/obj/structure/sign/clock{pixel_y = 32},/turf/simulated/floor/tiled/white,/area/coldwar)
+"jO" = (/obj/structure/bed/chair/office/dark{icon_state = "officechair_dark_preview"; dir = 4},/turf/simulated/floor/wood,/area/coldwar)
+"jP" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 1},/turf/simulated/floor/tiled/dark,/area/coldwar)
+"jQ" = (/obj/structure/sign/andropovportrait{pixel_y = 32},/turf/simulated/floor/tiled/dark,/area/coldwar)
+"jR" = (/obj/item/weapon/storage/wardrobe/alt1,/turf/simulated/floor/wood,/area/coldwar)
+"jT" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 8},/turf/simulated/floor/tiled/dark,/area/coldwar)
+"jU" = (/obj/structure/bed/chair/wood/lyoha{icon_state = "chairlyoha_preview"; dir = 8},/turf/simulated/floor/wood,/area/coldwar)
+"jX" = (/obj/structure/bed/chair/wood/lyoha{icon_state = "chairlyoha_preview"; dir = 1},/turf/simulated/floor/wood,/area/coldwar)
+"jY" = (/obj/structure/sandbag{pixel_y = -6},/turf/simulated/floor/tiled/dark,/area/coldwar)
+"jZ" = (/obj/structure/sandbag{pixel_y = -6},/turf/simulated/floor/wood,/area/coldwar)
+"ka" = (/obj/item/weapon/storage/wardrobe/alt2,/turf/simulated/floor/wood,/area/coldwar)
+"kb" = (/obj/structure/sign/clock{pixel_y = 32},/obj/structure/bed/chair/wood/lyoha{icon_state = "chairlyoha_preview"; dir = 8},/turf/simulated/floor/wood,/area/coldwar)
+"ke" = (/obj/structure/fire_source/fireplace,/turf/simulated/floor/wood,/area/coldwar)
+"kf" = (/obj/item/weapon/storage/wardrobe,/turf/simulated/floor/wood,/area/coldwar)
+"kh" = (/obj/structure/sign/clock{pixel_y = 32},/turf/simulated/floor/tiled/dark,/area/coldwar)
+"ki" = (/obj/structure/fire_source/burningbarrel,/turf/unsimulated/ground,/area/coldwar)
+"kj" = (/obj/structure/table/rack/foldtable,/turf/simulated/floor/tiled/dark,/area/coldwar)
+"kk" = (/obj/structure/sign/carpetleft{pixel_y = 32},/turf/simulated/floor/wood,/area/coldwar)
+"kl" = (/obj/structure/sign/carpetright{pixel_y = 32},/obj/structure/bed/soviet,/turf/simulated/floor/wood,/area/coldwar)
+"km" = (/obj/structure/table/fancy,/turf/simulated/floor/tiled/white,/area/coldwar)
+"kn" = (/obj/item/weapon/storage/wardrobe/tumbo4ka/cupboard,/turf/simulated/floor/tiled/white,/area/coldwar)
+"ko" = (/obj/item/weapon/storage/wardrobe/alt3,/turf/simulated/floor/wood,/area/coldwar)
+"kp" = (/obj/structure/table/fancy,/obj/structure/sign/rassvet307,/turf/simulated/floor/wood,/area/coldwar)
+"kq" = (/obj/structure/sign/nes{pixel_y = 4},/turf/simulated/floor/wood,/area/coldwar)
+"kr" = (/obj/structure/newfence/wooden,/turf/unsimulated/ground/sand,/area/coldwar)
+"ks" = (/obj/structure/bed/chair/wood/lyoha,/turf/simulated/floor/tiled/white,/area/coldwar)
+"kt" = (/obj/structure/newfence/wooden,/turf/unsimulated/ground,/area/coldwar)
+"ku" = (/obj/structure/bed/chair/wood/lyoha{icon_state = "chairlyoha_preview"; dir = 4},/turf/simulated/floor/tiled/white,/area/coldwar)
+"kv" = (/obj/structure/bed/chair/wood/lyoha{icon_state = "chairlyoha_preview"; dir = 1},/turf/simulated/floor/tiled/white,/area/coldwar)
+"kw" = (/obj/item/weapon/storage/wardrobe/alt2,/turf/simulated/floor/tiled/white,/area/coldwar)
+"kx" = (/obj/structure/table/greenmetal,/turf/simulated/floor/tiled,/area/coldwar)
+"ky" = (/obj/structure/table/rack/shelf,/turf/simulated/floor/tiled,/area/coldwar)
+"kz" = (/obj/structure/sign/clock{pixel_y = 32},/turf/simulated/floor/tiled,/area/coldwar)
+"kA" = (/obj/structure/bed/chair/office/dark{icon_state = "officechair_dark_preview"; dir = 4},/turf/simulated/floor/tiled,/area/coldwar)
+"kB" = (/obj/structure/fire_source/stove,/turf/simulated/floor/tiled,/area/coldwar)
+"kC" = (/obj/structure/bed/chair/office/dark{icon_state = "officechair_dark_preview"; dir = 1},/turf/simulated/floor/wood,/area/coldwar)
+"kD" = (/obj/structure/bed/chair/office/dark{icon_state = "officechair_dark_preview"; dir = 1},/turf/simulated/floor/tiled/dark,/area/coldwar)
+"kE" = (/obj/structure/fire_source/hearth,/turf/unsimulated/ground/sand,/area/coldwar)
+"kF" = (/obj/structure/table/rack/shelf,/turf/simulated/floor/lino,/area/coldwar)
+"kG" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 8},/turf/simulated/floor/wood,/area/coldwar)
+"kI" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 1},/turf/simulated/floor/lino,/area/coldwar)
+"kJ" = (/obj/structure/sandbag{pixel_y = -6},/turf/simulated/floor/lino,/area/coldwar)
+"kK" = (/obj/structure/table/fancy,/obj/structure/sign/rassvet307,/turf/simulated/floor/lino,/area/coldwar)
+"kL" = (/obj/structure/sign/andropovportrait{pixel_y = 32},/turf/simulated/floor/lino,/area/coldwar)
+"kM" = (/obj/structure/bed/chair/office/dark{icon_state = "officechair_dark_preview"; dir = 8},/turf/simulated/floor/lino,/area/coldwar)
+"kN" = (/obj/structure/bed/foldbed/soviet,/turf/simulated/floor/lino,/area/coldwar)
+"kO" = (/obj/structure/sign/russian/staff_only{pixel_y = -32},/turf/unsimulated/floor/road{dir = 4; icon_state = "sidewalkconcrete"},/area/coldwar)
+"kP" = (/obj/structure/bed/foldbed/soviet,/turf/simulated/floor/tiled/dark,/area/coldwar)
+"kQ" = (/obj/structure/sandbag{icon_state = "sandbag"; dir = 4},/turf/simulated/floor/tiled/dark,/area/coldwar)
+"kR" = (/obj/structure/sign/russian/electrical_danger{pixel_x = 32},/turf/unsimulated/floor/road{icon_state = "sidewalkconcrete"},/area/coldwar)
+"kS" = (/obj/structure/fire_source/stove,/turf/simulated/floor/lino,/area/coldwar)
+"kT" = (/obj/structure/bed/chair/office/dark,/turf/simulated/floor/lino,/area/coldwar)
+"kU" = (/obj/structure/sign/clock{pixel_y = 32},/obj/item/weapon/storage/wardrobe/alt2,/turf/simulated/floor/lino,/area/coldwar)
+"kV" = (/obj/structure/bed/chair/wood/lyoha{icon_state = "chairlyoha_preview"; dir = 8},/turf/simulated/floor/lino,/area/coldwar)
+"kW" = (/obj/structure/bed/chair/wood/lyoha{icon_state = "chairlyoha_preview"; dir = 1},/turf/simulated/floor/lino,/area/coldwar)
+"kX" = (/obj/structure/bed/soviet,/turf/simulated/floor/lino,/area/coldwar)
+"li" = (/obj/structure/bed/nato,/turf/simulated/floor/tiled/white,/area/coldwar)
+"lk" = (/obj/structure/bed/chair/fancy,/turf/simulated/floor/tiled/white,/area/coldwar)
+"ls" = (/obj/structure/bed/chair/fancy,/turf/simulated/floor/tiled/dark,/area/coldwar)
+"lv" = (/obj/machinery/door/unpowered/simple/bulkhead,/turf/simulated/floor/tiled/freezer,/area/coldwar)
+"ly" = (/obj/structure/table/rack/steriletable,/turf/simulated/floor/tiled/dark,/area/coldwar)
+"lz" = (/obj/machinery/door/unpowered/simple/bulkhead,/turf/simulated/floor/tiled/dark,/area/coldwar)
+"lI" = (/obj/structure/table/greenmetal,/turf/simulated/floor/tiled/dark,/area/coldwar)
+"lS" = (/obj/item/weapon/storage/wardrobe/tumbo4ka/cupboard,/turf/simulated/floor/wood,/area/coldwar)
+"mi" = (/obj/structure/table/rack/shelf,/turf/simulated/floor/wood,/area/coldwar)
+"mk" = (/obj/structure/sandbag,/turf/simulated/floor/wood,/area/coldwar)
+"ml" = (/obj/structure/sandbag{dir = 1},/turf/unsimulated/floor/road{icon_state = "sidewalkconcrete"},/area/coldwar)
+"mm" = (/obj/structure/bed/chair/wood/lyoha{icon_state = "chairlyoha_preview"; dir = 4},/turf/simulated/floor/wood,/area/coldwar)
+"mI" = (/obj/structure/bed/foldbed/nato,/turf/simulated/floor/wood,/area/coldwar)
+"mL" = (/obj/structure/bed/chair/wood/soviet,/turf/simulated/floor/tiled/dark,/area/coldwar)
+"mM" = (/turf/unsimulated/floor/road{icon_state = "concreteroad"; temperature = 293.15},/area/coldwar)
+"mN" = (/obj/structure/bed/chair/fancy,/turf/simulated/floor/tiled/bunker/polar,/area/coldwar)
+"mP" = (/turf/simulated/floor/tiled/bunker/polar,/area/coldwar)
+"mZ" = (/obj/structure/bed/foldbed/nato,/turf/simulated/floor/tiled,/area/coldwar)
+"nc" = (/obj/structure/table/fancy,/turf/simulated/floor/tiled/dark,/area/coldwar)
+"nf" = (/turf/simulated/floor/tiled/freezer,/area/coldwar)
+"ni" = (/obj/structure/fire_source/stove,/turf/simulated/floor/tiled/dark,/area/coldwar)
+"nj" = (/turf/simulated/floor/wood,/area/coldwar)
+"nk" = (/obj/structure/bed/chair/office/dark{icon_state = "officechair_dark_preview"; dir = 8},/turf/simulated/floor/wood,/area/coldwar)
+"nl" = (/obj/structure/table/fancy,/turf/simulated/floor/lino,/area/coldwar)
+"no" = (/obj/structure/bed/soviet,/turf/simulated/floor/wood,/area/coldwar)
+"np" = (/turf/simulated/floor/tiled/dark,/area/coldwar)
+"nq" = (/turf/simulated/floor/plating,/area/coldwar)
+"nr" = (/obj/structure/table/rack,/turf/simulated/floor/tiled/dark,/area/coldwar)
+"ns" = (/obj/structure/sign/clock{pixel_y = 32},/turf/simulated/floor/wood,/area/coldwar)
+"nt" = (/obj/structure/table/fancy,/turf/simulated/floor/wood,/area/coldwar)
+"nv" = (/turf/simulated/floor/lino,/area/coldwar)
+"nw" = (/turf/simulated/floor/tiled/white,/area/coldwar)
+"ny" = (/turf/simulated/floor/tiled,/area/coldwar)
+
+(1,1,1) = {"
+aEaEaEaEaEaEaEaEaEaEjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjljljljljljljljljljljljljkjkjljqadadadadjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+aEnfnfnfnfaEnfnfnfaEjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqizizizizjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+aEnfnfnfnfaEnfnfnfaEjqjqmMmMmMmMmMmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMiAmMmMmMmMjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+aEnfnfnfnfaEnfnfnfaEjqjqmMmMmMmMmMmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMjqjkjkjkjkjkjkjkaBaBaBaBjkjkjkjkjkaBaBaBnqjkjkjkjkjkjkjkjkjkjk
+aEnfnfnfnfaEnfnfnfaEjqjqmMmMmMmMmMmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMiAmMmMmMmMjqjqjqjqjqjqjqjqjqjqjqjqjqjqmMjqjkjkjkjkjkjkjkaBnqnqnqnqjkjkjkjknqnqnqnqjkjkjkjkjkjkjkjkjkjk
+aEaEnwaEaEaEaEnwaEaEaEiMmMmMmMmMmMmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMiAmMmMmMmMjqaEaEaiaiaEaEjqjqjqaEaEaEjqmMjqjkjkjkjkjkjkjkaBnqnqnqjkjkjkjkjkjknqnqnqjkjkjkjkjkjkjkjkjkjk
+aElinwlilililinwlknwaiiMmMmMiKmMmMmMmMmMjqiFiFiFiFiFiFiFiFiFiFiFiFiFiFiFiFiFiFiFiFiFiFiFiFiFiFiFiFjqizizizizjqaEnynynynyaEjqjqjqaEkxaEjqmMjqjkjkjkjkjkjkjkaBnqnqjkjkjkjknqjkjknqnqjkjkjkjkjkjkjkjkjkjkjk
+aElinwnwnwnwnwnwnwnwaiiMmMmMiKmMmMmMmMmMjqaMaMaMhIhIhIhIaBaBcqcqcqaBcqcqcqaBaBaBcqcqcqaBcqcqcqaBaBiMmMmMmMmMjqainykykynyaEaEaoaEaEnyaEjqmMjqjkjkjkjkjkjkjkaBnqjkjkjkjknqnqjkjknqjkjkjkjkjkjkjkjkjkjkjkjk
+aElInwaEnwaEaEaEaEaEaEiMmMmMmMmMmMmMmMmMjqjkjkjkjkjljljlcqnjnjnjnjaBminjmmntntjRnjnjnjaBnjnjnjnjaBiMmMmMmMmMjqaEnynynynykznynynynynyaEjqmMjqjkjkjkjkjkjkjkaBnqnqnqjkjkjknqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+aEaiaiaEeXaEnplIlInraEiMmMmMiKmMmMmMmMmMjqjkjkjkjkjljljlcqnjaBaBnjaBminjnjnjnjnjnjnjlSaBnjaBaBnjcqiMmMmMmMmMjqaEkxkxkxkxnynynykykynyaEjqmMjqjkjkjkjkjkjkjkaBaBnqjkjkjkjknqjkjkjkjkjkaBjkjkjkjkjkjkjkjkjk
+aEnwnwnwnwarnpnpnpnpaiiMmMmMiKmMmMmMmMmMjqaMjkjkjljljljlaBnjaBaBnjaBminjnjnjnjeanjnjntaBnjaBaBnjcqiMmMmMmMmMjqainynykAkxnynynykykynyaEjqmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjknqnqaBjkjkjkjkjkjkjkjkjk
+aEnwnwnwnwaElsnpnpnpaEiMmMmMmMmMmMmMmMmMjqaMjkjkjljljkjlaBnjnjminjaBaBalaBaBaBaBaBalaBaBnjmiminjaBiMmMmMmMmMjqaEnykBnykxnynynynynynyaEjqmMjqjkjkjkjkjkjkjkjkjkjknqaBaBaBaBaBaBaBaBaBaBjkjkjkjkjkjkjkjkjk
+aEnpaEnpnpaEnqaEaiaEaEjqmMmMmMmMmMmMmMmMjqhIjkjkjkjkjkjkalnjnjnjnjnjnjnjnjnsnjnjnjnjminjnjnjnjnjaljqmMmMmMmMjqaEcjaEaEaEaEaEaEaEaEaEaEjqmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+aEnwnwnwnwnwnwjynpjyhHjzmMmMmMmMmMmMmMmMjqhIjljkjkjkjkjlaBnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjaBiMizizizizjqjqjqjqjqjqjqjqjqjqjqjqjqjqmMjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjq
+aEnwnwnwnwnwlIaEnpaEjAjzmMmMmMmMmMmMmMmMjqhIjljkjljljkjkalnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjaljqmMmMmMmMmMmMmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMiAmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmM
+aEnwnwnwnwnwnwjynpjyhHjzmMmMiKmMmMmMmMmMjqhIjljkjljljkjkaBmimiaBaBalaBaBaBaBaBaBaBaBaBalaBaBmimiaBiMmMmMmMmMmMmMmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMiAmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmM
+aEnpaEnpnpaEaEaEaEaEaEjqmMmMiKmMmMmMmMmMjqhIjljkjljljkjkaBaBaBaBmInjmImImImImImImImImInjmIaBaBaBaBiMmMmMmMmMmMmMmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMiAmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmM
+aEnwnwnwnwaEnpnpmLlIaEiMmMmMiKmMmMmMmMmMjqhIjljkjljljljkcqnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjmImImIcqiMmMmMmMmMmMmMmMmMmMjqjqjqjqjqjqjqjqjqmMjqjqjqjqjqjqjqjqjqjqizizizjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjq
+aEnwnwnwnwaEnplIlIlIaiiMmMmMiKmMmMmMmMmMjqhIjljkjljljljlcqmImImImImImImImImImImImImImImImkmkmkmkcqiMmMmMmMmMagmMagmMagjqaEaEaEaEaEaEaEjqmMjqjkjkjkjkjkjkjkjkjqmMmMmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+aEnwnwnwnwarnpnpnpnpaiiMmMmMiKmMmMmMmMmMjqhIaMaMaMaMaMhIaBaBcqcqcqaBcqcqcqaBaBaBcqcqcqaBcqcqcqaBaBiMmMmMmMmMagmMagmMagjqaEnjjLnjnseaaijqmMjqjkjkjkjkjkjkjkjkjqmMmMmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+aEnwnwnwnwaEnpnpnpnpaEiMmMmMiKmMmMmMmMmMjqjtjtjtjtjtjtjtjtjtjtjtjtjtjtjtjtjtjtjtjtjtjtjtjtjtjtjtjtjqmMmMmMmMagmMagmMagjqainjntntnjnjaijqmMjqjkjkjkjkjkjkjkjkjqmMmMmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+aEnwnwnwnwaEaEaEaEaEaEjqmMmMmMmMmMmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMiAmMmMmMmMmMmMmMmMmMjqaijOntntnjlSaEjqmMjqjkjkjkjkjkjkjkjkjqmMmMmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+aElvaEaEnwaEninpnpaEjqjqmMmMmMmMmMmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMiAmMmMmMmMjqjqjqjqjqjqaEnjnjkCnjnjaEjqmMjqjkjkjkjkjkjkjkjkjqmMmMmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+aEnfnfaEnwaEnpnpnpaEjqjqmMmMmMmMmMmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMiAmMmMmMmMjqaEaEaoaEaEaEaEaEnjnjkaaijqmMjqjkjkjkjkjkjkjkjkjqmMmMmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+aEnfaEaEnwlznpnpnpaEiMjqmMmMmMmMmMmMmMmMjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqmMjqaEaEaoaEaEaEaEaEaEaEaEjqizizizizjqaEjFnpnpjFaEnvcjnjnjntaijqmMjqjkjkjkjkjkjkjkjkjqmMmMmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+aEnfnfaEnwaElynpnpaEiMjqjqjqjqjqjqjqjqjqjqjkjkjljljkjkjkjkjkjkjkjljljljqmMjqaEnynynynynynykxnynycjjqmMmMmMmMjqainpnpnpjFaEnvaEaEcjaEaEjqmMjqjkjkjkjkjkjkjkjkjqmMmMmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+aEaEaEaEaiaEaEaEaEaEiMjljljljljljljkjkjkjkjkjkjljljkjkjkjkjkjkjkjkjkjljqmMjqaEnykykykynynykxnynyaEjqmMmMmMmMjqainpnpnpnpaEnvaEjJnqnqaEjqmMjqjkjkjkjkjkjkjkjkjqmMmMmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+jqiCiCiCiCjBjBjBjBjqjqjljljljkjljljkjkjkjkjkaanynyaajkjkjkjkjkjkjkjkjkjqmMjqaEnynynynynynykxnykyaEjqmMmMmMmMjqaEncncncncaEnvaEjJnqjJaEjqmMjqjkjkjkjkjkjkjkjkjqmMmMmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+jljljljljljljljkjljljljljljljljljljkjkjkaaaaaanynyaaaaaajkjkjkjkjkjkjkjqmMjqaEnykykykynynykxnykyaEjqmMmMmMmMjqaEnpnpkDnpcjnvaEaEcjaEaEjqmMjqjkjkjkjkjkjkjkjkjqmMmMmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+jljljljljljljljljljljljljkjljljljkjkjkaaaamZmZnynymZmZaaaajkjkjkjkjkjkjqmMjqaEaEaiaiaEaEaEaiaiaEaEjqmMmMmMmMjqaEaEaEaEaEaEaEaEjqjqjqjqjqmMjqjkjkjkjkjkjkjkjkjqmMmMmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+jlaaaaaaaajljljljljljljljljljkjkjkjkjkaanynynynynynynynyaajkjkjkjkjkjkjqmMjqjqjqjqjqjqjqjqjqjqjqjqjqmMmMmMmMjqjqjqjqjqjqjqjqjqjqjqjqjqjqmMjqjkjkjkjkjkjkjkjkjqmMmMmMjqjkjkjkjkjkjljljljkjkjkjkjkjkjkjkjk
+aaaanymZaajljljljkjljljljljkjkjkjkjkjkaamZmZmZnynymZmZmZaajkjkjkjkjkjkjqmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMjqjkjkjkjkjkjkjkjkjqmMmMmMjqjkjkjkjkjkjlavjljljkjkjkjkjkjkjkjk
+aamZnymZaajljljljljkjljljljkjkjkjkjkjkaanynynynynynynynyaajkjkjkjkjkjkjqjqjqjqjqjqadjqjqjqjqjqjqjqjqmMmMmMmMjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjkjkjkjkjkjkjkjkjqmMmMmMjqjkjkjkjkjljlavavjljljljljljkjkjkjk
+aamZnymZaajljljljljkjljljkjkjkjkjkjkjkaaaamZmZmZmZmZmZaaaajkjkjkjkjkjkjkjkjkjkjkjqadjqaBaBaBjknqjkjqmMmMmMmMjqaBaBaBnjnjaBnjnjaBnjaBjkjkjkjkjkjkjkjkjkjkjkjkjqmMmMmMjqjkjkjkjkjljlavavavavavavjljkjkjkjk
+aamZnynynyjljljljljljljljknqjkjkaBaBjkjkaaaaaaaaaaaaaaaajkjkjkjkjkjkjkjkjkjkjkjkjqadjqaBnqnqjkjkjkjqmMmMmMmMjqaBnjnjnjnjaBnjnqnqnjaBjkjkjkjkjkjkjkjkjkjkjkjkjqmMmMmMjqjkjkjkjkjljlavavavavavavjljkjkjkjk
+aamZnynynyjljljljljljljljkjkjkjknqaBjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjqadjqaBnqjkjkjkaBjqmMmMmMmMjqaBnjnjnjnjnjnqnqjknjaBjkjkjkjkjkjkjkjkjkjkjkjkjqmMmMmMjqjkjkjkjkjljljlavavavavavjljljkjkjk
+aamZnymZaajljljljkjljljljkjkjkjknqnqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjqadjqaBnqjknqnqaBjqmMmMmMmMjqnjnjnjnjnjaBjkjkjknjnjjljkjkjkjkjkjkjkjkjkjkjljqmMmMmMjqjljkjkjkjkjkjljljlavavavjljljkjkjk
+aamZnymZaajljljljljljljkjkjknqnqjknqjkjkjkjkjkjkjkjkjkjkjqjqjqjqjqjqjqjqjqjkjkjkjqadjqaBnqjkjknqaBjqmMmMmMmMjqnjnjnjaBaBaBnqkEjknjnjjljkjkjkjkjkjkjkjkjljljljqmMmMmMjqjljljljljljkjkjkjlavavavavjljkjkjk
+aaaanymZaajljljljljljljkjkaBaBaBjkjkjkjkjkjkjkjkjkjkjkjkjqjqjqaBaBaBcjaBjqjkjkjkjqadjqjkjkjkjknqaBjqmMmMmMmMjqnjnjnjaBnqnqnqjknjnjaBjljljljkjkjkjkjljljljljlhzhyhyhyhzavavavavjljljkjkjljljljlavjljkjkjk
+jkaaaaaaaajljljljljkjljkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjqjqjqaBmieanjcqjqjkjkjkjqadjqjknqaBjkjkaBjqmMmMmMmMjqaBnjnjaBnqnqaBjkaBaBaBjljljkjkjkjkjkjlavavavavhzhyhyhyhzavavavavavjljkjkjkjkjljljljljkjkjk
+jkjkjkjkjljljljljljljljljljljkjkjkjkjkjkjkjkjkjkjkjkjkjkjqjqjqaBnjnjjDcqjqjkjkjkjqadjqjqjqjqjqjqjqjqmMmMmMmMjqaBaBaBaBnjnjnjnjnjnjnjjljljljkjkjkjljlavavavavhzhyhyhyhzavavavavavjljljkjkjkjkjkjljkjkjkjk
+jkjkjljljljljkjkjkjkjljljljljljkjkjkjkjkjkjkjkjkjkjkjkjkjqjqjqaBnplIlIaBjqjkjkjkjqadadadadadadadadadmMmMmMmMjqaBnjnjaBnjaBnjnjnjnjnjjlhFjljljkjkjlavavavavavhzhyhyhyhzavavavavavjljljljljkjkjkjkjkjkjkjk
+jljljljljljlaBeXeXaBjljljljljljljkjkjqjqjqjqjqjqjqjqjqjqjqjqjqaBnpnpnpcqjqjkjkjkjqjqjqjqjqjqjqjqjqjqmMmMmMmMjqnjnjnjnjnjaBnjntntnjnjjlhFjljljkjkjlavavavavavhzhyhyhyhzavavavavavavavavjljkjkjkjkjkjkjkjk
+aBmPmPaBmPmPaBjojoaBmPmPaBmPmPaBmPaBaEaEaEaEaEaiaiaiaEaEjqmMjqarnpjFnpaBjqjkjkjkjkjkjkjkjkjkjkjkjkjqmMmMmMmMjqnjnjnjnjnjnjnjntntnjaBjlhFhFjljkjkjlavavavavavhzhyhyhyhzhFavavavavavavavjljkjkjkjkjkjkjkjk
+mPmPmPmPmPmPmPmPmPmPmPmPmPmPmPmPmPjsaEnwnwaEnpncnpnpnpaEjqmMjqaBnpjFnpcqjqjqjqjkjkjkjkjkjkjkjkjkjkjqmMmMmMmMjqaBnjnjnjnjaBnjnjnjnjaBjlhFhFjljkjkjlavavavavhFhzhyhyhyhzhFavavavavavavavjljkjkjkjkjkjkjkjk
+aBjcjcjcjcjdaBmPmPaBjdjcjcjcjcaBjoaBaEnwnwaonpncnpnpnpaojqmMjqaBnpnpnpcqjqjqjqjkjkjkjkjkjkjkjkjkjkjqmMmMmMmMjqaBaBaBnjaBaBaBnjaBaBaBjlhFhFjljkjljlavavavhFhFhzhyhyhyhzhFhFavavavavavavjljkjkjkjkjkjkjkjk
+jrjrjrjrjrjemNmPmPjsjfjrjrjrjrjrjkjtaEnwnwaEnpncnpnpnpaEjqmMjqaBaBnqaBaBjqjqjqjkjkjkjkjkjkjkjkjkjkjqmMmMmMmMjqjkjkjkjkjkjkjljljljljlhFhFjljljkjlavavavhFhFhFhzhyhyhyhzhFhFhFavavavavavjljkjkjkjkjkjkjkjk
+hAhAhAhAhAjemPmPmPmPjfhAhAhAhAhAhAjjaEnwnwaEaEaEaEaoaEaEjqmMjqjqjwiFjxjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqmMmMmMmMjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqhzhzhzhzhzhzhzhyhyhyhzhzhzhzhzhzhzhzhzjqjqjqjqjqjqjqjqjq
+jljkjljkjkaBjcjcjcjcaBjkjljljkjljkjqaEnwnwnwnwnwnwnwnwaEjqmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMhyhyhyhyhyhyhyhyhyhyhyhyhyhyhyhyhyhyhymMmMmMmMmMmMmMmMmM
+jkjljljljkjujujujrjrjrjkjljkjljkjljqaEnwnwnwnwnwnwnwnwaEjqjqjqjqjqjqjqjqjqjqjqjqiFiFiFjqjqjqjqiFjqjqmMmMmMmMjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqhzhzhzhzhzhzhzhyhyhyhzhzhzhzhzhzhzhzhzjqjqjqjqjqjqjqjqjq
+hAhAhAhAhAePePePePePhAhAhAhAhAhAhAjjaEaEaEaEaEaEaEasaEaEaEaEaEaEaEaEaEaEaEaEjqhJhJhJhJhJjkjkhJhJhJjqmMmMmMmMjqjkjkjkjkjkjkjkjkjkjljljkjkjkjkjkjljlavavavhFhFhzhyhyhyhzhFhFhFhFavavavavjljkjkjkjkjkjkjkjk
+jkjkjkjkjkjljljljljljkjkjkjkjkjkjkjqaEnfnfaEjHmiaEnwnwaEjInfnfaEjJaEnfnfjIaEjqhJiWiWiWiWjkjkiWiWhJjqmMmMmMmMjqjkjkjkjkjkjkjkjljljljljljkjkjkjkjkjlavavavavhFhzhyhyhyhzhFhFavavavavavavjljkjkjkjkjkjkjkjk
+jkjkjkjkjkjljljkjkjljkjkjkjkjkjkjkjqaEnfnfaEnjnjatnwnwaEnfnfnfaunqaunfnfnfaEjqhJiWiWiWjkjkjkjkiWhJjqmMmMmMmMjqjkjkjkjkjkjljljlavavjljljkjkjkjkjkjljlavavavavhzhyhyhyhzhFhFavavavavjljljljkjkjkjkjkjkjkjk
+hAhAhAhAhAhAePhAePePhAhAhAhAhAhAhAjjaEajaEaEnjnjaEnwnwaEnfnfnfaEjJaEnfnfnfaEjqjkjkjkjkjkjkjkjkjkjkjqmMmMmMmMjqjkjkjkjkjkjlavavavavjljljljljkjkjkjkjlavavavavhzhyhyhyhzhFavavavavavjljkjkjkjkjkjkjkjkjkjk
+jkjkjljkjkjkjljkjljljkjkjkjkjkjkjkjqaEnjnjjKnjnjaEnwnwaEaEcjaEaEaEaEaEcjaEaEjqjkjkjkjkjkaNjkjkjkjkjqmMmMmMmMjqjkjkjkjkjkjlavavavavavavavjljkjkjkjkjljljlavavhzhyhyhyhzavavavavavavjljkjkjkjkjkjkjkjkjkjk
+jkjkjkjljkjkjkjkjljkjkjkjkjkjkjkjkjqaEnjnjnjjLnjaEnwnwaEjMnwnwnwnwjNnwnwnwaEjqhJiWiWiWjkjkjkjkiWhJjqmMmMmMmMjqjkjkjkjkjkjlavavavavavavavjljljkjkjkjkjljlavavhzhyhyhyhzavavjljljljljljkjkjkjkjkjkjkjkjkjk
+jkjkjkjkjkjkjkjkjljkjkjkjkjkjkjkjkjqaEnjjOntnteaaEnwnwcjnwnwnwnwnwjMnwnwnwaEjqhJiWiWiWiWjkjkiWiWhJjqmMmMmMmMjqjkjkjkjkjkjljljlavavavavavjljljljkjkjkjljlavavhzhyhyhyhzavavjljljljkjkjkjkjkjkjkjkjkjkjkjk
+jkjkjkjkjkjkjkjkjkjkjkjkjkjljkjkjkjqaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEjqhJhJhJhJhJjkjkhJhJhJjqmMmMmMmMjqjkjkjkjkjkjkjljlavavavavavavjljljkjkjkjkjljljljqmMmMmMjqjljljljkjkjkjkjkjkjkjkjkjkjkjkjkjk
+jkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqmlmlmlmlmljqjqjqjqjqjqizizizizjqjkjkjkjkjkjkjljlavavavavavavavjljljkjkjkjkjkjkjqmMmMmMjqjljljljkjkjkjkjkjkjkjkjkjkjkjkjkjk
+jkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjqmMmMmMjqhJiWiWiWiWiWiWiWiWiWiWiWhJjqjqjqmMiRiRiRmMmMmMmMiAmMmMmMmMjqjkjkjkjkjkjkjkjlavavavavavavavavjljljkjkjkjkjkjqmMmMmMjqjljkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+jkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjqmMmMmMjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqmMmMmMmMmMmMmMmMiAmMmMmMmMjqjkjkjkjkjkjkjkjljljljljlavavavavjljljkjkjkjkjkjqmMmMmMjqjkjkaBaBaBaBjkjkjknqaBaBjkjkjkjkjk
+jkjkjkjkjkjkjkjkjkjljkjkjkjkjkjkjkjkjkjkjqmMmMmMjqaEaEaiaEaEaEaiaEaEaEaiaEaEaEaEjqmMiRiRiRmMmMmMmMiAmMmMmMmMjqjkjkjkjkjkjkjkjkjkjkjljljljljljljljkjkjkjkjkjkjqmMmMmMjqjkjkaBnqnqjkjkjkjkjkjkjkjkjkjkjkjk
+jkjkjkjkjkjkjkjkjljljljljljkjkjkjkjkjkjkjqmMmMmMjqaEnpjPjQnpnpgljRnsnjglnpncncaEjqiFiFiFiFiFiFiFiFjqizizizizjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjqmMmMmMjqjkjkaBnqjkjknqjkjkjkjkjknqaBjkjkjk
+jkjkjkjkjkjkjkjkjljljljljljkjkjkjkjkjkjkjqmMmMmMjqaEnpjTnpnpnpnjnjnjjDnjnpnpncaEjzhJhJhJhJhJhJhJhJcSmMmMmMmMjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjkjkjkjkjkjqmMmMmMjqjkjkaBjkjknqnqjkjknqaBaBaBaBjkjkjk
+jkjkjkjkjkjkjkjkjljljljljljkjkjkjkjkjkjkjqmMmMmMazajnpaEjJjJnpnjntjUntnjjTnpncaEjzhJiWiWiWiWiWiWhJcSmMmMmMmMadadadadadadadadadadadadadadadadadadjqjkjkjkjkjkjqmMmMmMjqjkjkjkjkjknqnqjkjknqaBjkjkjkjkjkjk
+jkjkjkjkjkjljljljljljljljljljkjkjkjkjkjkjqmMmMmMaEaEnpaEaEaEnpmmntnjntnjjTnpniaEjzhJiWiWiWiWiWiWhJcSmMmMmMmMjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqadjqjkjkjkjkjkjqmMmMmMjqjkjkjkjkjknqjkjknqnqaBjkjkjkjkjkjk
+jkjkjkjkjljljljljljljljljljljkjkjkjkjkjkjqmMmMmMazajnpaEjJjJnpnjntnjntnjjTnpncaEjzhJiWiWiWiWiWiWhJcSmMmMmMmMjqaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEjqadjqjkjkjkjkjkjqmMmMmMjqjkjknqnqjkjkaBaBaBaBaBjkjkjkjkjkjk
+jqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqmMmMmMjqaEnpjTnpnpnpnjjXnjnjnjnpnpncaEjzhJiWiWiWiWiWiWhJcSmMmMmMmMjqaEnjjLnjnjnjaEkFkFaEeanjntnjaEjqadjqjkjkjkjkjkjqmMmMmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+jlaBaBcqaBaBcqaBaBaBcqcqaBaBaBcqcqaBaBaBjqmMmMmMjqaEnpjYnpnpnpjZnjnjkajZnpncncaEjzhJiWiWiWiWiWiWhJcSmMmMmMmMjzaikGntnjntnjajnvnvajnjnjntnkaEjqadjqjkjkjkjkjkjqmMmMmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+jlaBnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjaBjqmMmMmMjqaEaEaiaEaEaEaiaEaEaEaiaEaEaEaEjzhJhJhJhJhJhJhJhJcSmMmMmMmMjzaikGntjOntnjaEnvkIaEnjnjntnjaEjqadjqjkjkjkjkjkjqmMmMmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+jlaBnjnjaBaBnjnjnjnjnjnjnjnjnjaBaBnjnjcqjqmMmMmMjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqmlmlmlmlmlmlmlmljqmMmMmMmMjzaikGntnjntnkaEnvnvaEhijZjZnjaEjqadjqjkjkjkjkjkjqmMmMmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+jlaBnjnjaBaBnjnjnjnjnjnjnjnjnjaBaBnjnjcqjqmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMjqaEnjjZjZjZnjaEkJnvaEaEaiaiaEaEjqadjqjkjkjkjkjkjqmMmMmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjk
+jlaBnjnjaBaBnjnjnjaBnjaBnjnjnjaBaBnjnjaBjqmMmMmMjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqmMmMmMmMjqaEaEaiaiaiaEaEnvnvkKnlkIkInvaEjqadjqjkjkjkjkjkjqmMmMmMjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjkjk
+jlaBnjnjnjnjnjnjaBaBaBaBaBnjnjnjnjnjnjnjjqmMmMmMjqaEaEaEaEaEaiaEaEaiaEaEaEcjaEaEaiaEaEaiaEaEaEaEaEjqmMmMmMmMjqaEnvkIkIkInvkLnvnvnvkMnvnvnvaEjqadjqjkjkjkjkjkjqmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMjqjkjk
+jlaBnjnjnjnjnjnjnjaBaBaBnjnjnjnjnjnjnjnjjqmMmMmMjqaEnfnfaEnjntntkbnjlSaEnpnpaElSnjnsntntjUaEnfnfaEjqmMmMmMmMjqaEnvnvnvnvnvnvnvnvnvnvkNnvnvaEjqadjqjkjljljkjkjqmMmMmMjqjqjqjqjqjqjqjqjqjqaGjqjqjqmMjqjkjk
+jlaBnjnjnjnjnjnjaBaBaBaBaBnjnjnjnjnjnjnjjqmMmMmMjqaEnfnfaEnjntntnjnjnjaEnpnpaEnjnjmmntntnjaEnfnfaEjqmMmMmMmMjqaEajaEaEnvkNnvnvnvnvnvaEaEajaEjqadjqjkjljljkjkjqmMmMmMjqaEaEaEaEaEaEaEaGaGkOaGaGaGmMjqjkjk
+jlaBnjnjaBaBnjnjnjaBnjaBnjnjnjaBaBnjnjaBjqmMmMmMjqaEajaEaEnjjXnjnjjRnoaEnpnpaEnokanjnjjXnjaEaEajaEjqmMmMmMmMjqaEnpkPaEnlaEaEaoaEaEkFaEninpaEjqadjqjkjljljljljqmMmMmMjqaEjJnqjJnqjJaEaEcjaEaEaEaGmMjqjkjk
+jlaBnjnjaBaBnjnjnjnjnjnjnjnjnjaBaBnjnjaBjqmMmMmMjqaEnjnjkenjnjnoaEaEaEaEnpnpaEaEaEaEnonjnjkenjnjaEjqmMmMmMmMjzaijTnpaEaEaEnpnpnpaEaEaEnpkQaicSadjqjljljljljljqmMmMmMkRaEnqnqjJnqnqaEkSnvnvnvaEaGmMjqjkjk
+jlaBnjnjaBaBnjnjnjnjnjnjnjnjnjaBaBnjnjcqjqmMmMmMjqaEnjnjnjnjnjnjaEnqnqcjnpnpcjnqnqaEnjnjnjnjjDnjaEjqmMmMmMmMjzaijTnpnpnpatnpnpnpatnpnpnpkQaicSadjqjljljljljljqmMmMmMjqcjnqnqnqnqnqaEnvnvkTnvaEaGmMjqjkjk
+jlaBnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjaBjqmMmMmMjqaEnontntkfnjnjcjnqnqaEnpnpaEnqnqcjnjnjkfntntnoaEjqmMmMmMmMjqaEncjYjYnpaEnpnpnpaEkPjYjYncaEjqadjqjljljljljljqmMmMmMjqaEjJnqjJnqnqannvnvnlkKaEaGmMjqjkjk
+jlaBaBcqaBaBcqaBaBaBcqcqaBaBaBaBcqcqaBaBjqmMmMmMjqaEaEaiaiaiaiaEaEaEaEaEaEaEaEaEaEaEaEaiaiaiaiaEaEjqmMmMmMmMjqaEaEaiaiaEaEaoaEaoaEaEaiaiaEaEjqadjqjljljljljljqmMmMmMjqaEaEaEaEaEaEaEaEaEaiaEaEaGmMjqjkjk
+jqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqizizizjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqizizizizjqjqjqjtjtjqjqjqjqjqjqjqjtjtjqjqjqadjqjqjqjqjqjqjqizizizjqjqjqjqjqjqjqjqjqjqjqjqjqaGmMjqjqjq
+mMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMiAmMmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMiAmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmM
+mMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMiAmMmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMiAmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmM
+mMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMiAmMmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMiAmMmMmMiAmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmM
+jqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqizizizizjqjqjqjqjqjqjqjqjqmMjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjq
+jkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjljljljljqjljlaBaBaBaBaBajaBaBaBaBaBaBaBaBaBjqhJjqaEaEaEaEaEaEaEaEjqmMmMmMmMjqhJhJhJjkhJhJhJjqmMjqaBaBaBcqaBaBaBcqaBaBaBaBcqaBaBaBaBaBaBaBaBaBaBcqaBaBjqjkjkjkjkjkjkjkjk
+hFjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjljljqjljlaBnrnpaBnjnjnjaBnjnsaBntnjnoaBjqiWjqaEjFjFnpjQkhnpaEjqmMmMmMmMjqhJiWiWjkiWiWhJjqmMjqaBnjnjnjnjnjnjnjdudvaBnwnwdynwdJaBnpnpaBnjaBkanjdFaBjqjkjkjkjkjkjkjkjk
+hFhFhFjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjljljqjlkiaBnrnpaBnjnjnjajnjnjajnjnjnjaBjqiWjqaEnpnpnpnpnplIaijqmMmMmMmMjqhJiWiWjkiWiWhJjqmMjqcqnjdGnjdGnjdGnjnjnjaBnwnwnwnwdJaBnpaBaBnjdSnjnjnjaBjqjkjkjkjkjkjkjkjk
+avavhFjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjljqaBaBaBaBnpaBnjkaeaaBnjnjaBkfnjntaBjqiWjqaEcjaEnpnpnplIaEjqmMmMmMmMjqjkjkjkjkjkjkjkjqmMjqaBnjntntntntntntnjnjaBaBaBnwnwnwaBnpaBnjnjaBnjnjdOaBjqjkjkjkjkjkjkjkjk
+avavhFhFhFjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjqaBkjnraBajaBnjaBaBaBaBnjaBaBaBaBaBjqiWjqjqjqaElInpnplIaijqmMmMmMmMjqhJiWiWjkiWiWhJjqmMjqaBnjntnjntntnjntdPnjaBnjaBnjaBaBaBdSaBnjaBaBaBaBaBaBjqjkjkjkjkjkjkjkjk
+avavavavhFjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjqaBnpnpajnjnjnjnjnskfaBnjaBntkkklaBjqiWjqjqjqaEjFnpnpnpaEjqmMmMmMmMjqhJiWiWjkiWiWhJjqmMjqaBnjntntntntntntnjnjnjnjnjnjnjnjnjnjnjnjaBnjnjehehcqjqjkjkjkjkjkjkjkjk
+avavavavhFjkjkjkjkjkjkjkjkjkjkjkjkjkjkjljqaBaBaBaBaBnjnjnjjDnjaBnjajnjnjjRcqjqhJjqjqjqaEaEaEaEaEaEjqmMmMmMmMjqhJiWiWjkiWiWhJjqmMjqcqnjnjdZnjdZnjdZnjnjaBnjaBaBaBaBaBnjeanjdSnjnjebehaBjqjkjkjkjkjkjkjkjk
+avavavavhFjkjkjkjkjkjkjkjkjkjkjkjkjkjkjljqaBkmnwknaBnjmmntntnjaBnjaBaBaBaBaBjqjqjqjqjqjqjqjqjqjqjqjqmMmMmMmMjqhJiWiWjkiWiWhJjqmMjqaBnjnjnjnjnjnjnjnjnjaBaBaBaBeeehaBnjnjnjaBnjnjehehcqjqjkjkjkjkjkjkjkjk
+avavavavhFhFjkjkjkjkjkjkjkjkjkjkjljljljljqcqkmnwnwajnjnjntntjUaBnjaBntnjnoaBjqmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMjqhJiWiWjkiWiWhJjqmMjqaBnjaBaBaBnjaBaBaBaBaBnjnjnjnjnjnjnjnjnjaBaBaBaBaBaBjqjkjkjkjkjkjkjkjk
+avavavavavhFhFjkjkjkjkjkjkjkjkjkjljljljljqaBkmnwnwaBnjnjnjjXnjaBnjajnjnjkacqjqmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMjqhJiWiWjkiWiWhJjqmMjqaBnjaBnjaBnjaBnpnpnpaBntntntnjnjaBnjnjnjnjaBkanjdFcqjqjkjkjkjkjkjkjkjk
+avavavavavavhFhFhFhFhFhFjkjkjkjkjljljljljqaBaBaBaBaBaBcqaBcqaBaBcqaBaBaBaBaBjqmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMjqaBaBaBaBaBaBaBjqmMjqaBnjaBnjaBnjaBnpnpnpaBnjnjnjnjaBaBnjeanjnjdSnjnjdOaBjqjkjkjkjkjkjkjkjk
+avavavavavavavavavavavhFjkjkjkjkjljljljljqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMjqcjnqnqaBnjeaaBjqmMjqaBnjnjnjnjnjaBaBdSaBaBaBaBaBaBaBnjnjnjnjnjaBaBaBaBaBjqjkjkjkjkjkjkjkjk
+avavavavavavavavavavavhFjkjkjkjkjljljljljljljljljljljkjkjkjkjkjljljqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqmMmMmMmMjqaBnqnqcjnjnjaBjqmMjqaBnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjnjaBnqaBnjaBkanjdFaBjqjkjkjkjkjkjkjkjk
+avavavavavavavavavavavhFhFjljljljljljljljljljljljljkjkjkjkjkjkjkjljqaBaBcqaBaBaBaBaBcqaBaBaBcqaBaBjqmMmMmMmMjqaBaBaBaBaBajaBjqmMjqaBnjnjnjnjnjaBnjnjnjnjnjnjnjnjnjnjaBjJaBnjdSnjnjdOcqjqjkjkjkjkjkjkjkjk
+avavavavavavavavavavavavhFhFhFjljljljljljljljljkjkjkjkjkjkjkjkjkjkjqaBkonjntntkbaBnonjnoaBmikpmiaBjqmMmMmMmMjqaBnvnvkUnvnvaBjqmMjqaBcqaBajaBcqaBcqaBcqaBcqaBcqaBcqaBaBaBaBaBaBaBaBaBaBjqjljkjkaEjkjkaEjk
+avavavavavavavavavavavavavavhFjljljljljljljljljkjkjkjkjkjkjkjkjkjkjqaBnjmmntntnjaBnjnjkfaBnjkqnjaBjqmMmMmMmMjqcqnlkVnvnvnvcqjqmMjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjljkjkjkjkjkjkjk
+avavavavavavavavavavavavavavhFjljljljljljljljljkjkjkjkjkjkjkjkjkjqjqaBnjnjjXnjnjaBnonjntaBnjnjnjaBjqmMmMmMmMjqaBnlnvnvnvnvaBjqmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjljljljljljljljljljljkjkjkjkjkjkjk
+avavavavavavavavavavavavavavhFjljljljljljljkjkjkjkjkjkjkjkjkjkjkjqaBaBajaBaBnjnjaBaBajaBaBnjaBaBaBjqmMmMmMmMjqaBkWnvaBaBajaBjqmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjljlhFhFhFhFhFjljljljljljkjkjkhFhF
+avavavavavavavavavavavavavavhFjljljljljljljkjkjkjkjkjkjkjkjkjkjkjqaBnfnfnfaBnjnjnjnjnjnjajnjaBnqaBjqmMmMmMmMjqcqnvnvaBnfnfaBjqmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjljlhFhFhFhFhFhFhFhFhFhFjljljkhFhFhF
+avavavavavavavavavavavavavavhFhFgmjljljljljkjkjkjkjkjkjkjkjkjkjkjqaBnfnfnfaBnjnjnjnjnjnjaBnjaBnqaBjqmMmMmMmMjqaBkXnvaBnfnfaBjqmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkhFhFhFhFhFhFhFhFhFhFhFhFhFhFhFhFhFhFhFhFavav
+hFhFhFhFavavavavavavavavavavavavhFgmjljljljljkjkjkjkjkjkjkjkjkjkjqaBaBaBaBaBajaBaBaBaBaBaBajaBaBaBjqmMmMmMmMjqaBaBaBaBaBaBaBjqmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkhFavavavhFhFhFhFhFhFhFhFhFhFhFhFhFhFhFavavav
+hFhFfyhFavavavavavavavavavavavavhFhFhFhFhFgmjkjkjkjkjkjkjkjkjkjkjqjqaBknnwnwnwkmkmaBjljljljljljlkrjqmMmMmMmMjqjqjqjqjqjqjqjqjqmMjqjkjkjkjkjkjkjkjkjkjkhFhFhFhFavavavavhFhFhFhFhFhFhFhFhFhFhFhFhFhFavavav
+fyfyfyhFhFhFhFhFhFhFhFhFavavavavavavavavhFhFhFhFfyjkjkjkjkjkjkjkjkjqaBnwnwksnwnwkmaBjljljkjljljlkrjqmMmMmMmMmMmMmMmMmMmMmMmMmMmMjqjkjkjkjkhFhFhFhFhFhFhFavavavavavavavavhFhFhFhFhFhFhFhFhFhFhFhFhFavavav
+fyfyfyfygmgmgmgmgmgmgmhFavavavavavavavavavavavhFhFhFhFhFfyjkjkjkjkjqcqnwkmkmnwnwkmaBjljkjljljljlktjqmMmMmMmMjqjqjqjqjqjqjqjqjqjqjqjkjkjkjkhFavavavavavavavavavavavavavavhFhFhFhFhFhFhFhFhFhFhFhFhFavavav
+fyfyfyfyfygmgmgmgmgmgmhFavavavavavavavavavavavavavavavhFfyjkjkjkjkjqcqkukmkmnwnwnwaBjljljljkjljljkjqmMmMmMmMjqjkjkjkjkjkjkjkjkjkjkjkjkjkjkhFavavavavavavavavavavavavavavavhFhFhFhFhFhFhFhFhFhFhFhFhFavav
+fyfyfyfyfygmgmgmgmgmgmhFhFhFhFhFavavavavavavavavavavavhFfyjkjkjkjkjqcqnwkvnwnwnwkwaBjljljljkjkjkkrjqmMmMmMmMjqjkjkjkjkjkjkjkjkjkjkjkjkhFhFhFavavavavavavavavavavavavavavavhFhFhFhFhFhFhFhFhFhFcZhFhFhFhF
+fyfyfyfyfygmgmgmgmgmgmgmgmgmgmhFhFhFavavavavavavavavavhFfyjkjkjkjkjqaBaBaBcqaBcqaBaBktkrkrkrkrkrkrjqmMmMmMmMjqjkjkjkaBnqdfnqaBjkhFhFhFhFavavavavavavavavavavavavavavavavhFhFhFhFhFhFhFhFhFhFhFcZjkjkhFhF
+fyfyfygmgmgmgmgmgmgmgmgmgmgmgmgmfyhFavavavavavavavavavhFfyjkjkjkjkjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqjqizizizizjqjkjkjkcccccdcccchFhFhFavavavavavavavavavavavavavavavavavhFhFhFhFhFhFhFhFhFhFhFhFjljkjkjkjk
+fyfygmgmgmgmgmgmgmgmgmgmgmgmfyfyfyhFhFavavavavavavavavhFfyjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjqmMmMmMmMjqjkjkhFdgcdcdcchFhFhFavavavavavavavavavavavavavavavavavhFhFjkhFhFhFjljljljljljljljljkjkjkjk
+fyfygmgmgmgmgmgmgmgmgmfyfyfyfyfyfyfyhFavavavavavavavavhFhFhFhFfyjkjkjkjkjkjkjkjkjkjkjkjkjkcOjkjkjkjqmMmMmMmMjqjkjkhFdgcccdhFhFhFhFavavavavavavavavavavavavavavavhFhFhFhAhAePePePePjljlePePePePePhAhAjkjk
+fyfygmgmgmgmgmgmgmgmfyfyfyfyfyfyfyfyhFhFhFhFavavavavavavavavhFfyjkjkjkjkjkjkjkjkjkcOcOcOjkjkjkjkjkjqcWcWcWcWjqjkjkhFdgcdcdcddhhFhFavavavavavavavavavavavavavavavhFjkjkjkjljljljljljlhBhChChChGhGhGhGdojk
+fyfygmgmgmgmgmgmgmfyfyfyfyfyfyfyfyfyfyfyfyhFavavavavavavavavhFhFhFhFhFfyjkcZhFhFfyjkjkjkjkjkjkjkjkjqmMmMmMmMjqjkjkhFcehFdidicehFhFavavavavavavavavavavavavavavavhFjkjkaaePePePaajljljljljljljkjkjkjkjkjk
+fyfyfygmgmgmgmgmgmfyfyfyfyfyfyfyfyfyfyfyfyhFhFavavavavavavavavavavavhFfyjkcZhFhFfyjkjkjkjkjkjkjkjkjqhyhyhyhyhzhFhFhFhFhFhFhFhFhFavavavavavavavavavavavavavavavavhFjkaaaaeQeQeQaaaajljljljljljkjkjkjkjkjk
+fyfyfygmgmgmgmfyfyfyfyfyfyfyfyfyfyfyfyfyfyfyhFavavavavavavavavavavavhFhFhFhFhFhFhFhFhFhFfyjkjkjkjkjqhyhyhyhyhzhFhFavavavavhFhFavavavavavavavavavavavavavhFhFhFhFhFjkeReSnjnjnjeSeRjljljljljkjkjkjkjkjkjk
+fyfyfygmgmgmgmgmgmfyfyfyfyfyfyfyfyfyfyfyfyfyhFhFavavavavavavavavavavhFhFhFhFhFhFhFhFhFhFfycZhFhFhFhzhyhyhyhyhzhFhFavavavavavavavavavavavavavavavavavavavhFjkjkjkjkjkeReSnjnjnjeSeRjljljljljkjkjkjkjkjkjk
+fyfyfyfyfygmgmgmgmgmgmfyfyfyfyfyfyfyfyfyfyfyfyhFavavavavavavavavavavavavavavavavavavavhFhFhFhFhFhFhzhyhyhyhyhzhFhFhFavavavavavavavavavavavavavavavhFhFhFhFjkjkjkjkjkaaaanjnjfeaaaajljljljljkjkjkjkjkjkjk
+fyfyfyfyfyfygmgmgmgmgmfyfyfyfyfyfyfyfyfyfyfyfyhFhFavavavavavavavavavavavavavavavavavavavavavhFhFhFhzhyhyhyhyhzhFhFhFavavavavavavavavavavavavavavhFhFjkjkjkjkjkjkjkjkjkaaaaalaaaajkjljljljkjkjkjkjkjkjkjk
+fyfyfyfyfyfygmgmgmgmgmfyfyfyfyfyfyfyfyfyfyfyfyfyhFhFavavavavavavavavavavavavavavavavavavavavhFhFhFhzhyhyhyhyhzhFhFhFavavavavavavavavavavavhFhFhFhFjkjkaJaTaTjkjkjkjkjkjkjkeXjkjkjkjljljkjkjkjkjkjkjkjkjk
+fyfyfyfyfyfygmgmgmgmgmgmgmgmfyfyfygmfyfyfyfyfyfyfyhFavavavavavavavavavavavavavavavavavavavavhFhFhFhzhyhyhyhyhzhFhFhFavavavavavavavavavavavhFjkjkjkjkaJaUjljkjkjkjkjkjkjkjkjljlaVaVjljlaVaVaVjkjkjkjkjkjk
+fyfyfyfyfyfyfyfyfygmgmgmgmgmfyfygmgmgmgmfyfyfyfyfyhFavavavavavavavavavavavavavavavavavavavavhFhFhFhzhyhyhyhyhzhFhFavavavavavavavavavavavavhFjkaJaTaTaUjljkjkjkjkjkjkjkjkjljljljljljljljljkjkjkjkjkjkjkjk
+fyfyfyfyfyfyfygmgmgmgmgmgmgmgmgmgmgmhFhFhFhFhFhFhFhFavavavavavavavavavavavavavavavavavavavavhFhFhFhzhyhyhyhyhzhFhFavavavavavavhFhFhFhFhFhFhFjkaXjljljljkjkjkjkjljljljljkjljljljljljljljljljkjkjkjkjkjkjk
+fyfyfyfyfygmgmgmgmgmgmgmgmgmgmgmgmgmhFavavavavavavavavavavavavavavavavavavavavavavavavavavavavhFhFhzhyhyhyhyhzhFhFhFavavavhFhFhFjkjkjkjkjkjkjkaXjljljkjkjkjkjljljljljljljljljljljljljljljljljljljkjkjkjk
+fyfyfyfygmgmgmhFhFhFhFhFhFhFhFhFhFhFhFavavavavavavavavavavavavavavavavavavavavavavavavavavavavhFhFhzhyhyhyhyhzhFjkhFhFhFhFhFjkjkjkjkaJaTaTaTaTaUjljkjkjkjkjljljljljljljljljljljljljljljljljljljljljljljl
+fyfyfygmgmavavavavavavavavavavavavavavavavavavavavavavavavavavavavavavavavavavavavavavavavavavhFhFhzhyhyhyhyhzhFjkaaePePePaajkjkjkjkaXjljljljljljkjkjkjkjljljljljlcNcNcNcOjkcOcNcNjljljljljljljljljljljl
+hFhFhFhFhFavavavavavavavavavavavavavavavavavavavhFhFhFhFhFhFhFhFhFhFhFhFhFhFhFavavfyjkcZhFavavhFfyjqmMmMmMmMjqjkaaaaeQeQeQaaaajkjkjkaXjljkjkjkjkjkjkjkjljljljljldlaBglglaBnjaBglaBdmjljljljljljljljljljl
+avavavavavavavavavavavavavavavavavavavavhFhFhFhFhFhbjljljkcZhFhFfycZhFhFhFfycZhFhFfyjkjkcZhFhFhFfyjqmMmMmMmMjqjkeReSnjnjnjeSeRjkjkjkjkjkjkjkbbjkjkjkjljljljljljleMaBnjnjnjnjnjnjnjjkjljljljljljljljljljl
+avavavavavavavavavavavavavavavavavavavhFhFgmjljljljljljkjkjkjkjkjkjkjkcZfyjkjkjkjkjkjkjkjkcZhFfyjkdadbdbdbdbcSjkeReSnjnjnjeSeRjkjkjkbejkjkjkjljljljljljljljljljljknjnjnjhahahamiaBdojljljljljljljljljljl
+avavavavavavavavavavavavavavavavavavavhFgmjljlhchchchchchchchchchchchchchchchchchchchchchchchchchcdamMmMdciKcSjkaaaanjnjfeaaaajkjkjkbfjkjljljljljljljljlbgjljljljknjnjnjhahahamiaBdojljljljljljljljljljl
+avavavavavavavavavavavavavavavavavavavhFgmjlaEaEaEcqaEaEaEaEaEaEaEaEaEaEcqaEaEcqaEaEcqaEaEaEcqaEaEdamMmMmMdecSjkjkaaaaalaaaajljljljlbjjljljljljljljljljljljljljleMaBnjnjnjnjnjnjnjjkjljljljljljljljljljl
+avavavavavavavavavavavavavavavavavavavhFgmaEaEkkbPdfnjaEnwnwaEnvnvnlcVfJcQfJfJcQfJfJcQfJfJfJcQfJaEjqmMmMmMmMjqjkjkjkjleXjljljljljljlbjjljljljljljljljljljljljljldlaBfNfNaBnjaBfNaBdmjljljljljljljljljljl
+avavavavavavavavavavavavavavavavavavhFhFgmaEeanjnjdGnjaEnwnwajnvnvnlfJfJfKfKfJgGgGgGgGfJfJfJfJcRcqcSmMmMmMmMjqjkjkjkjljljljljljljljljljljljljljljljljljljljljljljldpeNeNeNjkeNdpdpjljljljljljljljljljljl
+avavavavavavavavavavavavavavavavavavhFgmjlaEnjnjhahanjajnwnwaEnvnvnlfJfJhphpfJgGgGgGgGfJgBhphpgraEjqmMmMmMmMjqjkjkjkjkjljldleOeOdmjljljljljljljljljkjkjkjkjkaFaFaFjkjkjkjkjkjkjkjkjljljljljljljljljljljl
+avavavavavavavavavavavavavavavavavhFhFgmjlaEnjgshahdnjaEnwnwaEnvnvnlfJfJhphpfJgGgGgGgGfJgBhphpcTcqcSmMmMmMmMjqjkjkcOcOcOcOcNjljlcNcNcNcNcNjljljljkjkjkaHaaaacqcqcqaaaajkjkjkjkjkjkjkbCjkbEjkbCjkjkjljljl
+avavavavavavavavavavavavavavavavhFhFgmjljlaEnjnjnjhihiaEaEaEaEaEnlnlfJfJdrdrfJfJfJfJfJfJfJfJfJfJaEjqmMmMmMmMjqjkeMaaaaaaaaaajkjkaaaaaaaaaadmjljkbEjkaQbCaanjglglglnjaajkjkbEbCbCbEbCbCicicicbCjkjkjkjljl
+avavavavavavavavavavavavavavavavhFfyjljlaEaEaEcjaEaEaEaEnwaEnwaEaEfJfJfJfJfJfJgGgGgGgGfJfJfJfJfJaEjqmMmMmMmMjqjkeMaahinjhiaajkjkaahinjhiaadmjljkaaaaajaaaanjnjnjbKhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabEjljl
+avavavavavavavavavavavavavavavavhFfyjljlaEjJnqnqnqnqaEnwnwaEnwnwaEfJgBhphpgrfJgGgGgGgGfJgBhphpgraEjqmMmMmMmMjqjkeMaahinjnjnjjkjknjnjnjhiaadmjljkaanwnwnwaagfnjhahahaaacJnfnfnfnfnfjIaafUfUfUfUfUaabEjljl
+avavavavavavavavavavavavavavavavhFfyjljlaEjJnqjJnqnqaEbQaEaEaEbQaEfJgBhphpgrfJgGgGgGgGfJgBhphpgraEjqmMmMmMmMjqjkeMaahinjhiaajkjkaahinjhiaadmjljkaacynwcyaanjnjnjnjnjaacJnfnfnfcJnfnfcjnwnwnwnwnwaajkjljl
+avavavavavavavavavavavavavavavavhFgmjljlaEjJnqjJnqnqaEnwnwnwnwnwajfJcUfJcUfJcUfJfJfJfJcUfJcUfJcUaEjqmMmMmMmMjqjkeMaahinjhiaajkjkaahinjhiaadmjljkaanwnwnwaahinjnjnjeaaacJnfnfnfnfnfnfaanwnwnwnwfUaajkjljl
+avavavavavavavavavavavavavavavavhFfyjljlaEjJnqnqnqnqaEnfnfnfnfnfaEaEcqaEcqaEcqaEbXbXaEcqaEcqaEcqaEjqmMmMmMmMjqjkeMaahinjhiaajkjkaahinjhiaadmjljkaacynwcyaaaaaaaaajaaaaaaaaaaaaaacjaaaaaaaacjaaaaaajkjljl
+avavavavavavavavavavavavavavavavhFgmjljlaEaEnqnqnqnqaEnfnfaEnfnfaEmMgZmMgZmMgZmMmMmMmMgZmMgZmMgZmMmMmMmMmMmMjqjkeMaahinjhiaajkjkaahinjhiaadmjljkaanwnwnwaanjjKnjnjnjnjnjnjnjnjnjnjgVaanwcynwnwcyaajkjljl
+avavavavavavavavavavavavavavavavhFgmjljljlaEaEaEcjaEaEaEaEaEaEaEaEmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMjqjkeMaahinjnjnjjkjknjnjnjhiaadmjljkaanwnwnwajnjfNfNnjfNfNnjfNfNnjfNfNnjajnwnwnwnwnwaajkjljl
+avavavavavavavavavavavavavavavavhFhFjljljljlhthvjkhvaEicicicicicaEmMmMmMmMcWcWcWcWcWcWcWcWmMmMmMmMmMmMmMmMmMjqjkeMaahinjhiaajkjkaahinjhiaadmjljkaacDfUfQaaaacqcqaacqcqaacqcqaacqcqaaaanwnwfUcDfUaajkjljl
+avavavavavavavavavavavavavavavavhFhFjljljljljljkjkjkjkjkjkjkjkjkjqmMmMmMfViCiCiCiCiCiCiCiCfYmMmMmMmMmMmMmMmMjqjkeMaaaaaaaaaajkjkaaaaaaaaaadmjljkaaaaaaaaaajkjrjrjkjrjrjkjrjrjkjrjrjkaaaaaaaaaaaaaajkjljl
+avavavavavavavavavavavavavavavavgagbgcgcgcgdgdgdgdgdgdgdgdgdgdgdgemMmMmMfVaaiCaaiCiCaaiCaafYmMmMmMjqmMmMmMmMjqjkjkeNeNeNeNeNjkjkeNeNdpdpdpjljljkjkjkjkjkjkjkjljljljljljljljljljljljkjkjkjkjkjkjkjkjkjljl
+"}

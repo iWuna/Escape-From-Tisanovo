@@ -38,11 +38,9 @@
 #define LANGUAGE_SKRELLIAN "Skrellian"
 #define LANGUAGE_ROOTLOCAL "Local Rootspeak"
 #define LANGUAGE_ROOTGLOBAL "Global Rootspeak"
-#define LANGUAGE_LUNAR "Panlingua"
 #define LANGUAGE_GUTTER "Gutter"
 #define LANGUAGE_CULT "Cult"
 #define LANGUAGE_SIGN "Sign Language"
-#define LANGUAGE_INDEPENDENT "Slavic Common"
 #define LANGUAGE_NABBER "Serpentid"
 #define LANGUAGE_SPACER "Spacer"
 
@@ -60,6 +58,7 @@
 
 #define LANGUAGE_ENGLISH "English"
 #define LANGUAGE_GERMAN  "German"
-
+#define LANGUAGE_POLISH  "Polish"
+#define LANGUAGE_FRANCE  "French"
 #define LANGUAGE_RUSSIAN "Russian"
 #define LANGUAGE_CZECH   "Czech"

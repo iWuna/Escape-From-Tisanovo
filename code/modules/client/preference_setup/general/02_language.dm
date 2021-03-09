@@ -17,8 +17,8 @@
 	sanitize_alt_languages()
 
 /datum/category_item/player_setup_item/general/language/content()
-//	. += "<b>Languages</b><br>"
-/*	var/datum/species/S = all_species[pref.species]
+	. += "<b>Languages</b><br>"
+	var/datum/species/S = all_species[pref.species]
 	if(S.language)
 		. += "- [S.language]<br>"
 	if(S.default_language && S.default_language != S.language)
@@ -33,7 +33,6 @@
 			. += "- <a href='?src=\ref[src];add_language=1'>add</a> ([S.num_alternate_languages - pref.alternate_languages.len] remaining)<br>"
 	else
 		. += "- [pref.species] cannot choose secondary languages.<br>"
-*/
 /datum/category_item/player_setup_item/general/language/OnTopic(var/href,var/list/href_list, var/mob/user)
 	if(href_list["remove_language"])
 		var/index = text2num(href_list["remove_language"])

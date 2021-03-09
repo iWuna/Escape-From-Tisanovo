@@ -35,15 +35,40 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	)
 
 /area/coldwar/surrounding
-	name = "outside (right side)"
+	name = "outside"
 	icon_state = "outside"
 	sound_env = FOREST
 	requires_power = 0
 	dynamic_lighting = 1
-
+	ambience = list (
+	'sound/ambience/coldwar/dayz/ForestDay.ogg',
+	'sound/ambience/coldwar/dayz/ForestDayBirds.ogg',
+	'sound/ambience/coldwar/dayz/WindForestLight.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_3.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_4.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_5.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_6.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_7.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_8.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_9.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_10.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_11.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_12.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_13.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_14.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_15.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_3.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_3.ogg',
+	)
 
 /area/coldwar/surroundingleftside
-	name = "outside (left side)"
+	name = "outside"
 	icon_state = "outside"
 	sound_env = FOREST
 	requires_power = 0
@@ -55,14 +80,65 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	sound_env = FOREST
 	requires_power = 0
 	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/ForestDay.ogg',
+	'sound/ambience/coldwar/dayz/ForestDayBirds.ogg',
+	'sound/ambience/coldwar/dayz/WindForestLight.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_3.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_4.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_5.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_6.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_7.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_8.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_9.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_10.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_11.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_12.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_13.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_14.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_15.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_3.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_3.ogg',
+	)
 
 /area/coldwar/foboutside
-	name = "FOB"
+	name = "CSLA FOB"
 	icon_state = "foboutside"
 	sound_env = FOREST
 	requires_power = 0
 	dynamic_lighting = 1
-
+	ambience = list (
+	'sound/ambience/coldwar/dayz/ForestDay.ogg',
+	'sound/ambience/coldwar/dayz/ForestDayBirds.ogg',
+	'sound/ambience/coldwar/dayz/WindForestLight.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_3.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_4.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_5.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_6.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_7.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_8.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_9.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_10.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_11.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_12.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_13.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_14.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_15.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_3.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_3.ogg',
+	)
 
 /area/coldwar/helioutdoors
 	name = "helicopter exterior"
@@ -358,8 +434,8 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	)
 
 /area/coldwar/fobindoors
-	name = "USMC FOB"
-	icon_state = "house"
+	name = "CSLA FOB"
+	icon_state = "fobinside"
 	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
@@ -398,6 +474,39 @@ var/list/interior_areas = list(/area/coldwar/house1,
 	name = "USMC FOB"
 	icon_state = "usmcfob"
 	sound_env = PLAIN
+	requires_power = 0
+	dynamic_lighting = 1
+	ambience = list (
+	'sound/ambience/coldwar/dayz/ForestDay.ogg',
+	'sound/ambience/coldwar/dayz/ForestDayBirds.ogg',
+	'sound/ambience/coldwar/dayz/WindForestLight.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_3.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_4.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_5.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_6.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_7.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_8.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_9.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_10.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_11.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_12.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_13.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_14.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_crow_15.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_shooting_3.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_1.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_2.ogg',
+	'sound/ambience/coldwar/dayz/rand/rnd_wind_3.ogg',
+	)
+
+/area/coldwar/usmcfob_inside
+	name = "USMC FOB"
+	icon_state = "usmcfobinside"
+	sound_env = LIVINGROOM
 	requires_power = 0
 	dynamic_lighting = 1
 
@@ -440,7 +549,7 @@ var/list/interior_areas = list(/area/coldwar/house1,
 
 /area/coldwar/coast
 	name = "coast"
-	icon_state = "outside"
+	icon_state = "coast"
 	sound_env = PLAIN
 	requires_power = 0
 	dynamic_lighting = 1
