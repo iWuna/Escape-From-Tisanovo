@@ -44,6 +44,7 @@
 
 /obj/item/clothing/head/helmet/coldwar/
 	var/icon_state_unzipped = null
+	flags_inv = null
 
 /obj/item/clothing/head/helmet/coldwar/attack_self(mob/user as mob)
 	if(icon_state == initial(icon_state))

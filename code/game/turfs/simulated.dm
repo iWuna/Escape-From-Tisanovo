@@ -15,6 +15,8 @@
 
 	var/timer_id
 
+	outdoors = 1
+
 /turf/simulated/post_change()
 	..()
 	var/turf/T = GetAbove(src)

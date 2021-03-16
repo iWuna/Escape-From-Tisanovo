@@ -15,6 +15,7 @@
 	flag_state = "white"
 	base_color = "white"
 	language = "Czech"
+	fireteam_names = list("Respawn #1", "Respawn #2", "Respawn #3")
 
 /datum/army_faction/civ/redcross
 	name = "Red Cross"

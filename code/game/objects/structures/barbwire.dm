@@ -77,3 +77,15 @@
 			playsound(src.loc, 'sound/items/Wirecutter.ogg', 50, 1)
 			qdel(src)
 			return
+	if(istype(W, /obj/item/weapon/material/knife/bayonet/))
+		if(anchored)
+			user.visible_message("\blue \The [user] starts to cut through \the [src] with [W].")
+			if(!do_after(user,120))
+				user.visible_message("\blue \The [user] couldn't cut through the \the [src].")
+				return
+			user.visible_message("\blue \The [user] finishes cutting through \the [src]!")
+			playsound(src.loc, 'sound/items/Wirecutter.ogg', 50, 1)
+			qdel(src)
+			return
+	else
+		return

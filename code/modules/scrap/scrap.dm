@@ -9,7 +9,7 @@
 	var/obj/item/weapon/storage/internal/loot	//the visible loot
 	var/loot_min = 3
 	var/loot_max = 5
-	var/list/loot_list = list(
+	/*var/list/loot_list = list(
 		/obj/item/stack/rods/scrap,
 		/obj/item/stack/material/plastic/scrap,
 		/obj/item/stack/material/scrap,
@@ -17,13 +17,13 @@
 		/obj/item/stack/material/plasteel/scrap,
 		/obj/item/weapon/material/shard,
 		/obj/item/weapon/material/shard/shrapnel
-		)
+		)*/
 	var/parts_icon = 'icons/obj/structures/scrap/trash.dmi'
 	var/base_min = 3	//min and max number of random pieces of base icon
 	var/base_max = 5
 	var/base_spread = 8	//limits on pixel offsets of base pieces
 
-/obj/structure/scrap/New()
+/*/obj/structure/scrap/New()
 	var/amt = rand(loot_min, loot_max)
 	for(var/x = 1 to amt)
 		var/loot_path = pick(loot_list)
@@ -33,12 +33,12 @@
 	loot.max_storage_space = loot_min*4
 	shuffle_loot()
 	update_icon(1)
-	..()
+	..()*/
 
-/obj/structure/scrap/Destroy()
+/*/obj/structure/scrap/Destroy()
 	qdel(loot)
 	loot = null
-	..()
+	..()*/
 
 /obj/structure/scrap/proc/shuffle_loot()
 	loot.close_all()
@@ -101,7 +101,7 @@
 /obj/structure/scrap/vehicle
 	name = "debris pile"
 	parts_icon = 'icons/obj/structures/scrap/vehicle.dmi'
-	loot_list = list(
+	/*loot_list = list(
 //		/obj/item/vehicle_part,
 //		/obj/item/vehicle_part,
 ///	/obj/item/vehicle_part,
@@ -110,7 +110,7 @@
 		/obj/item/stack/material/plastic/scrap,
 		/obj/item/stack/material/scrap,
 		/obj/item/weapon/material/shard
-		)
+		)*/
 
 /obj/structure/scrap/large
 	name = "large scrap pile"

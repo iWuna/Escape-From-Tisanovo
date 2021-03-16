@@ -8,14 +8,14 @@
 # /datum/job/escalation/cccp/grenadier
 # @END@
 
-# CIV
-Czech Police:civ
+# PMC
+Czech Police:pmc
 /datum/job/escalation/eft/czech_police
 /datum/job/escalation/eft/czech_police
 /datum/job/escalation/eft/czech_police
 @END@
 
-Military Police:civ
+Military Police:pmc
 /datum/job/escalation/eft/military_police
 /datum/job/escalation/eft/military_police
 /datum/job/escalation/eft/military_police

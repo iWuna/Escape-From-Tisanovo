@@ -7,7 +7,6 @@
 		slot_r_hand_str = "helmet",
 		)
 	item_flags = THICKMATERIAL
-	body_parts_covered = HEAD
 	armor = list(melee = 50, bullet = 50, laser = 50,energy = 25, bomb = 30, bio = 0, rad = 0)
 	flags_inv = HIDEEARS|BLOCKHEADHAIR
 	cold_protection = HEAD
@@ -18,6 +17,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	valid_accessory_slots = list(ACCESSORY_SLOT_HELM_C)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_HELM_C)
+
 /obj/item/clothing/head/helmet/solgov
 	name = "\improper Sol Central Government helmet"
 	desc = "A helmet painted in Peacekeeper blue. Stands out like a sore thumb."

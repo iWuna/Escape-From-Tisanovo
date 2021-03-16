@@ -10,6 +10,7 @@
 	layer = ABOVE_HUMAN_LAYER
 	var/chops = 0 //how many times it's been chopped. Gotta make them work for it!
 	var/small = 0
+	mouse_opacity = 0
 
 /obj/structure/flora/tree/attackby(var/obj/item/I, mob/user as mob)
 	if(istype(I, /obj/item/weapon/carpentry/axe))
@@ -54,6 +55,7 @@
 	icon_state = "log"
 	density = 1
 	anchored = 0
+	mouse_opacity = 0
 
 /obj/structure/log/attackby(var/obj/item/I, mob/user as mob)
 	if(istype(I, /obj/item/weapon/carpentry/saw))
@@ -107,6 +109,7 @@
 	name = "grass"
 	icon = 'icons/obj/flora/snowflora.dmi'
 	anchored = 1
+	mouse_opacity = 0
 
 /obj/structure/flora/grass/brown
 	icon_state = "snowgrass1bb"

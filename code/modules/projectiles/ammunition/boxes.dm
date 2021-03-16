@@ -79,6 +79,9 @@
 	name = "magazine (9mm flash)"
 	ammo_type = /obj/item/ammo_casing/c9mm/flash
 
+/obj/item/ammo_magazine/box
+	var/loading = 0
+
 /obj/item/ammo_magazine/box/c9mm
 	name = "ammunition box (9mm)"
 	icon_state = "9mm"

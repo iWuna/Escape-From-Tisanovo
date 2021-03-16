@@ -432,6 +432,12 @@ var/const/NO_EMAG_ACT = -50
 	access = list(access_merchant)
 
 
+/obj/item/weapon/card/id/dogtag
+	name = "dog tag"
+	desc = "Looks so military."
+	icon_state = "dogtag"
+	access = null
+
 //redline
 
 /obj/item/weapon/card/id/vppcard

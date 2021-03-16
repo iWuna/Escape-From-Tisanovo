@@ -234,6 +234,8 @@
 
 	if(istype(W, /obj/item/ammo_magazine/box))
 		var/obj/item/ammo_magazine/box/L = W
+		if(L.loading)
+			return
 		if(L.caliber != caliber)
 			user << "<span class='warning'>The ammo in [L] does not fit into [src].</span>"
 			return
@@ -243,6 +245,10 @@
 		if(stored_ammo.len >= max_ammo)
 			user << "<span class='warning'>[src] is full!</span>"
 			return
+		L.loading = 1
+		if(!do_after(user, 5, src))
+			L.loading = 0
+			return
 		var/obj/item/ammo_casing/AC = L.stored_ammo[1] //select the next casing.
 		L.stored_ammo -= AC //Remove this casing from loaded list of the clip.
 		AC.loc = src
@@ -250,6 +256,8 @@
 		L.update_icon()
 		update_icon()
 		playsound(src.loc, 'sound/weapons/gunhandling/bulletin_mag.wav', 80, 1)
+		L.loading = 0
+		attackby(W, user)
 	update_icon()
 
 

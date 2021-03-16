@@ -375,6 +375,7 @@
 #include "code\escalation\armies\armies.dm"
 #include "code\escalation\armies\escalation_whitelist.dm"
 #include "code\escalation\armies\pmc.dm"
+#include "code\escalation\eft\corruption.dm"
 #include "code\escalation\eft\emotions.dm"
 #include "code\escalation\eft\ShitAndPoo.dm"
 #include "code\escalation\eft\vision_cone.dm"

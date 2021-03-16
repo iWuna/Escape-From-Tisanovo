@@ -443,6 +443,11 @@ its easier to just keep the beam vertical.
 	if (!(flags & OBJ_CLIMBABLE) || !can_touch(user) || (!post_climb_check && (user in climbers)))
 		return 0
 
+	if(isitem(src))
+		var/obj/item/C = src
+		if(C.w_class < INFINITY)
+			return 0
+
 	if (!user.Adjacent(src))
 		to_chat(user, "<span class='danger'>You can't climb there, the way is blocked.</span>")
 		return 0

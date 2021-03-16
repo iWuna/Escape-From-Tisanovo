@@ -100,11 +100,11 @@
 	desc = "This is the languaged used by the Poland."
 	colour = "german"
 	key = "p"
-	syllables = list("die", "das", "wein", "mir", "und", "wier", "ein", "nein", "gen", "en", "sauen", "bien", "nien", "rien", "rhein", "deut", "der", "lieb", "en", "stein", "nein", "ja", "wolle", "sil", "be")
+	syllables = list("jot", "pshe", "ha", "gie", "kreska", "te", "zwylke", "es", "igrek", "zet", "ziet", "bzjegosh", "chickevich", "pe", "ku", "kropka", "kurwa", "pierdole")
 
 /datum/language/escalation/french
 	name = "French"
 	desc = "This is the languaged used by the France."
 	colour = "german"
 	key = "f"
-	syllables = list("die", "das", "wein", "mir", "und", "wier", "ein", "nein", "gen", "en", "sauen", "bien", "nien", "rien", "rhein", "deut", "der", "lieb", "en", "stein", "nein", "ja", "wolle", "sil", "be")
+	syllables = list("effe", "ache", "enne", "emme", "ixe", "le", "gook", "passion", "que", "grec", "elle", "bien", "stein", "nein")
