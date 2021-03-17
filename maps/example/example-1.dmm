@@ -1,44 +1,50 @@
 "a" = (/turf/space,/area/space)
-"b" = (/turf/simulated/wall,/area/coldwar/fobindoors)
-"c" = (/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"d" = (/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"e" = (/obj/effect/landmark{name = "tdome1"},/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"f" = (/obj/effect/floor_decal/industrial/hatch/yellow,/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"g" = (/obj/machinery/light_switch{pixel_x = 25},/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"h" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"i" = (/obj/structure/ladder/up,/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"j" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"k" = (/obj/structure/eft/supply/redcross,/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"l" = (/obj/structure/eft/supply/soviet,/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"m" = (/obj/structure/eft/supply/nato,/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"n" = (/obj/machinery/atmospherics/unary/vent_pump/on,/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"o" = (/turf/simulated/wall/iron,/area/coldwar/fobindoors)
-"p" = (/obj/machinery/atmospherics/pipe/simple/visible{tag = "icon-intact (NORTHEAST)"; icon_state = "intact"; dir = 5},/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"q" = (/obj/machinery/atmospherics/pipe/simple/visible{tag = "icon-intact (EAST)"; icon_state = "intact"; dir = 4},/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"r" = (/obj/machinery/atmospherics/portables_connector{tag = "icon-map_connector (WEST)"; icon_state = "map_connector"; dir = 8},/obj/machinery/portable_atmospherics/canister/air,/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"s" = (/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor/plating,/area/coldwar/fobindoors)
-"t" = (/obj/machinery/computer/shuttle_control{shuttle_tag = "Example"},/turf/simulated/floor/plating,/area/coldwar/fobindoors)
-"u" = (/obj/machinery/light_switch{pixel_x = -25},/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"v" = (/obj/effect/landmark/start,/obj/item/weapon/crowbar/red,/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"w" = (/obj/structure/bed/chair{dir = 1},/obj/machinery/embedded_controller/radio/simple_docking_controller{id_tag = "example_shuttle_starboard"; pixel_x = 28},/obj/machinery/embedded_controller/radio/simple_docking_controller{id_tag = "example_shuttle_port"; pixel_x = -28},/turf/simulated/floor/plating,/area/coldwar/fobindoors)
-"x" = (/obj/effect/landmark/test/safe_turf,/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"y" = (/obj/machinery/atmospherics/pipe/simple/visible{tag = "icon-intact (SOUTHEAST)"; icon_state = "intact"; dir = 6},/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"z" = (/obj/machinery/atmospherics/portables_connector{tag = "icon-map_connector (WEST)"; icon_state = "map_connector"; dir = 8},/obj/machinery/portable_atmospherics/canister/empty,/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"A" = (/obj/machinery/door/airlock/external/bolted{frequency = 1379; id_tag = "example_shuttle_port_hatch"},/turf/simulated/floor/plating,/area/coldwar/fobindoors)
-"B" = (/obj/machinery/light,/turf/simulated/floor/plating,/area/coldwar/fobindoors)
-"C" = (/obj/machinery/door/airlock/external/bolted{frequency = 1379; id_tag = "example_shuttle_starboard_hatch"},/turf/simulated/floor/plating,/area/coldwar/fobindoors)
-"D" = (/obj/machinery/door/airlock/external/bolted{frequency = 1379; id_tag = "lower_level_dock_hatch"},/turf/simulated/floor,/area/coldwar/fobindoors)
-"E" = (/obj/machinery/embedded_controller/radio/simple_docking_controller{id_tag = "lower_level_dock"; pixel_x = -8; pixel_y = -25},/turf/simulated/floor,/area/coldwar/fobindoors)
-"F" = (/turf/simulated/floor,/area/coldwar/fobindoors)
-"G" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{tag = "icon-map_scrubber_on (NORTH)"; icon_state = "map_scrubber_on"; dir = 1},/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"H" = (/obj/effect/landmark{name = "JoinLate"},/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"I" = (/obj/structure/cable{d2 = 2; icon_state = "0-2"; pixel_y = 0},/obj/machinery/power/apc{dir = 8; name = "west bump"; pixel_x = -24},/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
+"b" = (/turf/simulated/wall,/area/coldwar/surrounding)
+"c" = (/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"d" = (/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"e" = (/obj/effect/landmark{name = "tdome1"},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"f" = (/obj/effect/floor_decal/industrial/hatch/yellow,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"g" = (/obj/effect/floor_decal/industrial/hatch/yellow,/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"h" = (/obj/structure/barricade/metal,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"i" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"j" = (/obj/structure/ladder/up,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"k" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"l" = (/obj/structure/eft/supply/redcross,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"m" = (/obj/structure/eft/supply/soviet,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"n" = (/obj/structure/eft/supply/nato,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"o" = (/obj/machinery/atmospherics/unary/vent_pump/on,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"p" = (/turf/simulated/wall/iron,/area/coldwar/surrounding)
+"q" = (/obj/machinery/atmospherics/pipe/simple/visible{tag = "icon-intact (NORTHEAST)"; icon_state = "intact"; dir = 5},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"r" = (/obj/machinery/atmospherics/pipe/simple/visible{tag = "icon-intact (EAST)"; icon_state = "intact"; dir = 4},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"s" = (/obj/machinery/atmospherics/portables_connector{tag = "icon-map_connector (WEST)"; icon_state = "map_connector"; dir = 8},/obj/machinery/portable_atmospherics/canister/air,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"t" = (/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor/plating,/area/coldwar/surrounding)
+"u" = (/obj/machinery/computer/shuttle_control{shuttle_tag = "Example"},/turf/simulated/floor/plating,/area/coldwar/surrounding)
+"v" = (/obj/machinery/light_switch{pixel_x = -25},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"w" = (/obj/effect/landmark/start,/obj/item/weapon/crowbar/red,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"x" = (/obj/structure/bed/chair{dir = 1},/obj/machinery/embedded_controller/radio/simple_docking_controller{id_tag = "example_shuttle_starboard"; pixel_x = 28},/obj/machinery/embedded_controller/radio/simple_docking_controller{id_tag = "example_shuttle_port"; pixel_x = -28},/turf/simulated/floor/plating,/area/coldwar/surrounding)
+"y" = (/obj/effect/landmark/test/safe_turf,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"z" = (/obj/machinery/atmospherics/pipe/simple/visible{tag = "icon-intact (SOUTHEAST)"; icon_state = "intact"; dir = 6},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"A" = (/obj/machinery/atmospherics/portables_connector{tag = "icon-map_connector (WEST)"; icon_state = "map_connector"; dir = 8},/obj/machinery/portable_atmospherics/canister/empty,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"B" = (/obj/machinery/door/airlock/external/bolted{frequency = 1379; id_tag = "example_shuttle_port_hatch"},/turf/simulated/floor/plating,/area/coldwar/surrounding)
+"C" = (/obj/machinery/light,/turf/simulated/floor/plating,/area/coldwar/surrounding)
+"D" = (/obj/machinery/door/airlock/external/bolted{frequency = 1379; id_tag = "example_shuttle_starboard_hatch"},/turf/simulated/floor/plating,/area/coldwar/surrounding)
+"E" = (/obj/machinery/door/airlock/external/bolted{frequency = 1379; id_tag = "lower_level_dock_hatch"},/turf/simulated/floor,/area/coldwar/surrounding)
+"F" = (/obj/machinery/embedded_controller/radio/simple_docking_controller{id_tag = "lower_level_dock"; pixel_x = -8; pixel_y = -25},/turf/simulated/floor,/area/coldwar/surrounding)
+"G" = (/turf/simulated/floor,/area/coldwar/surrounding)
+"H" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{tag = "icon-map_scrubber_on (NORTH)"; icon_state = "map_scrubber_on"; dir = 1},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"I" = (/obj/effect/landmark{name = "JoinLate"},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
 "J" = (/obj/effect/landmark/test/space_turf,/turf/space,/area/space)
-"K" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"L" = (/obj/structure/cable,/obj/machinery/power/debug_items/infinite_generator,/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"M" = (/obj/machinery/light,/turf/simulated/floor/tiled,/area/coldwar/fobindoors)
-"N" = (/obj/effect/landmark/start{name = "Military Police"},/obj/effect/floor_decal/turf/woodalt,/turf/simulated/floor/wood,/area/coldwar/fobindoors)
-"O" = (/obj/effect/landmark/start{name = "Survivor"},/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/tiled/bunker,/area/coldwar/fobindoors)
+"K" = (/obj/structure/cable{d2 = 2; icon_state = "0-2"; pixel_y = 0},/obj/machinery/power/apc{dir = 8; name = "west bump"; pixel_x = -24},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"L" = (/obj/item/weapon/lockpick,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"M" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"N" = (/obj/effect/floor_decal/newcorner/green{dir = 8},/obj/effect/floor_decal/newcorner/green{dir = 4},/obj/machinery/door/unpowered/simple/bars{initial_lock_value = "natoof"},/turf/simulated/floor/tiled/dark,/area/coldwar/surrounding)
+"O" = (/obj/effect/landmark/start{name = "Survivor"},/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/tiled/bunker,/area/coldwar/surrounding)
+"P" = (/obj/effect/landmark/start{name = "Military Police"},/obj/effect/floor_decal/turf/woodalt,/turf/simulated/floor/wood,/area/coldwar/surrounding)
+"Q" = (/obj/structure/cable,/obj/machinery/power/debug_items/infinite_generator,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"R" = (/obj/machinery/light,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"S" = (/mob/living/simple_animal/hostile/eft/zombie/civ,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"T" = (/obj/machinery/door/unpowered/simple/bars{initial_lock_value = "natoof"},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
+"U" = (/obj/machinery/light_switch{pixel_x = 25},/obj/structure/barricade/metal,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -51,19 +57,19 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabcccdcccccdcccbaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabceeecfbfcccccbaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabceeecfffccccgbaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabheeeifffccccjbaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabcccccklmccnccbaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaoooaabcccccklmccpqrbaaaaaaaaaaaaaaaa
-aaaaaaaaaaaastsaabucccckvmcccccbaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaswsbbbccccxclcccyqzbaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaABCDEFccccccccccGccbaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaooobbbhcHHHcccccccjbaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabIcHHHccccccccbaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabKcHHHccccOcNcbaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabLccMcccccMcccbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabcccdcccchdcccbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabceeecfbfhScScbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabceeecfgfhhThUbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabieeejfffcccckbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabccccclmnccoccbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaapppaabccccclmnccqrsbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaatutaabvcccclwncccccbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaatxtbbbccccycmccczrAbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaBCDEFGccccccccccHccbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaapppbbbicIIIccccccckbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabKcIIIcLccccccbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabMcIIIcNccOcPcbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabQccRcccccRcccbaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

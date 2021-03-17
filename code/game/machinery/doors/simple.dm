@@ -9,6 +9,8 @@
 	var/datum/lock/lock
 	var/initial_lock_value //for mapping purposes. Basically if this value is set, it sets the lock to this value.
 
+	var/opening_time = 2
+	var/closing_time = 4
 
 /obj/machinery/door/unpowered/simple/fire_act(datum/gas_mixture/air, exposed_temperature, exposed_volume)
 	TemperatureAct(exposed_temperature)
@@ -69,8 +71,10 @@
 	switch(animation)
 		if("opening")
 			flick("[icon_base]opening", src)
+			sleep(opening_time)
 		if("closing")
 			flick("[icon_base]closing", src)
+			sleep(closing_time)
 	return
 
 /obj/machinery/door/unpowered/simple/inoperable(var/additional_flags = 0)
@@ -127,7 +131,19 @@
 		else
 			to_chat(user, "<span class='warning'>You unlock the door.</span>")
 		return
+
 	if(lock && lock.pick_lock(I,user))
+		return
+
+	if(istype(I,/obj/item/weapon/lockpick) && lock)
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		playsound(src.loc, 'sound/items/Screwdriver.ogg', 30, 1)
+		to_chat(user, "<span class='warning'>You started using [I] to break lock.</span>")
+		if(do_after(user, 40, src))
+			playsound(src.loc, 'sound/effects/doors/door_key.wav', 100, 1)
+			to_chat(user, "<span class='warning'>You unlock the door by using [I].</span>")
+			lock = null
+			new /obj/item/weapon/material/lock_construct(loc)
 		return
 
 	if(istype(I,/obj/item/weapon/material/lock_construct))

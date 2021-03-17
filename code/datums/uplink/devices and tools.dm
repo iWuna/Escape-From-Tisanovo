@@ -79,11 +79,6 @@
 	item_cost = 32
 	path = /obj/item/device/flashlight/flashdark
 
-/datum/uplink_item/item/tools/powersink
-	name = "Powersink (DANGER!)"
-	item_cost = 40
-	path = /obj/item/device/powersink
-
 /datum/uplink_item/item/tools/teleporter
 	name = "Teleporter Circuit Board"
 	item_cost = 40
