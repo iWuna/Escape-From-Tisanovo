@@ -38,9 +38,9 @@ var/global/datum/controller/gameticker/ticker
 /datum/controller/gameticker/proc/pregame()
 	do
 		if(!gamemode_voted)
-			pregame_timeleft = 180
+			pregame_timeleft = 800
 		else
-			pregame_timeleft = 15
+			pregame_timeleft = 800
 			if(!isnull(secondary_mode))
 				master_mode = secondary_mode
 				secondary_mode = null
