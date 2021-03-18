@@ -282,11 +282,11 @@
 	var/obj/item/weapon/reagent_containers/RC = locate() in src.loc
 	if((U || S) && gender != FEMALE)//In the urinal or sink.
 		message = "<B>[src]</B> urinates into [U ? U : S]."
-		reagents.remove_any(rand(1,8))
+		bladder -= rand(60,80)
 
 	else if(T && T.open)//In the toilet.
 		message = "<B>[src]</B> urinates into [T]."
-		reagents.remove_any(rand(1,8))
+		bladder -= rand(40,50)
 
 	else if(RC && (istype(RC,/obj/item/weapon/reagent_containers/food/drinks || istype(RC,/obj/item/weapon/reagent_containers/glass))))
 		if(RC.is_open_container())
