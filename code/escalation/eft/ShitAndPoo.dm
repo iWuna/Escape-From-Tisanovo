@@ -299,6 +299,7 @@
 
 	else if(w_uniform)//In your pants.
 		message = "<B>[src]</B> pisses \his pants."
+		bladder -= rand(40,50)
 
 	else//On the floor.
 		if(!B.safezone)
