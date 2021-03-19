@@ -210,7 +210,7 @@ datum/preferences
 	else
 		return
 
-	if((equip_preview_mob & EQUIP_PREVIEW_LOADOUT) && !(previewJob && (equip_preview_mob & EQUIP_PREVIEW_JOB) && (previewJob.type == /datum/job/ai || previewJob.type == /datum/job/cyborg)))
+	if((equip_preview_mob & EQUIP_PREVIEW_LOADOUT) && !(previewJob && (equip_preview_mob & EQUIP_PREVIEW_JOB)))
 		var/list/equipped_slots = list() //If more than one item takes the same slot only spawn the first
 		for(var/thing in Gear())
 			var/datum/gear/G = gear_datums[thing]

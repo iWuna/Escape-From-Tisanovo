@@ -15,7 +15,7 @@ var/const/BDWFORCE			=(1<<0)
 var/const/DDRFORCE			=(1<<0)
 var/const/USMCFORCE			=(1<<0)
 var/const/SOVFORCE			=(1<<0)
-
+var/const/PMCFORCE			=(1<<0)
 
 GLOBAL_LIST_EMPTY(assistant_occupations)
 

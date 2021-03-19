@@ -48,7 +48,6 @@ var/list/uplink_random_selections_
 	items += new/datum/uplink_random_item(/datum/uplink_item/item/visible_weapons/g9mm)
 	items += new/datum/uplink_random_item(/datum/uplink_item/item/visible_weapons/revolver)
 	items += new/datum/uplink_random_item(/datum/uplink_item/item/visible_weapons/heavysniper, 15, 0)
-	items += new/datum/uplink_random_item(/datum/uplink_item/item/grenades/emp, 50)
 	items += new/datum/uplink_random_item(/datum/uplink_item/item/visible_weapons/crossbow, 33)
 	items += new/datum/uplink_random_item(/datum/uplink_item/item/visible_weapons/energy_sword, 75)
 
@@ -80,13 +79,8 @@ var/list/uplink_random_selections_
 	items += new/datum/uplink_random_item(/datum/uplink_item/item/implants/imp_compress)
 	items += new/datum/uplink_random_item(/datum/uplink_item/item/implants/imp_explosive)
 
-	items += new/datum/uplink_random_item(/datum/uplink_item/item/medical/sinpockets, reselect_propbability = 20)
-	items += new/datum/uplink_random_item(/datum/uplink_item/item/medical/surgery, reselect_propbability = 10)
-	items += new/datum/uplink_random_item(/datum/uplink_item/item/medical/combat, reselect_propbability = 10)
 
 	items += new/datum/uplink_random_item(/datum/uplink_item/item/tools/suit_sensor_mobile)
-	items += new/datum/uplink_random_item(/datum/uplink_item/item/services/suit_sensor_shutdown, 75, 0)
-	items += new/datum/uplink_random_item(/datum/uplink_item/item/services/suit_sensor_garble, 75, 0)
 
 /datum/uplink_random_selection/blacklist
 	var/list/blacklist = list(
@@ -95,8 +89,7 @@ var/list/uplink_random_selections_
 			/datum/uplink_item/item/telecrystal,
 			/datum/uplink_item/item/tools/teleporter,
 			/datum/uplink_item/item/tools/supply_beacon,
-			/datum/uplink_item/item/implants/imp_uplink,
-			/datum/uplink_item/deity
+			/datum/uplink_item/item/implants/imp_uplink
 		)
 
 /datum/uplink_random_selection/blacklist/New()

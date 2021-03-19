@@ -13,24 +13,14 @@
 "m" = (/obj/structure/eft/supply/soviet,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
 "n" = (/obj/structure/eft/supply/nato,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
 "o" = (/obj/machinery/atmospherics/unary/vent_pump/on,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
-"p" = (/turf/simulated/wall/iron,/area/coldwar/surrounding)
 "q" = (/obj/machinery/atmospherics/pipe/simple/visible{tag = "icon-intact (NORTHEAST)"; icon_state = "intact"; dir = 5},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
 "r" = (/obj/machinery/atmospherics/pipe/simple/visible{tag = "icon-intact (EAST)"; icon_state = "intact"; dir = 4},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
 "s" = (/obj/machinery/atmospherics/portables_connector{tag = "icon-map_connector (WEST)"; icon_state = "map_connector"; dir = 8},/obj/machinery/portable_atmospherics/canister/air,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
-"t" = (/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor/plating,/area/coldwar/surrounding)
-"u" = (/obj/machinery/computer/shuttle_control{shuttle_tag = "Example"},/turf/simulated/floor/plating,/area/coldwar/surrounding)
 "v" = (/obj/machinery/light_switch{pixel_x = -25},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
 "w" = (/obj/effect/landmark/start,/obj/item/weapon/crowbar/red,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
-"x" = (/obj/structure/bed/chair{dir = 1},/obj/machinery/embedded_controller/radio/simple_docking_controller{id_tag = "example_shuttle_starboard"; pixel_x = 28},/obj/machinery/embedded_controller/radio/simple_docking_controller{id_tag = "example_shuttle_port"; pixel_x = -28},/turf/simulated/floor/plating,/area/coldwar/surrounding)
 "y" = (/obj/effect/landmark/test/safe_turf,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
 "z" = (/obj/machinery/atmospherics/pipe/simple/visible{tag = "icon-intact (SOUTHEAST)"; icon_state = "intact"; dir = 6},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
 "A" = (/obj/machinery/atmospherics/portables_connector{tag = "icon-map_connector (WEST)"; icon_state = "map_connector"; dir = 8},/obj/machinery/portable_atmospherics/canister/empty,/turf/simulated/floor/tiled,/area/coldwar/surrounding)
-"B" = (/obj/machinery/door/airlock/external/bolted{frequency = 1379; id_tag = "example_shuttle_port_hatch"},/turf/simulated/floor/plating,/area/coldwar/surrounding)
-"C" = (/obj/machinery/light,/turf/simulated/floor/plating,/area/coldwar/surrounding)
-"D" = (/obj/machinery/door/airlock/external/bolted{frequency = 1379; id_tag = "example_shuttle_starboard_hatch"},/turf/simulated/floor/plating,/area/coldwar/surrounding)
-"E" = (/obj/machinery/door/airlock/external/bolted{frequency = 1379; id_tag = "lower_level_dock_hatch"},/turf/simulated/floor,/area/coldwar/surrounding)
-"F" = (/obj/machinery/embedded_controller/radio/simple_docking_controller{id_tag = "lower_level_dock"; pixel_x = -8; pixel_y = -25},/turf/simulated/floor,/area/coldwar/surrounding)
-"G" = (/turf/simulated/floor,/area/coldwar/surrounding)
 "H" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{tag = "icon-map_scrubber_on (NORTH)"; icon_state = "map_scrubber_on"; dir = 1},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
 "I" = (/obj/effect/landmark{name = "JoinLate"},/turf/simulated/floor/tiled,/area/coldwar/surrounding)
 "J" = (/obj/effect/landmark/test/space_turf,/turf/space,/area/space)
@@ -62,13 +52,13 @@ aaaaaaaaaaaaaaaaabceeecfbfhScScbaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaabceeecfgfhhThUbaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaabieeejfffcccckbaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaabccccclmnccoccbaaaaaaaaaaaaaaaa
-aaaaaaaaaaaapppaabccccclmnccqrsbaaaaaaaaaaaaaaaa
-aaaaaaaaaaaatutaabvcccclwncccccbaaaaaaaaaaaaaaaa
-aaaaaaaaaaaatxtbbbccccycmccczrAbaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaBCDEFGccccccccccHccbaaaaaaaaaaaaaaaa
-aaaaaaaaaaaapppbbbicIIIccccccckbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabccccclmnccqrsbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabvcccclwncccccbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabccccycmccczrAbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabccccccccccHccbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabicIIITTTTccckbaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaabKcIIIcLccccccbaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabMcIIIcNccOcPcbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabMcIIITNTTOcPcbaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaabQccRcccccRcccbaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

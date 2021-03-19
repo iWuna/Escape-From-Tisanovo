@@ -15,7 +15,6 @@
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat/cmo
 	shoes = /obj/item/clothing/shoes/brown
 	r_pocket = /obj/item/device/flashlight/pen
-	id_type = /obj/item/weapon/card/id/medical/head
 	pda_type = /obj/item/device/pda/heads/cmo
 
 /decl/hierarchy/outfit/job/medical/doctor
@@ -23,7 +22,6 @@
 	uniform = /obj/item/clothing/under/rank/medical
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat
 	r_pocket = /obj/item/device/flashlight/pen
-	id_type = /obj/item/weapon/card/id/medical
 
 /decl/hierarchy/outfit/job/medical/doctor/emergency_physician
 	name = OUTFIT_JOB_NAME("Emergency physician")
@@ -64,7 +62,6 @@
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat/chemist
 	backpack = /obj/item/weapon/storage/backpack/chemistry
 	satchel_one = /obj/item/weapon/storage/backpack/satchel_chem
-	id_type = /obj/item/weapon/card/id/medical/chemist
 	pda_type = /obj/item/device/pda/chemist
 
 /decl/hierarchy/outfit/job/medical/geneticist
@@ -74,7 +71,6 @@
 	backpack = /obj/item/weapon/storage/backpack/genetics
 	r_pocket = /obj/item/device/flashlight/pen
 	satchel_one = /obj/item/weapon/storage/backpack/satchel_gen
-	id_type = /obj/item/weapon/card/id/medical/geneticist
 	pda_type = /obj/item/device/pda/geneticist
 
 /decl/hierarchy/outfit/job/medical/psychiatrist
@@ -82,7 +78,6 @@
 	uniform = /obj/item/clothing/under/rank/psych
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat
 	shoes = /obj/item/clothing/shoes/laceup
-	id_type = /obj/item/weapon/card/id/medical/psychiatrist
 
 /decl/hierarchy/outfit/job/medical/psychiatrist/psychologist
 	name = OUTFIT_JOB_NAME("Psychologist")
@@ -94,7 +89,6 @@
 	suit = /obj/item/clothing/suit/storage/toggle/fr_jacket
 	shoes = /obj/item/clothing/shoes/jackboots
 	belt = /obj/item/weapon/storage/belt/medical/emt
-	id_type = /obj/item/weapon/card/id/medical/paramedic
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 
 /decl/hierarchy/outfit/job/medical/paramedic/emt

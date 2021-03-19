@@ -303,8 +303,6 @@
 			return global.cameranet_;
 		if("can_call_ert")
 			return global.can_call_ert;
-		if("captain_announcement")
-			return global.captain_announcement;
 		if("cargo_supply_pack_root")
 			return global.cargo_supply_pack_root;
 		if("cargo_supply_packs")
@@ -521,8 +519,6 @@
 			return global.global_message_listener;
 		if("global_vars_")
 			return global.global_vars_;
-		if("godcult")
-			return global.godcult;
 		if("gravity_is_on")
 			return global.gravity_is_on;
 		if("gyrotrons")
@@ -1450,8 +1446,6 @@
 			global.cameranet_=newval;
 		if("can_call_ert")
 			global.can_call_ert=newval;
-		if("captain_announcement")
-			global.captain_announcement=newval;
 		if("cargo_supply_pack_root")
 			global.cargo_supply_pack_root=newval;
 		if("cargo_supply_packs")
@@ -1668,8 +1662,6 @@
 			global.global_message_listener=newval;
 		if("global_vars_")
 			global.global_vars_=newval;
-		if("godcult")
-			global.godcult=newval;
 		if("gravity_is_on")
 			global.gravity_is_on=newval;
 		if("gyrotrons")

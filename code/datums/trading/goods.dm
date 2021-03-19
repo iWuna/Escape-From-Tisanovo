@@ -1,47 +1,3 @@
-/*/datum/trader/ship/toyshop
-	name = "Toy Shop Employee"
-	name_language = TRADER_DEFAULT_NAME
-	origin = "Toy Shop"
-	trade_flags = TRADER_GOODS|TRADER_MONEY|TRADER_WANTED_ONLY
-	possible_origins = list("Toys R Ours", "LEGS GO", "Kay-Cee Toys", "Build-a-Cat", "Magic Box", "The Positronic's Dungeon and Baseball Card Shop")
-	speech = list("hail_generic"    = "Uuhh... hello? Welcome to ORIGIN, I hope you have a uh.... good shoping trip.",
-				"hail_deny"         = "Nah, you're not allowed here. At all",
-
-				"trade_complete"       = "Thanks for shopping... here.... at ORIGIN.",
-				"trade_blacklist"      = "Uuuuuuuuuuuuuuuuuuuh.... no.",
-				"trade_found_unwanted" = "Nah! That's not what I'm looking for. Something rarer.",
-				"trade_not_enough"   = "Just cause they're made of cardboard doesn't mean they don't cost money...",
-				"how_much"          = "Uuuuuuuh... I'm thinking like... VALUE. Right? Or something rare that complements my interest.",
-				"what_want"         = "Uuuuum..... I guess I want",
-
-				"compliment_deny"   = "Ha! Very funny! You should write your own television show.",
-				"compliment_accept" = "Why yes, I do work out.",
-				"insult_good"       = "Well well well. Guess we learned who was the troll here.",
-				"insult_bad"        = "I've already written a nasty spacebook post in my mind about you.",
-
-				"bribe_refusal"     = "Nah. I need to get moving as soon as uh... possible.",
-				"bribe_accept"      = "You know what, I wasn't doing anything for TIME minutes anyways.",
-				)
-
-	possible_wanted_items = list(/obj/item/toy/figure       = TRADER_THIS_TYPE,
-								/obj/item/toy/figure/ert    = TRADER_THIS_TYPE,
-								/obj/item/toy/prize/honk    = TRADER_THIS_TYPE)
-
-	possible_trading_items = list(/obj/item/toy/prize                 = TRADER_SUBTYPES_ONLY,
-								/obj/item/toy/prize/honk              = TRADER_BLACKLIST,
-								/obj/item/toy/figure                  = TRADER_SUBTYPES_ONLY,
-								/obj/item/toy/figure/ert              = TRADER_BLACKLIST,
-								/obj/item/toy/plushie                 = TRADER_SUBTYPES_ONLY,
-								/obj/item/toy/katana                  = TRADER_THIS_TYPE,
-								/obj/item/toy/sword                   = TRADER_THIS_TYPE,
-								/obj/item/toy/bosunwhistle            = TRADER_THIS_TYPE,
-								/obj/item/weapon/board                = TRADER_THIS_TYPE,
-								/obj/item/weapon/storage/box/checkers = TRADER_ALL,
-								/obj/item/weapon/deck                 = TRADER_SUBTYPES_ONLY,
-								/obj/item/weapon/pack                 = TRADER_SUBTYPES_ONLY,
-								/obj/item/weapon/dice                 = TRADER_ALL,
-								/obj/item/weapon/dice/d20/cursed      = TRADER_BLACKLIST)
-*/
 /datum/trader/ship/electronics
 	name = "Electronic Shop Employee"
 	name_language = TRADER_DEFAULT_NAME
@@ -187,41 +143,6 @@
 								/obj/item/clothing/accessory/neckguard		= TRADER_ALL,
 								/obj/item/clothing/suit/armor/vest/old     = TRADER_ALL)
 
-/*
-/datum/trader/xeno_shop
-	name = "Xenolife Collector"
-	origin = "CSV Not a Poacher"
-	trade_flags = TRADER_GOODS|TRADER_MONEY|TRADER_WANTED_ONLY|TRADER_WANTED_ALL
-	possible_origins = list("XenoHugs","NT Specimen Acquisition","Lonely Pete's Exotic Companionship","Space Wei's Exotic Cuisine")
-	speech = list("hail_generic"    = "Welcome! We are always looking to acquire more exotic life forms.",
-				"hail_deny"         = "We no longer wish to speak to you. Please contact our legal representative if you wish to rectify this.",
-
-				"trade_complete"    = "Remember to give them attention and food. They are living beings, and you should treat them like so.",
-				"trade_blacklist"   = "Legally I can' do that. Morally... anyway I refuse to do that.",
-				"trade_found_unwanted" = "I only want animals. I don't need food, shiny things, I'm looking for specific ones at that. Ones I already have the cage and food for.",
-				"trade_not_enough"   = "I'd give you this for free, but I need the money to feed the specimens. So you must pay in full.",
-				"how_much"          = "This is a good choice, I believe it will cost you VALUE credits.",
-				"what_want"         = "I have the facilities currently to support",
-
-				"compliment_deny"   = "According to customs on 34 planets I traded with, this constitutes sexual harrasment.",
-				"compliment_accept" = "Thank you. I needed that.",
-				"insult_good"       = "No need to be upset, I believe we can do business.",
-				"insult_bad"        = "I have traded dogs with more bark than that.",
-				)
-
-	possible_wanted_items = list(/mob/living/simple_animal/tindalos    = TRADER_THIS_TYPE,
-								/mob/living/simple_animal/tomato      = TRADER_THIS_TYPE,
-								/mob/living/simple_animal/yithian     = TRADER_THIS_TYPE,
-								/mob/living/simple_animal/hostile/retaliate/beast/diyaab = TRADER_THIS_TYPE,
-								/mob/living/simple_animal/hostile/retaliate/beast/shantak= TRADER_THIS_TYPE,
-								/mob/living/simple_animal/hostile/retaliate/beast/samak= TRADER_THIS_TYPE,
-								/mob/living/simple_animal/hostile/carp = TRADER_THIS_TYPE)
-
-	possible_trading_items = list(/mob/living/simple_animal/hostile/carp= TRADER_THIS_TYPE,
-								/obj/item/device/dociler              = TRADER_THIS_TYPE,
-								/obj/item/weapon/beartrap			  = TRADER_THIS_TYPE,
-								/obj/item/device/slime_scanner = TRADER_THIS_TYPE)
-*/
 /datum/trader/medical
 	name = "Medical Supplier"
 	origin = "Infirmary of Unity Station"

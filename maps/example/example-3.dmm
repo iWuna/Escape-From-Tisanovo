@@ -6,7 +6,6 @@
 "f" = (/obj/structure/lattice,/turf/simulated/open,/area/maintenance/fsmaint2)
 "g" = (/turf/simulated/open,/area/maintenance/fsmaint2)
 "h" = (/obj/machinery/light_switch{pixel_x = 25},/obj/effect/floor_decal/corner/blue/diagonal,/turf/simulated/floor/tiled,/area/maintenance/fsmaint2)
-"i" = (/obj/effect/shuttle_landmark/upper_level,/turf/space,/area/space)
 "j" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/obj/effect/floor_decal/corner/blue/diagonal,/turf/simulated/floor/tiled,/area/maintenance/fsmaint2)
 "k" = (/obj/effect/floor_decal/corner/blue/diagonal,/obj/structure/ladder,/turf/simulated/floor/tiled,/area/maintenance/fsmaint2)
 "l" = (/turf/simulated/floor,/area/maintenance/fsmaint2)
@@ -40,7 +39,7 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaabaaacccccccccccccccaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaacdddeddfddedddcaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaacdddddfffdddddcaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaacdddddgggddddhccccaiaaaaaaaaaaa
+aaaaaaaaaaaaaaaaacdddddgggddddhccccaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaacjdddkgggdddddllmnaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaacddddddddddodpccccaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaacddddddddddqrscaaaaaaaaaaaaaaaa

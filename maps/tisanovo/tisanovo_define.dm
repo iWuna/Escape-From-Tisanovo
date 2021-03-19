@@ -17,3 +17,5 @@
 	emergency_shuttle_docked_message = "The emergency escape shuttle has docked."
 	emergency_shuttle_leaving_dock = "The emergency escape shuttle has departed from %dock_name%."
 	emergency_shuttle_called_message = "An emergency escape shuttle has been sent."
+
+	welcome_sound = 'sound/effects/siren2.ogg'
