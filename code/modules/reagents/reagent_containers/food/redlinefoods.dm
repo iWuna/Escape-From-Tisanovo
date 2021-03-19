@@ -131,6 +131,18 @@
 		bitesize = 2
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 12)
 
+/obj/item/weapon/reagent_containers/food/snacks/sliceable/breadsys/salo
+	name = "salo"
+	desc = "Don't choke on this, find a knife."
+	icon_state = "salo"
+	nutriment_desc = list("meat" = 6)
+	nutriment_amt = 12
+	slice_path = /obj/item/weapon/reagent_containers/food/snacks/slice/breadsys/ontop/salo_slice
+	slices_num = 3
+	New()
+		..()
+		bitesize = 2
+		reagents.add_reagent(/datum/reagent/nutriment/protein, 12)
 
 // a slice of bread loaf
 /obj/item/weapon/reagent_containers/food/snacks/slice/breadsys/ontop/bread
@@ -145,6 +157,16 @@
 	name = "salami"
 	desc = "A preserved meat."
 	icon_state = "salami"
+	nutriment_desc = list("meat" = 2)
+	nutriment_amt = 2
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/nutriment/protein, 1)
+
+/obj/item/weapon/reagent_containers/food/snacks/slice/breadsys/ontop/salo_slice
+	name = "small piece of salo"
+	desc = "A preserved meat."
+	icon_state = "salo_slice"
 	nutriment_desc = list("meat" = 2)
 	nutriment_amt = 2
 	New()

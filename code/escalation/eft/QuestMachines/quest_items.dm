@@ -50,3 +50,8 @@
 	name = "6-STEN-140-M"
 	desc = "Tank battery with increased capacity. Milspec electronics."
 	icon_state = "battery"
+
+/obj/item/quest/military_chip
+	name = "chip"
+	desc = "Small chip with military codes, this can be useful for traders."
+	icon_state = "military_chip"

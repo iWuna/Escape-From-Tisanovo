@@ -135,6 +135,7 @@
 	if(lock && lock.pick_lock(I,user))
 		return
 
+	var/obj/item/weapon/lockpick/LP = I
 	if(istype(I,/obj/item/weapon/lockpick) && lock)
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 		playsound(src.loc, 'sound/items/Screwdriver.ogg', 30, 1)
@@ -143,7 +144,9 @@
 			playsound(src.loc, 'sound/effects/doors/door_key.wav', 100, 1)
 			to_chat(user, "<span class='warning'>You unlock the door by using [I].</span>")
 			lock = null
-			new /obj/item/weapon/material/lock_construct(loc)
+			if(prob(LP.broken_chance))
+				to_chat(user, "<span class='warning'>[I] broken!</span>")
+				qdel(LP)
 		return
 
 	if(istype(I,/obj/item/weapon/material/lock_construct))
@@ -309,6 +312,8 @@
 	set_opacity(0)
 	color = null
 
+/obj/machinery/door/unpowered/simple/bars/locked/New()
+	initial_lock_value = rand(1,1000)
 
 /obj/machinery/door/unpowered/simple/steel
 	icon = 'icons/obj/doors/doorsteel.dmi'
@@ -334,6 +339,8 @@
 	..(newloc, "steel", complexity)
 	color = null
 
+/obj/machinery/door/unpowered/simple/bulkhead/locked/New()
+	initial_lock_value = rand(1,1000)
 
 /obj/machinery/door/unpowered/simple/wood/alt
 	icon = 'icons/obj/doors/key_door.dmi'
@@ -393,6 +400,9 @@
 	glass = 1
 	set_opacity(0)
 	color = null
+
+/obj/machinery/door/unpowered/simple/metalglass1/locked/New()
+	initial_lock_value = rand(1,1000)
 
 /obj/machinery/door/unpowered/simple/metalalt1
 	icon = 'icons/obj/doors/material_doors_leonister.dmi'

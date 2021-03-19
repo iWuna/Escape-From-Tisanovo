@@ -208,6 +208,16 @@
 		reagents.add_reagent(/datum/reagent/space_drugs, 15)
 		reagents.add_reagent(/datum/reagent/sugar, 15)
 
+/obj/item/weapon/reagent_containers/pill/blotter
+	name = "blotter"
+	desc = "Happy happy joy joy with acid!"
+	icon_state = "blotter1"
+	New()
+		..()
+		icon_state = "blotter[rand(1,7)]"
+		reagents.add_reagent(/datum/reagent/space_drugs, 20)
+		reagents.add_reagent(/datum/reagent/sugar, 5)
+
 /obj/item/weapon/reagent_containers/pill/zoom
 	name = "Zoom pill"
 	desc = "Zoooom!"
