@@ -213,6 +213,7 @@
 	else if(istype(W, /obj/item/quest/military_chip) || human)
 		to_chat(user, "<span class='notice'>You give \the [W] to [src].</span>")
 		emagged = 1
+		qdel(W)
 	else if(attempt_to_stock(W, user))
 		return
 	..()
