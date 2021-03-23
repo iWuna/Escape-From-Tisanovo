@@ -50,3 +50,35 @@
 	name = "military police armband"
 	desc = "An armband, worn by the crew to display which department they're assigned to. This one is black with white letters MP."
 	icon_state = "mpband"
+
+//colored
+
+/obj/item/clothing/accessory/armband/red
+	name = "red armband"
+	desc = "A fancy red armband!"
+	icon_state = "red_band"
+
+/obj/item/clothing/accessory/armband/green
+	name = "green armband"
+	desc = "A fancy green armband!"
+	icon_state = "green_band"
+
+/obj/item/clothing/accessory/armband/white
+	name = "white armband"
+	desc = "A fancy white armband!"
+	icon_state = "white_band"
+
+/obj/item/clothing/accessory/armband/orange
+	name = "orange armband"
+	desc = "A fancy orange armband!"
+	icon_state = "orange_band"
+
+/obj/item/clothing/accessory/armband/yellow
+	name = "yellow armband"
+	desc = "A fancy yellow armband!"
+	icon_state = "yellow_band"
+
+/obj/item/clothing/accessory/armband/blue
+	name = "blue armband"
+	desc = "A fancy blue armband!"
+	icon_state = "blue_band"

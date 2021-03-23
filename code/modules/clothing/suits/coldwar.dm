@@ -235,3 +235,14 @@
 	cold_protection = UPPER_TORSO|LOWER_TORSO
 	heat_protection = UPPER_TORSO|LOWER_TORSO
 	armor = list(melee = 40, bullet = 10, laser = 30, energy = 5, bomb = 5, bio = 0, rad = 0)
+
+/obj/item/clothing/suit/storage/olympic
+	name = "olympic jacket"
+	desc = "A olympic jacket."
+	item_state = "olympic_violet"
+	body_parts_covered = UPPER_TORSO|ARMS
+	allowed = list(/obj/item/weapon/tank/emergency,/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/device/taperecorder)
+	armor = list(melee = 10, bullet = 10, laser = 15, energy = 10, bomb = 0, bio = 0, rad = 0)
+
+/obj/item/clothing/suit/storage/olympic/blue
+	item_state = "olympic_blue"
