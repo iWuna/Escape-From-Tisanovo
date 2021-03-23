@@ -79,6 +79,15 @@
 	flags_inv = HIDEEARS | BLOCKHAIR
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/head/hood_ww3
+	name = "hood"
+	desc = "A hood attached to a coat."
+	icon_state = "zeltbahn_hood"
+	body_parts_covered = HEAD
+	cold_protection = HEAD
+	flags_inv = HIDEEARS | BLOCKHAIR
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+
 /obj/item/clothing/suit/storage/hooded/coat_ww2
 	name = "coat"
 	desc = "A common sniper outfit in past war."
@@ -91,6 +100,19 @@
 	slowdown_general = 0.2
 	action_button_name = "Toggle Hood"
 	hoodtype = /obj/item/clothing/head/hood_ww2
+
+/obj/item/clothing/suit/storage/hooded/coat_ww3
+	name = "zeltbahn coat"
+	desc = "A common sniper outfit in last war."
+	icon_state = "zeltbahn"
+	item_state = "armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(melee = 10, bullet = 10, laser = 20, energy = 10, bomb = 5, bio = 0, rad = 0)
+	slowdown_general = 0.2
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/hood_ww3
 
 /obj/item/clothing/head/hood_hazmat
 	name = "hazmat hood"

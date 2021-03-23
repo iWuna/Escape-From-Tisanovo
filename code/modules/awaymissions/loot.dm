@@ -6,6 +6,7 @@
 	var/list/loot = list()
 	var/lootleft = 2
 	var/emptyprob = 30
+	var/change_icon = FALSE
 
 /obj/structure/lootable/New()
 	..()
@@ -15,6 +16,8 @@
 /obj/structure/lootable/attack_hand(mob/user)
 	if(lootleft <= 0)
 		to_chat(user, "<span class='warning'>There's nothing left in this one but unusable garbage...</span>")
+		if(change_icon)
+			icon_state = initial(icon_state) + "_looted"
 		return
 	visible_message("[user] starts searching inside of [src].")
 	if(do_after(user, 30))
@@ -22,6 +25,8 @@
 		booty = new booty(loc)
 		lootleft--
 		update_icon()
+		if(change_icon)
+			icon_state = initial(icon_state) + "_opened"
 		to_chat(user, "<span class='notice'>You find \a [booty] inside of [src].</span>")
 
 /obj/effect/spawner/lootdrop

@@ -64,7 +64,7 @@
 			to_chat(usr, "You begin deconstructing \a [src].")
 			if (!do_after(usr, 30,src))
 				return
-			new /obj/item/stack/material/steel( get_turf(src.loc), sheets_refunded )
+			//new /obj/item/stack/material/steel( get_turf(src.loc), sheets_refunded )
 			user.visible_message("[user.name] deconstructs [src].", \
 				"You deconstruct [src].", "You hear a noise.")
 			playsound(src.loc, 'sound/items/Deconstruct.ogg', 75, 1)

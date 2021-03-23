@@ -19,6 +19,13 @@
 	shoes = /obj/item/clothing/shoes/hightops/black
 	r_pocket = /obj/item/weapon/spacecash/bundle/randarmy
 
+/*
+/decl/hierarchy/outfit/job/eft/merc
+	name = OUTFIT_JOB_NAME("EFT - PMC outfit")
+	uniform = /obj/item/clothing/under/usmc/shirt
+	shoes = /obj/item/clothing/shoes/hightops/black
+	r_pocket = /obj/item/weapon/spacecash/bundle/randarmy
+*/
 /decl/hierarchy/outfit/job/eft/cz_police
 	name = OUTFIT_JOB_NAME("EFT - Czech Police outfit")
 	uniform = /obj/item/clothing/under/policevpp

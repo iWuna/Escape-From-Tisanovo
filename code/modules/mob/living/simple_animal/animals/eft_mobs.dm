@@ -4,8 +4,8 @@
 	name = "zombie"
 	desc = "B-raa-ains~"
 	icon = 'icons/escalation/mob/zombie.dmi'
-	icon_state = "zed1"
-	icon_living = "zed1"
+	icon_state = "zed"
+	icon_living = "zed"
 	icon_dead = "zed1_dead"
 	icon_gib = "generic_gib"
 	faction = "zombie"
@@ -64,6 +64,8 @@
 
 /mob/living/simple_animal/hostile/eft/zombie/New()
 	..()
+	icon_dead = icon_state + "_dead"
+
 	attack_sound = pick('sound/escalation/zed/zed_attack1.ogg',
 	'sound/escalation/zed/zed_attack2.ogg',
 	'sound/escalation/zed/zed_attack3.ogg',
@@ -100,26 +102,6 @@
 /mob/living/simple_animal/hostile/eft/zombie/civ/New()
 	..()
 	icon_state = "zed[rand(1,10)]"
-	if(icon_state == "zed1")
-		icon_dead = "zed_dead1"
-	if(icon_state == "zed2")
-		icon_dead = "zed_dead2"
-	if(icon_state == "zed3")
-		icon_dead = "zed_dead3"
-	if(icon_state == "zed4")
-		icon_dead = "zed_dead4"
-	if(icon_state == "zed5")
-		icon_dead = "zed_dead5"
-	if(icon_state == "zed6")
-		icon_dead = "zed_dead6"
-	if(icon_state == "zed7")
-		icon_dead = "zed_dead7"
-	if(icon_state == "zed8")
-		icon_dead = "zed_dead8"
-	if(icon_state == "zed9")
-		icon_dead = "zed_dead9"
-	if(icon_state == "zed10")
-		icon_dead = "zed_dead10"
 
 /mob/living/simple_animal/hostile/eft/zombie/runner
 	name = "zombie runner"
@@ -131,12 +113,6 @@
 /mob/living/simple_animal/hostile/eft/zombie/runner/New()
 	..()
 	icon_state = "zed_runner[rand(1,3)]"
-	if(icon_state == "zed_runner1")
-		icon_dead = "zed_runnerdead1"
-	if(icon_state == "zed_runner2")
-		icon_dead = "zed_runnerdead2"
-	if(icon_state == "zed_runner3")
-		icon_dead = "zed_runnerdead3"
 
 /mob/living/simple_animal/hostile/eft/zombie/police
 	name = "policeman zombie"
@@ -150,15 +126,11 @@
 /mob/living/simple_animal/hostile/eft/zombie/police/New()
 	..()
 	icon_state = "zed_police[rand(1,2)]"
-	if(icon_state == "zed_police1")
-		icon_dead = "zed_policedead1"
-	if(icon_state == "zed_police2")
-		icon_dead = "zed_policedead2"
 
 /mob/living/simple_animal/hostile/eft/zombie/soldier
 	name = "zombie soldier"
 	desc = "Once he was a soldier, but now he's just a brainless shell resembling a human. Good physical training in a previous life still makes itself felt."
-	icon_state = "zed_army1"
+	icon_state = "zed_army"
 	speed = 7
 	cooperative = 1
 	wander_distance = 8
@@ -168,16 +140,6 @@
 /mob/living/simple_animal/hostile/eft/zombie/soldier/New()
 	..()
 	icon_state = "zed_army[rand(1,5)]"
-	if(icon_state == "zed_army1")
-		icon_dead = "zed_armydead1"
-	if(icon_state == "zed_army2")
-		icon_dead = "zed_armydead2"
-	if(icon_state == "zed_army3")
-		icon_dead = "zed_armydead3"
-	if(icon_state == "zed_army4")
-		icon_dead = "zed_armydead4"
-	if(icon_state == "zed_army5")
-		icon_dead = "zed_armydead5"
 
 /mob/living/simple_animal/hostile/eft/zombie/soldier/armored
 	desc = "Wait, he's wearing armor?!"
@@ -188,15 +150,7 @@
 
 /mob/living/simple_animal/hostile/eft/zombie/soldier/armored/New()
 	..()
-	icon_state = "zed_armored_army[rand(1,2)]"
-	if(icon_state == "zed_armored_army1")
-		icon_dead = "zed_armored_armydead1"
-	if(icon_state == "zed_armored_army2")
-		icon_dead = "zed_armored_armydead2"
-	if(icon_state == "zed_armored_army3")
-		icon_dead = "zed_armored_armydead3"
-	if(icon_state == "zed_armored_army4")
-		icon_dead = "zed_armored_armydead4"
+	icon_state = "zed_armored_army[rand(1,4)]"
 
 /mob/living/simple_animal/hostile/eft/zombie/soldier_nato
 	name = "zombie soldier"
@@ -211,14 +165,6 @@
 /mob/living/simple_animal/hostile/eft/zombie/soldier_nato/New()
 	..()
 	icon_state = "zed_army_nato[rand(1,4)]"
-	if(icon_state == "zed_army_nato1")
-		icon_dead = "zed_army_nato1_dead"
-	if(icon_state == "zed_army_nato2")
-		icon_dead = "zed_army_nato2_dead"
-	if(icon_state == "zed_army_nato3")
-		icon_dead = "zed_army_nato3_dead"
-	if(icon_state == "zed_army_nato4")
-		icon_dead = "zed_army_nato4_dead"
 
 /mob/living/simple_animal/hostile/eft/zombie/soldier/set_target()
 	. = ..()
@@ -229,7 +175,7 @@
 	name = "zombie hazmat"
 	desc = "Once he was a soldier, but now he's just a brainless shell resembling a human. This one wearing NBO suit."
 	icon_state = "zed_hazmat"
-	icon_dead = "zed_hazmatdead"
+	icon_dead = "zed_hazmat_dead"
 	speed = 6
 	cooperative = 1
 	wander_distance = 4

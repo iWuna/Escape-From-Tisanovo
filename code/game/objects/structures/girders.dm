@@ -195,7 +195,7 @@
 	reinforcing = 0
 
 /obj/structure/girder/proc/dismantle()
-	new /obj/item/stack/material/steel(get_turf(src))
+	//new /obj/item/stack/material/steel(get_turf(src))
 	qdel(src)
 
 /obj/structure/girder/attack_hand(mob/user as mob)
@@ -221,36 +221,6 @@
 			return
 		else
 	return
-
-/obj/structure/girder/cult
-	icon= 'icons/obj/cult.dmi'
-	icon_state= "cultgirder"
-	health = 250
-	cover = 70
-
-/obj/structure/girder/cult/dismantle()
-	new /obj/item/remains/human(get_turf(src))
-	qdel(src)
-
-/obj/structure/girder/cult/attackby(obj/item/W as obj, mob/user as mob)
-	if(istype(W, /obj/item/weapon/wrench))
-		playsound(src.loc, 'sound/items/Ratchet.ogg', 100, 1)
-		to_chat(user, "<span class='notice'>Now disassembling the girder...</span>")
-		if(do_after(user,40 * W.toolspeed,src))
-			to_chat(user, "<span class='notice'>You dissasembled the girder!</span>")
-			dismantle()
-
-	else if(istype(W, /obj/item/weapon/pickaxe/plasmacutter))
-		to_chat(user, "<span class='notice'>Now slicing apart the girder...</span>")
-		if(do_after(user,30 * W.toolspeed,src))
-			to_chat(user, "<span class='notice'>You slice apart the girder!</span>")
-		dismantle()
-
-	else if(istype(W, /obj/item/weapon/pickaxe/diamonddrill))
-		to_chat(user, "<span class='notice'>You drill through the girder!</span>")
-		new /obj/item/remains/human(get_turf(src))
-		dismantle()
-
 
 /obj/structure/concretegirder
 	name = "concrete wreckage"

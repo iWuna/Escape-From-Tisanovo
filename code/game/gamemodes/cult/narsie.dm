@@ -49,8 +49,6 @@ var/global/list/narsie_list = list()
 	narsie_spawn_animation()
 
 	if(!narsie_cometh)//so we don't initiate Hell more than one time.
-		if(cause_hell)
-			SetUniversalState(/datum/universal_state/hell)
 		narsie_cometh = 1
 
 		spawn(10 SECONDS)
@@ -87,15 +85,11 @@ var/global/list/narsie_list = list()
 	if(!cause_hell) return
 	if(isturf(A))
 		narsiewall(A)
-	else if(istype(A, /obj/structure/cult))
-		qdel(A)
 
 /obj/singularity/narsie/large/Bumped(atom/A)
 	if(!cause_hell) return
 	if(isturf(A))
 		narsiewall(A)
-	else if(istype(A, /obj/structure/cult))
-		qdel(A)
 
 /obj/singularity/narsie/move(var/force_move = 0)
 	if(!move_self)

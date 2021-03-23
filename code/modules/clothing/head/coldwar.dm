@@ -71,6 +71,36 @@
 	siemens_coefficient = 0.9
 	icon_state_unzipped = "ssh60-unzipped"
 
+/obj/item/clothing/head/helmet/coldwar/soviet/altyn
+	name = "altyn helmet"
+	desc = "A recently engineered titanium helmet, issued in limited quantities to special KGB and Spetsnaz GRU units."
+	icon_state = "altyn"
+	armor = list(melee = 62, bullet = 30, laser = 10, energy = 10, bomb = 55, bio = 0, rad = 0)
+	siemens_coefficient = 0.9
+	icon_state_unzipped = "altyn-unzipped"
+
+/obj/item/clothing/head/helmet/coldwar/soviet/altyn/attack_self(mob/user as mob)
+	..()
+	if(icon_state == initial(icon_state))
+		icon_state = "altyn-unzipped"
+		to_chat(user, "You raise the helmet's visor.")
+	else
+		icon_state = "altyn"
+		to_chat(user, "You pull the visor back down.")
+
+/obj/item/clothing/head/helmet/coldwar/soviet/altyn/gopnik
+	desc = "A recently engineered titanium helmet, issued in limited quantities to special KGB and Spetsnaz GRU units. This one with special painting."
+	icon_state = "altyn_gop"
+
+/obj/item/clothing/head/helmet/coldwar/soviet/altyn/gopnik/attack_self(mob/user as mob)
+	..()
+	if(icon_state == initial(icon_state))
+		icon_state = "altyn_gop-unzipped"
+		to_chat(user, "You raise the helmet's visor.")
+	else
+		icon_state = "altyn_gop"
+		to_chat(user, "You pull the visor back down.")
+
 //Volksarmee helmets
 
 
@@ -116,6 +146,12 @@
 
 
 //U.S. hats
+
+/obj/item/clothing/head/usmc/wcap/black
+	name = "watch cap"
+	desc = "That's a generic beanie. This one is in black."
+	icon_state = "wcapblack"
+	item_state = "wcapblack"
 
 /obj/item/clothing/head/usmc/cap/woodland
 	name = "woodland cap"

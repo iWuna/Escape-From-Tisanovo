@@ -212,7 +212,7 @@
 //		playsound(src.loc, W.usesound, 50, 1)
 		if(do_after(user, 20, src))
 			user.visible_message("<span class='notice'>\The [user] dismantles \the [src].</span>", "<span class='notice'>You dismantle \the [src].</span>")
-			new /obj/item/stack/material/steel(get_turf(usr), 2)
+			//new /obj/item/stack/material/steel(get_turf(usr), 2)
 			qdel(src)
 			return
 

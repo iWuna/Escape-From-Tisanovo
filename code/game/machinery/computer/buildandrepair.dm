@@ -29,7 +29,7 @@
 				if(do_after(user, 20 * WT.toolspeed, src))
 					if(!src || !WT.isOn()) return
 					to_chat(user, "<span class='notice'>You deconstruct the frame.</span>")
-					new /obj/item/stack/material/steel( src.loc, 5 )
+					//new /obj/item/stack/material/steel( src.loc, 5 )
 					qdel(src)
 		if(1)
 			if(istype(P, /obj/item/weapon/wrench))

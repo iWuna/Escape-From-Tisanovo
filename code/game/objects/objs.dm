@@ -12,7 +12,6 @@
 	var/damtype = "brute"
 	var/armor_penetration = 0
 
-
 /obj/Destroy()
 	GLOB.processing_objects -= src
 	return ..()

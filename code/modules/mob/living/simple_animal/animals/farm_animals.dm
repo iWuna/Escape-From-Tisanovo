@@ -271,3 +271,32 @@ var/global/chicken_count = 0
 			qdel(src)
 	else
 		GLOB.processing_objects.Remove(src)
+
+//PIGS!!!
+
+/mob/living/simple_animal/pig
+	name = "pig"
+	desc = "Big fat pig..."
+	icon_state = "pig"
+	icon_living = "pig"
+	icon_dead = "pig_dead"
+	icon_gib = "pig_gib"
+	intelligence_level = SA_ANIMAL
+
+	health = 60
+	turns_per_move = 5
+	see_in_dark = 6
+
+	response_help  = "pets"
+	response_disarm = "gently pushes aside"
+	response_harm   = "kicks"
+	attacktext = list("kicked")
+
+	speak_chance = 1
+	speak = list("slava ukraine","hruuu","oink","wee-weee!","oink-oink!")
+	speak_emote = list("oinks","oinks hauntingly")
+	emote_hear = list("oinks")
+	emote_see = list("shakes its head")
+
+	meat_amount = 2
+	meat_type = /obj/item/weapon/reagent_containers/food/snacks/sliceable/breadsys/salo

@@ -108,7 +108,6 @@
 	attack_sound = 'sound/weapons/heavysmash.ogg'
 	status_flags = 0
 	resistance = 10
-	construct_spells = list(/spell/aoe_turf/conjure/forcewall/lesser)
 
 /mob/living/simple_animal/construct/armoured/Life()
 	weakened = 0
@@ -176,12 +175,6 @@
 	speed = 0
 	environment_smash = 1
 	attack_sound = 'sound/weapons/rapidslice.ogg'
-	construct_spells = list(/spell/aoe_turf/conjure/construct/lesser,
-							/spell/aoe_turf/conjure/wall,
-							/spell/aoe_turf/conjure/floor,
-							/spell/aoe_turf/conjure/soulstone,
-							/spell/aoe_turf/conjure/pylon
-							)
 
 
 /////////////////////////////Behemoth/////////////////////////
@@ -208,7 +201,6 @@
 	resistance = 10
 	var/energy = 0
 	var/max_energy = 1000
-	construct_spells = list(/spell/aoe_turf/conjure/forcewall/lesser)
 
 ////////////////////////Harvester////////////////////////////////
 

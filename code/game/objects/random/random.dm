@@ -611,22 +611,6 @@ obj/random/closet/spawn_choices()
 				/obj/item/weapon/reagent_containers/spray/cleaner = 2,
 				/obj/item/weapon/grenade/chem_grenade/cleaner = 1)
 
-obj/random/obstruction //Large objects to block things off in maintenance
-	name = "random obstruction"
-	desc = "This is a random obstruction."
-	icon = 'icons/obj/cult.dmi'
-	icon_state = "cultgirder"
-
-obj/random/obstruction/spawn_choices()
-	return list(/obj/structure/barricade/wooden,
-				/obj/structure/girder,
-				/obj/structure/girder/displaced,
-				/obj/structure/girder/reinforced,
-				/obj/structure/grille,
-				/obj/structure/grille/broken,
-				/obj/item/weapon/caution,
-				/obj/item/weapon/caution/cone)
-
 /obj/random/assembly
 	name = "random assembly"
 	desc = "This is a random circuit assembly."
