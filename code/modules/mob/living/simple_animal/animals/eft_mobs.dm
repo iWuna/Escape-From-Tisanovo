@@ -63,8 +63,7 @@
 		audible_emote("growls at [.]")
 
 /mob/living/simple_animal/hostile/eft/zombie/New()
-	..()
-	icon_dead = icon_state + "_dead"
+	. = ..()
 
 	attack_sound = pick('sound/escalation/zed/zed_attack1.ogg',
 	'sound/escalation/zed/zed_attack2.ogg',
@@ -100,8 +99,9 @@
 	speed = 6
 
 /mob/living/simple_animal/hostile/eft/zombie/civ/New()
-	..()
+	. = ..()
 	icon_state = "zed[rand(1,10)]"
+	icon_dead = icon_state + "_dead"
 
 /mob/living/simple_animal/hostile/eft/zombie/runner
 	name = "zombie runner"
@@ -111,8 +111,9 @@
 	health = 60
 
 /mob/living/simple_animal/hostile/eft/zombie/runner/New()
-	..()
+	. = ..()
 	icon_state = "zed_runner[rand(1,3)]"
+	icon_dead = icon_state + "_dead"
 
 /mob/living/simple_animal/hostile/eft/zombie/police
 	name = "policeman zombie"
@@ -124,8 +125,9 @@
 	health = 100
 
 /mob/living/simple_animal/hostile/eft/zombie/police/New()
-	..()
+	. = ..()
 	icon_state = "zed_police[rand(1,2)]"
+	icon_dead = icon_state + "_dead"
 
 /mob/living/simple_animal/hostile/eft/zombie/soldier
 	name = "zombie soldier"
@@ -138,8 +140,9 @@
 	health = 130
 
 /mob/living/simple_animal/hostile/eft/zombie/soldier/New()
-	..()
+	. = ..()
 	icon_state = "zed_army[rand(1,5)]"
+	icon_dead = icon_state + "_dead"
 
 /mob/living/simple_animal/hostile/eft/zombie/soldier/armored
 	desc = "Wait, he's wearing armor?!"
@@ -149,8 +152,9 @@
 	icon_state = "zed_armored_army1"
 
 /mob/living/simple_animal/hostile/eft/zombie/soldier/armored/New()
-	..()
+	. = ..()
 	icon_state = "zed_armored_army[rand(1,4)]"
+	icon_dead = icon_state + "_dead"
 
 /mob/living/simple_animal/hostile/eft/zombie/soldier_nato
 	name = "zombie soldier"
@@ -163,8 +167,9 @@
 	health = 130
 
 /mob/living/simple_animal/hostile/eft/zombie/soldier_nato/New()
-	..()
+	. = ..()
 	icon_state = "zed_army_nato[rand(1,4)]"
+	icon_dead = icon_state + "_dead"
 
 /mob/living/simple_animal/hostile/eft/zombie/soldier/set_target()
 	. = ..()

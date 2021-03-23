@@ -210,12 +210,15 @@
 			to_chat(user, "<span class='notice'>You insert \the [W] into \the [src].</span>")
 		GLOB.nanomanager.update_uis(src)
 		return
-	else if(istype(W, /obj/item/quest/military_chip) || human)
-		to_chat(user, "<span class='notice'>You give \the [W] to [src].</span>")
-		emagged = 1
-		qdel(W)
+
 	else if(attempt_to_stock(W, user))
 		return
+
+	if(istype(W, /obj/item/quest/military_chip) || human)
+		to_chat(user, "<span class='notice'>You give \the [W] to [src].</span>")
+		//src.emagged = 1
+		emag_act()
+		qdel(W)
 	..()
 	return
 
@@ -229,8 +232,9 @@
 		if(I.type == R.item_path)
 			if(human)
 				var/money = R.price * 0.5
-				spawn_money(money,src.loc,usr)
-				qdel(I)
+				spawn_money(money,src.loc)
+				spawn(2)
+					qdel(I)
 			else
 				stock(I, R, user)
 			return 1
@@ -1171,8 +1175,7 @@
 					/obj/item/weapon/reagent_containers/food/snacks/armymaindish/burrito = 2
 					)
 
-	contraband = list(/obj/item/weapon/reagent_containers/food/drinks/cans/thirteenloko = 5,
-					/obj/item/weapon/reagent_containers/food/snacks/liquidfood = 6)
+	premium = list(/obj/item/weapon/reagent_containers/food/drinks/cans/thirteenloko = 5,/obj/item/weapon/reagent_containers/food/snacks/liquidfood = 6)
 
 	prices = list(/obj/item/weapon/radioset/prc77 = 650,
 					/obj/item/clothing/suit/storage/hooded/brown_jacket = 200,
@@ -1224,8 +1227,7 @@
 					/obj/item/ammo_magazine/c545x39m = 8
 					)
 
-	contraband = list(/obj/item/weapon/reagent_containers/food/drinks/cans/thirteenloko = 5,
-					/obj/item/weapon/reagent_containers/food/snacks/liquidfood = 6)
+	premium = list(/obj/item/weapon/reagent_containers/food/drinks/cans/thirteenloko = 5,/obj/item/weapon/reagent_containers/food/snacks/liquidfood = 6)
 
 	prices = list(/obj/item/clothing/suit/storage/hooded/leather_coat = 260,
 					/obj/item/clothing/suit/storage/hooded/ghillie = 750,
@@ -1258,9 +1260,7 @@
 					/obj/item/weapon/storage/backpack/bundes_med = 1
 					)
 
-	contraband = list(/obj/item/weapon/reagent_containers/pill/dexalin_plus = 2,
-					/obj/item/weapon/reagent_containers/pill/happy = 4,
-					/obj/item/weapon/reagent_containers/pill/blotter = 10)
+	premium = list(/obj/item/weapon/reagent_containers/pill/dexalin_plus = 2,/obj/item/weapon/reagent_containers/pill/happy = 4,/obj/item/weapon/reagent_containers/pill/blotter = 10)
 
 	prices = list(
 					/obj/item/stack/medical/bruise_pack/bint = 80,
