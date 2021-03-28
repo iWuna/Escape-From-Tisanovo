@@ -1,3 +1,4 @@
 iWuna - Host
 Fanxelt - GameAdmin
+Stalkeros - GameAdmin
 DarkestWolf- Host
