@@ -100,19 +100,19 @@ MOD_JOB_TEMPBAN_MAX 1440
 ##
 ## default probablity is 1, increase to make that mode more likely to be picked
 ## set to 0 to disable that mode
-PROBABILITY EXTENDED 1
-PROBABILITY MALFUNCTION 1
-PROBABILITY MERCENARY 1
-PROBABILITY WIZARD 1
-PROBABILITY CHANGELING 1
-PROBABILITY CULT 1
-PROBABILITY EXTEND-A-TRAITORMONGOUS 6
+PROBABILITY EXTENDED 0
+PROBABILITY MALFUNCTION 0
+PROBABILITY MERCENARY 0
+PROBABILITY WIZARD 0
+PROBABILITY CHANGELING 0
+PROBABILITY CULT 0
+PROBABILITY EXTEND-A-TRAITORMONGOUS 0
 
 ## Hash out to disable random events during the round.
 #ALLOW_RANDOM_EVENTS
 
 ## if amount of traitors scales or not
-TRAITOR_SCALING
+#TRAITOR_SCALING
 
 ## if objectives are disabled
 #OBJECTIVES_DISABLED
@@ -179,7 +179,7 @@ ANTAG_HUD_RESTRICTED
 # DONT_DEL_NEWMOB
 
 ## set a hosted by name for unix platforms
-HOSTEDBY TauCeti
+HOSTEDBY SanecMan
 
 ## Set to jobban "Guest-" accounts from Captain, HoS, HoP, CE, RD, CMO, Warden, Security, Detective, and AI positions.
 ## Set to 1 to jobban them from those positions, set to 0 to allow them.
