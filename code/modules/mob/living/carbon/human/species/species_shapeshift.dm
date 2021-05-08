@@ -121,7 +121,7 @@ var/list/wrapped_species_by_ref = list()
 
 /mob/living/carbon/human/proc/shapeshifter_select_gender()
 
-	set name = "Select Gender"
+	set name = "Select Sex"
 	set category = "Abilities"
 
 	if(stat || world.time < last_special)

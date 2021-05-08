@@ -19,6 +19,7 @@
 	icon_opened = "fridgeopen"
 	icon_broken = "fridgebroken"
 	icon_off = "fridgebroken"
+	layer = 2
 
 /obj/structure/closet/secure_closet/freezer/meat/WillContain()
 	return list(
@@ -33,6 +34,7 @@
 	icon_opened = "fridgeopen"
 	icon_broken = "fridgebroken"
 	icon_off = "fridgebroken"
+	layer = 2
 
 /obj/structure/closet/secure_closet/freezer/fridge/full/WillContain()
 	return list(
@@ -50,6 +52,7 @@
 	icon_broken = "fridgebroken"
 	icon_off = "fridgebroken"
 	req_access = list(access_heads_vault)
+	layer = 2
 
 /obj/structure/closet/secure_closet/freezer/money/Initialize()
 	. = ..()
