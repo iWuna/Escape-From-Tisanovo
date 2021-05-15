@@ -31,7 +31,6 @@
 		return
 	..()
 
-
 /obj/item/device/boombox/MouseDrop(var/obj/over_object)
 	if (!over_object || !(ishuman(usr) || issmall(usr)))
 		return

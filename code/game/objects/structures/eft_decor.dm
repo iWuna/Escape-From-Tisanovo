@@ -260,3 +260,10 @@
 		/obj/item/weapon/material/kitchen/utensil/knife/plastic,
 		/obj/item/weapon/material/knife/butch
 		)
+
+/obj/structure/eft/deco
+	icon = 'icons/obj/decorations.dmi'
+
+/obj/structure/eft/deco/cashregister
+	name = "cashregister"
+	icon_state = "cashregister"
