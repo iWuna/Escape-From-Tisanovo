@@ -94,7 +94,7 @@
 				/obj/item/weapon/reagent_containers/food/snacks/tincan/stewbuckwheat,
 				/obj/item/weapon/reagent_containers/food/snacks/tincan/buckwheat,
 				/obj/item/weapon/reagent_containers/food/snacks/tincan/condensedmilk,
-				/obj/item/weapon/reagent_containers/food/snacks/armymaindish/burrito,
+				/obj/item/weapon/reagent_containers/food/snacks/armymaindish/burrito
 				)
 
 /obj/effect/spawner/lootdrop/backpack_army
@@ -105,7 +105,7 @@
 				/obj/item/weapon/storage/backpack/sovietpack,
 				/obj/item/weapon/storage/backpack/usmc_buttpack,
 				/obj/item/weapon/storage/backpack/soviet_tabletbag,
-				/obj/item/weapon/storage/backpack/czechpack,
+				/obj/item/weapon/storage/backpack/czechpack
 				)
 
 /obj/effect/spawner/lootdrop/zombie_civ
@@ -113,9 +113,24 @@
 	lootdoubles = TRUE
 	mob_spawner = 1
 	emptyprob = 30
-	loot = list(
-				/mob/living/simple_animal/hostile/eft/zombie/civ,
-				)
+	icon_state = "zed"
+	loot = list(/mob/living/simple_animal/hostile/eft/zombie/civ)
+
+/obj/effect/spawner/lootdrop/zombie_nato
+	name = "nato random zombie spawn"
+	lootdoubles = TRUE
+	mob_spawner = 1
+	emptyprob = 25
+	icon_state = "zed_nato"
+	loot = list(/mob/living/simple_animal/hostile/eft/zombie/soldier_nato)
+
+/obj/effect/spawner/lootdrop/zombie_wp
+	name = "warpact random zombie spawn"
+	lootdoubles = TRUE
+	mob_spawner = 1
+	emptyprob = 20
+	icon_state = "zed_wp"
+	loot = list(/mob/living/simple_animal/hostile/eft/zombie/soldier)
 
 /obj/effect/spawner/lootdrop/possible_chicken
 	name = "possible chicken spawn"
@@ -130,7 +145,7 @@
 	lootdoubles = TRUE
 	mob_spawner = 1
 	loot = list(
-				/mob/living/simple_animal/retaliate/goat,
+				/mob/living/simple_animal/retaliate/goat
 				)
 
 /obj/effect/spawner/lootdrop/possible_supply_spawn
@@ -150,5 +165,5 @@
 	lootdoubles = TRUE
 	loot = list(
 				/obj/item/weapon/material/lstick,
-				/obj/item/weapon/crafty/knifeblade,
+				/obj/item/weapon/crafty/knifeblade
 				)
