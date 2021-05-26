@@ -325,6 +325,13 @@
 /obj/item/weapon/reagent_containers/food/drinks/flask/wornflask/nato
 	icon_state = "natoflask"
 
+/obj/item/weapon/reagent_containers/food/drinks/flask/kettle
+	name = "\improper kettle"
+	desc = "A metal kettle for boiling water."
+	icon_state = "kettle"
+	volume = 60
+	center_of_mass = "x=17;y=7"
+
 /obj/item/weapon/reagent_containers/food/drinks/coffeecup
 	name = "coffee cup"
 	desc = "A plain white coffee cup."

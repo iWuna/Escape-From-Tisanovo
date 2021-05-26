@@ -55,3 +55,8 @@
 	name = "chip"
 	desc = "Small chip with military codes, this can be useful for traders."
 	icon_state = "military_chip"
+
+/obj/item/quest/blade
+	name = "razor blade"
+	desc = "Small razor blade, it's a luck to find fine razor blade in this doomed country."
+	icon_state = "lezvie"

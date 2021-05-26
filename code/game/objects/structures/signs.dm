@@ -1362,6 +1362,7 @@ obj/structure/sign/noshitlers
 	name = "Andropovka"
 	icon = 'icons/obj/decals48.dmi'
 	icon_state = "andropovka"
+	pixel_x = -8
 
 /obj/structure/sign/stogovka
 	name = "Stogovka river"
@@ -1372,6 +1373,36 @@ obj/structure/sign/noshitlers
 	name = "Aerodrom"
 	icon = 'icons/obj/decorations_64x32.dmi'
 	icon_state = "AEROPORT"
+
+/obj/structure/sign/sogri
+	name = "Sogri-27"
+	icon = 'icons/obj/decals48.dmi'
+	icon_state = "wp_base1"
+	pixel_x = -8
+
+/obj/structure/sign/vostok
+	name = "Vostok-48"
+	icon = 'icons/obj/decals48.dmi'
+	icon_state = "wp_base2"
+	pixel_x = -8
+
+/obj/structure/sign/northwood1
+	name = "Northwood Alpha"
+	icon = 'icons/obj/decals48.dmi'
+	icon_state = "nato_base1"
+	pixel_x = -8
+
+/obj/structure/sign/northwood2
+	name = "Northwood Bravo"
+	icon = 'icons/obj/decals48.dmi'
+	icon_state = "nato_base2"
+	pixel_x = -8
+
+/obj/structure/sign/blackwood
+	name = "Bunker Blackwood"
+	icon = 'icons/obj/decals48.dmi'
+	icon_state = "nato_base3"
+	pixel_x = -8
 
 /obj/structure/sign/cafe
 	name = "cafe sign"
