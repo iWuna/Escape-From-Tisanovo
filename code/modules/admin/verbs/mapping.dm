@@ -40,8 +40,7 @@ var/intercom_range_display_status = 0
 /client/proc/do_not_use_these()
 	set category = "Mapping"
 	set name = "-None of these are for ingame use!!"
-
-	..()
+	//..()
 
 /client/proc/camera_view()
 	set category = "Mapping"

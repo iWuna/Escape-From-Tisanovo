@@ -59,17 +59,17 @@
 		flick("[initial(icon_state)]-spinning", src)
 		for(var/mob/O in oviewers(src))
 			O << "\red [src] suddenly jumps up!"
-		..()
+		//..()
 	if(delaytime)
 		sleep(delaytime)
-		..()
+		//..()
 	var/turf/T = get_turf(src.loc)
 	spawn(0)
 		explosion(T, 0, power1, power2, power3)
 		if(num_fragments)
 			//blatant copypaste from frags, but those are a whole different type so vOv
 			set waitfor = 0
-			..()
+			//..()
 
 			var/turf/O = get_turf(src)
 			if(!O) return

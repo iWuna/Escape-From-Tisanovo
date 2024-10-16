@@ -81,7 +81,7 @@
 			dismantle_wall()
 			return 1
 
-	if(..()) return 1
+	//if(..()) return 1
 
 	if(!can_open)
 		to_chat(user, "<span class='notice'>You push \the [src], but nothing happens.</span>")

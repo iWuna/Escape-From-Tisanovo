@@ -27,7 +27,7 @@
 	..() //Adding more planks is an afterattack on the sheet type
 
 /obj/structure/barricade/wooden/planks/proc/take_damage()
-	..()
+	//..()
 	if(health <= (planks-1)*30)
 		planks --
 		checkplanks()
